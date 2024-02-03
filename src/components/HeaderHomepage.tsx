@@ -13,6 +13,7 @@ export const HeaderHomepage: React.FC = () => {
               href="/tentang-jatim"
               className="text-1xl text-gray-950 font-semibold hover:underline hover:text-gray-800"
               style={{ transition: "all 0.3s ease-in-out" }}
+              data-aos="fade-in"
             >
               TENTANG JATIM
             </a>
@@ -20,6 +21,7 @@ export const HeaderHomepage: React.FC = () => {
               href="/budaya"
               className="text-1xl text-gray-950 font-semibold hover:underline hover:text-gray-800"
               style={{ transition: "all 0.3s ease-in-out" }}
+              data-aos="fade-in"
             >
               BUDAYA
             </a>
@@ -27,6 +29,7 @@ export const HeaderHomepage: React.FC = () => {
               href="/destinasi"
               className="text-1xl text-gray-950 font-semibold hover:underline hover:text-gray-800"
               style={{ transition: "all 0.3s ease-in-out" }}
+              data-aos="fade-in"
             >
               DESTINASI
             </a>
