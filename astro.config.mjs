@@ -6,4 +6,7 @@ import partytown from "@astrojs/partytown";
 
 export default defineConfig({
   integrations: [tailwind(), vue(), react(), partytown()],
+  server: {
+    port: 5000,
+  },
 });
