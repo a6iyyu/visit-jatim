@@ -1,43 +1,52 @@
-import React from "react";
+import "../../static/scss/component.scss";
+import React, { useEffect, useState } from "react";
+import Dropdown from "./molecules/Dropdown";
 
 export const HeaderHomepage: React.FC = () => {
+
+  const [scrolling, setScrolling] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 50) {
+      setScrolling(true);
+    } else {
+      setScrolling(false)
+    }
+  }
+  window.addEventListener('scroll', handleScroll)
+
   return (
-    <div className="h-36 w-full grid place-items-center bg-gray-100">
-      <div className="h-full w-[90%] flex">
-        <div className="h-full w-1/3 grid place-items-center">
-          <img src="" alt="" className="" />
-        </div>
-        <div className="h-full w-2/3 flex">
-          <div className="h-full w-3/5 flex items-center justify-around">
-            <a
-              href="/tentang-jatim"
-              className="text-1xl text-gray-950 font-semibold hover:underline hover:text-gray-800"
-              style={{ transition: "all 0.3s ease-in-out" }}
-              data-aos="fade-in"
-            >
-              TENTANG JATIM
-            </a>
-            <a
-              href="/budaya"
-              className="text-1xl text-gray-950 font-semibold hover:underline hover:text-gray-800"
-              style={{ transition: "all 0.3s ease-in-out" }}
-              data-aos="fade-in"
-            >
-              BUDAYA
-            </a>
-            <a
-              href="/destinasi"
-              className="text-1xl text-gray-950 font-semibold hover:underline hover:text-gray-800"
-              style={{ transition: "all 0.3s ease-in-out" }}
-              data-aos="fade-in"
-            >
-              DESTINASI
-            </a>
-          </div>
-          <div className="h-full w-1/5 grid place-items-center"></div>
-          <div className="h-full w-1/5 grid place-items-center"></div>
-        </div>
+    <nav className={scrolling ? "h-28 pl-28 pr-40 w-full flex justify-between items-center fixed z-50 text-slate-900 bg-slate-50 transition-all shadow-lg"
+      : "h-28 pl-28 pr-40 w-full flex justify-between items-center fixed z-50 text-gray-50 bg-transparent transition-all"}>
+
+      <div className="h-full w-1/6 flex items-center">
+        <h1 className="text-3xl font-semibold text-start">Visit Jatim</h1>
       </div>
-    </div>
+
+      <div className="h-full w-3/5 flex items-center justify-around">
+        <button
+          className="text-base font-semibold transition-all hover:underline hover:text-gray-800"
+          data-aos="fade-in"
+        >
+          TENTANG JATIM
+        </button>
+
+        <Dropdown name={"DESTINASI"} options={[
+          "Wilayah",
+          "Taman Nasional",
+          "Saran Perjalanan",
+          "Kota & Desa"
+        ]} />
+
+        <Dropdown name={"INSPIRASI"} options={[
+          "Petualanagan",
+          "Kuliner",
+          "Budaya",
+          "Acara"
+        ]} />
+        <div className="h-full flex items-center"><span><i className="bi bi-globe2 text-xl mx-3 font-bold"></i></span>en</div>
+        <div className="h-full flex items-center">darkmode</div>
+      </div>
+    </nav>
   );
 };

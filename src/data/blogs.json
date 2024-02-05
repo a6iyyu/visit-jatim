@@ -1,0 +1,40 @@
+{
+    "blogs" : [
+        {
+            "id": 1,
+            "link": "https://jatim.viva.co.id/gaya-hidup/9107-10-wisata-kuliner-khas-jawa-timur-yang-wajib-dikunjungi-murah-dan-maknyus",
+            "img": "../../static/img/sample-2.jpg",
+            "title": "10 Wisata Kuliner Khas Jawa Timur yang Wajib Dikunjungi, Murah dan Maknyus"
+        },
+        {
+            "id": 2,
+            "link": "https://www.kompas.com/tren/read/2023/08/14/124500165/daftar-10-perguruan-tinggi-negeri-terbaik-di-jawa-timur",
+            "img": "../../static/img/sample-3.jpeg",
+            "title": "Daftar 10 Perguruan Tinggi Negeri Terbaik di Jawa Timur"
+        },
+        {
+            "id": 3,
+            "link": "https://www.detik.com/jatim/budaya/d-7000628/6-budaya-dan-tradisi-jawa-timur-yang-dikagumi-dunia",
+            "img": "../../static/img/sample-4.jpeg",
+            "title": "6 Budaya dan Tradisi Jawa Timur yang Dikagumi Dunia"
+        },
+        {
+            "id": 4,
+            "link": "https://www.tripadvisor.co.id/Attractions-g2301797-Activities-c47-t17-East_Java_Java.html",
+            "img": "../../static/img/sample-5.jpg",
+            "title": "Tempat Bersejarah di Jawa Timur"
+        },
+        {
+            "id": 2,
+            "link": "https://www.kompas.com/tren/read/2023/08/14/124500165/daftar-10-perguruan-tinggi-negeri-terbaik-di-jawa-timur",
+            "img": "../../static/img/sample-3.jpeg",
+            "title": "Daftar 10 Perguruan Tinggi Negeri Terbaik di Jawa Timur"
+        },
+        {
+            "id": 3,
+            "link": "https://www.detik.com/jatim/budaya/d-7000628/6-budaya-dan-tradisi-jawa-timur-yang-dikagumi-dunia",
+            "img": "../../static/img/sample-4.jpeg",
+            "title": "6 Budaya dan Tradisi Jawa Timur yang Dikagumi Dunia"
+        }
+    ]
+}
