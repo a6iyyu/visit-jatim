@@ -30,9 +30,7 @@ const Dropdown = ({ options, name }: { options: string[], name: string }) => {
                 <div className="absolute z-40 bg-gray-50 w-64 h-60 flex flex-col justify-evenly shadow-lg rounded-md top-24 text-slate-950"
                     data-aos={isExpanded ? "fade-down" : "fade-up"}
                 >
-                    {options.map((option, index) => (
-                        <a className="cursor-pointer px-5 py-3 hover:bg-slate-100" key={index}>{option}</a>
-                    ))}
+                    {options.map((option, index) => (<a className="cursor-pointer px-5 py-3 hover:bg-slate-100" key={index}>{option}</a>))}
                 </div>
             )}
         </div>
