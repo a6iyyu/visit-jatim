@@ -84,18 +84,12 @@ import CardCityVue from "../components/CardCity.vue";
     id="jelajahi-jatim"
     data-aos="fade-up"
   >
-    <p
-      class="text-gray-950 text-3xl cursor-default font-semibold"
-      data-aos="fade-up"
-    >
+    <p class="text-gray-950 text-3xl cursor-default font-semibold">
       Jelajahi Jawa Timur
     </p>
-    <hr class="h-1 w-60 rounded-md bg-gray-950" data-aos="fade-up" />
+    <hr class="h-1 w-60 rounded-md bg-gray-950" />
     <div class="h-4 w-full"></div>
-    <p
-      class="text-gray-950 text-2xl cursor-default font-medium"
-      data-aos="fade-up"
-    >
+    <p class="text-gray-950 text-2xl cursor-default font-medium">
       Hal-Hal Unik dan Indah Menunggu Anda di Jawa Timur!
     </p>
     <div class="h-8 w-full"></div>
@@ -114,4 +108,38 @@ import CardCityVue from "../components/CardCity.vue";
     </div>
   </section>
   <div class="h-20 w-full"></div>
+
+  <!-- Tau Gak Sih? -->
+  <section class="h-[30rem] w-full grid place-items-center">
+    <div class="h-full w-[85%] flex"></div>
+  </section>
+
+  <section class="h-fit w-full grid place-items-center">
+    <p class="text-gray-950 text-3xl cursor-default font-semibold">
+      Tunggu Apa Lagi?
+    </p>
+    <hr class="h-1 w-60 rounded-md bg-gray-950" />
+    <div class="h-8 w-full"></div>
+  </section>
+
+  <section
+    class="h-screen w-full grid place-items-center bg-center bg-cover bg-no-repeat"
+    :style="{ backgroundImage: 'url(../../static/img/reog.jpg)' }"
+  >
+    <div
+      class="h-screen w-full bg-gradient-to-r from-black opacity-60 z-20 absolute"
+    ></div>
+    <div class="h-full w-[85%] flex justify-start">
+      <div class="h-full w-1/2 flex flex-col items-start justify-center z-30">
+        <p
+          class="text-5xl text-slate-50 cursor-default font-black"
+          data-aos="fade-up"
+        >
+          KAMI TUNGGU KEHADIRAN ANDA
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer></footer>
 </template>
