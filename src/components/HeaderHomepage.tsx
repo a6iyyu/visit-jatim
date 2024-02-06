@@ -1,11 +1,10 @@
 import "../../static/scss/component.scss";
 import React, { useEffect, useRef, useState } from "react";
-import Dropdown from "./molecules/Dropdown";
 import AccordionMobile from "./molecules/AccordionMobile";
 import { MobileNavbar } from "./molecules/MobileNavbar";
+import { Dropdown } from "./molecules/Dropdown";
 
-export const HeaderHomepage: React.FC = () => {
-
+export const Header: React.FC = () => {
   const [scrolling, setScrolling] = useState(false);
 
   const [mobileNavbarOpen, setMobileNavbarOpen] = useState(false);
@@ -29,10 +28,10 @@ export const HeaderHomepage: React.FC = () => {
     if (window.scrollY > 50) {
       setScrolling(true);
     } else {
-      setScrolling(false)
+      setScrolling(false);
     }
-  }
-  window.addEventListener('scroll', handleScroll)
+  };
+  window.addEventListener("scroll", handleScroll);
 
   return (
     <nav className={`h-28 pl-4 sm:pl-10 md:pl-8 lg:pl-16 xl:pl-28 pr-4 sm:pr-10 md:pr-8 lg:pr-16 xl:pr-40 w-full 

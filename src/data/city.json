@@ -1,0 +1,20 @@
+{
+    "cities": [
+        {
+            "city": "Surabaya",
+            "epithet": ""
+        },
+        {
+            "city": "Malang",
+            "epithet": ""
+        },
+        {
+            "city": "Banyuwangi",
+            "epithet": ""
+        },
+        {
+            "city": "",
+            "epithet": ""
+        }
+    ]
+}

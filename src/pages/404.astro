@@ -1,5 +1,11 @@
 ---
-
+import "../../static/scss/component.scss";
+import "../../static/scss/404.scss";
+import Logo from "../../static/img/logo.png?url";
+import { ScrollIndicator } from "../components/molecules/ScrollIndicator";
+import { ScrollToTop } from "../components/molecules/ScrollToTop";
+import { Header } from "../components/HeaderHomepage";
+import NotFoundPage from "../layouts/404.vue";
 ---
 
 <html lang="en">
@@ -8,6 +14,26 @@
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>404: Not Found!</title>
+    <link rel="icon" href={Logo} />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
-  <body></body>
+  <body>
+    <ScrollIndicator client:only="react" />
+    <ScrollToTop client:only="react" />
+    <Header client:only="react" />
+    <NotFoundPage />
+  </body>
+  <script crossorigin="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script 
+    type="text/javascript" 
+    src="https://unpkg.com/aos@next/dist/aos.js"
+  ></script>
+  <script type="text/javascript">
+    AOS.init();
+  </script>
 </html>
