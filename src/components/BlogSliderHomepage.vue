@@ -8,6 +8,7 @@
     <img
       :src="blog.img"
       class="max-h-32 h-32 w-2/5 rounded bg-center bg-cover bg-no-repeat"
+      :style="{ boxShadow: '0.4rem 0.4rem 0.4rem #bebebe' }"
     />
     <div class="h-full w-[55%] flex items-center justify-start">
       <p
