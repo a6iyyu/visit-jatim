@@ -5,16 +5,28 @@ import CardCityVue from "../components/CardCity.vue";
 
 <template>
   <!-- Hero section -->
-  <section class="h-screen w-full grid place-items-center bg-center bg-cover bg-no-repeat"
-    :style="{ backgroundImage: 'url(../../static/img/bromo.jpg)' }">
-    <div class="h-screen w-full bg-gradient-to-t md:bg-gradient-to-r from-black opacity-60 z-20 absolute"></div>
+  <section
+    class="h-screen w-full grid place-items-center bg-center bg-cover bg-no-repeat"
+    :style="{ backgroundImage: 'url(../../static/img/bromo.jpg)' }"
+  >
+    <div
+      class="h-screen w-full bg-gradient-to-t md:bg-gradient-to-r from-black opacity-60 z-20 absolute"
+    ></div>
     <div class="h-full w-full flex justify-start">
-      <div class="h-full w-5/6 md:w-1/2 mx-auto md:mx-16 lg:mx-28 flex flex-col items-start justify-center z-30">
-        <h1 class="mx-auto md:mx-1 text-4xl sm:text-5xl text-slate-50 cursor-default font-black text-start" data-aos="fade-up">
+      <div
+        class="h-full w-5/6 md:w-1/2 mx-auto md:mx-16 lg:mx-28 flex flex-col items-start justify-center z-30"
+      >
+        <h1
+          class="mx-auto md:mx-1 text-4xl sm:text-5xl text-slate-50 cursor-default font-black text-start"
+          data-aos="fade-up"
+        >
           JAWA TIMUR
         </h1>
         <br />
-        <p class="text-lg md:text-1xl text-slate-50 cursor-default font-medium text-center md:text-justify lg:pr-36" data-aos="fade-up">
+        <p
+          class="text-lg md:text-1xl text-slate-50 cursor-default font-medium text-center md:text-justify lg:pr-36"
+          data-aos="fade-up"
+        >
           Sambut keindahan dan keragaman Jawa Timur, sebuah destinasi yang
           menakjubkan bagi pencinta petualangan dan kebudayaan.
         </p>
@@ -84,15 +96,17 @@ import CardCityVue from "../components/CardCity.vue";
     id="jelajahi-jatim"
     data-aos="fade-up"
   >
-    <p class="text-gray-950 text-3xl cursor-default font-semibold">
-      Jelajahi Jawa Timur
-    </p>
-    <hr class="h-1 w-60 rounded-md bg-gray-950" />
-    <div class="h-4 w-full"></div>
-    <p class="text-gray-950 text-2xl cursor-default font-medium">
-      Hal-Hal Unik dan Indah Menunggu Anda di Jawa Timur!
-    </p>
-    <div class="h-8 w-full"></div>
+    <div class="h-full w-[85%] grid place-items-center">
+      <p class="text-gray-950 text-3xl cursor-default font-semibold">
+        Jelajahi Jawa Timur
+      </p>
+      <hr class="h-1 w-60 rounded-md bg-gray-950" />
+      <div class="h-4 w-full"></div>
+      <p class="text-gray-950 text-2xl cursor-default font-medium text-center">
+        Hal-Hal Unik dan Indah Menunggu Anda di Jawa Timur!
+      </p>
+      <div class="h-8 w-full"></div>
+    </div>
   </section>
 
   <section class="h-[35rem] w-full grid place-items-center" data-aos="fade-up">

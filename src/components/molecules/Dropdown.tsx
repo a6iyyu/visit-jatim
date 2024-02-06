@@ -1,12 +1,12 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState, type RefObject } from "react";
 
-export const Dropdown = ({ options, name }: { options: string[]; name: string }) => {
+export const Dropdown = ({options, name}: {options: string[]; name: string}) => {
   const [isExpanded, setIsExpanded] = useState(false);
-  const dropdownRef = useRef(null);
+  const dropdownRef: RefObject<HTMLDivElement> = useRef(null);
 
   const handleToggleDropdown = () => setIsExpanded(!isExpanded);
   const clickOutside = (event: MouseEvent) => {
-    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
       setIsExpanded(false);
     }
   };
@@ -45,5 +45,4 @@ export const Dropdown = ({ options, name }: { options: string[]; name: string })
       )}
     </div>
   );
-  
-}
+};
