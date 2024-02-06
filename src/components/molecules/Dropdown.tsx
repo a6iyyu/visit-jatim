@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 
-const Dropdown = ({ options, name }: { options: string[]; name: string }) => {
+export const Dropdown = ({ options, name }: { options: string[]; name: string }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const dropdownRef = useRef(null);
 
@@ -45,6 +45,5 @@ const Dropdown = ({ options, name }: { options: string[]; name: string }) => {
       )}
     </div>
   );
-};
-
-export default Dropdown;
+  
+}

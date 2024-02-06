@@ -5,26 +5,16 @@ import CardCityVue from "../components/CardCity.vue";
 
 <template>
   <!-- Hero section -->
-  <section
-    class="h-screen w-full pl-28 pr-40 grid place-items-center bg-center bg-cover bg-no-repeat"
-    :style="{ backgroundImage: 'url(../../static/img/bromo.jpg)' }"
-  >
-    <div
-      class="h-screen w-full bg-gradient-to-r from-black opacity-60 z-20 absolute"
-    ></div>
+  <section class="h-screen w-full grid place-items-center bg-center bg-cover bg-no-repeat"
+    :style="{ backgroundImage: 'url(../../static/img/bromo.jpg)' }">
+    <div class="h-screen w-full bg-gradient-to-t md:bg-gradient-to-r from-black opacity-60 z-20 absolute"></div>
     <div class="h-full w-full flex justify-start">
-      <div class="h-full w-1/2 flex flex-col items-start justify-center z-30">
-        <p
-          class="text-5xl text-slate-50 cursor-default font-black"
-          data-aos="fade-up"
-        >
+      <div class="h-full w-5/6 md:w-1/2 mx-auto md:mx-16 lg:mx-28 flex flex-col items-start justify-center z-30">
+        <h1 class="mx-auto md:mx-1 text-4xl sm:text-5xl text-slate-50 cursor-default font-black text-start" data-aos="fade-up">
           JAWA TIMUR
-        </p>
+        </h1>
         <br />
-        <p
-          class="text-1xl text-slate-50 cursor-default font-medium text-justify"
-          data-aos="fade-up"
-        >
+        <p class="text-lg md:text-1xl text-slate-50 cursor-default font-medium text-center md:text-justify lg:pr-36" data-aos="fade-up">
           Sambut keindahan dan keragaman Jawa Timur, sebuah destinasi yang
           menakjubkan bagi pencinta petualangan dan kebudayaan.
         </p>

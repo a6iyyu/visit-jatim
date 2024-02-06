@@ -1,3 +1,10 @@
+<script lang="ts" setup>
+import { ref} from 'vue';
+import blogData from '../data/blogs.json'
+
+const blogs = ref(blogData.blogs);
+</script>
+
 <template>
   <a
     v-for="blog in blogs"
@@ -19,10 +26,3 @@
     </div>
   </a>
 </template>
-
-<script lang="ts" setup>
-import { ref } from "vue";
-import blogData from "../data/blogs.json";
-
-const blogs = ref(blogData.blogs);
-</script>
