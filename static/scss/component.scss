@@ -19,3 +19,99 @@
 //   color: #030712;
 //   transition: all 0.3s linear;
 // }
+
+@media screen and (max-width: 8192px) {
+  body {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 2160px) {
+  ::-webkit-scrollbar {
+    width: 15px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #393939;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #787878;
+  }
+  br::selection,
+  img::selection {
+    background: none;
+  }
+  p {
+    transition: all 0.3s ease-in-out;
+  }
+  body {
+    display: block;
+    overflow-x: hidden;
+    background-color: #f9f9f9;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+}
+
+@media screen and (max-width: 1680px) {
+}
+
+@media screen and (max-width: 1440px) {
+}
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1160px) {
+  ::-webkit-scrollbar {
+    width: 13px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  ::-webkit-scrollbar {
+    width: 11px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+}
+
+@media screen and (max-width: 324px) {
+  * {
+    display: none;
+  }
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slide-out {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
