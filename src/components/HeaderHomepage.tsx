@@ -34,47 +34,41 @@ export const Header: React.FC = () => {
 
   return (
     <nav
-      className={`h-28 pl-4 sm:pl-10 md:pl-8 lg:pl-16 xl:pl-28 pr-4 sm:pr-10 md:pr-8 lg:pr-16 xl:pr-40 w-full flex justify-between items-center fixed z-50 ${
+      className={`h-28 w-full flex items-center justify-center fixed z-50 ${
         scrolling || mobileNavbarOpen
           ? "text-slate-900 bg-slate-50 shadow-lg transition-all ease-in-out duration-200"
           : "text-gray-50 bg-transparent transition-all ease-in-out duration-200"
       }`}
     >
-      <div className="flex h-full w-2/3 md:w-1/5 items-center">
-        <h1 className="text-3xl font-semibold text-start cursor-default">
-          Visit Jatim
-        </h1>
-      </div>
-      <div className="hidden md:flex h-full w-3/4 lg:w-3/5 items-center justify-around">
-        <button
-          className="text-base font-semibold transition-all hover:underline"
-          data-aos="fade-in"
-        >
-          TENTANG JATIM
-        </button>
-        <Dropdown
-          name={"DESTINASI"}
-          options={[
-            "Wilayah",
-            "Taman Nasional",
-            "Saran Perjalanan",
-            "Kota & Desa",
-          ]}
-        />
-
-        <Dropdown
-          name={"INSPIRASI"}
-          options={["Petualangan", "Kuliner", "Budaya", "Acara"]}
-        />
-        <div className="h-full flex items-center">
-          <span>
-            <i className="bi bi-globe2 text-xl mx-3 font-bold"></i>
-          </span>
-          en
+      <div className="h-full w-[85%] flex items-center justify-between">
+        <div className="flex h-full w-2/3 md:w-1/5 items-center">
+          <h1 className="text-3xl font-semibold text-start cursor-default">
+            VISIT JATIM
+          </h1>
         </div>
-        <div className="h-full flex items-center">darkmode</div>
+        <div className="hidden md:flex h-full w-3/4 lg:w-3/5 items-center justify-evenly">
+          <a
+            href="/tentang-jatim"
+            className="text-base font-semibold transition-all hover:underline"
+            data-aos="fade-in"
+          >
+            TENTANG JATIM
+          </a>
+          <Dropdown
+            name={"DESTINASI"}
+            options={[
+              "Wilayah",
+              "Taman Nasional",
+              "Saran Perjalanan",
+              "Kota & Desa",
+            ]}
+          />
+          <Dropdown
+            name={"INSPIRASI"}
+            options={["Petualangan", "Kuliner", "Budaya", "Acara"]}
+          />
+        </div>
       </div>
-
       {/* <MobileNavbar/> */}
       <div ref={mobileNavbarRef}>
         <button

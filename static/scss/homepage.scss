@@ -21,6 +21,9 @@
 }
 
 @media screen and (max-width: 960px) {
+  .hero > div:last-child > div {
+    width: 100% !important;
+  }
 }
 
 @media screen and (max-width: 640px) {
