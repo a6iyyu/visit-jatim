@@ -34,10 +34,11 @@ export const Header: React.FC = () => {
 
   return (
     <nav
-      className={`h-28 pl-4 sm:pl-10 md:pl-8 lg:pl-16 xl:pl-28 pr-4 sm:pr-10 md:pr-8 lg:pr-16 xl:pr-40 w-full flex justify-between items-center fixed z-50 ${scrolling || mobileNavbarOpen
-        ? "text-slate-900 bg-slate-50 shadow-lg transition-all ease-in-out duration-200"
-        : "text-gray-50 bg-transparent transition-all ease-in-out duration-200"
-    }`}
+      className={`h-28 pl-4 sm:pl-10 md:pl-8 lg:pl-16 xl:pl-28 pr-4 sm:pr-10 md:pr-8 lg:pr-16 xl:pr-40 w-full flex justify-between items-center fixed z-50 ${
+        scrolling || mobileNavbarOpen
+          ? "text-slate-900 bg-slate-50 shadow-lg transition-all ease-in-out duration-200"
+          : "text-gray-50 bg-transparent transition-all ease-in-out duration-200"
+      }`}
     >
       <div className="flex h-full w-2/3 md:w-1/5 items-center">
         <h1 className="text-3xl font-semibold text-start cursor-default">
@@ -63,7 +64,7 @@ export const Header: React.FC = () => {
 
         <Dropdown
           name={"INSPIRASI"}
-          options={["Petualanagan", "Kuliner", "Budaya", "Acara"]}
+          options={["Petualangan", "Kuliner", "Budaya", "Acara"]}
         />
         <div className="h-full flex items-center">
           <span>
@@ -88,9 +89,7 @@ export const Header: React.FC = () => {
             data-aos={mobileNavbarOpen ? "fade-down" : "fade-up"}
             data-aos-duration-200
           >
-            <a
-              className="px-10 py-5 flex justify-between font-semibold bg-transparent hover:bg-slate-900 hover:text-gray-50 transition cursor-pointer"
-            >
+            <a className="px-10 py-5 flex justify-between font-semibold bg-transparent hover:bg-slate-900 hover:text-gray-50 transition cursor-pointer">
               <h2 className="pl-5">TENTANG JATIM</h2>
               <span></span>
             </a>

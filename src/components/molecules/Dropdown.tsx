@@ -36,7 +36,7 @@ export const Dropdown = ({options, name}: {options: string[]; name: string}) => 
             <a
               className="cursor-pointer px-5 py-3 hover:bg-slate-100"
               key={index}
-              href={option}
+              href={`/${option.replace(/\+s/g, "-").replace("%20", "-").toLowerCase()}`}
             >
               {option}
             </a>

@@ -1,20 +1,28 @@
 {
     "cities": [
         {
-            "city": "Surabaya",
-            "epithet": ""
+            "city": "SURABAYA",
+            "epithet": "KOTA PAHLAWAN",
+            "img": "/static/img/surabaya.jpg",
+            "link": ""
         },
         {
-            "city": "Malang",
-            "epithet": ""
+            "city": "MALANG",
+            "epithet": "KOTA PENDIDIKAN",
+            "img": "/static/img/malang.jpg",
+            "link": ""
         },
         {
-            "city": "Banyuwangi",
-            "epithet": ""
+            "city": "BANYUWANGI",
+            "epithet": "THE SUNRISE OF JAVA",
+            "img": "/static/img/banyuwangi.jpg",
+            "link": ""
         },
         {
-            "city": "",
-            "epithet": ""
+            "city": "SIDOARJO",
+            "epithet": "KOTA UDANG",
+            "img": "/static/img/sidoarjo.jpg",
+            "link": ""
         }
     ]
 }

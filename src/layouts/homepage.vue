@@ -114,9 +114,6 @@ import CardCityVue from "../components/CardCity.vue";
       <div class="splide__track h-full w-full">
         <ul class="splide__list">
           <CardCityVue />
-          <CardCityVue />
-          <CardCityVue />
-          <CardCityVue />
         </ul>
       </div>
     </div>
@@ -124,11 +121,83 @@ import CardCityVue from "../components/CardCity.vue";
   <div class="h-20 w-full"></div>
 
   <!-- Tau Gak Sih? -->
-  <section class="h-[30rem] w-full grid place-items-center">
-    <div class="h-full w-[85%] flex"></div>
+  <section class="h-fit w-full grid place-items-center" data-aos="fade-up">
+    <p class="text-gray-950 text-3xl cursor-default font-semibold">
+      Tau Gak Sih?
+    </p>
+    <hr class="h-1 w-44 rounded-md bg-gray-950" />
+    <div class="h-8 w-full"></div>
   </section>
 
-  <section class="h-fit w-full grid place-items-center">
+  <section
+    class="h-[25rem] w-[85%] flex items-center justify-between mx-auto"
+    data-aos="fade-up"
+  >
+    <div class="h-full w-1/2 flex flex-col items-center justify-center">
+      <h2 class="text-3xl text-gray-950 cursor-default font-semibold">
+        Pengen Belajar Sejarah? Ada!
+        <p class="text-1xl font-medium text-justify">
+          Di Blitar, ada lho peninggalan bersejarah yang menarik dimana tempat
+          ini dulunya menjadi saksi bisu dari mendiang Presiden Soekarno. Nama
+          tempatnya adalah Istana Gebang yang menjadi tempat tinggal bagi beliau
+          semasa remaja.
+        </p>
+      </h2>
+    </div>
+    <div class="h-full w-[45%] grid place-items-center">
+      <img
+        src="../../static/img/istana-gebang.jpeg"
+        alt="Istana Gebang"
+        class="rounded-2xl"
+      />
+    </div>
+  </section>
+  <div class="h-12 w-full"></div>
+
+  <section
+    class="h-[25rem] w-[85%] flex items-center justify-between mx-auto"
+    data-aos="fade-up"
+  >
+    <div class="h-full w-1/2 grid place-items-center">
+      <img src="" alt="Museum Seni Presiden SBY" class="rounded-2xl" />
+    </div>
+    <div class="h-full w-[45%] flex flex-col items-center justify-center">
+      <h2 class="text-3xl text-gray-950 cursor-default font-semibold">
+        Mana Ada Museum Seni di Jatim!
+        <p class="text-1xl font-medium text-justify">
+          Di Pacitan, Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Error, dolores odio velit quasi nesciunt quisquam fuga quidem corporis
+          odit sit illum itaque temporibus numquam ipsa, assumenda iusto tempora
+          distinctio dolorem.
+        </p>
+      </h2>
+    </div>
+  </section>
+  <div class="h-12 w-full"></div>
+
+  <section
+    class="h-[25rem] w-[85%] flex items-center justify-between mx-auto"
+    data-aos="fade-up"
+  >
+    <div class="h-full w-1/2 flex flex-col items-center justify-center">
+      <h2 class="text-3xl text-gray-950 cursor-default font-semibold">
+        Nyasarnya Jauh Banget!
+        <p class="text-1xl font-medium text-justify">
+          Di Kota Sumenep, Lorem ipsum dolor sit amet consectetur, adipisicing
+          elit. Error, dolores odio velit quasi nesciunt quisquam fuga quidem
+          corporis odit sit illum itaque temporibus numquam ipsa, assumenda
+          iusto tempora distinctio dolorem.
+        </p>
+      </h2>
+    </div>
+    <div class="h-full w-[45%] grid place-items-center">
+      <img src="" alt="Ujung Paling Timur Jawa Timur" class="rounded-2xl" />
+    </div>
+  </section>
+  <div class="h-12 w-full"></div>
+
+  <!-- Tunggu Apa Lagi? -->
+  <section class="h-fit w-full grid place-items-center" data-aos="fade-up">
     <p class="text-gray-950 text-3xl cursor-default font-semibold">
       Tunggu Apa Lagi?
     </p>
@@ -155,5 +224,17 @@ import CardCityVue from "../components/CardCity.vue";
     </div>
   </section>
 
-  <footer></footer>
+  <footer class="h-40 w-full grid place-items-center">
+    <div class="h-full w-[85%] flex flex-row items-center justify-between">
+      <h2 class="text-gray-950 text-2xl cursor-default font-semibold">
+        VISIT JATIM
+        <p class="text-1xl font-medium">&copy; 2024</p>
+      </h2>
+      <h2 class="text-gray-950 text-2xl cursor-default font-semibold">
+        Created By:
+        <p class="text-1xl font-medium">Muhammad Afif Al Ghifari</p>
+        <p class="text-1xl font-medium">Rafi Abiyyu Airlangga</p>
+      </h2>
+    </div>
+  </footer>
 </template>
