@@ -41,7 +41,11 @@ const AccordionMobile = ({options, name}: {options: string[]; name: string}) => 
         <ul className="my-2 overflow-hidden bg-gray-200">
           {options.map((option, index) => (
             <li className="border-t-2 border-slate-900 py-3 hover:bg-slate-900 hover:text-gray-50">
-              <a className="cursor-pointer flex items-center" key={index}>
+              <a
+                href={`/${option.toLowerCase().replace(" ", "%20").replace("%20", "-")}`}
+                className="cursor-pointer flex items-center"
+                key={index}
+              >
                 <h2 className="pl-14">
                   <i className="bi bi-chevron-right"></i>
                   {option}

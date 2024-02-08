@@ -31,20 +31,23 @@ import CardCityVue from "../components/CardCity.vue";
       </div>
     </div>
   </section>
+  <div class="h-12 w-full"></div>
 
   <!-- Explore -->
-  <section class="h-fit w-full px-28 mt-20 grid place-items-center">
-    <div class="h-full w-full block" data-aos="fade-up">
-      <p class="text-3xl text-gray-950 cursor-default font-semibold">
-        Terbaru di Jatim
-      </p>
-      <hr class="h-1 w-60 bg-gray-950 rounded-md" />
-    </div>
+  <section class="h-fit w-[85%] block mx-auto" data-aos="fade-up">
+    <p class="text-3xl text-gray-950 cursor-default font-semibold">
+      Terbaru di Jatim
+    </p>
+    <hr class="h-1 w-60 bg-gray-950 rounded-md" />
   </section>
 
   <!-- Blog -->
-  <section class="h-fit w-full grid place-items-center my-4" data-aos="fade-up">
-    <div class="h-full w-[85%] flex">
+  <section
+    class="h-fit w-full grid place-items-center my-4"
+    id="terbaru-di-jatim"
+    data-aos="fade-up"
+  >
+    <div class="h-full w-[85%] flex items-center justify-between">
       <div class="h-full w-1/2 flex flex-col">
         <a
           href="https://www.jawapos.com/wisata-kuliner/011771965/8-desa-wisata-terbaik-di-jawa-timur-yang-wajib-dikunjungi"
@@ -82,7 +85,7 @@ import CardCityVue from "../components/CardCity.vue";
           </p>
         </a>
       </div>
-      <div class="max-h-[540px] w-1/2 flex flex-col overflow-y-auto ml-8">
+      <div class="blog-slider flex flex-col overflow-y-auto ml-8">
         <BlogSliderHomepageVue />
       </div>
     </div>
@@ -129,7 +132,7 @@ import CardCityVue from "../components/CardCity.vue";
 
   <!-- 1 -->
   <section
-    class="h-[25rem] w-[85%] flex items-center justify-between mx-auto"
+    class="tau-gak-sih h-[25rem] w-[85%] flex items-center justify-between mx-auto"
     data-aos="fade-up"
   >
     <div class="h-full w-1/2 flex flex-col items-start justify-center">
@@ -144,11 +147,12 @@ import CardCityVue from "../components/CardCity.vue";
         semasa remaja.
       </p>
     </div>
-    <div class="h-full w-[45%] grid place-items-center">
+    <div class="h-full w-[45%] flex items-center justify-end">
       <img
         src="/static/img/istana-gebang.jpeg?url"
         alt="Istana Gebang"
         class="rounded-2xl"
+        width="600"
       />
     </div>
   </section>
@@ -156,14 +160,15 @@ import CardCityVue from "../components/CardCity.vue";
 
   <!-- 2 -->
   <section
-    class="h-[25rem] w-[85%] flex items-center justify-between mx-auto"
+    class="tau-gak-sih tau-gak-sih-2 h-[25rem] w-[85%] flex items-center justify-between mx-auto"
     data-aos="fade-up"
   >
-    <div class="h-full w-1/2 grid place-items-center">
+    <div class="h-full w-1/2 flex items-center justify-start">
       <img
         src="/static/img/museum-sby.jpg?url"
         alt="Museum Seni Presiden SBY"
         class="rounded-2xl"
+        width="600"
       />
     </div>
     <div class="h-full w-[45%] flex flex-col items-start justify-center">
@@ -183,12 +188,14 @@ import CardCityVue from "../components/CardCity.vue";
 
   <!-- 3 -->
   <section
-    class="h-[25rem] w-[85%] flex items-center justify-between mx-auto"
+    class="tau-gak-sih h-[25rem] w-[85%] flex items-center justify-between mx-auto"
     data-aos="fade-up"
   >
     <div class="h-full w-1/2 flex flex-col items-start justify-center">
-      <h2 class="text-3xl text-gray-950 cursor-default font-semibold">
-        Nyasarnya Jauh Banget!
+      <h2
+        class="text-3xl text-gray-950 cursor-default font-semibold text-center"
+      >
+        Sejauh Ini, Ini yang Paling Jauh
       </h2>
       <br />
       <p class="text-1xl text-gray-950 cursor-default font-medium text-justify">
@@ -199,11 +206,12 @@ import CardCityVue from "../components/CardCity.vue";
         infrastruktur menjadi terhambat, salah satunya adalah internet.
       </p>
     </div>
-    <div class="h-full w-[45%] grid place-items-center">
+    <div class="h-full w-[45%] flex items-center justify-end">
       <img
         src="/static/img/pulau-sakala.jpg?url"
         alt="Ujung Paling Timur Jawa Timur"
         class="rounded-2xl"
+        width="600"
       />
     </div>
   </section>

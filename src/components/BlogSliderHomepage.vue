@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import { ref} from 'vue';
-import blogData from '../data/blogs.json'
+import { ref } from "vue";
+import blogData from "../data/blogs.json";
 
 const blogs = ref(blogData.blogs);
 </script>
@@ -14,10 +14,10 @@ const blogs = ref(blogData.blogs);
   >
     <img
       :src="blog.img"
-      class="max-h-32 h-32 w-2/5 rounded bg-center bg-cover bg-no-repeat"
+      class="blogs max-h-32 h-32 w-2/5 rounded bg-center bg-cover bg-no-repeat"
       :style="{ boxShadow: '0.4rem 0.4rem 0.4rem #bebebe' }"
     />
-    <div class="h-full w-[55%] flex items-center justify-start">
+    <div class="h-full w-[55%] grid place-items-center">
       <p
         class="text-1xl text-gray-950 font-semibold mr-3 hover:text-gray-800 hover:underline"
       >

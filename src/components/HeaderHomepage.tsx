@@ -41,7 +41,7 @@ export const Header: React.FC = () => {
       }`}
     >
       <div className="h-full w-[85%] flex items-center justify-between">
-        <div className="flex h-full w-2/3 md:w-1/5 items-center">
+        <div className="logo flex h-full w-2/3 md:w-2/5 items-center">
           <h1 className="text-3xl font-semibold text-start cursor-default">
             VISIT JATIM
           </h1>
@@ -83,7 +83,10 @@ export const Header: React.FC = () => {
             data-aos={mobileNavbarOpen ? "fade-down" : "fade-up"}
             data-aos-duration-200
           >
-            <a className="px-10 py-5 flex justify-between font-semibold bg-transparent hover:bg-slate-900 hover:text-gray-50 transition cursor-pointer">
+            <a
+              href="/tentang-jatim"
+              className="px-10 py-5 flex justify-between font-semibold bg-transparent hover:bg-slate-900 hover:text-gray-50 transition cursor-pointer"
+            >
               <h2 className="pl-5">TENTANG JATIM</h2>
               <span></span>
             </a>

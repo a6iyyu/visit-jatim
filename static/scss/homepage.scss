@@ -3,18 +3,32 @@
     background-color: #ffffff;
     transition: all 0.3s ease-in-out;
   }
+  .blog-slider {
+    width: 35%;
+    max-height: 540px;
+  }
 }
 
 @media screen and (max-width: 1920px) {
+  .blog-slider {
+    width: 40%;
+  }
 }
 
 @media screen and (max-width: 1680px) {
+  .blog-slider {
+    width: 45%;
+    max-height: 560px;
+  }
 }
 
 @media screen and (max-width: 1440px) {
 }
 
 @media screen and (max-width: 1280px) {
+  .blog-slider {
+    width: 55%;
+  }
 }
 
 @media screen and (max-width: 1160px) {
@@ -24,9 +38,66 @@
   .hero > div:last-child > div {
     width: 100% !important;
   }
+  #terbaru-di-jatim > div > div:first-child {
+    display: none;
+  }
+  #terbaru-di-jatim > div > div:last-child {
+    width: 100%;
+  }
+  .blogs {
+    max-height: 11rem;
+    height: 11rem;
+  }
+  .blog-slider {
+    margin: 0;
+  }
+  .tau-gak-sih,
+  .tau-gak-sih-2 {
+    height: 37.5rem;
+  }
+  .tau-gak-sih > div {
+    justify-content: center;
+    width: 100%;
+    & h2 {
+      text-align: center;
+    }
+    & p {
+      text-align: justify;
+      text-align-last: center;
+    }
+  }
+  .tau-gak-sih {
+    flex-direction: column-reverse;
+  }
+  .tau-gak-sih-2 {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 864px) {
+  .logo {
+    margin-left: 2rem;
+  }
+  footer {
+    height: 20rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .blogs {
+    max-height: 9rem;
+    height: 9rem;
+  }
+  footer {
+    height: 40rem;
+  }
 }
 
 @media screen and (max-width: 640px) {
+  .blogs {
+    max-height: 8rem;
+    height: 8rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
