@@ -7,15 +7,63 @@
             "link": ""
         },
         {
+            "city": "BANYUWANGI",
+            "epithet": "THE SUNRISE OF JAVA",
+            "img": "/static/img/banyuwangi.jpg",
+            "link": ""
+        },
+        {
+            "city": "BLITAR",
+            "epithet": "KOTA PROKLAMATOR",
+            "img": "/static/img/blitar.jpg",
+            "link": ""
+        },
+        {
+            "city": "BOJONEGORO",
+            "epithet": "KOTA LEDRE",
+            "img": "/static/img/bojonegoro.jpg",
+            "link": ""
+        },
+        {
+            "city": "JEMBER",
+            "epithet": "KOTA TEMBAKAU",
+            "img": "/static/img/jember.jpg",
+            "link": ""
+        },
+        {
+            "city": "KEDIRI",
+            "epithet": "KOTA TAHU",
+            "img": "/static/img/kediri.jpeg",
+            "link": ""
+        },
+        {
+            "city": "MADIUN",
+            "epithet": "KOTA SEPUR",
+            "img": "/static/img/madiun.jpg",
+            "link": ""
+        },
+        {
             "city": "MALANG",
             "epithet": "KOTA PENDIDIKAN",
             "img": "/static/img/malang.jpg",
             "link": ""
         },
         {
-            "city": "BANYUWANGI",
-            "epithet": "THE SUNRISE OF JAVA",
-            "img": "/static/img/banyuwangi.jpg",
+            "city": "MAGETAN",
+            "epithet": "THE SUNSET OF JAVA",
+            "img": "/static/img/magetan.jpg",
+            "link": ""
+        },
+        {
+            "city": "MOJOKERTO",
+            "epithet": "KOTA ONDE-ONDE",
+            "img": "/static/img/mojokerto.png",
+            "link": ""
+        },
+        {
+            "city": "PASURUAN",
+            "epithet": "KOTA SANTRI",
+            "img": "/static/img/pasuruan.jpg",
             "link": ""
         },
         {
