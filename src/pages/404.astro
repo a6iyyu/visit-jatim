@@ -4,8 +4,9 @@ import "../../static/scss/404.scss";
 import Logo from "../../static/img/logo.png?url";
 import { ScrollIndicator } from "../components/ScrollIndicator";
 import { ScrollToTop } from "../components/ScrollToTop";
-import { Header } from "../components/HeaderHomepage";
+import { Header } from "../components/Header";
 import NotFoundPage from "../layouts/404.vue";
+import Footer from "../layouts/Footer.vue";
 ---
 
 <html lang="en">
@@ -26,6 +27,7 @@ import NotFoundPage from "../layouts/404.vue";
     <ScrollToTop client:only="react" />
     <Header client:only="react" />
     <NotFoundPage />
+    <Footer />
   </body>
   <script crossorigin="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>

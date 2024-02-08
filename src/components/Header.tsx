@@ -36,7 +36,7 @@ export const Header: React.FC = () => {
       className={`h-28 w-full flex items-center justify-center fixed z-50 ${
         scrolling || mobileNavbarOpen
           ? "text-slate-900 bg-slate-50 shadow-lg transition-all ease-in-out duration-200"
-          : "text-gray-50 bg-transparent transition-all ease-in-out duration-200"
+          : "navbar bg-transparent transition-all ease-in-out duration-200"
       }`}
     >
       <div className="h-full w-[85%] flex items-center justify-between">

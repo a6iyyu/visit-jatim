@@ -1,13 +1,37 @@
 ---
-
+import Logo from "../../static/img/logo.png?url";
+import { ScrollIndicator } from "../components/ScrollIndicator";
+import { ScrollToTop } from "../components/ScrollToTop";
+import { Header } from "../components/Header";
+import RagamWisataVue from "../layouts/ragam-wisata.vue";
+import Footer from "../components/Footer.vue";
 ---
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
     <title>Ragam Wisata</title>
+    <link rel="icon" href={Logo} />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
-  <body> </body>
+  <body>
+    <ScrollIndicator client:only="react" />
+    <ScrollToTop client:only="react" />
+    <Header client:only="react" />
+    <RagamWisataVue />
+    <Footer />
+  </body> 
+  <script crossorigin="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> 
+  <script
+    type="text/javascript" 
+    src="https://unpkg.com/aos@next/dist/aos.js"
+  ></script>
+  <script type="text/javascript">
+    AOS.init();
+  </script>
 </html>

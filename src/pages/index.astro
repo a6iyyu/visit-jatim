@@ -1,12 +1,13 @@
 ---
+import "bootstrap-icons/font/bootstrap-icons.css";
 import "../../static/scss/component.scss";
 import "../../static/scss/homepage.scss";
 import Logo from "../../static/img/logo.png?url";
 import { ScrollIndicator } from "../components/ScrollIndicator";
 import { ScrollToTop } from "../components/ScrollToTop";
-import { Header } from "../components/HeaderHomepage";
+import { Header } from "../components/Header";
 import Homepage from "../layouts/homepage.vue";
-import "bootstrap-icons/font/bootstrap-icons.css";
+import Footer from "../components/Footer.vue";
 ---
 
 <html lang="en">
@@ -29,6 +30,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
     <ScrollToTop client:only="react" />
     <Header client:only="react" />
     <Homepage />
+    <Footer />
   </body>
   <script type="text/javascript">
     document.addEventListener("DOMContentLoaded", function () {
@@ -46,10 +48,6 @@ import "bootstrap-icons/font/bootstrap-icons.css";
   <script
     type="text/javascript"
     src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"
-  ></script>
-  <script
-    type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"
   ></script>
   <script 
     type="text/javascript" 
