@@ -1,3 +1,7 @@
+<script setup>
+import CardDestinationVue from "../components/CardDestination.vue";
+</script>
+
 <template>
   <!-- Hero -->
   <div class="h-28 w-full"></div>
@@ -8,7 +12,7 @@
       class="h-1/2 w-2/5 absolute grid place-items-center mr-[35rem] rounded-2xl bg-slate-400"
     >
       <div
-        class="h-full w-3/4 flex flex-col items-center justify-center"
+        class="h-full w-3/4 flex flex-col items-start justify-center"
         data-aos="fade-up"
       >
         <b class="text-3xl cursor-default">
@@ -28,5 +32,32 @@
       class="h-full w-3/5 bg-center bg-cover bg-no-repeat"
       style="background-image: url(/static/img/hotel-majapahit.jpg?url)"
     ></div>
+  </section>
+  <div class="h-28 w-full"></div>
+
+  <!-- Beragam Jenis Objek Wisata -->
+  <section
+    class="h-fit w-[85%] grid place-items-center mx-auto"
+    id="beragam-jenis"
+    data-aos="fade-up"
+  >
+    <p class="text-3xl text-gray-950 cursor-default font-semibold text-center">
+      Beragam Jenis Objek Wisata
+      <br />
+      Menunggu Kedatangan Anda!
+    </p>
+    <hr class="h-1 w-2/5 bg-gray-950 rounded-md" />
+  </section>
+  <div class="h-16 w-full"></div>
+
+  <!-- Slide Tempat Wisata -->
+  <section class="h-[30rem] w-full grid place-items-center" data-aos="fade-up">
+    <div class="splide splide__1 h-full w-[90%] overflow-hidden">
+      <div class="splide__track h-full w-full">
+        <ul class="splide__list">
+          <CardDestinationVue />
+        </ul>
+      </div>
+    </div>
   </section>
 </template>

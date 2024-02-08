@@ -1,4 +1,7 @@
 ---
+import "bootstrap-icons/font/bootstrap-icons.css";
+import "../../static/scss/component.scss";
+import "../../static/scss/ragam-wisata.scss";
 import Logo from "../../static/img/logo.png?url";
 import { ScrollIndicator } from "../components/ScrollIndicator";
 import { ScrollToTop } from "../components/ScrollToTop";
@@ -16,6 +19,10 @@ import Footer from "../components/Footer.vue";
     <meta name="generator" content={Astro.generator} />
     <title>Ragam Wisata</title>
     <link rel="icon" href={Logo} />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
@@ -26,7 +33,11 @@ import Footer from "../components/Footer.vue";
     <Footer />
   </body> 
   <script crossorigin="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> 
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"
+  ></script>
   <script
     type="text/javascript" 
     src="https://unpkg.com/aos@next/dist/aos.js"

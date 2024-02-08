@@ -6,11 +6,11 @@ import CardCityVue from "../components/CardCity.vue";
 <template>
   <!-- Hero section -->
   <section
-    class="hero h-screen w-full grid place-items-center bg-center bg-cover bg-no-repeat"
+    class="hero h-[40rem] w-full grid place-items-center bg-center bg-cover bg-no-repeat"
     :style="{ backgroundImage: 'url(../../static/img/bromo.jpg)' }"
   >
     <div
-      class="h-screen w-full bg-gradient-to-t md:bg-gradient-to-r from-black opacity-60 z-0 absolute"
+      class="h-[40rem] w-full bg-gradient-to-t md:bg-gradient-to-r from-black opacity-60 z-0 absolute"
     ></div>
     <div class="h-full w-[85%] flex flex-col items-start justify-center z-30">
       <div class="h-full w-1/2 flex flex-col items-start justify-center">
