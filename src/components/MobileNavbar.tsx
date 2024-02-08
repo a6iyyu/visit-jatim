@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect, type RefObject } from "react";
-import AccordionMobile from "./AccordionMobile";
+import { AccordionMobile } from "./AccordionMobile";
 
 export const MobileNavbar: React.FC = () => {
   const [mobileNavbarOpen, setMobileNavbarOpen] = useState(false);
@@ -43,7 +43,7 @@ export const MobileNavbar: React.FC = () => {
           <AccordionMobile
             name={"DESTINASI"}
             options={[
-              "Wilayah",
+              "Ragam Wisata",
               "Taman Nasional",
               "Saran Perjalanan",
               "Kota & Desa",

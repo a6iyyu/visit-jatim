@@ -1,8 +1,7 @@
 import "../../static/scss/component.scss";
 import React, { useEffect, useRef, useState, type RefObject } from "react";
-import AccordionMobile from "./molecules/AccordionMobile";
-import { MobileNavbar } from "./molecules/MobileNavbar";
-import { Dropdown } from "./molecules/Dropdown";
+import { AccordionMobile } from "./AccordionMobile";
+import { Dropdown } from "./Dropdown";
 
 export const Header: React.FC = () => {
   const [scrolling, setScrolling] = useState(false);
@@ -57,7 +56,7 @@ export const Header: React.FC = () => {
           <Dropdown
             name={"DESTINASI"}
             options={[
-              "Wilayah",
+              "Ragam Wisata",
               "Taman Nasional",
               "Saran Perjalanan",
               "Kota & Desa",
@@ -70,7 +69,7 @@ export const Header: React.FC = () => {
         </div>
       </div>
       {/* <MobileNavbar/> */}
-      <div ref={mobileNavbarRef}>
+      <div ref={mobileNavbarRef} className="mr-5">
         <button
           onClick={handleMobileNavbar}
           className="flex md:hidden p-2 border-[3px] border-gray-50 rounded-sm bg-transparent hover:border-slate-900 hover:bg-gray-50 hover:text-slate-900"
@@ -93,7 +92,7 @@ export const Header: React.FC = () => {
             <AccordionMobile
               name={"DESTINASI"}
               options={[
-                "Wilayah",
+                "Ragam Wisata",
                 "Taman Nasional",
                 "Saran Perjalanan",
                 "Kota & Desa",

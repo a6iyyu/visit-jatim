@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState, type RefObject } from "react";
 
-const AccordionMobile = ({options, name}: {options: string[]; name: string}) => {
+export const AccordionMobile = ({options, name}: {options: string[]; name: string}) => {
   const [accordionOpen, setAccordionOpen] = useState(false);
   const accordionRef: RefObject<HTMLDivElement> = useRef(null);
 
@@ -58,5 +58,3 @@ const AccordionMobile = ({options, name}: {options: string[]; name: string}) => 
     </div>
   );
 };
-
-export default AccordionMobile;

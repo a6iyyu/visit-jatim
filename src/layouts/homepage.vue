@@ -34,7 +34,7 @@ import CardCityVue from "../components/CardCity.vue";
   <div class="h-12 w-full"></div>
 
   <!-- Explore -->
-  <section class="h-fit w-[85%] block mx-auto" data-aos="fade-up">
+  <section class="h-fit w-[85%] block mx-auto" id="explore" data-aos="fade-up">
     <p class="text-3xl text-gray-950 cursor-default font-semibold">
       Terbaru di Jatim
     </p>
