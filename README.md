@@ -5,7 +5,8 @@ Visit Jatim is an online guide that introduces the beauty and richness of East J
 </p>
 
 <p align="justify">
-You can check out the site design link below: 
+You can check out the site design link below:
+<br>
 <a href="https://www.figma.com/file/1C6kZkLfzMJ6z9pEYRJRKP/WDC-design?type=design&node-id=4-3&mode=design">
 https://www.figma.com/file/1C6kZkLfzMJ6z9pEYRJRKP/WDC-design?type=design&node-id=4-3&mode=design
 </a>
