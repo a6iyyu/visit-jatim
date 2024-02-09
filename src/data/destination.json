@@ -1,0 +1,58 @@
+{
+    "places": [
+        {
+            "city": "BANYUWANGI",
+            "destination": "KAWAH IJEN",
+            "img": "/static/img/kawah-ijen.jpg",
+            "link": "https://maps.app.goo.gl/Eq96qJgKzzjJFxUS9"
+        },
+        {
+            "city": "BLITAR",
+            "destination": "MAKAM BUNG KARNO",
+            "img": "/static/img/museum-bung-karno.jpg",
+            "link": "https://maps.app.goo.gl/obekNQZknFEc4gXVA"
+        },
+        {
+            "city": "MALANG",
+            "destination": "CANDI SINGOSARI",
+            "img": "/static/img/candi-singosari.jpg",
+            "link": "https://maps.app.goo.gl/K6Ck296PsbX1cX1y9"
+        },
+        {
+            "city": "MALANG",
+            "destination": "PANTAI TELUK ASMARA",
+            "img": "/static/img/teluk-asmara.jpg",
+            "link": "https://maps.app.goo.gl/NDPqTfFcHDDHb4BS6"
+        },
+        {
+            "city": "MALANG",
+            "destination": "SERUNI POINT",
+            "img": "/static/img/seruni-point.jpg",
+            "link": "https://maps.app.goo.gl/KFrncQR8saxaQHhcA"
+        },
+        {
+            "city": "PACITAN",
+            "destination": "MUSEUM DAN GALERI SENI SBY ANI",
+            "img": "/static/img/museum-sby.jpg",
+            "link": "https://maps.app.goo.gl/A9TweKV8FRJRAXbdA"
+        },
+        {
+            "city": "SITUBONDO",
+            "destination": "TAMAN NASIONAL BALURAN",
+            "img": "/static/img/taman-nasional-baluran.jpg",
+            "link": "https://maps.app.goo.gl/r1SuGtsjAUQwk8nn7"
+        },
+        {
+            "city": "SUMENEP",
+            "destination": "PANTAI SEMBILAN",
+            "img": "/static/img/pantai-sembilan.jpg",
+            "link": "https://maps.app.goo.gl/BhHSG4kLSDWmeDr58"
+        },
+        {
+            "city": "TUBAN",
+            "destination": "WISATA RELIGI SUNAN BONANG",
+            "img": "/static/img/makam-sunan-bonang.jpg",
+            "link": "https://maps.app.goo.gl/9jpqcv2bGeuzXEoG7"
+        }
+    ]
+}

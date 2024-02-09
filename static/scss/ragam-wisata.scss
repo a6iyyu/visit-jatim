@@ -2,23 +2,74 @@
   .navbar {
     color: #0f172a;
   }
+  .hero > div:first-child {
+    height: 35%;
+    width: 25%;
+    margin-right: 50rem;
+  }
+  .hero > div:last-child {
+    b,
+    p {
+      opacity: 0;
+    }
+  }
 }
 
 @media screen and (max-width: 1920px) {
+  .hero > div:first-child {
+    width: 30%;
+    margin-right: 45rem;
+  }
 }
 
 @media screen and (max-width: 1680px) {
+  .hero > div:first-child {
+    height: 40%;
+    width: 35%;
+    margin-right: 37.5rem;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .hero > div:first-child {
+    height: 50%;
+    width: 40%;
+    margin-right: 35rem;
+  }
 }
 
 @media screen and (max-width: 1280px) {
   .blog-slider {
     width: 55%;
   }
+  .hero > div:first-child {
+    margin-right: 30rem;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .hero > div:first-child {
+    height: 60%;
+    width: 50%;
+    margin-right: 20rem;
+  }
 }
 
 @media screen and (max-width: 960px) {
   #beragam-jenis p {
     font-size: 1.75rem;
+  }
+  .hero > div:first-child {
+    display: none;
+  }
+  .hero > div:last-child {
+    width: 100%;
+  }
+  .hero > div:last-child {
+    b,
+    p {
+      opacity: 1;
+    }
   }
 }
 

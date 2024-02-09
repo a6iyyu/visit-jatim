@@ -5,10 +5,16 @@
         VISIT JATIM
         <p class="text-1xl font-medium">&copy; 2024</p>
       </h2>
-      <h2 class="text-gray-950 text-2xl cursor-default font-semibold">
+      <h2
+        class="text-gray-950 text-2xl cursor-default font-semibold flex flex-col"
+      >
         Created By:
-        <p class="text-1xl font-medium">Muhammad Afif Al Ghifari</p>
-        <p class="text-1xl font-medium">Rafi Abiyyu Airlangga</p>
+        <a href="https://github.com/Afif-Ghifari" class="text-1xl font-medium"
+          >Muhammad Afif Al Ghifari</a
+        >
+        <a href="https://github.com/a6iyyu" class="text-1xl font-medium"
+          >Rafi Abiyyu Airlangga</a
+        >
       </h2>
     </div>
   </footer>

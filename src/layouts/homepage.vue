@@ -226,11 +226,11 @@ import CardCityVue from "../components/CardCity.vue";
     <div class="h-8 w-full"></div>
   </section>
   <section
-    class="h-screen w-full grid place-items-center bg-center bg-cover bg-no-repeat"
+    class="h-[40rem] w-full grid place-items-center bg-center bg-cover bg-no-repeat"
     :style="{ backgroundImage: 'url(../../static/img/reog.jpg)' }"
   >
     <div
-      class="h-screen w-full bg-gradient-to-r from-black opacity-60 z-20 absolute"
+      class="h-[40rem] w-full bg-gradient-to-r from-black opacity-60 z-20 absolute"
     ></div>
     <div class="h-full w-[85%] flex justify-start">
       <div class="h-full w-1/2 flex flex-col items-start justify-center z-30">
