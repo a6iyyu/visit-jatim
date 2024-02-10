@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState, type RefObject } from "react";
 
 export const Dropdown = ({options, name}: {options: string[]; name: string}) => {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState<boolean>(false);
   const dropdownRef: RefObject<HTMLDivElement> = useRef(null);
 
   const handleToggleDropdown = () => setIsExpanded(!isExpanded);

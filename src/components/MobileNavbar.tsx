@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect, type RefObject } from "react";
 import { AccordionMobile } from "./AccordionMobile";
 
 export const MobileNavbar: React.FC = () => {
-  const [mobileNavbarOpen, setMobileNavbarOpen] = useState(false);
+  const [mobileNavbarOpen, setMobileNavbarOpen] = useState<boolean>(false);
   const mobileNavbarRef: RefObject<HTMLDivElement> = useRef(null);
 
   const handleMobileNavbar = () => setMobileNavbarOpen(!mobileNavbarOpen);

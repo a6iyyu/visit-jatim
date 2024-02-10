@@ -75,7 +75,6 @@ import CardDestinationVue from "../components/CardDestination.vue";
     </div>
   </section>
   <div class="h-12 w-full"></div>
-
   <section
     class="h-fit w-[85%] grid place-items-center mx-auto"
     data-aos="fade-up"
