@@ -13,6 +13,12 @@
             "link": "https://maps.app.goo.gl/obekNQZknFEc4gXVA"
         },
         {
+            "city": "MAGETAN",
+            "destination": "TELAGA SARANGAN",
+            "img": "/static/img/telaga-sarangan.jpg",
+            "link": "https://maps.app.goo.gl/6HaBzN5TqJndHSU96"
+        },
+        {
             "city": "MALANG",
             "destination": "CANDI SINGOSARI",
             "img": "/static/img/candi-singosari.jpg",

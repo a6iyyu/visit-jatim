@@ -60,7 +60,7 @@ import CardDestinationVue from "../components/CardDestination.vue";
       <br />
       Menunggu Kedatangan Anda!
     </p>
-    <hr class="h-1 w-2/5 bg-gray-950 rounded-md" />
+    <hr class="h-0.5 w-full bg-gray-950 rounded-md" />
   </section>
   <div class="h-16 w-full"></div>
 

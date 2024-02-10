@@ -38,7 +38,7 @@ import CardCityVue from "../components/CardCity.vue";
     <p class="text-3xl text-gray-950 cursor-default font-semibold">
       Terbaru di Jatim
     </p>
-    <hr class="h-1 w-60 bg-gray-950 rounded-md" />
+    <hr class="h-0.5 w-full bg-gray-950 rounded-md" />
   </section>
 
   <!-- Blog -->
