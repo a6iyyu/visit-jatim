@@ -5,26 +5,16 @@ import CardCityVue from "../components/CardCity.vue";
 
 <template>
   <!-- Hero section -->
-  <section
-    class="hero h-[40rem] w-full grid place-items-center bg-center bg-cover bg-no-repeat"
-    :style="{ backgroundImage: 'url(../../static/img/bromo.jpg)' }"
-  >
-    <div
-      class="h-[40rem] w-full bg-gradient-to-t md:bg-gradient-to-r from-black opacity-60 z-0 absolute"
-    ></div>
+  <section class="hero h-[40rem] w-full grid place-items-center bg-center bg-cover bg-no-repeat"
+    :style="{ backgroundImage: 'url(../../static/img/bromo.jpg)' }">
+    <div class="h-[40rem] w-full bg-gradient-to-t md:bg-gradient-to-r from-black opacity-60 z-0 absolute"></div>
     <div class="h-full w-[85%] flex flex-col items-start justify-center z-30">
       <div class="h-full w-1/2 flex flex-col items-start justify-center">
-        <h1
-          class="text-4xl sm:text-5xl text-slate-50 cursor-default font-black text-start"
-          data-aos="fade-up"
-        >
+        <h1 class="text-4xl sm:text-5xl text-slate-50 cursor-default font-black text-start" data-aos="fade-up">
           JAWA TIMUR
         </h1>
         <br />
-        <p
-          class="text-lg md:text-1xl text-slate-50 cursor-default font-medium text-start"
-          data-aos="fade-up"
-        >
+        <p class="text-lg md:text-1xl text-slate-50 cursor-default font-medium text-start" data-aos="fade-up">
           Sambut keindahan dan keragaman Jawa Timur, sebuah destinasi yang
           menakjubkan bagi pencinta petualangan dan kebudayaan.
         </p>
@@ -34,53 +24,38 @@ import CardCityVue from "../components/CardCity.vue";
   <div class="h-12 w-full"></div>
 
   <!-- Explore -->
-  <section class="h-fit w-[85%] block mx-auto" id="explore" data-aos="fade-up">
+  <section class="h-fit w-full px-28 my-12 block mx-auto" id="explore" data-aos="fade-up">
     <p class="text-3xl text-gray-950 cursor-default font-semibold">
       Terbaru di Jatim
     </p>
-    <hr class="h-0.5 w-full bg-gray-950 rounded-md" />
+    <hr class="h-0.5 w-96 my-5 bg-gray-950 rounded-md" />
   </section>
 
   <!-- Blog -->
-  <section
-    class="h-fit w-full grid place-items-center my-4"
-    id="terbaru-di-jatim"
-    data-aos="fade-up"
-  >
+  <section class="h-fit w-full grid place-items-center my-4" id="terbaru-di-jatim" data-aos="fade-up">
     <div class="h-full w-[85%] flex items-center justify-between">
       <div class="h-full w-1/2 flex flex-col">
-        <a
-          href="https://www.jawapos.com/wisata-kuliner/011771965/8-desa-wisata-terbaik-di-jawa-timur-yang-wajib-dikunjungi"
-          class="h-full w-full block"
-        >
-          <div
-            class="h-80 w-full rounded-md bg-bottom bg-cover bg-no-repeat"
-            :style="{
-              backgroundImage: 'url(../../static/img/sample-1.jpg)',
-              boxShadow: '0.75rem 0.75rem 0.75rem #bebebe',
-            }"
-          ></div>
+        <a href="https://www.jawapos.com/wisata-kuliner/011771965/8-desa-wisata-terbaik-di-jawa-timur-yang-wajib-dikunjungi"
+          class="h-full w-full block">
+          <div class="h-80 w-full rounded-md bg-bottom bg-cover bg-no-repeat" :style="{
+            backgroundImage: 'url(../../static/img/sample-1.jpg)',
+            boxShadow: '0.75rem 0.75rem 0.75rem #bebebe',
+          }"></div>
           <br />
-          <p
-            class="h-fit w-full text-2xl text-gray-950 font-semibold text-justify hover:text-gray-800 hover:underline"
-            :style="{ transition: 'all 0.3s ease-in-out' }"
-          >
+          <p class="h-fit w-full text-2xl text-gray-950 font-semibold text-justify hover:text-gray-800 hover:underline"
+            :style="{ transition: 'all 0.3s ease-in-out' }">
             8 Desa Wisata Terbaik di Jawa Timur yang Wajib Dikunjungi
           </p>
           <br />
-          <p
-            class="h-fit w-full text-xl text-gray-950 font-medium text-justify hover:text-gray-800 hover:underline"
-            :style="{ transition: 'all 0.3s ease-in-out' }"
-          >
+          <p class="h-fit w-full text-xl text-gray-950 font-medium text-justify hover:text-gray-800 hover:underline"
+            :style="{ transition: 'all 0.3s ease-in-out' }">
             Wisata alam yang disuguhkan yaitu Taman Edelweiss dan Menjemput
             Matahari Penanjakan Adventure. Selain itu, ada wisata budaya,
             seperti One Day ...
           </p>
           <br />
-          <p
-            class="h-fit w-full text-1xl text-gray-950 font-semibold text-justify hover:text-gray-800 hover:underline"
-            :style="{ transition: 'all 0.3s ease-in-out' }"
-          >
+          <p class="h-fit w-full text-1xl text-gray-950 font-semibold text-justify hover:text-gray-800 hover:underline"
+            :style="{ transition: 'all 0.3s ease-in-out' }">
             Baca Selengkapnya &#10132;
           </p>
         </a>
@@ -93,25 +68,19 @@ import CardCityVue from "../components/CardCity.vue";
   <div class="h-20 w-full"></div>
 
   <!-- Jelajahi Jawa Timur-->
-  <section
-    class="h-fit w-full grid place-items-center"
-    id="jelajahi-jatim"
-    data-aos="fade-up"
-  >
-    <div class="h-full w-[85%] grid place-items-center">
+  <section class="h-fit w-full my-10 grid place-items-center" id="jelajahi-jatim" data-aos="fade-up">
+    <div class="h-full w-[85%] my-10 grid place-items-center">
       <p class="text-gray-950 text-3xl cursor-default font-semibold">
         Jelajahi Jawa Timur
       </p>
       <hr class="h-1 w-60 rounded-md bg-gray-950" />
-      <div class="h-4 w-full"></div>
-      <p class="text-gray-950 text-2xl cursor-default font-medium text-center">
+      <p class="text-gray-950 text-2xl my-10 cursor-default font-medium text-center">
         Hal-Hal Unik dan Indah Menunggu Anda di Jawa Timur!
       </p>
-      <div class="h-8 w-full"></div>
     </div>
   </section>
-  <section class="h-[35rem] w-full grid place-items-center" data-aos="fade-up">
-    <div class="splide splide__1 h-full w-[90%] overflow-hidden">
+  <section class="h-[35rem] w-full my-20 px-28 grid place-items-center" data-aos="fade-up">
+    <div class="splide splide__1 h-full w-full overflow-hidden">
       <div class="splide__track h-full w-full">
         <ul class="splide__list">
           <CardCityVue />
@@ -119,22 +88,17 @@ import CardCityVue from "../components/CardCity.vue";
       </div>
     </div>
   </section>
-  <div class="h-20 w-full"></div>
 
   <!-- Tau Gak Sih? -->
-  <section class="h-fit w-full grid place-items-center" data-aos="fade-up">
-    <p class="text-gray-950 text-3xl cursor-default font-semibold">
+  <section class="h-fit w-full grid place-items-center my-20" data-aos="fade-up">
+    <p class="text-gray-950 text-3xl my-5 cursor-default font-semibold">
       Tau Gak Sih?
     </p>
-    <hr class="h-1 w-44 rounded-md bg-gray-950" />
-    <div class="h-8 w-full"></div>
+    <hr class="h-1 w-64 rounded-md bg-gray-950" />
   </section>
 
   <!-- 1 -->
-  <section
-    class="tau-gak-sih h-[25rem] w-[85%] flex items-center justify-between mx-auto"
-    data-aos="fade-up"
-  >
+  <section class="tau-gak-sih my-12 h-[25rem] w-[85%] flex items-center justify-between mx-auto" data-aos="fade-up">
     <div class="h-full w-1/2 flex flex-col items-start justify-center">
       <h2 class="text-3xl text-gray-950 cursor-default font-semibold">
         Pengen Belajar Sejarah? Ada!
@@ -148,28 +112,15 @@ import CardCityVue from "../components/CardCity.vue";
       </p>
     </div>
     <div class="h-full w-[45%] flex items-center justify-end">
-      <img
-        src="/static/img/istana-gebang.jpeg?url"
-        alt="Istana Gebang"
-        class="rounded-2xl"
-        width="600"
-      />
+      <img src="/static/img/istana-gebang.jpeg?url" alt="Istana Gebang" class="rounded-lg" width="600" />
     </div>
   </section>
-  <div class="h-12 w-full"></div>
 
   <!-- 2 -->
-  <section
-    class="tau-gak-sih tau-gak-sih-2 h-[25rem] w-[85%] flex items-center justify-between mx-auto"
-    data-aos="fade-up"
-  >
+  <section class="tau-gak-sih tau-gak-sih-2 my-12 h-[25rem] w-[85%] flex items-center justify-between mx-auto"
+    data-aos="fade-up">
     <div class="h-full w-1/2 flex items-center justify-start">
-      <img
-        src="/static/img/museum-sby.jpg?url"
-        alt="Museum Seni Presiden SBY"
-        class="rounded-2xl"
-        width="600"
-      />
+      <img src="/static/img/museum-sby.jpg?url" alt="Museum Seni Presiden SBY" class="rounded-lg" width="600" />
     </div>
     <div class="h-full w-[45%] flex flex-col items-start justify-center">
       <h2 class="text-3xl text-gray-950 cursor-default font-semibold">
@@ -184,17 +135,11 @@ import CardCityVue from "../components/CardCity.vue";
       </p>
     </div>
   </section>
-  <div class="h-12 w-full"></div>
 
   <!-- 3 -->
-  <section
-    class="tau-gak-sih h-[25rem] w-[85%] flex items-center justify-between mx-auto"
-    data-aos="fade-up"
-  >
+  <section class="tau-gak-sih h-[25rem] w-[85%] my-12 flex items-center justify-between mx-auto" data-aos="fade-up">
     <div class="h-full w-1/2 flex flex-col items-start justify-center">
-      <h2
-        class="text-3xl text-gray-950 cursor-default font-semibold text-center"
-      >
+      <h2 class="text-3xl text-gray-950 cursor-default font-semibold text-center">
         Sejauh Ini, Ini yang Paling Jauh
       </h2>
       <br />
@@ -207,37 +152,23 @@ import CardCityVue from "../components/CardCity.vue";
       </p>
     </div>
     <div class="h-full w-[45%] flex items-center justify-end">
-      <img
-        src="/static/img/pulau-sakala.jpg?url"
-        alt="Ujung Paling Timur Jawa Timur"
-        class="rounded-2xl"
-        width="600"
-      />
+      <img src="/static/img/pulau-sakala.jpg?url" alt="Ujung Paling Timur Jawa Timur" class="rounded-lg" width="600" />
     </div>
   </section>
-  <div class="h-12 w-full"></div>
 
   <!-- Tunggu Apa Lagi? -->
-  <section class="h-fit w-full grid place-items-center" data-aos="fade-up">
-    <p class="text-gray-950 text-3xl cursor-default font-semibold">
+  <section class="h-fit w-full my-12 grid place-items-center" data-aos="fade-up">
+    <p class="text-gray-950 text-3xl my-5 cursor-default font-semibold">
       Tunggu Apa Lagi?
     </p>
-    <hr class="h-1 w-60 rounded-md bg-gray-950" />
-    <div class="h-8 w-full"></div>
+    <hr class="h-1 w-80 rounded-md bg-gray-950" />
   </section>
-  <section
-    class="h-[40rem] w-full grid place-items-center bg-center bg-cover bg-no-repeat"
-    :style="{ backgroundImage: 'url(../../static/img/reog.jpg)' }"
-  >
-    <div
-      class="h-[40rem] w-full bg-gradient-to-r from-black opacity-60 z-20 absolute"
-    ></div>
+  <section class="h-[40rem] w-full grid place-items-center bg-center bg-cover bg-no-repeat"
+    :style="{ backgroundImage: 'url(../../static/img/reog.jpg)' }">
+    <div class="h-[40rem] w-full bg-gradient-to-r from-black opacity-60 z-20 absolute"></div>
     <div class="h-full w-[85%] flex justify-start">
       <div class="h-full w-1/2 flex flex-col items-start justify-center z-30">
-        <p
-          class="text-5xl text-slate-50 cursor-default font-black"
-          data-aos="fade-up"
-        >
+        <p class="text-5xl text-slate-50 cursor-default font-black" data-aos="fade-up">
           KAMI TUNGGU KEHADIRAN ANDA
         </p>
       </div>
