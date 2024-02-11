@@ -39,13 +39,14 @@ export const Header: React.FC = () => {
       }`}
     >
       <div className="h-full w-[85%] flex items-center justify-between">
-        <div className="logo flex h-full w-2/3 md:w-2/5 items-center">
+        <a href="/" className="logo flex h-full w-2/3 md:w-2/5 items-center">
+          
           <img
             src="/static/img/logo-black.png?url"
             width={125}
             alt="Logo"
           />
-        </div>
+        </a>
         <div className="hidden md:flex h-full w-3/4 lg:w-3/5 items-center justify-evenly">
           <a
             href="/tentang-jatim"
