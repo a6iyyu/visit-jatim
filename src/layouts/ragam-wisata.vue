@@ -35,43 +35,43 @@ import CardDestinationVue from "../components/CardDestination.vue";
   <div class="h-28 w-full"></div>
 
   <!-- Beragam Jenis Objek Wisata -->
-  <section class="px-28">
-    <section class="h-fit w-full grid place-items-center mx-auto my-16" id="beragam-jenis" data-aos="fade-up">
-      <p class="text-3xl text-gray-950 cursor-default font-semibold text-center my-5">
-        Beragam Jenis Objek Wisata
-        <br />
-        Menunggu Kedatangan Anda!
-      </p>
-      <hr class="h-0.5 w-full bg-gray-950 rounded-md my-5" />
-    </section>
-
-    <!-- Slide Tempat Wisata -->
-    <section class="h-[35rem] w-full my-12 grid place-items-center" data-aos="fade-up">
-      <div class="splide splide__1 h-full w-full overflow-hidden">
-        <div class="splide__track h-full w-full">
-          <ul class="splide__list">
-            <CardDestinationVue />
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section class="h-fit w-full grid place-items-center mx-auto" data-aos="fade-up">
-      <h4 class="text-1xl italic cursor-default font-semibold">
-        Dan masih banyak lagi...~
-      </h4>
-    </section>
-    <div class="h-20 w-full"></div>
+  <section class="h-fit w-[85%] grid place-items-center mx-auto" id="beragam-jenis" data-aos="fade-up">
+    <p class="text-3xl text-gray-950 cursor-default font-semibold text-center">
+      Beragam Jenis Objek Wisata
+      <br />
+      Menunggu Kedatangan Anda!
+    </p>
+    <hr class="h-1 w-2/5 bg-gray-950 rounded-md" />
   </section>
+  <div class="h-16 w-full"></div>
 
-  <section class="w-full h-fit px-28">
+  <!-- Slide Tempat Wisata -->
+  <section class="h-[35rem] w-full grid place-items-center" data-aos="fade-up">
+    <div class="splide splide__1 h-full w-[90%] overflow-hidden">
+      <div class="splide__track h-full w-full">
+        <ul class="splide__list">
+          <CardDestinationVue />
+        </ul>
+      </div>
+    </div>
+  </section>
+  <div class="h-12 w-full"></div>
+  <section class="h-fit w-[85%] grid place-items-center mx-auto" data-aos="fade-up">
+    <h4 class="text-1xl italic cursor-default font-semibold">
+      Dan masih banyak lagi...~
+    </h4>
+  </section>
+  <div class="h-20 w-full"></div>
+
+  <!-- <section class="w-full h-fit px-28">
     <div class="my-10 fit">
       <label for="">
         <h3 class="text-2xl my-5">Pilih Wilayah</h3>
         <select name="test" id="" class="h-10 w-96 border border-slate-950 rounded-md bg-slate-100">
-            <option value="" selected>Semua</option>
-            <option value="">Wilayah 1</option>
-            <option value="">Wilayah 2</option>
-            <option value="">Wilayah 3</option>
+          <option value="" selected>Semua</option>
+          <option value="">Wilayah 1</option>
+          <option value="">Wilayah 2</option>
+          <option value="">Wilayah 3</option>
         </select>
       </label>
 
@@ -110,5 +110,5 @@ import CardDestinationVue from "../components/CardDestination.vue";
       </div>
 
     </div>
-  </section>
+  </section> -->
 </template>

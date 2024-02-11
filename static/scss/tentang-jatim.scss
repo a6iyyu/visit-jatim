@@ -2,6 +2,10 @@
   .navbar {
     color: #f9fafb;
   }
+  .splide__1 .splide__arrow,
+  .splide__1 .splide__pagination__page {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1920px) {
@@ -20,6 +24,9 @@
 }
 
 @media screen and (max-width: 960px) {
+  .splide__1 .splide__slide {
+    width: 100% !important;
+  }
 }
 
 @media screen and (max-width: 864px) {

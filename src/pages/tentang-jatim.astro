@@ -32,6 +32,18 @@ import Footer from "../components/Footer.vue";
     <TentangJatimVue />
     <Footer />
   </body>
+  <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function () {
+      new Splide(".splide__1", {
+        drag: "free",
+        perPage: 3,
+        type: "loop",
+        autoScroll: {
+          speed: 1,
+        },
+      }).mount(window.splide.Extensions);
+    });
+  </script>
   <script crossorigin="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   <script
@@ -39,7 +51,11 @@ import Footer from "../components/Footer.vue";
     src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"
   ></script>
   <script
-    type="text/javascript" 
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"
+  ></script>
+  <script
+    type="text/javascript"
     src="https://unpkg.com/aos@next/dist/aos.js"
   ></script>
   <script type="text/javascript">
