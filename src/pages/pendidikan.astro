@@ -1,0 +1,40 @@
+---
+import "bootstrap-icons/font/bootstrap-icons.css";
+import "../../static/scss/component.scss";
+import "../../static/scss/tentang-jatim.scss";
+import Logo from "../../static/img/logo-black.png?url";
+import { ScrollIndicator } from "../components/ScrollIndicator";
+import { ScrollToTop } from "../components/ScrollToTop";
+import { Header } from "../components/Header";
+import PendidikanVue from "../layouts/pendidikan.vue";
+import Footer from "../components/Footer.vue";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Pendidikan</title>
+    <link rel="icon" href={Logo} />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <ScrollIndicator client:only="react" />
+    <ScrollToTop client:only="react" />
+    <Header client:only="react" />
+    <PendidikanVue />
+    <Footer />
+  </body>
+  <script crossorigin="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script
+    type="text/javascript"
+    src="https://unpkg.com/aos@next/dist/aos.js"
+  ></script>
+  <script type="text/javascript">
+    AOS.init();
+  </script>
+</html>
