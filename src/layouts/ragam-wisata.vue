@@ -19,7 +19,7 @@ import CardDestinationVue from "../components/CardDestination.vue";
       </div>
     </div>
     <div class="h-full w-3/5 flex items-end justify-center bg-center bg-cover bg-no-repeat"
-      style="background-image: url(/static/img/hotel-majapahit.jpg?url)">
+      :style="{ backgroundImage: 'url(/static/img/hotel-majapahit.jpg?url)' }">
       <div class="h-3/5 w-4/5 flex flex-col items-center justify-center text-center">
         <b class="text-3xl text-slate-50 cursor-default">
           Jenis Wisata Unik dan Menarik di Jatim!
@@ -32,10 +32,9 @@ import CardDestinationVue from "../components/CardDestination.vue";
       </div>
     </div>
   </section>
-  <div class="h-28 w-full"></div>
 
   <!-- Beragam Jenis Objek Wisata -->
-  <section class="h-fit w-[85%] grid place-items-center mx-auto" id="beragam-jenis" data-aos="fade-up">
+  <section class="h-fit w-[85%] grid place-items-center mt-28 mx-auto" id="beragam-jenis" data-aos="fade-up">
     <p class="text-3xl text-gray-950 cursor-default font-semibold text-center">
       Beragam Jenis Objek Wisata
       <br />
@@ -43,10 +42,9 @@ import CardDestinationVue from "../components/CardDestination.vue";
     </p>
     <hr class="h-1 w-2/5 bg-gray-950 rounded-md" />
   </section>
-  <div class="h-16 w-full"></div>
 
   <!-- Slide Tempat Wisata -->
-  <section class="h-[35rem] w-full grid place-items-center" data-aos="fade-up">
+  <section class="h-[35rem] w-full grid place-items-center mt-16" data-aos="fade-up">
     <div class="splide splide__1 h-full w-[90%] overflow-hidden">
       <div class="splide__track h-full w-full">
         <ul class="splide__list">

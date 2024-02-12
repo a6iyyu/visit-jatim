@@ -21,10 +21,9 @@ import CardCityVue from "../components/CardCity.vue";
       </div>
     </div>
   </section>
-  <div class="h-16 w-full"></div>
 
   <!-- Explore -->
-  <section class="h-fit w-[85%] block mx-auto" id="explore" data-aos="fade-up">
+  <section class="h-fit w-[85%] block mt-16 mx-auto" id="explore" data-aos="fade-up">
     <p class="text-3xl text-gray-950 cursor-default font-semibold">
       Terbaru di Jatim
     </p>
@@ -65,10 +64,9 @@ import CardCityVue from "../components/CardCity.vue";
       </div>
     </div>
   </section>
-  <div class="h-20 w-full"></div>
 
   <!-- Jelajahi Jawa Timur-->
-  <section class="h-fit w-full grid place-items-center" id="jelajahi-jatim" data-aos="fade-up">
+  <section class="h-fit w-full grid place-items-center mt-20" id="jelajahi-jatim" data-aos="fade-up">
     <div class="h-full w-[85%] grid place-items-center">
       <p class="text-gray-950 text-3xl cursor-default font-semibold">
         Jelajahi Jawa Timur
@@ -90,19 +88,17 @@ import CardCityVue from "../components/CardCity.vue";
       </div>
     </div>
   </section>
-  <div class="h-20 w-full"></div>
 
   <!-- Tau Gak Sih? -->
-  <section class="h-fit w-full grid place-items-center" data-aos="fade-up">
+  <section class="h-fit w-full grid place-items-center mt-20" data-aos="fade-up">
     <p class="text-gray-950 text-3xl cursor-default font-semibold">
       Tau Gak Sih?
     </p>
     <hr class="h-1 w-44 rounded-md bg-gray-950" />
-    <div class="h-8 w-full"></div>
   </section>
 
   <!-- 1 -->
-  <section class="tau-gak-sih h-[25rem] w-[85%] flex items-center justify-between mx-auto" data-aos="fade-up">
+  <section class="tau-gak-sih h-[25rem] w-[85%] flex items-center justify-between mt-8 mx-auto" data-aos="fade-up">
     <div class="h-full w-1/2 flex flex-col items-start justify-center">
       <h2 class="text-3xl text-gray-950 cursor-default font-semibold">
         Pengen Belajar Sejarah? Ada!
