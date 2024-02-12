@@ -14,10 +14,19 @@
     </div>
   </section>
 
-  <section class="h-fit w-[85%] flex flex-col items-center justify-center mt-52 mb-14 mx-auto">
+  <section class="h-fit w-[85%] flex flex-col items-center justify-center mt-52 mx-auto">
     <p class="text-3xl text-gray-950 cursor-default font-semibold" data-aos="fade-up">
       MENJELAJAH DI ALAM LIAR
     </p>
     <hr class="h-0.5 w-full bg-gray-950" data-aos="fade-up" />
+  </section>
+
+  <section class="h-fit w-[85%] grid place-items-center mt-6 mx-auto" data-aos="fade-up">
+    <p class="text-1xl text-gray-950 cursor-default font-medium text-justify"
+      :style="{ lineHeight: '1.5', textAlignLast: 'start' }">
+      Kalo udah mentok gatau pengen liburan kemana, enaknya ngapain lagi ya? Di Jawa Timur, ada wisata alternatif lainnya
+      lho, misalnya aja ke taman nasional. Ada beberapa taman nasional yang bisa kalian kunjungi selama liburanmu di Jawa
+      Timur, Mari kita berkelana di alam liar Jawa Timur untuk mengungkap keajaiban alam, flora, dan fauna yang memukau!
+    </p>
   </section>
 </template>
