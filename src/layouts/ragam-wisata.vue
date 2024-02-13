@@ -1,6 +1,3 @@
-<script setup>
-import CardDestinationVue from "../components/CardDestination.vue";
-</script>
 
 <template>
   <!-- Hero -->
@@ -62,52 +59,34 @@ import CardDestinationVue from "../components/CardDestination.vue";
   </section>
   <div class="h-20 w-full"></div>
 
-  <!-- <section class="w-full h-fit px-28">
+  <section class="w-full h-fit px-8 md:px-12 lg:px-28">
     <div class="my-10 fit">
-      <label for="">
+      <label for="cities">
         <h3 class="text-2xl my-5">Pilih Wilayah</h3>
-        <select name="test" id="" class="h-10 w-96 border border-slate-950 rounded-md bg-slate-100">
-          <option value="" selected>Semua</option>
-          <option value="">Wilayah 1</option>
-          <option value="">Wilayah 2</option>
-          <option value="">Wilayah 3</option>
+        <select name="test" id="cities" class="h-10 w-48 md:w-96 border border-slate-950 rounded-md bg-slate-100 px-3"
+          v-model="selectCity">
+          <option value="null" selected>SEMUA</option>
+          <option v-for="wilayah in unduplicate" :key="wilayah" :value="wilayah">{{ wilayah }}</option>
         </select>
       </label>
-
     </div>
-    <div class="w-full h-fit grid grid-cols-3 gap-4">
+    passed: {{ selectCity }}
+    <br>
 
-      <div class="w-full h-64 bg-slate-800 flex flex-col items-center justify-end py-10">
-        <h3 class="text-3xl text-slate-50 font-semibold">Nama</h3>
-        <h4 class="text-xl text-slate-50 font-semibold">Wilayah</h4>
-      </div>
-
-      <div class="w-full h-64 bg-slate-800 flex flex-col items-center justify-end py-10">
-        <h3 class="text-3xl text-slate-50 font-semibold">Nama</h3>
-        <h4 class="text-xl text-slate-50 font-semibold">Wilayah</h4>
-      </div>
-
-      <div class="w-full h-64 bg-slate-800 flex flex-col items-center justify-end py-10">
-        <h3 class="text-3xl text-slate-50 font-semibold">Nama</h3>
-        <h4 class="text-xl text-slate-50 font-semibold">Wilayah</h4>
-      </div>
-
-
-      <div class="w-full h-64 bg-slate-800 flex flex-col items-center justify-end py-10">
-        <h3 class="text-3xl text-slate-50 font-semibold">Nama</h3>
-        <h4 class="text-xl text-slate-50 font-semibold">Wilayah</h4>
-      </div>
-
-      <div class="w-full h-64 bg-slate-800 flex flex-col items-center justify-end py-10">
-        <h3 class="text-3xl text-slate-50 font-semibold">Nama</h3>
-        <h4 class="text-xl text-slate-50 font-semibold">Wilayah</h4>
-      </div>
-
-      <div class="w-full h-64 bg-slate-800 flex flex-col items-center justify-end py-10">
-        <h3 class="text-3xl text-slate-50 font-semibold">Nama</h3>
-        <h4 class="text-xl text-slate-50 font-semibold">Wilayah</h4>
-      </div>
-
-    </div>
-  </section> -->
+    <!-- <GridList :data="destinations" :selected="selectCity" /> -->
+  </section>
 </template>
+
+<script setup>
+import { ref, watch } from 'vue'
+import destination from "../data/destination.json"
+import CardDestinationVue from "../components/CardDestination.vue";
+import GridList from "../components/GridList.vue";
+
+const destinations = ref(destination.places)
+const cities = ref(destinations.value.map((place) => place.city))
+const unduplicate = ref([...new Set(cities.value)])
+
+const selectCity = ref('')
+
+</script>
