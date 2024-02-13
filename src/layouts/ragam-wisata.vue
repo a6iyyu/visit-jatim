@@ -78,8 +78,8 @@
 </template>
 
 <script setup>
-import { ref, watch } from 'vue'
-import destination from "../data/destination.json"
+import { ref, watch } from "vue";
+import destination from "../data/destination.json";
 import CardDestinationVue from "../components/CardDestination.vue";
 import GridList from "../components/GridList.vue";
 
@@ -87,6 +87,6 @@ const destinations = ref(destination.places)
 const cities = ref(destinations.value.map((place) => place.city))
 const unduplicate = ref([...new Set(cities.value)])
 
-const selectCity = ref('')
+const selectCity = ref("")
 
 </script>

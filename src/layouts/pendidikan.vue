@@ -1,10 +1,48 @@
+<script setup>
+import CollegeSlider from "../components/CollegeSlider.vue";
+</script>
+
 <template>
-  <section
-    class="h-[35rem] w-full mx-auto bg-bottom bg-cover bg-no-repeat"
-    :style="{ backgroundImage: 'url(/static/img/sample-3.jpeg?url)' }"
-  >
-    <div
-      class="h-[35rem] w-full bg-gradient-to-t md:bg-gradient-to-r from-black opacity-60 z-0 absolute"
-    ></div>
+  <!-- Hero section -->
+  <section class="h-[40rem] w-full grid place-items-center mx-auto bg-bottom bg-cover bg-no-repeat"
+    :style="{ backgroundImage: 'url(/static/img/ub.jpeg?url)' }">
+    <div class="h-[40rem] w-full bg-gradient-to-t md:bg-gradient-to-r from-black opacity-60 z-0 absolute"></div>
+    <div class="h-3/5 w-[85%] flex items-end justify-center z-10">
+      <h1 class="text-5xl text-slate-50 cursor-default font-semibold text-center" data-aos="fade-out">
+        YUK CARI <br />
+        ILMU DISINI
+      </h1>
+    </div>
+  </section>
+
+  <!-- Apakah pendidikan itu penting -->
+  <section class="h-fit w-[85%] my-20 mx-auto grid grid-cols-3 gap-10" id="pendidikan-penting">
+    <h1 class="text-3xl text-gray-950 cursor-default font-semibold text-justify" data-aos="fade-right">
+      Mengapa Pendidikan Itu Penting?
+    </h1>
+    <h4 class="text-1xl text-gray-950 cursor-default font-medium text-justify" :style="{ lineHeight: '1.5' }"
+      data-aos="fade-up">
+      Di zaman serba digital seperti sekarang ini, pendidikan menjadi kunci untuk mempersiapkan
+      generasi masa depan menghadapi tantangan yang semakin kompleks dan dinamis. Melalui pendidikan, individu diberikan
+      pemahaman yang mendalam tentang teknologi dan keterampilan digital yang kritis, yang sangat dibutuhkan untuk
+      beradaptasi dan bersaing di dunia kerja yang terus berkembang.
+    </h4>
+    <h4 class="text-1xl text-gray-950 cursor-default font-medium text-justify" :style="{ lineHeight: '1.5' }"
+      data-aos="fade-left">
+      Lebih dari sekadar mempersiapkan individu untuk dunia kerja, pendidikan juga membentuk karakter, nilai, dan etika
+      yang mendasar bagi kemajuan sosial dan ekonomi. Dengan pendidikan yang kokoh, individu dapat menjadi agen perubahan
+      positif dalam masyarakat, berkontribusi pada inovasi, pembangunan, dan penyelesaian tantangan-tantangan global yang
+      semakin kompleks.
+    </h4>
+  </section>
+
+  <section class="h-[25rem] w-full grid place-items-center mt-14" data-aos="fade-up">
+    <div class="splide splide__1 h-full w-[85%] overflow-hidden">
+      <div class="splide__track h-full w-full">
+        <ul class="splide__list">
+          <CollegeSlider />
+        </ul>
+      </div>
+    </div>
   </section>
 </template>
