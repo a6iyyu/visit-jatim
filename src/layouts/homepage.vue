@@ -1,8 +1,6 @@
 <script setup>
 import { ref } from 'vue'
 import blogData from "../data/blogs.json";
-
-import BlogSliderHomepageVue from "../components/BlogSliderHomepage.vue";
 import CardCityVue from "../components/CardCity.vue";
 import Latest from "../components/Latest.vue"
 
@@ -38,9 +36,7 @@ const blogs = ref(blogData.blogs);
 
   <!-- Blog -->
   <section class="h-fit w-full grid place-items-center my-4" id="terbaru-di-jatim" data-aos="fade-up">
-    
     <Latest :data="blogs" />
-
   </section>
 
   <!-- Jelajahi Jawa Timur-->

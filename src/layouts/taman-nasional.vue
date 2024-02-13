@@ -29,4 +29,12 @@
       Timur, Mari kita berkelana di alam liar Jawa Timur untuk mengungkap keajaiban alam, flora, dan fauna yang memukau!
     </p>
   </section>
+
+  <details class="h-fit w-[85%] flex mt-14 mx-auto" data-aos="fade-up">
+    <summary
+      class="h-fit w-fit text-2xl text-gray-950 cursor-pointer font-semibold transition-all duration-300 ease-in-out hover:text-gray-800 hover:underline">
+      Taman Nasional Baluran
+    </summary>
+    <section></section>
+  </details>
 </template>

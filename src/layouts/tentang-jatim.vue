@@ -124,7 +124,7 @@ import CardPopulationVue from '../components/CardPopulation.vue';
     </p>
     <hr class="h-0.5 w-full bg-gray-950 rounded-md" />
   </section>
-  <section class="h-fit w-[85%] grid place-items-center mt-6 mx-auto" data-aos="fade-up">
+  <section class="h-fit w-[85%] flex mt-6 mx-auto" data-aos="fade-up">
     <p class="text-1xl text-gray-950 cursor-default font-medium text-justify"
       :style="{ lineHeight: '1.5', textAlignLast: 'start' }">
       Siapa disini yang pernah ke Gunung Semeru? Tau gak sih kalo Gunung Semeru itu jadi puncak tertinggi di Jawa Timur?

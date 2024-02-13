@@ -42,7 +42,7 @@ export const AccordionMobile = ({options, name}: {options: string[]; name: strin
           {options.map((option, index) => (
             <li className="border-t-2 border-slate-900 py-3 hover:bg-slate-900 hover:text-gray-50">
               <a
-                href={`/${option.toLowerCase().replace(" ", "%20").replace("%20", "-")}`}
+                href={`/${option.toLowerCase().replace(/ /g, "%20").replace(/%20/g, "-")}`}
                 className="cursor-pointer flex items-center"
                 key={index}
               >
