@@ -1,6 +1,12 @@
 <script setup>
+import { ref } from 'vue'
+import blogData from "../data/blogs.json";
+
 import BlogSliderHomepageVue from "../components/BlogSliderHomepage.vue";
 import CardCityVue from "../components/CardCity.vue";
+import Latest from "../components/Latest.vue"
+
+const blogs = ref(blogData.blogs);
 </script>
 
 <template>
@@ -32,37 +38,9 @@ import CardCityVue from "../components/CardCity.vue";
 
   <!-- Blog -->
   <section class="h-fit w-full grid place-items-center my-4" id="terbaru-di-jatim" data-aos="fade-up">
-    <div class="h-full w-[85%] flex items-center justify-between">
-      <div class="h-full w-1/2 flex flex-col">
-        <a href="https://www.jawapos.com/wisata-kuliner/011771965/8-desa-wisata-terbaik-di-jawa-timur-yang-wajib-dikunjungi"
-          class="h-full w-full block">
-          <div class="h-80 w-full rounded-md bg-bottom bg-cover bg-no-repeat" :style="{
-            backgroundImage: 'url(/static/img/sample-1.jpg?url)',
-            boxShadow: '0.75rem 0.75rem 0.75rem #bebebe',
-          }"></div>
-          <br />
-          <p class="h-fit w-full text-2xl text-gray-950 font-semibold text-justify hover:text-gray-800 hover:underline"
-            :style="{ transition: 'all 0.3s ease-in-out' }">
-            8 Desa Wisata Terbaik di Jawa Timur yang Wajib Dikunjungi
-          </p>
-          <br />
-          <p class="h-fit w-full text-xl text-gray-950 font-medium text-justify hover:text-gray-800 hover:underline"
-            :style="{ transition: 'all 0.3s ease-in-out' }">
-            Wisata alam yang disuguhkan yaitu Taman Edelweiss dan Menjemput
-            Matahari Penanjakan Adventure. Selain itu, ada wisata budaya,
-            seperti One Day ...
-          </p>
-          <br />
-          <p class="h-fit w-full text-1xl text-gray-950 font-semibold text-justify hover:text-gray-800 hover:underline"
-            :style="{ transition: 'all 0.3s ease-in-out' }">
-            Baca Selengkapnya &#10132;
-          </p>
-        </a>
-      </div>
-      <div class="blog-slider flex flex-col overflow-y-auto ml-8">
-        <BlogSliderHomepageVue />
-      </div>
-    </div>
+    
+    <Latest :data="blogs" />
+
   </section>
 
   <!-- Jelajahi Jawa Timur-->
