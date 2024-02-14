@@ -1,3 +1,16 @@
+<script lang="ts" setup>
+import { ref, watch } from "vue";
+import destination from "../data/destination.json";
+import CardDestinationVue from "../components/CardDestination.vue";
+import GridList from "../components/GridList.vue";
+
+const destinations = ref(destination.places)
+const cities = ref(destinations.value.map((place: { city: string }) => place.city))
+// const unduplicate = ref([...new Set(cities.value)])
+
+// const selectCity = ref("")
+
+</script>
 
 <template>
   <!-- Hero -->
@@ -59,8 +72,12 @@
   </section>
   <div class="h-20 w-full"></div>
 
-  <section class="w-full h-fit px-8 md:px-12 lg:px-28">
-    <div class="my-10 fit">
+  <section class="w-full h-fit px-8 md:px-12 lg:px-28" data-aos="fade-up">
+    <div class="w-fit mx-auto my-10">
+      <h2 class="text-3xl font-semibold">Masih Bingung Mau Kemana?</h2>
+      <hr class="h-1 w-full bg-gray-950 rounded-md" />
+    </div>
+    <!-- <div class="my-10 fit">
       <label for="cities">
         <h3 class="text-2xl my-5">Pilih Wilayah</h3>
         <select name="test" id="cities" class="h-10 w-48 md:w-96 border border-slate-950 rounded-md bg-slate-100 px-3"
@@ -70,23 +87,8 @@
         </select>
       </label>
     </div>
-    passed: {{ selectCity }}
-    <br>
-
-    <!-- <GridList :data="destinations" :selected="selectCity" /> -->
+    selected: {{ selectCity }}
+    <br> -->
+    <GridList :data="destinations" />
   </section>
 </template>
-
-<script setup>
-import { ref, watch } from "vue";
-import destination from "../data/destination.json";
-import CardDestinationVue from "../components/CardDestination.vue";
-import GridList from "../components/GridList.vue";
-
-const destinations = ref(destination.places)
-const cities = ref(destinations.value.map((place) => place.city))
-const unduplicate = ref([...new Set(cities.value)])
-
-const selectCity = ref("")
-
-</script>
