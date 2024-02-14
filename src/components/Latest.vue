@@ -51,8 +51,8 @@ const blogs = computed(() => {
   <!-- Main -->
   <div class="h-full w-[85%] flex items-center justify-between">
     <div class="h-full w-1/2 flex flex-col">
-      <a :href="frontNews.link" class="h-full w-full block">
-        <img
+      <a :href="frontNews.link" class="h-full w-full block" target="_blank">
+        <img 
           :src="frontNews.img"
           class="h-80 w-full rounded-md bg-bottom bg-cover bg-no-repeat shadow-md"
           alt=""
@@ -65,14 +65,14 @@ const blogs = computed(() => {
           {{ frontNews.title }}
         </p>
         <br />
-        <p
+        <p 
           class="h-fit w-full text-xl text-gray-950 font-medium text-justify hover:text-gray-800 hover:underline"
           :style="{ transition: 'all 0.3s ease-in-out' }"
         >
           {{ frontNews.content }}
         </p>
         <br />
-        <p
+        <p 
           class="h-fit w-full text-1xl text-gray-950 font-semibold text-justify hover:text-gray-800 hover:underline"
           :style="{ transition: 'all 0.3s ease-in-out' }"
         >
@@ -83,12 +83,12 @@ const blogs = computed(() => {
 
     <!-- Side -->
     <div class="blog-slider flex flex-col overflow-y-auto ml-8">
-      <a
+      <a 
         v-for="blog in blogs"
         :key="blog.id"
         :href="blog.link"
         class="max-h-60 h-full w-full flex justify-between py-2"
-      >
+        target="_blank">
         <img
           :src="blog.img"
           class="blogs max-h-32 h-32 w-2/5 rounded bg-center bg-cover bg-no-repeat"

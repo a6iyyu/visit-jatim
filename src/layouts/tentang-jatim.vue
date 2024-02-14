@@ -98,11 +98,11 @@ import CardPopulationVue from '../components/CardPopulation.vue';
       Tau gak sih kalo provinsi ini jadi provinsi dengan jumlah penduduk terbanyak di Indonesia? Berdasarkan
       data yang dikutip dari
       <a href="https://kedirikota.bps.go.id/indicator/12/358/1/jumlah-penduduk-provinsi-jawa-timur.html"
-        class="text-blue-500 underline transition-all duration-300 ease-in-out hover:text-blue-400">
+        class="text-blue-500 underline transition-all duration-300 ease-in-out hover:text-blue-400" target="_blank">
         BPS Kota Kediri</a>
       dan
       <a href="https://www.inilah.com/10-provinsi-dengan-jumlah-penduduk-terbanyak-di-indonesia-tahun-2023"
-        class="text-blue-500 underline transition-all duration-300 ease-in-out hover:text-blue-400">
+        class="text-blue-500 underline transition-all duration-300 ease-in-out hover:text-blue-400" target="_blank">
         inilah.com</a>,
       Provinsi Jawa Timur menempati posisi urutan kedua setelah Provinsi Jawa Barat dengan total jumlah penduduk sebanyak
       41.416.407 jiwa. <b>Kota dengan penduduk terbanyak pada tahun 2023</b> ditempati oleh <b>Kota Surabaya</b> dengan
@@ -130,7 +130,7 @@ import CardPopulationVue from '../components/CardPopulation.vue';
       Siapa disini yang pernah ke Gunung Semeru? Tau gak sih kalo Gunung Semeru itu jadi puncak tertinggi di Jawa Timur?
       Berdasarkan data yang dimuat dari artikel
       <a href="https://www.detik.com/jatim/wisata/d-6008094/6-gunung-tertinggi-di-jawa-timur-simak-detailnya"
-        class="text-blue-500 underline transition-all duration-300 ease-in-out hover:text-blue-400">
+        class="text-blue-500 underline transition-all duration-300 ease-in-out hover:text-blue-400" target="_blank">
         Detik.com</a>,
       ketinggian dari Gunung Semeru sendiri yakni sekitar 3.676 mdpl, tinggi banget kan!
     </p>
@@ -149,7 +149,7 @@ import CardPopulationVue from '../components/CardPopulation.vue';
       Pernah minum es tebu dari penjual keliling belum? Rasanya manis dan seger di tenggorokan, bukan? Tebu yang kalian
       teguk di siang hari bisa jadi itu berasal dari Jawa Timur lho, karena seperti yang dikutip di halaman
       <a href="https://primagama.co.id/blog/berbagai-jenis-sumber-daya-alam-yang-ada-di-pulau-jawa/#:~:text=Provinsi%20Jawa%20Timur&text=Potensi%20sumber%20daya%20alam%20di%20Jawa%20Timur%20dalam%20sektor%20perkebunan,bahan%20pangan%20yang%20banyak%20dibutuhkan."
-        class="text-blue-500 underline transition-all duration-300 ease-in-out hover:text-blue-400">
+        class="text-blue-500 underline transition-all duration-300 ease-in-out hover:text-blue-400" target="_blank">
         Primagama.com</a>, komoditas perkebunan terbesar Jawa Timur adalah tebu dan ini dibuktikan dengan adanya 31 unit
       pabrik gula. Wow, banyak banget!
     </p>

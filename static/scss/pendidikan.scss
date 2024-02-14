@@ -1,2 +1,9 @@
 @media screen and (max-width: 960px) {
+  #pendidikan-penting {
+    grid-template: auto / auto;
+    gap: 1.5rem;
+    & h1 {
+      text-align: center;
+    }
+  }
 }

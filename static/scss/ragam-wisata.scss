@@ -1,17 +1,25 @@
-@media screen and (max-width: 2160px) {
+@media screen and (max-width: 3120px) {
   .navbar {
     color: #0f172a;
   }
   .hero > div:first-child {
-    height: 35%;
+    height: 25%;
     width: 25%;
-    margin-right: 50rem;
+    margin-right: 70rem;
   }
   .hero > div:last-child {
     b,
     p {
       opacity: 0;
     }
+  }
+}
+
+@media screen and (max-width: 2160px) {
+  .hero > div:first-child {
+    height: 35%;
+    width: 30%;
+    margin-right: 50rem;
   }
 }
 

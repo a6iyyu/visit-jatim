@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { ref } from "vue";
-import blogData from "../data/blogs.json";
+import blogData from "../data/homepage-blogs.json";
 
 const blogs = ref(blogData.blogs);
 </script>

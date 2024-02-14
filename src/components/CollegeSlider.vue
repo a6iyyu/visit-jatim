@@ -1,13 +1,14 @@
 <template>
   <div
-    class="splide__slide h-full w-full grid place-items-center cursor-pointer"
+    class="splide__slide h-full w-full grid place-items-center"
     v-for="(college, index) in colleges"
     :key="index"
   >
-    <div
-      class="h-full w-[95%] grid place-items-center bg-center bg-cover bg-no-repeat rounded-xl"
-      :style="{ backgroundImage: 'url(' + college + ')' }"
-    ></div>
+    <a
+      class="h-full w-[95%] grid place-items-center bg-center bg-cover bg-no-repeat rounded-xl z-30"
+      :style="{ backgroundImage: 'url(' + college.img + ')' }"
+      :href="college.link"
+    ></a>
   </div>
 </template>
 
