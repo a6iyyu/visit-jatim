@@ -49,6 +49,17 @@
   .blog-slider {
     margin: 0;
   }
+  #kami-percaya {
+    grid-template: auto / auto;
+    gap: 2.5rem;
+    & h1 {
+      text-align: center;
+      order: 2;
+    }
+    & img {
+      order: 1;
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {

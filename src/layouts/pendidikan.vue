@@ -69,4 +69,32 @@ const blogs = ref(collegeData.blogs)
   <section class="h-fit w-full grid place-items-center my-4" id="terbaru-di-pendidikan" data-aos="fade-up">
     <Latest :data="blogs" />
   </section>
+
+  <!-- Kami Percaya Pada Anda -->
+  <section class="h-fit w-[85%] my-20 mx-auto grid grid-cols-2 gap-10" id="kami-percaya">
+    <h1 class="flex flex-col items-start justify-center text-3xl text-gray-950 cursor-default font-semibold text-justify"
+      data-aos="fade-up">
+      KAMI PERCAYA<br />PADA ANDA SEBAGAI<br />GENERASI PENERUS BANGSA
+    </h1>
+    <img src="/static/img/businessman.jpg?url" alt="Successful" class="cursor-default font-semibold rounded-lg"
+      data-aos="fade-up" :style="{ boxShadow: '0.75rem 0.75rem 0.75rem #bebebe' }" />
+  </section>
+
+  <section class="h-[40rem] bg-gray-950"></section>
+
+  <section class="h-fit w-[85%] block mt-16 mb-6 mx-auto" id="latest" data-aos="fade-up">
+    <p class="text-3xl text-gray-950 cursor-default font-semibold">
+      Tips Masuk PTN Impian
+    </p>
+    <hr class="h-0.5 w-full bg-gray-950 rounded-md" />
+  </section>
+
+  <section class="h-fit w-[85%] flex flex-col items-start justify-center mx-auto mb-8">
+    <p class="text-1xl cursor-default font-medium" data-aos="fade-up" :style="{ lineHeight: '1.5' }">
+      Kalian udah nentuin mau masuk kampus mana? Memang sih masuk kampus dan jurusan impian tuh kebayang seru, tapi perlu
+      diingat buat kesana tentunya tidak dilakukan secara instan. Perlu perjuangan yang gede dan selalu baca informasi
+      tentang pendaftaran masuk perkuliahan. Di halaman ini, bakal dikasih tau tips-tips yang bisa kalian terapkan biar
+      bisa masuk ke perkuliahan. Apa aja ya kira-kira? Mari kita telusuri!
+    </p>
+  </section>
 </template>
