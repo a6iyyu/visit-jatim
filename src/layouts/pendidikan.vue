@@ -1,5 +1,10 @@
 <script setup>
+import { ref } from "vue";
+import collegeData from "../data/college-blogs.json";
 import CollegeSlider from "../components/CollegeSlider.vue";
+import Latest from "../components/Latest.vue";
+
+const blogs = ref(collegeData.blogs)
 </script>
 
 <template>
@@ -36,7 +41,14 @@ import CollegeSlider from "../components/CollegeSlider.vue";
     </h4>
   </section>
 
-  <section class="h-[25rem] w-full grid place-items-center mt-14" data-aos="fade-up">
+  <!-- Karosel kuliah -->
+  <section class="h-fit w-[85%] block mt-16 mx-auto" id="latest" data-aos="fade-up">
+    <p class="text-3xl text-gray-950 cursor-default font-semibold">
+      Pilih Kampus Impianmu!
+    </p>
+    <hr class="h-0.5 w-full bg-gray-950 rounded-md" />
+  </section>
+  <section class="h-[25rem] w-full grid place-items-center mt-8" data-aos="fade-up">
     <div class="splide splide__1 h-full w-[85%] overflow-hidden">
       <div class="splide__track h-full w-full">
         <ul class="splide__list">
@@ -44,5 +56,17 @@ import CollegeSlider from "../components/CollegeSlider.vue";
         </ul>
       </div>
     </div>
+  </section>
+
+  <!-- Terbaru di Pendidikan -->
+  <section class="h-fit w-[85%] block mt-16 mx-auto" id="latest" data-aos="fade-up">
+    <p class="text-3xl text-gray-950 cursor-default font-semibold">
+      Terbaru di Pendidikan
+    </p>
+    <hr class="h-0.5 w-full bg-gray-950 rounded-md" />
+  </section>
+
+  <section class="h-fit w-full grid place-items-center my-4" id="terbaru-di-pendidikan" data-aos="fade-up">
+    <Latest :data="blogs" />
   </section>
 </template>
