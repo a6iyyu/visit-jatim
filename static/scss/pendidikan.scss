@@ -3,6 +3,12 @@
     width: 35%;
     max-height: 540px;
   }
+  .splide__2 {
+    & .splide__pagination__page,
+    & .splide__arrow {
+      display: none;
+    }
+  }
 }
 
 @media screen and (max-width: 1920px) {
@@ -53,6 +59,7 @@
     grid-template: auto / auto;
     gap: 2.5rem;
     & h1 {
+      margin: auto;
       text-align: center;
       order: 2;
     }
@@ -60,12 +67,21 @@
       order: 1;
     }
   }
+  #college-entry {
+    height: 25rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .blogs {
     max-height: 9rem;
     height: 9rem;
+  }
+  #college-entry {
+    height: 22.5rem;
+  }
+  #college-entry .splide__track {
+    width: 200%;
   }
 }
 

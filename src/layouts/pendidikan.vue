@@ -3,6 +3,7 @@ import { ref } from "vue";
 import collegeData from "../data/college-blogs.json";
 import CollegeSlider from "../components/CollegeSlider.vue";
 import Latest from "../components/Latest.vue";
+import CollegeEntryTips from "../components/CollegeEntryTips.vue";
 
 const blogs = ref(collegeData.blogs)
 </script>
@@ -74,15 +75,23 @@ const blogs = ref(collegeData.blogs)
   <section class="h-fit w-[85%] my-20 mx-auto grid grid-cols-2 gap-10" id="kami-percaya">
     <h1 class="flex flex-col items-start justify-center text-3xl text-gray-950 cursor-default font-semibold text-justify"
       data-aos="fade-up">
-      KAMI PERCAYA<br />PADA ANDA SEBAGAI<br />GENERASI PENERUS BANGSA
+      KAMI PERCAYA<br />
+      PADA ANDA SEBAGAI<br />
+      GENERASI PENERUS BANGSA
     </h1>
     <img src="/static/img/businessman.jpg?url" alt="Successful" class="cursor-default font-semibold rounded-lg"
       data-aos="fade-up" :style="{ boxShadow: '0.75rem 0.75rem 0.75rem #bebebe' }" />
   </section>
 
-  <section class="h-[40rem] bg-gray-950"></section>
+  <section class="h-[40rem] w-full grid place-items-center bg-gray-950">
+    <p class="h-fit w-[85%] text-slate-50 text-4xl cursor-default font-semibold m-auto" data-aos="fade-right">
+      Udah nentuin<br />
+      kampus impian belum?
+    </p>
+  </section>
 
-  <section class="h-fit w-[85%] block mt-16 mb-6 mx-auto" id="latest" data-aos="fade-up">
+  <!-- Tips Masuk PTN Impian -->
+  <section class="h-fit w-[85%] block mt-16 mb-6 mx-auto" id="latest" data-aos="fade-right">
     <p class="text-3xl text-gray-950 cursor-default font-semibold">
       Tips Masuk PTN Impian
     </p>
@@ -90,11 +99,28 @@ const blogs = ref(collegeData.blogs)
   </section>
 
   <section class="h-fit w-[85%] flex flex-col items-start justify-center mx-auto mb-8">
-    <p class="text-1xl cursor-default font-medium" data-aos="fade-up" :style="{ lineHeight: '1.5' }">
+    <p class="text-1xl cursor-default font-medium" data-aos="fade-right" :style="{ lineHeight: '1.5' }">
       Kalian udah nentuin mau masuk kampus mana? Memang sih masuk kampus dan jurusan impian tuh kebayang seru, tapi perlu
       diingat buat kesana tentunya tidak dilakukan secara instan. Perlu perjuangan yang gede dan selalu baca informasi
       tentang pendaftaran masuk perkuliahan. Di halaman ini, bakal dikasih tau tips-tips yang bisa kalian terapkan biar
-      bisa masuk ke perkuliahan. Apa aja ya kira-kira? Mari kita telusuri!
+      bisa masuk ke perkuliahan. Apa aja ya kira-kira? Mari kita pahami bersama!
     </p>
   </section>
+
+  <section class="h-80 w-full grid place-items-center mt-8" id="college-entry" data-aos="fade-up">
+    <div class="splide splide__2 h-full w-[85%] overflow-hidden">
+      <div class="splide__track h-full w-full">
+        <ul class="splide__list">
+          <CollegeEntryTips />
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reminder -->
+  <p class="h-fit w-[85%] grid place-items-center mt-16 mb-8 mx-auto">
+    <q class="text-center text-gray-900 text-2xl cursor-default font-semibold" data-aos="fade-left">
+      Hanya pendidikan yang bisa menyelamatkan masa depan, tanpa pendidikan Indonesia tak mungkin bertahan.
+    </q>
+  </p>
 </template>

@@ -43,6 +43,12 @@ import Footer from "../components/Footer.vue";
           speed: 1,
         },
       }).mount(window.splide.Extensions);
+      new Splide(".splide__2", {
+        drag: "free",
+        perPage: 2,
+        snap: true,
+        type: "loop",
+      }).mount();
     });
   </script>
   <script crossorigin="https://cdn.tailwindcss.com"></script>
