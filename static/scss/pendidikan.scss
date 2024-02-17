@@ -3,6 +3,10 @@
     width: 35%;
     max-height: 540px;
   }
+  .splide__1 .splide__slide > a:hover,
+  .splide__2 .splide__slide > div:hover {
+    transform: scale(1.035);
+  }
   .splide__2 {
     & .splide__pagination__page,
     & .splide__arrow {

@@ -78,7 +78,7 @@ import CardPopulationVue from '../components/CardPopulation.vue';
 
   <section class="h-[25rem] w-full grid place-items-center mt-14" data-aos="fade-up">
     <div class="splide splide__1 h-full w-[85%] overflow-hidden">
-      <div class="splide__track h-full w-full">
+      <div class="splide__track h-full w-full py-4">
         <ul class="splide__list">
           <CardPopulationVue />
         </ul>

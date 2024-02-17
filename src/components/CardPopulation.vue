@@ -5,7 +5,7 @@
     :key="index"
   >
     <div
-      class="h-full w-[95%] bg-center bg-cover bg-no-repeat rounded-xl"
+      class="h-full w-[95%] bg-center bg-cover bg-no-repeat rounded-xl transition-all duration-500 ease-in-out"
       :style="{ backgroundImage: 'url(' + citizen + ')' }"
     ></div>
   </div>

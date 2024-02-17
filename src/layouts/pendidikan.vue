@@ -44,7 +44,7 @@ const blogs = ref(collegeData.blogs)
   </section>
   <section class="h-[25rem] w-full grid place-items-center mt-8" data-aos="fade-up">
     <div class="splide splide__1 h-full w-[85%] overflow-hidden">
-      <div class="splide__track h-full w-full">
+      <div class="splide__track h-full w-full py-4">
         <ul class="splide__list">
           <CollegeSlider />
         </ul>
@@ -102,7 +102,7 @@ const blogs = ref(collegeData.blogs)
 
   <section class="h-80 w-full grid place-items-center mt-8" id="college-entry" data-aos="fade-up">
     <div class="splide splide__2 h-full w-[85%] overflow-hidden">
-      <div class="splide__track h-full w-full">
+      <div class="splide__track h-full w-full py-4">
         <ul class="splide__list">
           <CollegeEntryTips />
         </ul>

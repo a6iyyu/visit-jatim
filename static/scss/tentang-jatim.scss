@@ -2,9 +2,14 @@
   .navbar {
     color: #f9fafb;
   }
-  .splide__1 .splide__arrow,
-  .splide__1 .splide__pagination__page {
-    display: none;
+  .splide__1 {
+    & .splide__arrow,
+    & .splide__pagination__page {
+      display: none;
+    }
+  }
+  .splide__1 .splide__slide > div:hover {
+    transform: scale(1.035);
   }
 }
 

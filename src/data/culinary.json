@@ -1,0 +1,19 @@
+{
+    "culinary": [
+        {
+            "img": "/static/img/rujak-cingur.jpg?url",
+            "name": "RUJAK CINGUR",
+            "origin": "MALANG"
+        },
+        {
+            "img": "/static/img/pecel.jpg?url",
+            "name": "PECEL",
+            "origin": "MADIUN"
+        },
+        {
+            "img": "/static/img/sate-madura.jpg?url",
+            "name": "SATE MADURA",
+            "origin": "MADURA"
+        }
+    ]
+}
