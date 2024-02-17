@@ -4,13 +4,13 @@ import CardCulinary from '../components/CardCulinary.vue';
 
 <template>
   <section class="h-[35rem] w-full mx-auto bg-center bg-cover bg-no-repeat"
-    :style="{ backgroundImage: 'url(/static/img/pecel.jpg?url)' }">
+    :style="{ backgroundImage: 'url(/static/img/soto-lamongan.jpg?url)' }">
     <div class="h-[35rem] w-full bg-gradient-to-t md:bg-gradient-to-r from-black opacity-60 z-0 absolute"></div>
   </section>
 
   <!-- Opening section -->
-  <section class="absolute h-60 grid place-items-center top-[27rem] rounded-xl bg-slate-400"
-    id="jangan-khawatir">
+  <section class="absolute h-60 grid place-items-center top-[27rem] rounded-xl bg-slate-400" id="jangan-khawatir"
+    :style="{ boxShadow: '0.75rem 0.75rem 0.75rem #48484830' }">
     <div class="h-full w-[85%] grid place-items-center">
       <p class="text-3xl text-gray-950 text-center cursor-default font-semibold" data-aos="fade-up">
         Laper? <br />
@@ -34,5 +34,10 @@ import CardCulinary from '../components/CardCulinary.vue';
         </ul>
       </div>
     </div>
+  </section>
+  <section class="h-fit w-[85%] grid place-items-center mx-auto my-6" data-aos="fade-up">
+    <h4 class="text-1xl italic cursor-default font-semibold">
+      Dan masih banyak lagi...~
+    </h4>
   </section>
 </template>

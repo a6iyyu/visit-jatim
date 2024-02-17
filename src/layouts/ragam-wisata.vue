@@ -70,12 +70,13 @@ const cities = ref(destinations.value.map((place: { city: string }) => place.cit
       Dan masih banyak lagi...~
     </h4>
   </section>
-  <div class="h-20 w-full"></div>
 
   <section class="w-full h-fit px-8 md:px-12 lg:px-28" data-aos="fade-up">
     <div class="w-fit mx-auto my-10">
-      <h2 class="text-3xl font-semibold">Masih Bingung Mau Kemana?</h2>
-      <hr class="h-1 w-full bg-gray-950 rounded-md" />
+      <h2 class="text-3xl cursor-default font-semibold">
+        Masih Bingung Mau Kemana?
+      </h2>
+      <hr class="h-0.5 w-full bg-gray-950 rounded-md" />
     </div>
     <!-- <div class="my-10 fit">
       <label for="cities">
