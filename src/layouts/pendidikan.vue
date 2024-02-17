@@ -22,23 +22,16 @@ const blogs = ref(collegeData.blogs)
   </section>
 
   <!-- Apakah pendidikan itu penting -->
-  <section class="h-fit w-[85%] my-20 mx-auto grid grid-cols-3 gap-10" id="pendidikan-penting">
+  <section class="h-fit w-[85%] my-20 mx-auto grid grid-cols-2 gap-10" id="pendidikan-penting">
     <h1 class="text-3xl text-gray-950 cursor-default font-semibold text-justify" data-aos="fade-right">
       Mengapa Pendidikan Itu Penting?
     </h1>
     <h4 class="text-1xl text-gray-950 cursor-default font-medium text-justify" :style="{ lineHeight: '1.5' }"
-      data-aos="fade-up">
+      data-aos="fade-left">
       Di zaman serba digital seperti sekarang ini, pendidikan menjadi kunci untuk mempersiapkan
       generasi masa depan menghadapi tantangan yang semakin kompleks dan dinamis. Melalui pendidikan, individu diberikan
       pemahaman yang mendalam tentang teknologi dan keterampilan digital yang kritis, yang sangat dibutuhkan untuk
       beradaptasi dan bersaing di dunia kerja yang terus berkembang.
-    </h4>
-    <h4 class="text-1xl text-gray-950 cursor-default font-medium text-justify" :style="{ lineHeight: '1.5' }"
-      data-aos="fade-left">
-      Lebih dari sekadar mempersiapkan individu untuk dunia kerja, pendidikan juga membentuk karakter, nilai, dan etika
-      yang mendasar bagi kemajuan sosial dan ekonomi. Dengan pendidikan yang kokoh, individu dapat menjadi agen perubahan
-      positif dalam masyarakat, berkontribusi pada inovasi, pembangunan, dan penyelesaian tantangan-tantangan global yang
-      semakin kompleks.
     </h4>
   </section>
 
@@ -99,7 +92,7 @@ const blogs = ref(collegeData.blogs)
   </section>
 
   <section class="h-fit w-[85%] flex flex-col items-start justify-center mx-auto mb-8">
-    <p class="text-1xl cursor-default font-medium" data-aos="fade-right" :style="{ lineHeight: '1.5' }">
+    <p class="text-1xl cursor-default font-medium text-justify" data-aos="fade-right" :style="{ lineHeight: '1.5' }">
       Kalian udah nentuin mau masuk kampus mana? Memang sih masuk kampus dan jurusan impian tuh kebayang seru, tapi perlu
       diingat buat kesana tentunya tidak dilakukan secara instan. Perlu perjuangan yang gede dan selalu baca informasi
       tentang pendaftaran masuk perkuliahan. Di halaman ini, bakal dikasih tau tips-tips yang bisa kalian terapkan biar
