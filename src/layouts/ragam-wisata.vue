@@ -17,7 +17,7 @@ const cities = ref(destinations.value.map((place: { city: string }) => place.cit
   <div class="h-28 w-full"></div>
   <section class="hero h-[35rem] w-full flex items-center justify-end mx-auto">
     <div class="absolute grid place-items-center rounded-2xl bg-slate-400"
-      :style="{ boxShadow: '0.5em 0.5em 0.5em #bebebe50' }">
+      :style="{ boxShadow: '0.75rem 0.75rem 0.75rem #48484850' }">
       <div class="h-full w-3/4 flex flex-col items-start justify-center" data-aos="fade-up">
         <b class="text-3xl cursor-default">
           Jenis Wisata Unik dan Menarik di Jatim!
