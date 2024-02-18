@@ -1,9 +1,9 @@
 <script setup>
 import { ref } from 'vue'
-import blogData from "../data/homepage-blogs.json";
 import CardCityVue from "../components/CardCity.vue";
 import Latest from "../components/Latest.vue"
 
+import blogData from "../data/homepage-blogs.json";
 const blogs = ref(blogData.blogs);
 </script>
 

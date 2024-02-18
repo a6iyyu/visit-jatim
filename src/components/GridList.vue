@@ -7,7 +7,7 @@ const array = ref([...props.data].sort(() => Math.random() - 0.5).slice(0, 6));
 </script>
 
 <template>
-  <!-- nilai: {{ array }} -->
+  <!-- nilai: {{ selectedProps }} -->
   <div class="w-full h-fit grid items-center sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-3">
     <a :href="content.link" v-for="content in array" :key="content" :style="{ 'background-image': 'url(' + content.img + ')' }"
       class="w-full h-64 mx-auto flex flex-col items-center justify-end object-cover object-center bg-cover cursor-pointer">

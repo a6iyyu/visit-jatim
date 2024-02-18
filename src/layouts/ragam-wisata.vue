@@ -13,25 +13,28 @@ const cities = ref(destinations.value.map((place: { city: string }) => place.cit
 </script>
 
 <template>
-  <!-- Hero -->
-  <div class="h-28 w-full"></div>
-  <section class="hero h-[35rem] w-full flex items-center justify-end mx-auto">
-    <div class="absolute grid place-items-center rounded-2xl bg-slate-400"
-      :style="{ boxShadow: '0.75rem 0.75rem 0.75rem #48484850' }">
-      <div class="h-full w-3/4 flex flex-col items-start justify-center" data-aos="fade-up">
-        <b class="text-3xl cursor-default">
+  <!-- Hero Desktop -->
+  <div class="hidden md:block h-28 w-full"></div>
+  <section class="h-[35rem] w-full">
+
+    <div class="pl-16 hidden lg:flex flex-row-reverse items-center w-full h-full">
+      <img src="../../static/img/hotel-majapahit.jpg" class="h-5/6 z-10" alt="">
+      <div class="w-[70vw] xl:w-[40vw] h-72 px-10 xl:px-16 py-5 -mr-48 xl:-mr-20 z-20 rounded-md bg-slate-400 flex flex-col justify-evenly">
+        <h2 class="text-3xl cursor-default font-bold">
           Jenis Wisata Unik dan Menarik di Jatim!
-        </b>
-        <br />
+        </h2>
         <p class="text-1xl text-gray-950 cursor-default font-medium text-justify" :style="{ lineHeight: '1.5' }">
           Banyak banget pilihan wisata yang bisa kalian kunjungi saat ke Jawa
           Timur, awas rawan dompet kosong!
         </p>
       </div>
     </div>
-    <div class="h-full w-3/5 flex items-end justify-center bg-center bg-cover bg-no-repeat"
+
+    <!-- Hero mobile -->
+    <div class="h-full w-full flex lg:hidden items-end justify-center bg-center bg-cover bg-no-repeat"
       :style="{ backgroundImage: 'url(/static/img/hotel-majapahit.jpg?url)' }">
-      <div class="h-3/5 w-4/5 flex flex-col items-center justify-center text-center">
+      <div class="block lg:hidden h-[40rem] w-full bg-gradient-to-t from-black opacity-60 z-0 absolute"></div>
+      <div class="h-3/5 w-4/5 flex flex-col items-center justify-center text-center z-10">
         <b class="text-3xl text-slate-50 cursor-default">
           Jenis Wisata Unik dan Menarik di Jatim!
         </b>
@@ -55,8 +58,8 @@ const cities = ref(destinations.value.map((place: { city: string }) => place.cit
   </section>
 
   <!-- Slide Tempat Wisata -->
-  <section class="h-[35rem] w-full grid place-items-center mt-16" data-aos="fade-up">
-    <div class="splide splide__1 h-full w-[90%] overflow-hidden">
+  <section class="h-[35rem] w-full grid place-items-center mt-16 px-28" data-aos="fade-up">
+    <div class="splide splide__1 h-full w-full overflow-hidden">
       <div class="splide__track h-full w-full">
         <ul class="splide__list">
           <CardDestinationVue />

@@ -7,7 +7,10 @@ export const MobileNavbar: React.FC = () => {
 
   const handleMobileNavbar = () => setMobileNavbarOpen(!mobileNavbarOpen);
   const clickOutside = (event: MouseEvent) => {
-    if (mobileNavbarRef.current && !mobileNavbarRef.current.contains(event.target as Node)) {
+    if (
+      mobileNavbarRef.current &&
+      !mobileNavbarRef.current.contains(event.target as Node)
+    ) {
       setMobileNavbarOpen(false);
     }
   };
