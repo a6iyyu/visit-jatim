@@ -10,10 +10,10 @@ import CardCulinary from '../components/CardCulinary.vue';
 
   <!-- Opening section -->
   <section
-    class="absolute h-60 grid place-items-center top-[27rem] rounded-xl bg-gradient-to-tr from-slate-950 to-slate-800"
+    class="absolute h-60 grid place-items-center top-[27rem] rounded-xl bg-gradient-to-tr from-slate-300 to-slate-200"
     id="jangan-khawatir" :style="{ boxShadow: '0.75rem 0.75rem 0.75rem #48484850' }">
     <div class="h-full w-[85%] grid place-items-center">
-      <p class="text-3xl text-white text-center cursor-default font-semibold">
+      <p class="text-3xl text-gray-950 text-center cursor-default font-semibold">
         Laper? <br />
         Jangan Khawatir!
       </p>

@@ -61,7 +61,7 @@
       "link": "https://maps.app.goo.gl/9jpqcv2bGeuzXEoG7"
     }
   ],
-  "taman_nasional": [
+  "taman-nasional": [
     {
       "city": "MALANG",
       "destination": "KAWAH IJEN",
@@ -89,7 +89,7 @@
     {
       "city": "PURWODADI",
       "destination": "PURWODADI BOTANIC GARDEN",
-      "img": "/static/img/Kebun_Raya_Purwodadi.png",
+      "img": "/static/img/kebun-raya-purwodadi.png",
       "link": "https://maps.app.goo.gl/wgCqvKxf2zXuEc7i7"
     },
     {
@@ -101,7 +101,7 @@
     {
       "city": "BANYUWANGI",
       "destination": "PANTAI TRIANGGULASI",
-      "img": "/static/img/pantai-pancur-banyuwangi-2.jpg",
+      "img": "/static/img/pantai-trianggulasi.jpg",
       "link": "https://maps.app.goo.gl/AFruuRKYpyudghSZ9"
     }
   ]
