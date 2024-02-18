@@ -49,7 +49,7 @@ import CardCulinary from '../components/CardCulinary.vue';
     </p>
     <hr class="h-0.5 w-full bg-gray-950" data-aos="fade-up" />
   </section>
-  <section class="h-fit w-[85%] grid place-items-center grid-cols-4 mx-auto" id="fnb">
+  <section class="h-fit w-[85%] grid place-items-center grid-cols-4 mx-auto" id="fnb-logos">
     <img src="/static/img/pesen-kopi.jpg?url" alt="Pesen Kopi" class="cursor-default font-semibold mix-blend-multiply"
       width="150" data-aos="fade-right" />
     <img src="/static/img/gacoan.png?url" alt="Mie Gacoan" class="cursor-default font-semibold mix-blend-multiply"
@@ -59,7 +59,7 @@ import CardCulinary from '../components/CardCulinary.vue';
     <img src="/static/img/kopi-studio-24.png?url" alt="Kopi Studio 24"
       class="cursor-default font-semibold mix-blend-multiply" width="150" data-aos="fade-left" />
   </section>
-  <section class="h-fit w-[85%] flex items-center mb-8 mx-auto">
+  <section class="h-fit w-[85%] flex items-center mb-8 mx-auto" id="fnb-description">
     <p class="text-gray-900 text-1xl cursor-default font-medium text-justify tracking-wide" :style="{ lineHeight: '1.5' }"
       data-aos="fade-up">
       Ke Jawa Timur belum afdol nih kalo kalian belum nyobain restorannya. Pernah dengar Mie Gacoan ga? Atau Kopi Studio

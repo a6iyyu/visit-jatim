@@ -32,6 +32,12 @@
   .splide__1 .splide__track {
     width: 150%;
   }
+  #fnb-logos {
+    grid-template: auto auto / auto auto;
+  }
+  #fnb-description {
+    margin-top: 2rem;
+  }
 }
 
 @media screen and (max-width: 640px) {
