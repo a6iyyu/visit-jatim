@@ -47,7 +47,6 @@ export const AccordionMobile = ({options, name}: {options: string[]; name: strin
                 key={index}
               >
                 <h2 className="pl-14">
-                  <i className="bi bi-chevron-right"></i>
                   {option}
                 </h2>
               </a>

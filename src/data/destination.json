@@ -1,64 +1,108 @@
 {
-    "places": [
-        {
-            "city": "BANYUWANGI",
-            "destination": "KAWAH IJEN",
-            "img": "/static/img/kawah-ijen.jpg",
-            "link": "https://maps.app.goo.gl/Eq96qJgKzzjJFxUS9"
-        },
-        {
-            "city": "BLITAR",
-            "destination": "MAKAM BUNG KARNO",
-            "img": "/static/img/museum-bung-karno.jpg",
-            "link": "https://maps.app.goo.gl/obekNQZknFEc4gXVA"
-        },
-        {
-            "city": "MAGETAN",
-            "destination": "TELAGA SARANGAN",
-            "img": "/static/img/telaga-sarangan.jpg",
-            "link": "https://maps.app.goo.gl/6HaBzN5TqJndHSU96"
-        },
-        {
-            "city": "MALANG",
-            "destination": "CANDI SINGOSARI",
-            "img": "/static/img/candi-singosari.jpg",
-            "link": "https://maps.app.goo.gl/K6Ck296PsbX1cX1y9"
-        },
-        {
-            "city": "MALANG",
-            "destination": "PANTAI TELUK ASMARA",
-            "img": "/static/img/teluk-asmara.jpg",
-            "link": "https://maps.app.goo.gl/NDPqTfFcHDDHb4BS6"
-        },
-        {
-            "city": "MALANG",
-            "destination": "SERUNI POINT",
-            "img": "/static/img/seruni-point.jpg",
-            "link": "https://maps.app.goo.gl/KFrncQR8saxaQHhcA"
-        },
-        {
-            "city": "PACITAN",
-            "destination": "MUSEUM DAN GALERI SENI SBY",
-            "img": "/static/img/museum-sby.jpg",
-            "link": "https://maps.app.goo.gl/A9TweKV8FRJRAXbdA"
-        },
-        {
-            "city": "SITUBONDO",
-            "destination": "TAMAN NASIONAL BALURAN",
-            "img": "/static/img/taman-nasional-baluran.jpg",
-            "link": "https://maps.app.goo.gl/r1SuGtsjAUQwk8nn7"
-        },
-        {
-            "city": "SUMENEP",
-            "destination": "PANTAI SEMBILAN",
-            "img": "/static/img/pantai-sembilan.jpg",
-            "link": "https://maps.app.goo.gl/BhHSG4kLSDWmeDr58"
-        },
-        {
-            "city": "TUBAN",
-            "destination": "WISATA RELIGI SUNAN BONANG",
-            "img": "/static/img/makam-sunan-bonang.jpg",
-            "link": "https://maps.app.goo.gl/9jpqcv2bGeuzXEoG7"
-        }
-    ]
+  "places": [
+    {
+      "city": "BANYUWANGI",
+      "destination": "KAWAH IJEN",
+      "img": "/static/img/kawah-ijen.jpg",
+      "link": "https://maps.app.goo.gl/Eq96qJgKzzjJFxUS9"
+    },
+    {
+      "city": "BLITAR",
+      "destination": "MAKAM BUNG KARNO",
+      "img": "/static/img/museum-bung-karno.jpg",
+      "link": "https://maps.app.goo.gl/obekNQZknFEc4gXVA"
+    },
+    {
+      "city": "MAGETAN",
+      "destination": "TELAGA SARANGAN",
+      "img": "/static/img/telaga-sarangan.jpg",
+      "link": "https://maps.app.goo.gl/6HaBzN5TqJndHSU96"
+    },
+    {
+      "city": "MALANG",
+      "destination": "CANDI SINGOSARI",
+      "img": "/static/img/candi-singosari.jpg",
+      "link": "https://maps.app.goo.gl/K6Ck296PsbX1cX1y9"
+    },
+    {
+      "city": "MALANG",
+      "destination": "PANTAI TELUK ASMARA",
+      "img": "/static/img/teluk-asmara.jpg",
+      "link": "https://maps.app.goo.gl/NDPqTfFcHDDHb4BS6"
+    },
+    {
+      "city": "MALANG",
+      "destination": "SERUNI POINT",
+      "img": "/static/img/seruni-point.jpg",
+      "link": "https://maps.app.goo.gl/KFrncQR8saxaQHhcA"
+    },
+    {
+      "city": "PACITAN",
+      "destination": "MUSEUM DAN GALERI SENI SBY",
+      "img": "/static/img/museum-sby.jpg",
+      "link": "https://maps.app.goo.gl/A9TweKV8FRJRAXbdA"
+    },
+    {
+      "city": "SITUBONDO",
+      "destination": "TAMAN NASIONAL BALURAN",
+      "img": "/static/img/taman-nasional-baluran.jpg",
+      "link": "https://maps.app.goo.gl/r1SuGtsjAUQwk8nn7"
+    },
+    {
+      "city": "SUMENEP",
+      "destination": "PANTAI SEMBILAN",
+      "img": "/static/img/pantai-sembilan.jpg",
+      "link": "https://maps.app.goo.gl/BhHSG4kLSDWmeDr58"
+    },
+    {
+      "city": "TUBAN",
+      "destination": "WISATA RELIGI SUNAN BONANG",
+      "img": "/static/img/makam-sunan-bonang.jpg",
+      "link": "https://maps.app.goo.gl/9jpqcv2bGeuzXEoG7"
+    }
+  ],
+  "taman_nasional": [
+    {
+      "city": "MALANG",
+      "destination": "KAWAH IJEN",
+      "img": "/static/img/kawah-ijen.jpg",
+      "link": "https://maps.app.goo.gl/DSXhPuqR8YJr43gX7"
+    },
+    {
+      "city": "SITUBONDO",
+      "destination": "TAMAN NASIONAL BALURAN",
+      "img": "/static/img/taman-nasional-baluran.jpg",
+      "link": "https://maps.app.goo.gl/r1SuGtsjAUQwk8nn7"
+    },
+    {
+      "city": "BANYUWANGI",
+      "destination": "TAMAN NASIONAL ALAS PURWO",
+      "img": "/static/img/roberto-rendon-alas-purwo.jpg",
+      "link": "https://maps.app.goo.gl/TBvqhd2pstGb3mqd8"
+    },
+    {
+      "city": "JEMBER",
+      "destination": "TAMAN NASIONAL MERU BETIRI",
+      "img": "/static/img/taman-nasional-meru-betiri.jpg",
+      "link": "https://maps.app.goo.gl/Yb6SKuqkLUFE12Jg9"
+    },
+    {
+      "city": "PURWODADI",
+      "destination": "PURWODADI BOTANIC GARDEN",
+      "img": "/static/img/Kebun_Raya_Purwodadi.png",
+      "link": "https://maps.app.goo.gl/wgCqvKxf2zXuEc7i7"
+    },
+    {
+      "city": "BANYUWANGI",
+      "destination": "PANTAI PANCUR",
+      "img": "/static/img/pantai-pancur-banyuwangi-2.jpg",
+      "link": "https://maps.app.goo.gl/aEnYGV5xSQCQRwETA"
+    },
+    {
+      "city": "BANYUWANGI",
+      "destination": "PANTAI TRIANGGULASI",
+      "img": "/static/img/pantai-pancur-banyuwangi-2.jpg",
+      "link": "https://maps.app.goo.gl/AFruuRKYpyudghSZ9"
+    }
+  ]
 }
