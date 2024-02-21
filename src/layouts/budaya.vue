@@ -34,7 +34,13 @@ import CultureSliderVue from '../components/CultureSlider.vue';
   </section>
 
   <!-- Karosel Kebudayaan -->
-  <section class="h-[25rem] w-full grid place-items-center mt-8" data-aos="fade-up">
+  <section class="h-fit w-[85%] block mt-16 mx-auto" id="latest" data-aos="fade-up">
+    <p class="text-3xl text-gray-950 cursor-default font-semibold">
+      Kenali Kebudayaan Khas Jawa Timur
+    </p>
+    <hr class="h-0.5 w-full bg-gray-950 rounded-md" />
+  </section>
+  <section class="h-[25rem] w-full grid place-items-center mt-6" data-aos="fade-up">
     <div class="splide splide__1 h-full w-[85%] overflow-hidden">
       <div class="splide__track h-full w-full py-4">
         <ul class="splide__list">
