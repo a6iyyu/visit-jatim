@@ -1,7 +1,6 @@
 <script lang="ts" setup>
 import { ref, watch } from "vue";
 import destination from "../data/destination.json";
-import CardDestinationVue from "../components/CardDestination.vue";
 import GridList from "../components/GridList.vue";
 
 const destinations = ref(destination.places)
@@ -11,17 +10,15 @@ const cities = ref(destinations.value.map((place: { city: string }) => place.cit
 </script>
 
 <template>
-  <!-- Hero Desktop -->
-  <div class="hidden md:block h-28 w-full"></div>
-  <section class="h-[35rem] w-full">
-    <div class="pl-16 hidden lg:flex flex-row-reverse items-center w-full h-full">
-      <img src="../../static/img/hotel-majapahit.jpg" class="h-5/6 z-10" alt="">
-      <div
-        class="w-[70vw] xl:w-[40vw] h-72 px-10 xl:px-16 py-5 -mr-48 xl:-mr-20 z-20 rounded-md bg-gradient-to-bl from-slate-300 to-slate-400 flex flex-col justify-evenly"
-        :style="{ boxShadow: '0.75rem 0.75rem 0.75rem #48484840' }">
-        <h2 class="text-3xl cursor-default font-bold">
+  <!-- Hero Dekstop -->
+  <section class="hero h-[35rem] w-full flex items-center justify-end pt-28 mx-auto">
+    <div class="absolute grid place-items-center rounded-2xl bg-slate-400"
+      :style="{ boxShadow: '0.5em 0.5em 0.5em #48484850' }">
+      <div class="h-full w-3/4 flex flex-col items-start justify-center" data-aos="fade-up">
+        <b class="text-3xl cursor-default">
           Jenis Wisata Unik dan Menarik di Jatim!
-        </h2>
+        </b>
+        <br />
         <p class="text-1xl text-gray-950 cursor-default font-medium text-justify" :style="{ lineHeight: '1.5' }">
           Banyak banget pilihan wisata yang bisa kalian kunjungi saat ke Jawa
           Timur, awas rawan dompet kosong!
@@ -30,10 +27,9 @@ const cities = ref(destinations.value.map((place: { city: string }) => place.cit
     </div>
 
     <!-- Hero Mobile -->
-    <div class="h-full w-full flex lg:hidden items-end justify-center bg-center bg-cover bg-no-repeat"
+    <div class="h-full w-3/5 flex items-end justify-center bg-center bg-cover bg-no-repeat"
       :style="{ backgroundImage: 'url(/static/img/hotel-majapahit.jpg?url)' }">
-      <div class="block lg:hidden h-[40rem] w-full bg-gradient-to-t from-black opacity-60 z-0 absolute"></div>
-      <div class="h-3/5 w-4/5 flex flex-col items-center justify-center text-center z-10">
+      <div class="h-3/5 w-4/5 flex flex-col items-center justify-center text-center">
         <b class="text-3xl text-slate-50 cursor-default">
           Jenis Wisata Unik dan Menarik di Jatim!
         </b>
@@ -54,24 +50,7 @@ const cities = ref(destinations.value.map((place: { city: string }) => place.cit
     <hr class="h-0.5 w-full bg-gray-950 rounded-md" />
   </section>
 
-  <!-- Slide Tempat Wisata -->
-  <section class="h-[35rem] w-[85%] grid place-items-center mt-10 mx-auto" data-aos="fade-up">
-    <div class="splide splide__1 h-full w-full overflow-hidden">
-      <div class="splide__track h-full w-full">
-        <ul class="splide__list">
-          <CardDestinationVue />
-        </ul>
-      </div>
-    </div>
-  </section>
-
   <section class="h-fit w-full px-8 md:px-12 lg:px-28 mt-14" data-aos="fade-up">
-    <div class="w-full flex flex-col items-center justify-center mx-auto my-10">
-      <h2 class="text-3xl cursor-default font-semibold">
-        Masih Bingung Mau Kemana?
-      </h2>
-      <hr class="h-0.5 w-full bg-gray-950 rounded-md" />
-    </div>
     <GridList :data="destinations" />
     <!-- <div class="my-10 fit">
       <label for="cities">
@@ -86,7 +65,7 @@ const cities = ref(destinations.value.map((place: { city: string }) => place.cit
     selected: {{ selectCity }}
     <br> -->
   </section>
-  <section class="h-fit w-[85%] grid place-items-center mt-12 mx-auto" data-aos="fade-up">
+  <section class="h-fit w-[85%] grid place-items-center mx-auto my-6" data-aos="fade-up">
     <h4 class="text-1xl italic cursor-default font-semibold">
       Dan masih banyak lagi...~
     </h4>
