@@ -41,7 +41,7 @@ const blogs = ref(blogData.blogs)
 
   <!-- Karosel Kebudayaan -->
   <section class="h-fit w-[85%] block mt-16 mx-auto" id="kenali-kebudayaan" data-aos="fade-up">
-    <p class="text-3xl text-gray-950 cursor-default font-semibold">
+    <p class="text-3xl text-gray-950 text-center cursor-default font-semibold">
       Upacara Adat Khas Jawa Timur
     </p>
     <hr class="h-0.5 w-full bg-gray-950 rounded-md" />
@@ -65,7 +65,13 @@ const blogs = ref(blogData.blogs)
       sekadar sebagai upacara adat, ternyata Kebo-Keboan bisa narik wisatawan buat ngerti tradisi daerah sana!
     </p>
   </section>
-  <section class="h-fit w-full grid place-items-center mx-auto my-12" data-aos="fade-up">
+  <section class="h-fit w-[85%] block mt-16 mx-auto" id="latest" data-aos="fade-up">
+    <p class="text-3xl text-gray-950 text-center cursor-default font-semibold">
+      Kenali Kebudayaan Lokalnya
+    </p>
+    <hr class="h-0.5 w-full bg-gray-950 rounded-md" />
+  </section>
+  <section class="h-fit w-full grid place-items-center mx-auto my-12" id="blog-kebudayaan" data-aos="fade-up">
     <Latest :data="blogs" />
   </section>
 </template>

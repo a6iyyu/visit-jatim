@@ -2,24 +2,24 @@
     "blogs": [
         {
             "id": 1,
-            "link": "",
-            "img": "",
-            "title": "",
-            "content": ""
+            "link": "https://kumparan.com/sejarah-dan-sosial/mengenal-suku-osing-dari-banyuwangi-dan-tradisi-uniknya-20Ke2BKv1eX",
+            "img": "/static/img/suku-osing.jpg?url",
+            "title": "Mengenal Suku Osing dari Banyuwangi dan Tradisi Uniknya",
+            "content": "Suku Osing berasal dari Banyuwangi, Jawa Timur. Suku ini mempunyai tradisi khas berupa Mepe Kasur. Berikut penjelasan lengkapnya."
         },
         {
             "id": 2,
-            "link": "",
-            "img": "",
-            "title": "",
-            "content": ""
+            "link": "https://mediaindonesia.com/ramadan/567535/mengenal-megengan-tradisi-menyambut-ramadan-masyarakat-jawa#:~:text=Megengan%20merupakan%20alkuturasi%20budaya%20Jawa,mulia%20yaitu%20Rajab%20dan%20Ramadan.",
+            "img": "/static/img/megengan.jpg?url",
+            "title": "Mengenal Megengan, Tradisi Menyambut Ramadan Masyarakat Jawa",
+            "content": "Megengan merupakan alkuturasi budaya Jawa dan budaya Islam yang dilakukan Walisongo saat menyebarkan ajaran Islam di Jawa ..."
         },
         {
             "id": 3,
-            "link": "",
-            "img": "",
-            "title": "",
-            "content": ""
+            "link": "https://www.sonora.id/read/423884477/makna-dan-pesan-moral-lagu-rek-ayo-rek-lagu-daerah-jawa-timur#:~:text=Makna%20dari%20lagu%20%22Rek%20Ayo,daerah%20Tunjungan%20untuk%20mencari%20hiburan.",
+            "img": "/static/img/rek-ayo-rek.jpg?url",
+            "title": "Makna dan Pesan Moral Lagu Rek Ayo Rek, Lagu Daerah Jawa Timur",
+            "content": "Makna dari lagu \"Rek Ayo Rek\" adalah mengajak anak muda untuk tidak hanya melamun atau berdiam diri di rumah saat malam Minggu."
         }
     ]
 }
