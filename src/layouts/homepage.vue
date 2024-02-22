@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue'
+import { ref } from "vue";
 import CardCityVue from "../components/CardCity.vue";
 import Latest from "../components/Latest.vue"
 

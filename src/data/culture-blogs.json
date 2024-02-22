@@ -1,0 +1,25 @@
+{
+    "blogs": [
+        {
+            "id": 1,
+            "link": "",
+            "img": "",
+            "title": "",
+            "content": ""
+        },
+        {
+            "id": 2,
+            "link": "",
+            "img": "",
+            "title": "",
+            "content": ""
+        },
+        {
+            "id": 3,
+            "link": "",
+            "img": "",
+            "title": "",
+            "content": ""
+        }
+    ]
+}
