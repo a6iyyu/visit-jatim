@@ -3,8 +3,7 @@ import React, { useState, useEffect } from "react";
 export const ScrollIndicator: React.FC = () => {
   const [scrollPercentage, setScrollPercentage] = useState<number>(0);
   const updateScrollPercentage = () => {
-    const scrollHeight: number =
-      document.documentElement.scrollHeight - window.innerHeight;
+    const scrollHeight: number = document.documentElement.scrollHeight - window.innerHeight;
     const percentage: number = (window.scrollY / scrollHeight) * 100;
     setScrollPercentage(percentage);
   };
