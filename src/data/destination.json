@@ -104,5 +104,85 @@
       "img": "/static/img/pantai-trianggulasi.jpg",
       "link": "https://maps.app.goo.gl/AFruuRKYpyudghSZ9"
     }
+  ],
+  "city_villages": [
+    {
+      "city": "BANYUWANGI",
+      "destination": "Kota",
+      "img": "/static/img/banyuwangi-kota.jpg",
+      "link": "https://maps.app.goo.gl/LPF9h9XZZan14oER6"
+    },
+    {
+      "city": "BLITAR",
+      "destination": "Kota",
+      "img": "/static/img/blitar.jpg",
+      "link": "https://maps.app.goo.gl/ajRniYUTQ1snAfdH7"
+    },
+    {
+      "city": "MALANG",
+      "destination": "Kota",
+      "img": "/static/img/malang.jpg",
+      "link": "https://maps.app.goo.gl/X2UhaqdeVJpvENjU6"
+    },
+    {
+      "city": "SURABAYA",
+      "destination": "Kota",
+      "img": "/static/img/surabaya.jpg",
+      "link": "https://maps.app.goo.gl/PDcGT1B3agXYv6xJ6"
+    },
+    {
+      "city": "MADIUN",
+      "destination": "Kota",
+      "img": "/static/img/madiun.jpg",
+      "link": "https://maps.app.goo.gl/Wqo41arMh2LvMM5u9"
+    },
+    {
+      "city": "KEDIRI",
+      "destination": "Kota",
+      "img": "/static/img/kediri.jpeg",
+      "link": "https://maps.app.goo.gl/A9TweKV8FRJRAXbdA"
+    },
+    {
+      "city": "PAMEKASAN",
+      "destination": "Kota",
+      "img": "/static/img/pamekasan.jpg",
+      "link": "https://maps.app.goo.gl/Cc4LBs5q62hpjUcY6"
+    },
+    {
+      "city": "TAMANSARI",
+      "destination": "Desa",
+      "img": "/static/img/desa_tamansari.jpg",
+      "link": "https://maps.app.goo.gl/F1nf5HbFdRvA8A1e9"
+    },
+    {
+      "city": "PUJON KIDUL",
+      "destination": "Desa",
+      "img": "/static/img/pujon-kidul.jpg",
+      "link": "https://maps.app.goo.gl/EsGZGRotUhdPEwyx6"
+    },
+    {
+      "city": "KAMPUNG KUNGKUK",
+      "destination": "Desa",
+      "img": "/static/img/desa_kampung-kungkuk.jpg",
+      "link": "https://maps.app.goo.gl/41NFCAz16byvixv1A"
+    },
+    {
+      "city": "BIRA TENGAH",
+      "destination": "Desa",
+      "img": "/static/img/desa_bira-tengah.jpg",
+      "link": "https://maps.app.goo.gl/eK4G43Va4bLgEmTM9"
+    },
+    {
+      "city": "GUWOTERUS",
+      "destination": "Desa",
+      "img": "/static/img/desa_guwoterus.jpg",
+      "link": "https://maps.app.goo.gl/QZBuRKoirwJHQaTX8"
+    },
+    {
+      "city": "SENDANG",
+      "destination": "Desa",
+      "img": "/static/img/desa_sendang.jpg",
+      "link": "https://maps.app.goo.gl/MxRoynnbox2HJEqd9"
+    }
   ]
 }

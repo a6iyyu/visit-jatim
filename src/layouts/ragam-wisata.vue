@@ -1,12 +1,21 @@
 <script lang="ts" setup>
 import { ref, watch } from "vue";
 import destination from "../data/destination.json";
-import GridList from "../components/GridList.vue";
 
-const destinations = ref(destination.places)
-const cities = ref(destinations.value.map((place: { city: string }) => place.city))
-// const unduplicate = ref([...new Set(cities.value)])
-// const selectCity = ref("")
+const destinations = ref(destination.places);
+const arrayDestination = ref([...destinations.value].sort(() => Math.random() - 0.5).slice(0, 6));
+const cities = ref(destinations.value.map((place: { city: string }) => place.city));
+const unduplicate = ref([...new Set(cities.value)]);
+const filteredCity = ref(arrayDestination.value);
+const selectCity = ref();
+
+watch(selectCity, (newSelectCity) => {
+  if (newSelectCity === 'SEMUA') {
+    filteredCity.value = arrayDestination.value;
+  } else {
+    filteredCity.value = destinations.value.filter(c => c.city === newSelectCity);
+  }
+})
 </script>
 
 <template>
@@ -43,30 +52,51 @@ const cities = ref(destinations.value.map((place: { city: string }) => place.cit
   </section>
 
   <!-- Beragam Jenis Objek Wisata -->
-  <section class="h-fit w-[85%] grid place-items-center mt-14 mx-auto" id="beragam-jenis" data-aos="fade-up">
+  <section class="h-fit w-full grid place-items-center mt-14 px-28 mx-auto" id="beragam-jenis" data-aos="fade-up">
     <p class="text-3xl text-gray-950 cursor-default font-semibold text-center">
       Beragam Jenis Objek Wisata Menunggu Kedatangan Anda!
     </p>
-    <hr class="h-0.5 w-full bg-gray-950 rounded-md" />
+    <hr class="h-0.5 w-5/6 my-10 bg-gray-950 rounded-md" />
   </section>
 
-  <section class="h-fit w-full px-8 md:px-12 lg:px-28 mt-14" data-aos="fade-up">
-    <GridList :data="destinations" />
-    <!-- <div class="my-10 fit">
+  <!-- Filter -->
+  <section class="h-fit w-full px-16 md:px-12 lg:px-28 mt-14" data-aos="fade-up">
+    <div class="my-10 fit">
       <label for="cities">
         <h3 class="text-2xl my-5">Pilih Wilayah</h3>
-        <select name="test" id="cities" class="h-10 w-48 md:w-96 border border-slate-950 rounded-md bg-slate-100 px-3"
+        <select name="test" id="cities"
+          class="h-10 w-48 md:w-96 border border-slate-950 rounded-md bg-slate-100 px-3 cursor-pointer"
           v-model="selectCity">
-          <option value="null" selected>SEMUA</option>
+          <option value="SEMUA" selected>SEMUA</option>
           <option v-for="wilayah in unduplicate" :key="wilayah" :value="wilayah">{{ wilayah }}</option>
         </select>
       </label>
     </div>
-    selected: {{ selectCity }}
-    <br> -->
   </section>
-  <section class="h-fit w-[85%] grid place-items-center mx-auto my-6" data-aos="fade-up">
-    <h4 class="text-1xl italic cursor-default font-semibold">
+
+  <!-- List section -->
+  <section class="h-fit w-full grid place-items-center px-16 md:px-12 lg:px-28 mx-auto my-6" data-aos="fade-up">
+
+    <div class="w-full h-fit grid items-center sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-3" v-if="filteredCity != null">
+      <a :href="content.link" v-for="content in filteredCity" :key="content.city"
+        :style="{ 'background-image': 'url(' + content.img + ')' }"
+        class="w-full h-64 mx-auto flex flex-col items-center justify-end object-cover object-center bg-cover cursor-pointer"
+        data-aos="fade-up">
+        <div
+          class="min-w-full min-h-full bg-gradient-to-t from-black opacity-50 hover:opacity-80 transition-opacity duration-100 z-20">
+        </div>
+        <div class="absolute max-w-72 flex flex-col items-center z-20 text-slate-100 font-semibold text-center">
+          <h3 class="md:text-xl lg:text-2xl my-1 mx-7">
+            {{ content.destination }}
+          </h3>
+          <h4 class="md:text-base lg:text-lg mb-6">
+            {{ content.city }}
+          </h4>
+        </div>
+      </a>
+    </div>
+
+    <h4 class="text-1xl italic cursor-default font-semibold my-16">
       Dan masih banyak lagi...~
     </h4>
   </section>
