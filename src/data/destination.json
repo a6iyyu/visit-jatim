@@ -105,7 +105,7 @@
       "link": "https://maps.app.goo.gl/AFruuRKYpyudghSZ9"
     }
   ],
-  "city_villages": [
+  "city-villages": [
     {
       "city": "BANYUWANGI",
       "destination": "Kota",
@@ -151,7 +151,7 @@
     {
       "city": "TAMANSARI",
       "destination": "Desa",
-      "img": "/static/img/desa_tamansari.jpg",
+      "img": "/static/img/desa-tamansari.jpg",
       "link": "https://maps.app.goo.gl/F1nf5HbFdRvA8A1e9"
     },
     {
@@ -163,25 +163,25 @@
     {
       "city": "KAMPUNG KUNGKUK",
       "destination": "Desa",
-      "img": "/static/img/desa_kampung-kungkuk.jpg",
+      "img": "/static/img/desa-kampung-kungkuk.jpg",
       "link": "https://maps.app.goo.gl/41NFCAz16byvixv1A"
     },
     {
       "city": "BIRA TENGAH",
       "destination": "Desa",
-      "img": "/static/img/desa_bira-tengah.jpg",
+      "img": "/static/img/desa-bira-tengah.jpg",
       "link": "https://maps.app.goo.gl/eK4G43Va4bLgEmTM9"
     },
     {
       "city": "GUWOTERUS",
       "destination": "Desa",
-      "img": "/static/img/desa_guwoterus.jpg",
+      "img": "/static/img/desa-guwoterus.jpg",
       "link": "https://maps.app.goo.gl/QZBuRKoirwJHQaTX8"
     },
     {
       "city": "SENDANG",
       "destination": "Desa",
-      "img": "/static/img/desa_sendang.jpg",
+      "img": "/static/img/desa-sendang.jpg",
       "link": "https://maps.app.goo.gl/MxRoynnbox2HJEqd9"
     }
   ]

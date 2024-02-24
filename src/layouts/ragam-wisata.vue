@@ -52,18 +52,18 @@ watch(selectCity, (newSelectCity) => {
   </section>
 
   <!-- Beragam Jenis Objek Wisata -->
-  <section class="h-fit w-full grid place-items-center mt-14 px-28 mx-auto" id="beragam-jenis" data-aos="fade-up">
+  <section class="h-fit w-[85%] grid place-items-center mt-14 mx-auto" id="beragam-jenis" data-aos="fade-up">
     <p class="text-3xl text-gray-950 cursor-default font-semibold text-center">
       Beragam Jenis Objek Wisata Menunggu Kedatangan Anda!
     </p>
-    <hr class="h-0.5 w-5/6 my-10 bg-gray-950 rounded-md" />
+    <hr class="h-0.5 w-full bg-gray-950 rounded-md" />
   </section>
 
   <!-- Filter -->
-  <section class="h-fit w-full px-16 md:px-12 lg:px-28 mt-14" data-aos="fade-up">
+  <section class="h-fit w-[85%] mx-auto mt-8" data-aos="fade-up">
     <div class="my-10 fit">
       <label for="cities">
-        <h3 class="text-2xl my-5">Pilih Wilayah</h3>
+        <h3 class="text-1xl my-5 cursor-default font-medium">Pilih Wilayah</h3>
         <select name="test" id="cities"
           class="h-10 w-48 md:w-96 border border-slate-950 rounded-md bg-slate-100 px-3 cursor-pointer"
           v-model="selectCity">
@@ -75,8 +75,7 @@ watch(selectCity, (newSelectCity) => {
   </section>
 
   <!-- List section -->
-  <section class="h-fit w-full grid place-items-center px-16 md:px-12 lg:px-28 mx-auto my-6" data-aos="fade-up">
-
+  <section class="h-fit w-[85%] grid place-items-center mx-auto my-6" data-aos="fade-up">
     <div class="w-full h-fit grid items-center sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-3" v-if="filteredCity != null">
       <a :href="content.link" v-for="content in filteredCity" :key="content.city"
         :style="{ 'background-image': 'url(' + content.img + ')' }"
@@ -96,7 +95,8 @@ watch(selectCity, (newSelectCity) => {
       </a>
     </div>
 
-    <h4 class="text-1xl italic cursor-default font-semibold my-16">
+    <h4 class="h-fit w-full text-1xl text-center italic cursor-default font-semibold mb-4 mt-10 mx-auto"
+      data-aos="fade-up">
       Dan masih banyak lagi...~
     </h4>
   </section>
