@@ -98,7 +98,8 @@ watch([allBtn, kotaBtn, desaBtn], ([all, kota, desa]) => {
       </a>
     </div>
 
-    <h4 class="h-fit w-[85%] text-1xl italic cursor-default font-semibold mb-4 mt-10 mx-auto" data-aos="fade-up">
+    <h4 class="h-fit w-full text-1xl text-center italic cursor-default font-semibold mb-4 mt-10 mx-auto"
+      data-aos="fade-up">
       Dan masih banyak lagi...~
     </h4>
   </section>

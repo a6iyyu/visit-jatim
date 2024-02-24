@@ -1,6 +1,5 @@
 <script lang="ts" setup>
 import { ref } from "vue";
-// import ColumnListVue from '../components/ColumnList.vue';
 import GridListVue from '../components/GridList.vue';
 import destination from "../data/destination.json";
 
@@ -39,20 +38,12 @@ const destinations = ref(destination["taman-nasional"])
     </p>
   </section>
 
-  <section class="h-fit w-[85%] mx-auto my-12">
-    <!-- <ColumnListVue /> -->
+  <section class="h-fit w-[85%] mx-auto mb-8 mt-12">
     <GridListVue :data="destinations" />
   </section>
-  <section class="h-fit w-[85%] grid place-items-center mb-8 mx-auto" data-aos="fade-up">
+  <section class="h-fit w-[85%] grid place-items-center mx-auto" data-aos="fade-up">
     <h4 class="text-1xl italic cursor-default font-semibold">
       Dan masih banyak lagi...~
     </h4>
   </section>
-  <!-- <details class="h-fit w-[85%] flex mt-14 mx-auto" data-aos="fade-up">
-    <summary
-      class="h-fit w-fit text-2xl text-gray-950 cursor-pointer font-semibold transition-all duration-300 ease-in-out hover:text-gray-800 hover:underline">
-      Taman Nasional Baluran
-    </summary>
-    <section></section>
-  </details> -->
 </template>
