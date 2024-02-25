@@ -1,11 +1,10 @@
 <script setup>
 import { ref } from "vue";
-import CultureSliderVue from '../components/CultureSlider.vue';
-import Latest from '../components/Latest.vue';
+import CultureSliderVue from "../components/CultureSlider.vue";
+import Latest from "../components/Latest.vue";
 
 import blogData from "../data/culture-blogs.json";
-const blogs = ref(blogData.blogs)
-
+const blogs = ref(blogData.blogs);
 </script>
 
 <template>
@@ -58,11 +57,11 @@ const blogs = ref(blogData.blogs)
   <section class="h-full w-[85%] mt-4 mx-auto grid place-items-center">
     <p class="text-gray-900 text-1xl cursor-default font-medium text-justify tracking-wide" :style="{ lineHeight: '1.5' }"
       data-aos="fade-up">
-      Di Jawa Timur, ada beberapa upacara adat yang dilakuin di beberapa daerah dan oleh suku tertentu.
-      Misalnya kayak Upacara Yadnya Kasada yang dilakuin oleh Suku Tengger di Gunung Bromo yang tujuannya adalah agar
-      masyarakat setempat terhindar dari berbagai macam musibah dengan cara menyampaikan persembahan kepada Sang Hyang
-      Widhi di kawah puncak Gunung Bromo. Selain itu, ada juga Upacara Kebo-Keboan yang asalnya dari Banyuwangi. Ga
-      sekadar sebagai upacara adat, ternyata Kebo-Keboan bisa narik wisatawan buat ngerti tradisi daerah sana!
+      Di Jawa Timur, ada beberapa upacara adat yang dilakuin di beberapa daerah dan oleh suku tertentu. Misalnya kayak
+      Upacara Yadnya Kasada yang dilakuin oleh Suku Tengger di Gunung Bromo yang tujuannya adalah agar masyarakat setempat
+      terhindar dari berbagai macam musibah dengan cara menyampaikan persembahan kepada Sang Hyang Widhi di kawah puncak
+      Gunung Bromo. Selain itu, ada juga Upacara Kebo-Keboan yang asalnya dari Banyuwangi. Ga sekadar sebagai upacara
+      adat, ternyata Kebo-Keboan bisa narik wisatawan buat ngerti tradisi daerah sana!
     </p>
   </section>
   <section class="h-fit w-[85%] block mt-16 mx-auto" id="latest" data-aos="fade-up">

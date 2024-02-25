@@ -1,5 +1,5 @@
 <script setup>
-import CardCulinary from '../components/CardCulinary.vue';
+import CardCulinary from "../components/CardCulinary.vue";
 </script>
 
 <template>

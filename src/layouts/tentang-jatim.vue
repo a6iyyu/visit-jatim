@@ -1,11 +1,11 @@
 <script setup>
-import CardPopulationVue from '../components/CardPopulation.vue';
+import CardPopulationVue from "../components/CardPopulation.vue";
 </script>
 
 <template>
   <!-- Hero section -->
   <section class="hero h-[40rem] w-full grid place-items-center bg-center bg-cover bg-no-repeat"
-    :style="{ backgroundImage: 'url(../../static/img/telaga-sarangan.jpg)' }">
+    :style="{ backgroundImage: 'url(/static/img/kehidupan-4.jpg?url)' }">
     <div class="h-[40rem] w-full bg-gradient-to-t from-black opacity-60 z-0 absolute"></div>
     <div class="h-3/5 w-[85%] flex items-end justify-center z-10">
       <h1 class="text-5xl text-slate-50 cursor-default font-semibold text-center" data-aos="fade-up">
@@ -67,12 +67,15 @@ import CardPopulationVue from '../components/CardPopulation.vue';
   <section class="h-fit w-[85%] grid place-items-center mt-6 mx-auto" data-aos="fade-up">
     <p class="text-1xl text-gray-950 cursor-default font-medium text-justify"
       :style="{ lineHeight: '1.5', textAlignLast: 'start' }">
-      Surabaya! Pernah kesana apa belum teman-teman? Surabaya menjadi pusatnya Jawa Timur yang tak pernah berhenti
-      berdetak. Kota ini menyuguhkan energi yang luar biasa, dari kulinernya yang legendaris hingga kehidupan sehari-hari
-      yang selalu menggema. Sebuah kota dimana sejarah dan modernitas bersatu, mengundang kalian untuk hadir merasakan
-      kehidupan yang berbeda nan luar biasa. Banyak wisatawan lokal maupun turis yang berkunjung ke ibukota ini karena
-      memiliki tempat wisata yang banyak seperti Surabaya Zoo serta memiliki sejarah panjang seperti Peristiwa 10 November
-      di Hotel Yamato.
+      Surabaya! Pernah kesana apa belum teman-teman? Surabaya menjadi pusatnya
+      Jawa Timur yang tak pernah berhenti berdetak. Kota ini menyuguhkan energi
+      yang luar biasa, dari kulinernya yang legendaris hingga kehidupan
+      sehari-hari yang selalu menggema. Sebuah kota dimana sejarah dan
+      modernitas bersatu, mengundang kalian untuk hadir merasakan kehidupan yang
+      berbeda nan luar biasa. Banyak wisatawan lokal maupun turis yang
+      berkunjung ke ibukota ini karena memiliki tempat wisata yang banyak
+      seperti Surabaya Zoo serta memiliki sejarah panjang seperti Peristiwa 10
+      November di Hotel Yamato.
     </p>
   </section>
 
@@ -95,29 +98,32 @@ import CardPopulationVue from '../components/CardPopulation.vue';
   </section>
   <div class="h-fit w-[85%] grid place-items-center mt-6 mx-auto" data-aos="fade-up">
     <p class="text-1xl text-gray-950 cursor-default font-medium text-justify" :style="{ lineHeight: '1.5' }">
-      Tau gak sih kalo provinsi ini jadi provinsi dengan jumlah penduduk terbanyak di Indonesia? Berdasarkan
-      data yang dikutip dari
+      Tau gak sih kalo provinsi ini jadi provinsi dengan jumlah penduduk
+      terbanyak di Indonesia? Berdasarkan data yang dikutip dari
       <a href="https://kedirikota.bps.go.id/indicator/12/358/1/jumlah-penduduk-provinsi-jawa-timur.html"
         class="text-blue-500 underline transition-all duration-300 ease-in-out hover:text-blue-400" target="_blank">
         BPS Kota Kediri</a>
       dan
       <a href="https://www.inilah.com/10-provinsi-dengan-jumlah-penduduk-terbanyak-di-indonesia-tahun-2023"
         class="text-blue-500 underline transition-all duration-300 ease-in-out hover:text-blue-400" target="_blank">
-        inilah.com</a>,
-      Provinsi Jawa Timur menempati posisi urutan kedua setelah Provinsi Jawa Barat dengan total jumlah penduduk sebanyak
-      41.416.407 jiwa. <b>Kota dengan penduduk terbanyak pada tahun 2023</b> ditempati oleh <b>Kota Surabaya</b> dengan
-      jumlah penduduknya mencapai <b>2.893.698 jiwa</b>, diikuti oleh Kota Malang dengan jumlah penduduknya mencapai
-      <b>2.703.175 jiwa.</b> Hal ini tak dapat dipungkiri karena pada dasarnya kedua kota tersebut sering dikunjungi oleh
-      para wisatawan maupun para perantau yang ingin mengadu nasib. Sedangkan untuk <b>kota dengan penduduk paling sedikit
-        di tahun 2023</b> ditempati oleh <b>Kota Mojokerto</b> dengan jumlah penduduknya mencapai <b>135.414 jiwa</b>,
-      diikuti oleh <b>Kota Blitar</b> dengan jumlah penduduknya mencapai <b>153.541 jiwa.</b>
+        inilah.com</a>, Provinsi Jawa Timur menempati posisi urutan kedua setelah Provinsi Jawa
+      Barat dengan total jumlah penduduk sebanyak 41.416.407 jiwa.
+      <b>Kota dengan penduduk terbanyak pada tahun 2023</b> ditempati oleh
+      <b>Kota Surabaya</b> dengan jumlah penduduknya mencapai
+      <b>2.893.698 jiwa</b>, diikuti oleh Kota Malang dengan jumlah penduduknya
+      mencapai <b>2.703.175 jiwa.</b> Hal ini tak dapat dipungkiri karena pada
+      dasarnya kedua kota tersebut sering dikunjungi oleh para wisatawan maupun
+      para perantau yang ingin mengadu nasib. Sedangkan untuk
+      <b>kota dengan penduduk paling sedikit di tahun 2023</b> ditempati oleh
+      <b>Kota Mojokerto</b> dengan jumlah penduduknya mencapai
+      <b>135.414 jiwa</b>, diikuti oleh <b>Kota Blitar</b> dengan jumlah
+      penduduknya mencapai <b>153.541 jiwa.</b>
     </p>
   </div>
 
   <!-- Puncak Tertinggi -->
   <section class="h-[30rem] w-[85%] bg-center bg-cover bg-no-repeat mt-14 mx-auto rounded-xl"
-    :style="{ backgroundImage: 'url(/static/img/seruni-point.jpg?url)' }" data-aos="fade-up">
-  </section>
+    :style="{ backgroundImage: 'url(/static/img/seruni-point.jpg?url)' }" data-aos="fade-up"></section>
   <section class="h-fit w-[85%] flex flex-col mt-14 mx-auto" data-aos="fade-up">
     <p class="text-3xl text-gray-950 cursor-default font-semibold text-start">
       PUNCAK TERTINGGI
@@ -127,12 +133,13 @@ import CardPopulationVue from '../components/CardPopulation.vue';
   <section class="h-fit w-[85%] flex mt-6 mx-auto" data-aos="fade-up">
     <p class="text-1xl text-gray-950 cursor-default font-medium text-justify"
       :style="{ lineHeight: '1.5', textAlignLast: 'start' }">
-      Siapa disini yang pernah ke Gunung Semeru? Tau gak sih kalo Gunung Semeru itu jadi puncak tertinggi di Jawa Timur?
-      Berdasarkan data yang dimuat dari artikel
+      Siapa disini yang pernah ke Gunung Semeru? Tau gak sih kalo Gunung Semeru
+      itu jadi puncak tertinggi di Jawa Timur? Berdasarkan data yang dimuat dari
+      artikel
       <a href="https://www.detik.com/jatim/wisata/d-6008094/6-gunung-tertinggi-di-jawa-timur-simak-detailnya"
         class="text-blue-500 underline transition-all duration-300 ease-in-out hover:text-blue-400" target="_blank">
-        Detik.com</a>,
-      ketinggian dari Gunung Semeru sendiri yakni sekitar 3.676 mdpl, tinggi banget kan!
+        Detik.com</a>, ketinggian dari Gunung Semeru sendiri yakni sekitar 3.676 mdpl, tinggi
+      banget kan!
     </p>
   </section>
 
@@ -146,12 +153,13 @@ import CardPopulationVue from '../components/CardPopulation.vue';
   <section class="h-fit w-[85%] grid place-items-center mt-6 mb-8 mx-auto" data-aos="fade-up">
     <p class="text-1xl text-gray-950 cursor-default font-medium text-justify"
       :style="{ lineHeight: '1.5', textAlignLast: 'start' }">
-      Pernah minum es tebu dari penjual keliling belum? Rasanya manis dan seger di tenggorokan, bukan? Tebu yang kalian
-      teguk di siang hari bisa jadi itu berasal dari Jawa Timur lho, karena seperti yang dikutip di halaman
+      Pernah minum es tebu dari penjual keliling belum? Rasanya manis dan seger
+      di tenggorokan, bukan? Tebu yang kalian teguk di siang hari bisa jadi itu
+      berasal dari Jawa Timur lho, karena seperti yang dikutip di halaman
       <a href="https://primagama.co.id/blog/berbagai-jenis-sumber-daya-alam-yang-ada-di-pulau-jawa/#:~:text=Provinsi%20Jawa%20Timur&text=Potensi%20sumber%20daya%20alam%20di%20Jawa%20Timur%20dalam%20sektor%20perkebunan,bahan%20pangan%20yang%20banyak%20dibutuhkan."
         class="text-blue-500 underline transition-all duration-300 ease-in-out hover:text-blue-400" target="_blank">
-        Primagama.com</a>, komoditas perkebunan terbesar Jawa Timur adalah tebu dan ini dibuktikan dengan adanya 31 unit
-      pabrik gula. Wow, banyak banget!
+        Primagama.com</a>, komoditas perkebunan terbesar Jawa Timur adalah tebu dan ini dibuktikan
+      dengan adanya 31 unit pabrik gula. Wow, banyak banget!
     </p>
   </section>
 </template>

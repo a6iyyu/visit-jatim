@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from "vue";
 import CardCityVue from "../components/CardCity.vue";
-import Latest from "../components/Latest.vue"
+import Latest from "../components/Latest.vue";
 
 import blogData from "../data/homepage-blogs.json";
 const blogs = ref(blogData.blogs);
@@ -138,9 +138,9 @@ const blogs = ref(blogData.blogs);
     <hr class="h-1 w-60 rounded-md bg-gray-950" />
     <div class="h-8 w-full"></div>
   </section>
-  
+
   <section class="h-[40rem] w-full bg-center bg-cover bg-no-repeat"
-    :style="{ backgroundImage: 'url(../../static/img/reog.jpg)' }">
+    :style="{ backgroundImage: 'url(/static/img/reog.jpg?url)' }">
     <div class="h-[40rem] w-full bg-gradient-to-t md:bg-gradient-to-r from-black opacity-60 z-20 absolute"></div>
     <div class="h-full w-full md:w-3/4 lg:w-1/2 px-10 md:px-28 flex items-end md:items-center content-end justify-center">
       <p class="text-3xl md:text-5xl mb-44 md:mb-0 text-slate-50 text-center md:text-left cursor-default font-black z-30"
@@ -149,5 +149,4 @@ const blogs = ref(blogData.blogs);
       </p>
     </div>
   </section>
-
 </template>

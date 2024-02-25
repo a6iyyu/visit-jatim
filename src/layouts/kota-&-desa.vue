@@ -6,7 +6,6 @@ const destinations = ref(destination.city_villages);
 // const arrayDestination = ref([...destinations.value].sort(() => Math.random() - 0.5).slice(0, 6));
 const filtered = ref();
 
-
 const allBtn = ref(true);
 const kotaBtn = ref(false);
 const desaBtn = ref(false);
@@ -30,26 +29,31 @@ const toggleDesaBtn = () => {
 };
 
 onMounted(() => {
-  filtered.value = destinations.value.sort(() => Math.random() - 0.5).slice(0, 6);
-})
-
-watch([allBtn, kotaBtn, desaBtn], ([all, kota, desa]: [boolean, boolean, boolean]) => {
-  if (all) {
-    filtered.value = destinations.value
+  filtered.value = destinations.value
     .sort(() => Math.random() - 0.5)
     .slice(0, 6);
-  } else if (kota) {
-    filtered.value = destinations.value
-      .filter((c: any) => c.destination === "Kota")
-      .sort(() => Math.random() - 0.5)
-      .slice(0, 6);
-  } else if (desa) {
-    filtered.value = destinations.value
-      .filter((c: any) => c.destination === "Desa")
-      .sort(() => Math.random() - 0.5)
-      .slice(0, 6);
-  }
 });
+
+watch(
+  [allBtn, kotaBtn, desaBtn],
+  ([all, kota, desa]: [boolean, boolean, boolean]) => {
+    if (all) {
+      filtered.value = destinations.value
+        .sort(() => Math.random() - 0.5)
+        .slice(0, 6);
+    } else if (kota) {
+      filtered.value = destinations.value
+        .filter((c: any) => c.destination === "Kota")
+        .sort(() => Math.random() - 0.5)
+        .slice(0, 6);
+    } else if (desa) {
+      filtered.value = destinations.value
+        .filter((c: any) => c.destination === "Desa")
+        .sort(() => Math.random() - 0.5)
+        .slice(0, 6);
+    }
+  }
+);
 </script>
 
 <template>
@@ -66,18 +70,21 @@ watch([allBtn, kotaBtn, desaBtn], ([all, kota, desa]: [boolean, boolean, boolean
     </div>
   </section>
 
-  <section class="h-fit w-full flex flex-col items-center px-14 md:px-28 my-20 mx-auto" data-aos=fade-up>
+  <section class="h-fit w-[85%] flex flex-col items-center mb-10 mt-20 mx-auto" data-aos="fade-up">
     <h2 class="text-2xl md:text-3xl text-gray-950 cursor-default font-semibold my-3 text-center" data-aos="fade-up">
-      TEMUKAN KEINDAHAN DI <br> SETIAP JALAN KOTA DAN DESA
+      TEMUKAN KEINDAHAN DI SETIAP JALAN KOTA DAN DESA
     </h2>
-    <hr class="h-0.5 my-5 w-5/6 md:w-[500px] lg:w-[750px] bg-gray-950" data-aos="fade-up" />
-    <p class="text-base md:text-xl my-3 md:px-8 lg:px-24 text-gray-950 cursor-default font-medium text-justify">
-      Jelajahi pesona kota yang modern dan desa yang asri dalam satu perjalanan! Nikmati kehidupan perkotaan yang dinamis
-      dan kemudian meresapi ketenangan desa yang memesona.Keindahan di setiap kota dan desa menanti untuk dijelajahi!
+    <hr class="h-0.5 w-full bg-gray-950" data-aos="fade-up" />
+    <p class="text-base md:text-xl my-3 text-gray-950 cursor-default font-medium text-justify"
+      :style="{ textAlignLast: 'center' }" data-aos="fade-up">
+      Jelajahi pesona kota yang modern dan desa yang asri dalam satu perjalanan!
+      Nikmati kehidupan perkotaan yang dinamis dan kemudian meresapi ketenangan
+      desa yang memesona. Keindahan di setiap kota dan desa menanti untuk
+      dijelajahi!
     </p>
   </section>
 
-  <section class="h-fit w-full px-16 md:px-12 lg:px-28 mt-14" data-aos="fade-up">
+  <section class="h-fit w-[85%] mt-14 mx-auto" data-aos="fade-up">
     <div class="my-10 w-full md:w-3/4 lg:w-1/2 grid grid-cols-3 gap-4">
       <button @click="toggleAllBtn()"
         class="border border-slate-900 px-4 py-2 hover:bg-slate-900 hover:text-slate-50 transition-colors text-lg focus:text-slate-50 focus:bg-slate-900">
@@ -94,7 +101,7 @@ watch([allBtn, kotaBtn, desaBtn], ([all, kota, desa]: [boolean, boolean, boolean
     </div>
   </section>
 
-  <section class="h-fit w-full grid place-items-center px-16 md:px-12 lg:px-28 mx-auto my-6" data-aos="fade-up">
+  <section class="h-fit w-[85%] grid place-items-center mx-auto my-6" data-aos="fade-up">
     <div class="w-full h-fit grid items-center sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-3" v-if="filtered != null">
       <a :href="content.link" v-for="content in filtered" :key="content.city"
         :style="{ 'background-image': 'url(' + content.img + ')' }"

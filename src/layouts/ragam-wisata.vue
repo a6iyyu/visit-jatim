@@ -3,24 +3,34 @@ import { ref, watch, onMounted } from "vue";
 import destination from "../data/destination.json";
 
 const destinations = ref(destination.places);
-const arrayDestination = ref([...destinations.value].sort(() => Math.random() - 0.5).slice(0, 6));
-const cities = ref(destinations.value.map((place: { city: string }) => place.city));
+const arrayDestination = ref(
+  [...destinations.value].sort(() => Math.random() - 0.5).slice(0, 6)
+);
+const cities = ref(
+  destinations.value.map((place: { city: string }) => place.city)
+);
 
 const unduplicate = ref([...new Set(cities.value)]);
 const filteredCity = ref();
 const selectCity = ref();
 
-onMounted(()=>{
-  filteredCity.value = destinations.value.sort(() => Math.random() - 0.5).slice(0, 6);
-})
+onMounted(() => {
+  filteredCity.value = destinations.value
+    .sort(() => Math.random() - 0.5)
+    .slice(0, 6);
+});
 
-watch(selectCity, (newSelectCity:string) => {
-  if (newSelectCity === 'SEMUA' || newSelectCity == null) {
-    filteredCity.value = destinations.value.sort(() => Math.random() - 0.5).slice(0, 6);
+watch(selectCity, (newSelectCity: string) => {
+  if (newSelectCity === "SEMUA" || newSelectCity == null) {
+    filteredCity.value = destinations.value
+      .sort(() => Math.random() - 0.5)
+      .slice(0, 6);
   } else {
-    filteredCity.value = destinations.value.filter((c:any) => c.city === newSelectCity);
+    filteredCity.value = destinations.value.filter(
+      (c: any) => c.city === newSelectCity
+    );
   }
-})
+});
 </script>
 
 <template>
@@ -44,8 +54,8 @@ watch(selectCity, (newSelectCity:string) => {
     <div class="h-full w-3/5 flex items-end justify-center bg-center bg-cover bg-no-repeat"
       :style="{ backgroundImage: 'url(/static/img/hotel-majapahit.jpg?url)' }">
       <div
-          class="block md:hidden absolute min-w-full min-h-full bg-gradient-to-t from-black opacity-50 hover:opacity-80 transition-opacity duration-100 z-20">
-        </div>
+        class="block md:hidden absolute min-w-full min-h-full bg-gradient-to-t from-black opacity-50 hover:opacity-80 transition-opacity duration-100 z-20">
+      </div>
       <div class="h-3/5 w-4/5 flex flex-col items-center justify-center text-center z-30">
         <b class="text-3xl text-slate-50 cursor-default">
           Jenis Wisata Unik dan Menarik di Jatim!
@@ -59,30 +69,30 @@ watch(selectCity, (newSelectCity:string) => {
     </div>
   </section>
 
-  <!-- Beragam Jenis Objek Wisata -->
-  <section class="h-fit w-full grid place-items-center px-28 my-24 mx-auto" id="beragam-jenis" data-aos="fade-up">
-    <p class="text-3xl my-10 text-gray-950 cursor-default font-semibold text-center">
-      Beragam Jenis Objek Wisata <br> Menunggu Kedatangan Anda!
+  <section class="h-fit w-[85%] grid place-items-center mb-12 mt-24 mx-auto" id="beragam-jenis">
+    <p class="text-3xl text-gray-950 cursor-default font-semibold text-center mb-2" data-aos="fade-up">
+      Beragam Jenis Objek Wisata Menunggu Kedatangan Anda!
     </p>
-    <hr class="h-0.5 w-full md:w-2/3 lg:w-1/2 bg-gray-950 rounded-md" />
+    <hr class="h-0.5 w-full bg-gray-950 rounded-md" data-aos="fade-up" />
   </section>
 
   <section class="h-[35rem] w-full bg-center bg-cover bg-no-repeat"
-    :style="{ backgroundImage: 'url(../../static/img/banyuwangi.jpg)' }">
+    :style="{ backgroundImage: 'url(/static/img/banyuwangi.jpg?url)' }">
     <div class="h-[35rem] w-full bg-gradient-to-t md:bg-gradient-to-r from-black opacity-60 z-20 absolute"></div>
-    <div class="h-full w-full md:w-3/4 lg:w-1/2 px-10 md:px-28 flex items-end md:items-center content-end justify-center">
-      <p class="text-3xl md:text-5xl mb-44 md:mb-0 text-slate-50 text-center md:text-left cursor-default font-black z-30"
+    <div class="h-full w-[85%] flex items-center justify-center md:items-center md:justify-start mx-auto">
+      <p class="text-4xl md:text-5xl text-slate-50 text-center md:text-left cursor-default font-black z-30"
         data-aos="fade-right">
-        KEINDAHAN TIADA TARA
+        KEINDAHAN TIADA<br />
+        TARA
       </p>
     </div>
   </section>
 
-  <section class="h-fit w-full grid place-items-center px-28 my-24 mx-auto" id="beragam-jenis" data-aos="fade-up">
-    <p class="text-3xl my-10 text-gray-950 cursor-default font-semibold text-center">
+  <section class="h-fit w-[85%] grid place-items-center mx-auto my-12" id="beragam-jenis">
+    <p class="text-3xl text-gray-950 cursor-default font-semibold text-center mb-2">
       Ingin Tahu Mau Kemana Saja?
     </p>
-    <hr class="h-0.5 w-full md:w-2/3 lg:w-1/2 bg-gray-950 rounded-md" />
+    <hr class="h-0.5 w-full bg-gray-950 rounded-md" />
   </section>
 
   <!-- Filter -->
@@ -94,12 +104,14 @@ watch(selectCity, (newSelectCity:string) => {
           class="h-10 w-48 md:w-96 border border-slate-950 rounded-md bg-slate-100 px-3 cursor-pointer"
           v-model="selectCity">
           <option value="SEMUA" selected>SEMUA</option>
-          <option v-for="wilayah in unduplicate" :key="wilayah" :value="wilayah">{{ wilayah }}</option>
+          <option v-for="wilayah in unduplicate" :key="wilayah" :value="wilayah">
+            {{ wilayah }}
+          </option>
         </select>
       </label>
     </div>
   </section>
-  
+
   <!-- List section -->
   <section class="h-fit w-[85%] grid place-items-center mx-auto my-6" data-aos="fade-up">
     <div class="w-full h-fit grid items-center sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-3" v-if="filteredCity != null">

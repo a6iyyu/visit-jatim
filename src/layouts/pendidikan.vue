@@ -5,7 +5,7 @@ import CollegeSlider from "../components/CollegeSlider.vue";
 import Latest from "../components/Latest.vue";
 import CollegeEntryTips from "../components/CollegeEntryTips.vue";
 
-const blogs = ref(collegeData.blogs)
+const blogs = ref(collegeData.blogs);
 </script>
 
 <template>
@@ -28,10 +28,12 @@ const blogs = ref(collegeData.blogs)
     </h1>
     <h4 class="text-1xl text-gray-950 cursor-default font-medium text-justify" :style="{ lineHeight: '1.5' }"
       data-aos="fade-left">
-      Di zaman serba digital seperti sekarang ini, pendidikan menjadi kunci untuk mempersiapkan
-      generasi masa depan menghadapi tantangan yang semakin kompleks dan dinamis. Melalui pendidikan, individu diberikan
-      pemahaman yang mendalam tentang teknologi dan keterampilan digital yang kritis, yang sangat dibutuhkan untuk
-      beradaptasi dan bersaing di dunia kerja yang terus berkembang.
+      Di zaman serba digital seperti sekarang ini, pendidikan menjadi kunci
+      untuk mempersiapkan generasi masa depan menghadapi tantangan yang semakin
+      kompleks dan dinamis. Melalui pendidikan, individu diberikan pemahaman
+      yang mendalam tentang teknologi dan keterampilan digital yang kritis, yang
+      sangat dibutuhkan untuk beradaptasi dan bersaing di dunia kerja yang terus
+      berkembang.
     </h4>
   </section>
 
@@ -93,10 +95,12 @@ const blogs = ref(collegeData.blogs)
 
   <section class="h-fit w-[85%] flex flex-col items-start justify-center mx-auto mb-8">
     <p class="text-1xl cursor-default font-medium text-justify" data-aos="fade-right" :style="{ lineHeight: '1.5' }">
-      Kalian udah nentuin mau masuk kampus mana? Memang sih masuk kampus dan jurusan impian tuh kebayang seru, tapi perlu
-      diingat buat kesana tentunya tidak dilakukan secara instan. Perlu perjuangan yang gede dan selalu baca informasi
-      tentang pendaftaran masuk perkuliahan. Di halaman ini, bakal dikasih tau tips-tips yang bisa kalian terapkan biar
-      bisa masuk ke perkuliahan. Apa aja ya kira-kira? Mari kita pahami bersama!
+      Kalian udah nentuin mau masuk kampus mana? Memang sih masuk kampus dan
+      jurusan impian tuh kebayang seru, tapi perlu diingat buat kesana tentunya
+      tidak dilakukan secara instan. Perlu perjuangan yang gede dan selalu baca
+      informasi tentang pendaftaran masuk perkuliahan. Di halaman ini, bakal
+      dikasih tau tips-tips yang bisa kalian terapkan biar bisa masuk ke
+      perkuliahan. Apa aja ya kira-kira? Mari kita pahami bersama!
     </p>
   </section>
 
@@ -113,7 +117,8 @@ const blogs = ref(collegeData.blogs)
   <!-- Reminder -->
   <p class="h-fit w-[85%] grid place-items-center mt-16 mb-8 mx-auto">
     <q class="text-center text-gray-900 text-2xl cursor-default font-semibold" data-aos="fade-left">
-      Hanya pendidikan yang bisa menyelamatkan masa depan, tanpa pendidikan Indonesia tak mungkin bertahan.
+      Hanya pendidikan yang bisa menyelamatkan masa depan, tanpa pendidikan
+      Indonesia tak mungkin bertahan.
     </q>
   </p>
 </template>
