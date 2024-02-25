@@ -52,11 +52,19 @@ export const Header: React.FC = () => {
           </a>
           <Dropdown
             name={"DESTINASI"}
-            options={["Kota & Desa", "Ragam Wisata", "Taman Nasional"]}
+            options={[
+              "Ragam Wisata", 
+              "Kota & Desa", 
+              "Taman Nasional"
+            ]}
           />
           <Dropdown
             name={"INSPIRASI"}
-            options={["Budaya", "Kuliner", "Pendidikan"]}
+            options={[
+              "Budaya", 
+              "Kuliner",
+              "Pendidikan"
+              ]}
           />
         </div>
       </div>
@@ -83,11 +91,19 @@ export const Header: React.FC = () => {
             </a>
             <AccordionMobile
               name={"DESTINASI"}
-              options={["Kota & Desa", "Ragam Wisata", "Taman Nasional"]}
+              options={[
+                "Ragam Wisata", 
+                "Kota & Desa", 
+                "Taman Nasional"
+              ]}
             />
             <AccordionMobile
               name={"INSPIRASI"}
-              options={["Budaya", "Kuliner", "Pendidikan"]}
+              options={[
+                "Budaya", 
+                "Kuliner", 
+                "Pendidikan"
+              ]}
             />
           </div>
         )}

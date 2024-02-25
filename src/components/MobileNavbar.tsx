@@ -44,7 +44,7 @@ export const MobileNavbar: React.FC = () => {
             <span></span>
           </a>
           <AccordionMobile
-            name={"DESTINASI"}
+            name={"DESTINASI"}                      
             options={[
               "Ragam Wisata",
               "Taman Nasional",
@@ -54,7 +54,12 @@ export const MobileNavbar: React.FC = () => {
           />
           <AccordionMobile
             name={"INSPIRASI"}
-            options={["Petualangan", "Kuliner", "Budaya", "Acara"]}
+            options={[
+            "Petualangan", 
+            "Kuliner", 
+            "Budaya", 
+            "Acara"
+          ]}
           />
         </div>
       )}

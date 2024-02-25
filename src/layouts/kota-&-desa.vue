@@ -1,10 +1,11 @@
 <script lang="ts" setup>
-import { ref, watch } from "vue";
+import { ref, watch, onMounted } from "vue";
 import destination from "../data/destination.json";
 
-const destinations = ref(destination["city-villages"]);
-const arrayDestination = ref([...destinations.value].sort(() => Math.random() - 0.5).slice(0, 6));
-const filtered = ref(arrayDestination.value);
+const destinations = ref(destination.city_villages);
+// const arrayDestination = ref([...destinations.value].sort(() => Math.random() - 0.5).slice(0, 6));
+const filtered = ref();
+
 
 const allBtn = ref(true);
 const kotaBtn = ref(false);
@@ -28,19 +29,23 @@ const toggleDesaBtn = () => {
   desaBtn.value = true;
 };
 
-watch([allBtn, kotaBtn, desaBtn], ([all, kota, desa]) => {
+onMounted(() => {
+  filtered.value = destinations.value.sort(() => Math.random() - 0.5).slice(0, 6);
+})
+
+watch([allBtn, kotaBtn, desaBtn], ([all, kota, desa]: [boolean, boolean, boolean]) => {
   if (all) {
     filtered.value = destinations.value
-      .sort(() => Math.random() - 0.5)
-      .slice(0, 6);
+    .sort(() => Math.random() - 0.5)
+    .slice(0, 6);
   } else if (kota) {
     filtered.value = destinations.value
-      .filter((c) => c.destination === "Kota")
+      .filter((c: any) => c.destination === "Kota")
       .sort(() => Math.random() - 0.5)
       .slice(0, 6);
   } else if (desa) {
     filtered.value = destinations.value
-      .filter((c) => c.destination === "Desa")
+      .filter((c: any) => c.destination === "Desa")
       .sort(() => Math.random() - 0.5)
       .slice(0, 6);
   }
@@ -59,6 +64,17 @@ watch([allBtn, kotaBtn, desaBtn], ([all, kota, desa]) => {
         DI KOTA & DESA
       </h1>
     </div>
+  </section>
+
+  <section class="h-fit w-full flex flex-col items-center px-14 md:px-28 my-20 mx-auto" data-aos=fade-up>
+    <h2 class="text-2xl md:text-3xl text-gray-950 cursor-default font-semibold my-3 text-center" data-aos="fade-up">
+      TEMUKAN KEINDAHAN DI <br> SETIAP JALAN KOTA DAN DESA
+    </h2>
+    <hr class="h-0.5 my-5 w-5/6 md:w-[500px] lg:w-[750px] bg-gray-950" data-aos="fade-up" />
+    <p class="text-base md:text-xl my-3 md:px-8 lg:px-24 text-gray-950 cursor-default font-medium text-justify">
+      Jelajahi pesona kota yang modern dan desa yang asri dalam satu perjalanan! Nikmati kehidupan perkotaan yang dinamis
+      dan kemudian meresapi ketenangan desa yang memesona.Keindahan di setiap kota dan desa menanti untuk dijelajahi!
+    </p>
   </section>
 
   <section class="h-fit w-full px-16 md:px-12 lg:px-28 mt-14" data-aos="fade-up">
