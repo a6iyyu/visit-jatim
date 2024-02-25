@@ -23,14 +23,14 @@ const destinations = ref(destination["taman-nasional"])
     </div>
   </section>
 
-  <section class="h-fit w-[85%] grid place-items-center mt-52 mx-auto">
-    <h2 class="text-2xl md:text-3xl text-gray-950 cursor-default font-semibold" data-aos="fade-up">
+  <section class="h-fit w-full flex flex-col items-center px-14 md:px-28 mt-56 mb-20 mx-auto">
+    <h2 class="text-2xl md:text-3xl text-gray-950 cursor-default font-semibold my-3 text-center" data-aos="fade-up">
       MENJELAJAH DI ALAM LIAR
     </h2>
-    <hr class="h-0.5 w-full bg-gray-950" data-aos="fade-up" />
+    <hr class="h-0.5 my-5 w-5/6 md:w-[500px] lg:w-[750px] bg-gray-950" data-aos="fade-up" />
   </section>
   <section class="h-fit w-[85%] grid place-items-center mt-6 mx-auto" data-aos=fade-up>
-    <p class="text-base md:text-xl text-gray-950 cursor-default font-medium text-justify">
+    <p class="text-base md:text-xl my-3 md:px-8 lg:px-24 text-gray-950 cursor-default font-medium text-justify">
       Kalo udah mentok gatau pengen liburan kemana, enaknya ngapain lagi ya? Di Jawa Timur, ada wisata alternatif
       lainnya lho, misalnya aja ke taman nasional. Ada beberapa taman nasional yang bisa kalian kunjungi selama
       liburanmu di Jawa Timur, Mari kita berkelana di alam liar Jawa Timur untuk mengungkap keajaiban alam, flora, dan
@@ -38,7 +38,7 @@ const destinations = ref(destination["taman-nasional"])
     </p>
   </section>
 
-  <section class="h-fit w-[85%] mx-auto mb-8 mt-12">
+  <section class="h-fit w-full grid place-items-center px-16 md:px-12 lg:px-28 mx-auto my-8">
     <GridListVue :data="destinations" />
   </section>
   <section class="h-fit w-[85%] grid place-items-center mx-auto" data-aos="fade-up">

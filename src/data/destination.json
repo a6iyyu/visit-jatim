@@ -1,60 +1,70 @@
 {
   "places": [
     {
+      "id": 1,
       "city": "BANYUWANGI",
       "destination": "KAWAH IJEN",
       "img": "/static/img/kawah-ijen.jpg",
       "link": "https://maps.app.goo.gl/Eq96qJgKzzjJFxUS9"
     },
     {
+      "id": 2,
       "city": "BLITAR",
       "destination": "MAKAM BUNG KARNO",
       "img": "/static/img/museum-bung-karno.jpg",
       "link": "https://maps.app.goo.gl/obekNQZknFEc4gXVA"
     },
     {
+      "id": 3,
       "city": "MAGETAN",
       "destination": "TELAGA SARANGAN",
       "img": "/static/img/telaga-sarangan.jpg",
       "link": "https://maps.app.goo.gl/6HaBzN5TqJndHSU96"
     },
     {
+      "id": 3,
       "city": "MALANG",
       "destination": "CANDI SINGOSARI",
       "img": "/static/img/candi-singosari.jpg",
       "link": "https://maps.app.goo.gl/K6Ck296PsbX1cX1y9"
     },
     {
+      "id": 4,
       "city": "MALANG",
       "destination": "PANTAI TELUK ASMARA",
       "img": "/static/img/teluk-asmara.jpg",
       "link": "https://maps.app.goo.gl/NDPqTfFcHDDHb4BS6"
     },
     {
+      "id": 5,
       "city": "MALANG",
       "destination": "SERUNI POINT",
       "img": "/static/img/seruni-point.jpg",
       "link": "https://maps.app.goo.gl/KFrncQR8saxaQHhcA"
     },
     {
+      "id": 6,
       "city": "PACITAN",
       "destination": "MUSEUM DAN GALERI SENI SBY",
       "img": "/static/img/museum-sby.jpg",
       "link": "https://maps.app.goo.gl/A9TweKV8FRJRAXbdA"
     },
     {
+      "id": 7,
       "city": "SITUBONDO",
       "destination": "TAMAN NASIONAL BALURAN",
       "img": "/static/img/taman-nasional-baluran.jpg",
       "link": "https://maps.app.goo.gl/r1SuGtsjAUQwk8nn7"
     },
     {
+      "id": 8,
       "city": "SUMENEP",
       "destination": "PANTAI SEMBILAN",
       "img": "/static/img/pantai-sembilan.jpg",
       "link": "https://maps.app.goo.gl/BhHSG4kLSDWmeDr58"
     },
     {
+      "id": 9,
       "city": "TUBAN",
       "destination": "WISATA RELIGI SUNAN BONANG",
       "img": "/static/img/makam-sunan-bonang.jpg",
@@ -63,122 +73,142 @@
   ],
   "taman-nasional": [
     {
+      "id": 1,
       "city": "MALANG",
       "destination": "KAWAH IJEN",
       "img": "/static/img/kawah-ijen.jpg",
       "link": "https://maps.app.goo.gl/DSXhPuqR8YJr43gX7"
     },
     {
+      "id": 2,
       "city": "SITUBONDO",
       "destination": "TAMAN NASIONAL BALURAN",
       "img": "/static/img/taman-nasional-baluran.jpg",
       "link": "https://maps.app.goo.gl/r1SuGtsjAUQwk8nn7"
     },
     {
+      "id": 3,
       "city": "BANYUWANGI",
       "destination": "TAMAN NASIONAL ALAS PURWO",
       "img": "/static/img/roberto-rendon-alas-purwo.jpg",
       "link": "https://maps.app.goo.gl/TBvqhd2pstGb3mqd8"
     },
     {
+      "id": 4,
       "city": "JEMBER",
       "destination": "TAMAN NASIONAL MERU BETIRI",
       "img": "/static/img/taman-nasional-meru-betiri.jpg",
       "link": "https://maps.app.goo.gl/Yb6SKuqkLUFE12Jg9"
     },
     {
+      "id": 5,
       "city": "PURWODADI",
       "destination": "PURWODADI BOTANIC GARDEN",
       "img": "/static/img/kebun-raya-purwodadi.png",
       "link": "https://maps.app.goo.gl/wgCqvKxf2zXuEc7i7"
     },
     {
+      "id": 6,
       "city": "BANYUWANGI",
       "destination": "PANTAI PANCUR",
       "img": "/static/img/pantai-pancur-banyuwangi-2.jpg",
       "link": "https://maps.app.goo.gl/aEnYGV5xSQCQRwETA"
     },
     {
+      "id": 7,
       "city": "BANYUWANGI",
       "destination": "PANTAI TRIANGGULASI",
       "img": "/static/img/pantai-trianggulasi.jpg",
       "link": "https://maps.app.goo.gl/AFruuRKYpyudghSZ9"
     }
   ],
-  "city-villages": [
+  "city_villages": [
     {
+      "id": 1,
       "city": "BANYUWANGI",
       "destination": "Kota",
       "img": "/static/img/banyuwangi-kota.jpg",
       "link": "https://maps.app.goo.gl/LPF9h9XZZan14oER6"
     },
     {
+      "id": 2,
       "city": "BLITAR",
       "destination": "Kota",
       "img": "/static/img/blitar.jpg",
       "link": "https://maps.app.goo.gl/ajRniYUTQ1snAfdH7"
     },
     {
+      "id": 2,
       "city": "MALANG",
       "destination": "Kota",
       "img": "/static/img/malang.jpg",
       "link": "https://maps.app.goo.gl/X2UhaqdeVJpvENjU6"
     },
     {
+      "id": 3,
       "city": "SURABAYA",
       "destination": "Kota",
       "img": "/static/img/surabaya.jpg",
       "link": "https://maps.app.goo.gl/PDcGT1B3agXYv6xJ6"
     },
     {
+      "id": 4,
       "city": "MADIUN",
       "destination": "Kota",
       "img": "/static/img/madiun.jpg",
       "link": "https://maps.app.goo.gl/Wqo41arMh2LvMM5u9"
     },
     {
+      "id": 5,
       "city": "KEDIRI",
       "destination": "Kota",
       "img": "/static/img/kediri.jpeg",
       "link": "https://maps.app.goo.gl/A9TweKV8FRJRAXbdA"
     },
     {
+      "id": 6,
       "city": "PAMEKASAN",
       "destination": "Kota",
       "img": "/static/img/pamekasan.jpg",
       "link": "https://maps.app.goo.gl/Cc4LBs5q62hpjUcY6"
     },
     {
+      "id": 7,
       "city": "TAMANSARI",
       "destination": "Desa",
       "img": "/static/img/desa-tamansari.jpg",
       "link": "https://maps.app.goo.gl/F1nf5HbFdRvA8A1e9"
     },
     {
+      "id": 8,
       "city": "PUJON KIDUL",
       "destination": "Desa",
       "img": "/static/img/pujon-kidul.jpg",
       "link": "https://maps.app.goo.gl/EsGZGRotUhdPEwyx6"
     },
     {
+      "id": 9,
       "city": "KAMPUNG KUNGKUK",
       "destination": "Desa",
       "img": "/static/img/desa-kampung-kungkuk.jpg",
       "link": "https://maps.app.goo.gl/41NFCAz16byvixv1A"
     },
     {
+      "id": 10,
       "city": "BIRA TENGAH",
       "destination": "Desa",
       "img": "/static/img/desa-bira-tengah.jpg",
       "link": "https://maps.app.goo.gl/eK4G43Va4bLgEmTM9"
     },
     {
+      "id": 11,
       "city": "GUWOTERUS",
       "destination": "Desa",
       "img": "/static/img/desa-guwoterus.jpg",
       "link": "https://maps.app.goo.gl/QZBuRKoirwJHQaTX8"
     },
     {
+      "id": 12,
       "city": "SENDANG",
       "destination": "Desa",
       "img": "/static/img/desa-sendang.jpg",
