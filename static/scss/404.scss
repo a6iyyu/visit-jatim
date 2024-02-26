@@ -1,6 +1,7 @@
 @media screen and (max-width: 3120px) {
   .not-found-page {
-    margin: 15rem 0;
+    height: 25rem;
+    margin: 20rem 0;
   }
   .not-found-page > div > div:first-child > img {
     width: 600px;
@@ -21,31 +22,22 @@
 
 @media screen and (max-width: 2560px) {
   .not-found-page {
-    margin: 6rem 0;
+    margin: 7.5rem 0 10rem 0;
   }
 }
 
 @media screen and (max-width: 1680px) {
   .not-found-page {
-    margin: 0;
+    margin: 5rem 0 7.5rem 0;
   }
 }
 
 @media screen and (max-width: 960px) {
   .not-found-page {
-    height: 50rem;
-  }
-  .not-found-page > div {
-    display: block !important;
+    height: 60rem;
   }
   .not-found-page > div > div {
     width: 100% !important;
-  }
-  .not-found-page > div > div:first-child {
-    height: 40% !important;
-  }
-  .not-found-page > div > div:last-child {
-    height: 60% !important;
   }
   .not-found-page > div > div:last-child > div:not(div:first-child) {
     display: grid;
