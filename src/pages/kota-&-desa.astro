@@ -1,51 +1,13 @@
 ---
-import "bootstrap-icons/font/bootstrap-icons.css";
 import "../../static/scss/component.scss";
 import "../../static/scss/kota-&-desa.scss";
-import Logo from "../../static/img/logo-black.png?url";
-import { ScrollIndicator } from "../components/ScrollIndicator";
-import { ScrollToTop } from "../components/ScrollToTop";
-import { Header } from "../components/Header";
+import MainLayout from "../layouts/main-layout.astro";
 import KotaDesaPage from "../layouts/kota-&-desa.vue";
-import Footer from "../components/Footer.vue";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="description"
-      content="Dari keramaian perkotaan hingga ketenangan desa, eksplorasi pesona budaya dan alam yang unik."
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Kota & Desa</title>
-    <link rel="icon" href={Logo} />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
-    />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  </head>
-  <body>
-    <ScrollIndicator client:only="react" />
-    <ScrollToTop client:only="react" />
-    <Header client:only="react" />
-    <KotaDesaPage client:load />
-    <Footer />
-  </body>
-  <script crossorigin="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-  <script
-    type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"
-  ></script>
-  <script
-    type="text/javascript"
-    src="https://unpkg.com/aos@next/dist/aos.js"
-  ></script>
-  <script type="text/javascript">
-    AOS.init();
-  </script>
-</html>
+<MainLayout
+  description="Jelajahi keindahan alam, kekayaan budaya, dan kelezatan kuliner Jawa Timur bersama Visit Jatim."
+  title="Kota & Desa"
+>
+  <KotaDesaPage client:load />
+</MainLayout>

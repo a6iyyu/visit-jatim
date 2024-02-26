@@ -3,9 +3,7 @@ import { ref, watch, onMounted } from "vue";
 import destination from "../data/destination.json";
 
 const destinations = ref(destination.places);
-const arrayDestination = ref(
-  [...destinations.value].sort(() => Math.random() - 0.5).slice(0, 6)
-);
+// const arrayDestination = ref([...destinations.value].sort(() => Math.random() - 0.5).slice(0, 6));
 const cities = ref(
   destinations.value.map((place: { city: string }) => place.city)
 );
@@ -69,11 +67,11 @@ watch(selectCity, (newSelectCity: string) => {
     </div>
   </section>
 
-  <section class="h-fit w-full px-28 grid place-items-center my-32 mx-auto" id="beragam-jenis">
+  <section class="h-fit w-[85%] grid place-items-center mb-12 mt-24 mx-auto" id="beragam-jenis">
     <p class="text-3xl text-gray-950 cursor-default font-semibold text-center mb-2" data-aos="fade-up">
-      Beragam Jenis Objek Wisata <br> Menunggu Kedatangan Anda!
+      Beragam Jenis Objek Wisata Menunggu Kedatangan Anda!
     </p>
-    <hr class="h-1 w-[500px] my-5 bg-gray-950 rounded-md" data-aos="fade-up" />
+    <hr class="h-0.5 w-full bg-gray-950 rounded-md" data-aos="fade-up" />
   </section>
 
   <section class="h-[35rem] w-full bg-center bg-cover bg-no-repeat"
@@ -88,30 +86,32 @@ watch(selectCity, (newSelectCity: string) => {
     </div>
   </section>
 
-  <section class="h-fit w-full px-28 grid place-items-center mx-auto my-24" id="beragam-jenis">
+  <section class="h-fit w-[85%] grid place-items-center mx-auto my-12" id="beragam-jenis">
     <p class="text-3xl text-gray-950 cursor-default font-semibold text-center mb-2">
       Ingin Tahu Mau Kemana Saja?
     </p>
-    <hr class="h-1 w-[500px] my-5 bg-gray-950 rounded-md" />
+    <hr class="h-0.5 w-full bg-gray-950 rounded-md" />
   </section>
 
   <!-- Filter -->
-  <section class="h-fit w-full my-10 px-12 md:px-28 mx-auto mt-8 flex flex-col items-center md:items-start" data-aos="fade-up">
-    <label for="cities">
-      <h3 class="text-1xl my-5 cursor-default font-medium text-center md:text-left">Pilih Wilayah</h3>
-      <select name="test" id="cities"
-        class="h-10 w-64 md:w-96 mx-auto md:mx-0 border border-slate-950 rounded-md bg-slate-100 px-3 cursor-pointer"
-        v-model="selectCity">
-        <option value="SEMUA" selected>SEMUA</option>
-        <option v-for="wilayah in unduplicate" :key="wilayah" :value="wilayah">
-          {{ wilayah }}
-        </option>
-      </select>
-    </label>
+  <section class="h-fit w-[85%] mx-auto mt-8" data-aos="fade-up">
+    <div class="my-10 fit">
+      <label for="cities">
+        <h3 class="text-1xl my-5 cursor-default font-medium">Pilih Wilayah</h3>
+        <select name="test" id="cities"
+          class="h-10 w-48 md:w-96 border border-slate-950 rounded-md bg-slate-100 px-3 cursor-pointer"
+          v-model="selectCity">
+          <option value="SEMUA" selected>SEMUA</option>
+          <option v-for="wilayah in unduplicate" :key="wilayah" :value="wilayah">
+            {{ wilayah }}
+          </option>
+        </select>
+      </label>
+    </div>
   </section>
 
   <!-- List section -->
-  <section class="h-fit w-full px-10 md:px-12 lg:px-28 grid place-items-center mx-auto my-6" data-aos="fade-up">
+  <section class="h-fit w-[85%] grid place-items-center mx-auto my-6" data-aos="fade-up">
     <div class="w-full h-fit grid items-center sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-3" v-if="filteredCity != null">
       <a :href="content.link" v-for="content in filteredCity" :key="content.id"
         :style="{ 'background-image': 'url(' + content.img + ')' }"
