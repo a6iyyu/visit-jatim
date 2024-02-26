@@ -147,7 +147,7 @@ import CardPopulationVue from "../components/CardPopulation.vue";
   <!-- SDA -->
   <section class="h-fit w-[85%] flex flex-col mt-14 mx-auto" data-aos="fade-up">
     <p class="text-3xl text-gray-950 cursor-default font-semibold text-start">
-      Sumber Daya Alam
+      SUMBER DAYA ALAM
     </p>
     <hr class="h-0.5 w-full bg-gray-950 rounded-md" />
     <section class="h-fit w-full grid place-items-center mt-6 mb-8 mx-auto" data-aos="fade-up">
