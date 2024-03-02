@@ -1,0 +1,13 @@
+---
+import "../../static/scss/component.scss";
+import "../../static/scss/kota-&-desa.scss";
+import MainLayout from "../layouts/main-layout.astro";
+import KotaDesaPage from "../layouts/kota-&-desa.vue";
+---
+
+<MainLayout
+  description="Jelajahi keindahan alam, kekayaan budaya, dan kelezatan kuliner Jawa Timur bersama Visit Jatim."
+  title="Kota & Desa"
+>
+  <KotaDesaPage client:load />
+</MainLayout>
