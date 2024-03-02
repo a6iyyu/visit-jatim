@@ -12,6 +12,6 @@ export default defineConfig({
   },
   // output: "server",
   // adapter: vercel(),
-  // site: 'https://astronaut.github.io',
-  // base: '/my-repo',
+  site: 'https://Afif-Ghifari.github.io',
+  // base: '/wdc',
 });
