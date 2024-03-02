@@ -13,5 +13,5 @@ export default defineConfig({
   // output: "server",
   // adapter: vercel(),
   site: 'https://Afif-Ghifari.github.io',
-  // base: '/wdc',
+  base: '/wdc',
 });
