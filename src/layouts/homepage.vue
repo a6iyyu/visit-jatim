@@ -16,11 +16,11 @@ const blogs = ref(blogData.blogs);
     <div class="h-[40rem] w-full bg-gradient-to-t md:bg-gradient-to-r from-black opacity-60 z-0 absolute"></div>
     <div class="h-full w-[85%] flex flex-col items-start justify-center z-30">
       <div class="h-full w-1/2 flex flex-col items-center lg:items-start justify-center">
-        <h1 class="text-4xl md:text-5xl text-slate-50 cursor-default font-black text-center md:text-left" data-aos="fade-up">
+        <h1 class="text-4xl lg:text-5xl text-slate-50 cursor-default font-black text-center lg:text-left" data-aos="fade-up">
           JAWA TIMUR
         </h1>
         <br />
-        <p class="text-lg md:text-1xl text-slate-50 cursor-default font-medium text-center md:text-left" data-aos="fade-up">
+        <p class="text-lg lg:text-1xl text-slate-50 cursor-default font-medium text-center lg:text-left" data-aos="fade-up">
           Sambut keindahan dan keragaman Jawa Timur, sebuah destinasi yang
           menakjubkan bagi pencinta petualangan dan kebudayaan.
         </p>
@@ -87,7 +87,7 @@ const blogs = ref(blogData.blogs);
         semasa remaja.
       </p>
     </div>
-    <div class="h-full w-[45%] flex items-center justify-end mb-5 lg:mb-0">
+    <div class="h-full w-[45%] flex items-center justify-end">
       <img src="/static/img/istana-gebang.jpeg?url" alt="Istana Gebang" class="rounded-lg" width="600" />
     </div>
   </section>
@@ -95,7 +95,7 @@ const blogs = ref(blogData.blogs);
   <!-- 2 -->
   <section class="tau-gak-sih tau-gak-sih-2 h-fit w-[85%] flex items-center justify-between mx-auto"
     data-aos="fade-up">
-    <div class="h-full w-1/2 flex items-center justify-start mb-5 lg:mb-0">
+    <div class="h-full w-1/2 flex items-center justify-start">
       <img src="/static/img/museum-sby.jpg?url" alt="Museum Seni Presiden SBY" class="rounded-lg" width="600" />
     </div>
     <div class="h-full w-[45%] flex flex-col items-start justify-center">
@@ -127,7 +127,7 @@ const blogs = ref(blogData.blogs);
         infrastruktur menjadi terhambat, salah satunya adalah internet.
       </p>
     </div>
-    <div class="h-full w-[45%] flex items-center justify-end mb-5 lg:mb-0">
+    <div class="h-full w-[45%] flex items-center justify-end">
       <img src="/static/img/pulau-sakala.jpg?url" alt="Ujung Paling Timur Jawa Timur" class="rounded-lg" width="600" />
     </div>
   </section>

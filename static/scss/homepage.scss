@@ -6,6 +6,9 @@
     width: 35%;
     max-height: 540px;
   }
+  .tau-gak-sih {
+    margin-bottom: 3rem;
+  }
 }
 
 @media screen and (max-width: 1920px) {
@@ -48,12 +51,11 @@
   .blog-slider {
     margin: 0;
   }
-  .tau-gak-sih {
-    margin-bottom: 3rem;
-  }
   .tau-gak-sih > div {
+    align-items: center;
     justify-content: center;
     width: 100%;
+    margin-bottom: 2rem;
     & h2 {
       text-align: center;
     }
