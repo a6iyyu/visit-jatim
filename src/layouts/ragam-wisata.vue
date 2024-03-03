@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import { ref, watch, onMounted } from "vue";
 import destination from "../data/destination.json";
+import hotel from '/static/img/hotel-majapahit.jpg';
 
 const destinations = ref(destination.places);
 // const arrayDestination = ref([...destinations.value].sort(() => Math.random() - 0.5).slice(0, 6));
@@ -50,7 +51,7 @@ watch(selectCity, (newSelectCity: string) => {
 
     <!-- Hero Mobile -->
     <div class="h-full w-3/5 flex items-end justify-center bg-center bg-cover bg-no-repeat"
-      :style="{ backgroundImage: 'url(/static/img/hotel-majapahit.jpg?url)' }">
+      :style="{ backgroundImage: `url(${hotel})` }">
       <div
         class="block md:hidden absolute min-w-full min-h-full bg-gradient-to-t from-black opacity-50 hover:opacity-80 transition-opacity duration-100 z-20">
       </div>

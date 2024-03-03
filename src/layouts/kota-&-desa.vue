@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import { ref, watch, onMounted } from "vue";
 import destination from "../data/destination.json";
+import
 
 const destinations = ref(destination.city_villages);
 // const arrayDestination = ref([...destinations.value].sort(() => Math.random() - 0.5).slice(0, 6));
