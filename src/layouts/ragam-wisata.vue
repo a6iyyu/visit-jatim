@@ -35,7 +35,7 @@ watch(selectCity, (newSelectCity: string) => {
 
 <template>
   <!-- Hero Dekstop -->
-  <section class="hero h-[35rem] w-full flex items-center justify-end pt-28 mx-auto">
+  <section class="hero h-[45rem] md:h-[35rem] w-full flex items-center justify-end pt-28 mx-auto">
     <div class="absolute grid place-items-center rounded-2xl bg-slate-400"
       :style="{ boxShadow: '0.5em 0.5em 0.5em #48484850' }">
       <div class="h-full w-3/4 flex flex-col items-start justify-center" data-aos="fade-up">

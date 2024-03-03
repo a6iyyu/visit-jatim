@@ -4,6 +4,7 @@ import collegeData from "../data/college-blogs.json";
 import CollegeSlider from "../components/CollegeSlider.vue";
 import Latest from "../components/Latest.vue";
 import CollegeEntryTips from "../components/CollegeEntryTips.vue";
+import ub from "../../static/img/ub.jpeg";
 
 const blogs = ref(collegeData.blogs);
 </script>
@@ -11,7 +12,7 @@ const blogs = ref(collegeData.blogs);
 <template>
   <!-- Hero section -->
   <section class="h-[40rem] w-full grid place-items-center mx-auto bg-bottom bg-cover bg-no-repeat"
-    :style="{ backgroundImage: 'url(/static/img/ub.jpeg?url)' }">
+    :style="{ backgroundImage: `url(${ub.src})` }">
     <div class="h-[40rem] w-full bg-gradient-to-t md:bg-gradient-to-r from-black opacity-60 z-0 absolute"></div>
     <div class="h-3/5 w-[85%] flex items-end justify-center z-10">
       <h1 class="text-5xl text-slate-50 cursor-default font-semibold text-center" data-aos="fade-out">

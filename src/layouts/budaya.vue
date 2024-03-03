@@ -2,6 +2,7 @@
 import { ref } from "vue";
 import CultureSliderVue from "../components/CultureSlider.vue";
 import Latest from "../components/Latest.vue";
+import candisingosari from "../../static/img/candi-singosari.jpg";
 
 import blogData from "../data/culture-blogs.json";
 const blogs = ref(blogData.blogs);
@@ -25,7 +26,7 @@ const blogs = ref(blogData.blogs);
 
     <!-- Hero Mobile -->
     <div class="h-full w-3/5 flex items-end justify-center bg-center bg-cover bg-no-repeat"
-      :style="{ backgroundImage: 'url(/static/img/candi-singosari.jpg?url)' }">
+      :style="{ backgroundImage: `url(${candisingosari.src})` }">
       <div class="h-3/5 w-4/5 flex flex-col items-center justify-center text-center">
         <b class="text-3xl text-slate-50 cursor-default">
           Mari Telusuri Ragam Tradisi Lokal!

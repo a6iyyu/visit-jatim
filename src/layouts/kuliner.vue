@@ -1,10 +1,11 @@
 <script setup>
 import CardCulinary from "../components/CardCulinary.vue";
+import sotolamongan from "../../static/img/soto-lamongan.jpg";
 </script>
 
 <template>
   <section class="h-[35rem] w-full mx-auto bg-center bg-cover bg-no-repeat"
-    :style="{ backgroundImage: 'url(/static/img/soto-lamongan.jpg?url)' }">
+    :style="{ backgroundImage: `url(${sotolamongan.src})` }">
     <div class="h-[35rem] w-full bg-gradient-to-t md:bg-gradient-to-r from-black opacity-60 z-0 absolute"></div>
   </section>
 

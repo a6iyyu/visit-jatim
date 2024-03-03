@@ -48,12 +48,8 @@
   .blog-slider {
     margin: 0;
   }
-  .tau-gak-sih-1 {
-    height: 32.5rem;
-  }
-  .tau-gak-sih-2,
-  .tau-gak-sih-3 {
-    height: 35rem;
+  .tau-gak-sih {
+    margin-bottom: 3rem;
   }
   .tau-gak-sih > div {
     justify-content: center;
@@ -66,8 +62,7 @@
       text-align-last: center;
     }
   }
-  .tau-gak-sih,
-  .tau-gak-sih-3 {
+  .tau-gak-sih {
     flex-direction: column-reverse;
   }
   .tau-gak-sih-2 {

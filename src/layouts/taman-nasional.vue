@@ -13,6 +13,7 @@ const destinations = ref(destination["taman-nasional"]);
   }">
     <div class="h-[35rem] w-full bg-gradient-to-t md:bg-gradient-to-t from-black opacity-60 z-20"></div>
   </section>
+  
   <!-- Opening section -->
   <section
     class="absolute h-60 w-4/5 md:w-3/5 lg:w-2/5 left-1/2 transform -translate-x-1/2 grid place-items-center top-[27rem] rounded-xl bg-gradient-to-tr from-slate-400 to-slate-300 z-20"
@@ -45,7 +46,7 @@ const destinations = ref(destination["taman-nasional"]);
   <section class="h-fit w-[85%] grid place-items-center mx-auto my-8">
     <GridListVue :data="destinations" />
   </section>
-  <section class="h-fit w-[85%] grid place-items-center mb-4 mx-auto" data-aos="fade-up">
+  <section class="h-fit w-[85%] grid place-items-center mb-12 sm:mb-4 mx-auto" data-aos="fade-up">
     <h4 class="text-1xl italic cursor-default font-semibold">
       Dan masih banyak lagi...~
     </h4>

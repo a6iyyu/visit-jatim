@@ -1,11 +1,13 @@
 <script lang="ts" setup>
 import CardPopulationVue from "../components/CardPopulation.vue";
+import kehidupan4 from "../../static/img/kehidupan-4.jpg";
+import seruni from "../../static/img/seruni-point.jpg";
 </script>
 
 <template>
   <!-- Hero section -->
   <section class="hero h-[40rem] w-full grid place-items-center bg-center bg-cover bg-no-repeat"
-    :style="{ backgroundImage: 'url(/static/img/kehidupan-4.jpg?url)' }">
+    :style="{ backgroundImage: `url(${kehidupan4.src})` }">
     <div class="h-[40rem] w-full bg-gradient-to-t from-black opacity-60 z-0 absolute"></div>
     <div class="h-3/5 w-[85%] flex items-end justify-center z-10">
       <h1 class="text-4xl lg:text-5xl text-slate-50 cursor-default font-semibold text-center" data-aos="fade-up">
@@ -122,7 +124,7 @@ import CardPopulationVue from "../components/CardPopulation.vue";
   </section>
 
   <!-- Puncak Tertinggi -->
-  <img src="../../static/img/seruni-point.jpg" class="h-[30rem] w-[85%] object-cover mt-14 mx-auto rounded-xl"
+  <img :src="`${seruni.src}`" class="h-[30rem] w-[85%] object-cover mt-14 mx-auto rounded-xl"
     data-aos="fade-up" />
 
   <section class="h-fit w-[85%] flex flex-col mt-14 mx-auto" data-aos="fade-up">
@@ -187,7 +189,7 @@ import CardPopulationVue from "../components/CardPopulation.vue";
   </section>
 
   <!-- Nomor darurat -->
-  <section class="h-fit w-[85%] flex flex-col mt-14 mx-auto" data-aos="fade-up">
+  <section class="h-fit w-[85%] flex flex-col mx-auto my-14" data-aos="fade-up">
     <h2 class="text-3xl text-gray-950 cursor-default font-semibold text-start">
       NOMOR DARURAT
     </h2>
