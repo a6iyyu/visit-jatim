@@ -45,7 +45,7 @@ const blogs = ref(collegeData.blogs);
     </p>
     <hr class="h-0.5 w-full bg-gray-950 rounded-md" />
   </section>
-  <section class="h-[25rem] w-full grid place-items-center mt-8" data-aos="fade-up">
+  <section class="h-[25rem] w-full grid place-items-center mt-8" id="college-slider" data-aos="fade-up">
     <div class="splide splide__1 h-full w-[85%] overflow-hidden">
       <div class="splide__track h-full w-full py-4">
         <ul class="splide__list">
@@ -117,7 +117,7 @@ const blogs = ref(collegeData.blogs);
 
   <!-- Reminder -->
   <p class="h-fit w-[85%] grid place-items-center mt-16 mb-8 mx-auto">
-    <q class="text-center text-gray-900 text-2xl cursor-default font-semibold" data-aos="fade-left">
+    <q class="text-center text-gray-900 text-xl md:text-2xl cursor-default font-semibold" data-aos="fade-left">
       Hanya pendidikan yang bisa menyelamatkan masa depan, tanpa pendidikan
       Indonesia tak mungkin bertahan.
     </q>
