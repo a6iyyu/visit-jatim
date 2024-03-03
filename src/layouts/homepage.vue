@@ -3,6 +3,7 @@ import { ref } from "vue";
 import CardCityVue from "../components/CardCity.vue";
 import Latest from "../components/Latest.vue";
 import bromoImg from "../../static/img/bromo.jpg";
+import reog from "../../static/img/reog.jpg";
 
 import blogData from "../data/homepage-blogs.json";
 const blogs = ref(blogData.blogs);
@@ -141,7 +142,7 @@ const blogs = ref(blogData.blogs);
   </section>
 
   <section class="h-[40rem] w-full bg-center bg-cover bg-no-repeat"
-    :style="{ backgroundImage: 'url(/static/img/reog.jpg?url)' }">
+    :style="{ backgroundImage: `url(${reog.src})` }">
     <div class="h-[40rem] w-full bg-gradient-to-t md:bg-gradient-to-r from-black opacity-60 z-20 absolute"></div>
     <div class="h-full w-full md:w-3/4 lg:w-1/2 px-10 md:px-28 flex items-end md:items-center content-end justify-center">
       <p class="text-3xl md:text-5xl mb-44 md:mb-0 text-slate-50 text-center md:text-left cursor-default font-black z-30"

@@ -2,6 +2,7 @@
 import { ref, watch, onMounted } from "vue";
 import destination from "../data/destination.json";
 import hotel from '../../static/img/hotel-majapahit.jpg';
+import banyuwangi from '../../static/img/banyuwangi.jpg';
 
 const destinations = ref(destination.places);
 // const arrayDestination = ref([...destinations.value].sort(() => Math.random() - 0.5).slice(0, 6));
@@ -76,7 +77,7 @@ watch(selectCity, (newSelectCity: string) => {
   </section>
 
   <section class="h-[35rem] w-full bg-center bg-cover bg-no-repeat"
-    :style="{ backgroundImage: 'url(/static/img/banyuwangi.jpg?url)' }">
+    :style="{ backgroundImage: `url(${banyuwangi.src})` }">
     <div class="h-[35rem] w-full bg-gradient-to-t md:bg-gradient-to-r from-black opacity-60 z-20 absolute"></div>
     <div class="h-full w-[85%] flex items-center justify-center md:items-center md:justify-start mx-auto">
       <p class="text-4xl md:text-5xl text-slate-50 text-center md:text-left cursor-default font-black z-30"

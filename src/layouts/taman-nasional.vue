@@ -2,13 +2,14 @@
 import { ref } from "vue";
 import GridListVue from "../components/GridList.vue";
 import destination from "../data/destination.json";
+import baluran from '../../static/img/taman-nasional-baluran.jpg';
 
 const destinations = ref(destination["taman-nasional"]);
 </script>
 
 <template>
   <section class="h-[35rem] w-full mx-auto bg-center bg-cover bg-no-repeat z-10" :style="{
-    backgroundImage: 'url(/static/img/taman-nasional-baluran.jpg?url)',
+    backgroundImage: `url(${baluran.src})`,
   }">
     <div class="h-[35rem] w-full bg-gradient-to-t md:bg-gradient-to-t from-black opacity-60 z-20"></div>
   </section>

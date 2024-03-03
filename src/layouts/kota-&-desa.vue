@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import { ref, watch, onMounted } from "vue";
 import destination from "../data/destination.json";
+import surabaya from '../../static/img/surabaya.jpg';
 
 const destinations = ref(destination.city_villages);
 // const arrayDestination = ref([...destinations.value].sort(() => Math.random() - 0.5).slice(0, 6));
@@ -59,7 +60,7 @@ watch(
 <template>
   <!-- Hero section -->
   <section class="hero h-[40rem] w-full grid place-items-center bg-center bg-cover bg-no-repeat"
-    :style="{ backgroundImage: 'url(/static/img/surabaya.jpg?url)' }">
+    :style="{ backgroundImage: `url(${surabaya.src})` }">
     <div class="h-[40rem] w-full bg-gradient-to-t from-black opacity-60 z-0 absolute"></div>
     <div class="h-3/5 w-[85%] flex items-end justify-center z-10">
       <h1 class="text-3xl md:text-5xl text-slate-50 cursor-default font-semibold text-center" data-aos="fade-up">
