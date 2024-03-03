@@ -7,10 +7,14 @@ export const Header: React.FC = () => {
   const [scrolling, setScrolling] = useState(false);
   const [mobileNavbarOpen, setMobileNavbarOpen] = useState(false);
   const mobileNavbarRef: RefObject<HTMLDivElement> = useRef(null);
+  const logoImg = logo.src;
 
   const handleMobileNavbar = () => setMobileNavbarOpen(!mobileNavbarOpen);
   const clickOutside = (event: MouseEvent) => {
-    if (mobileNavbarRef.current && !mobileNavbarRef.current.contains(event.target as Node)) {
+    if (
+      mobileNavbarRef.current &&
+      !mobileNavbarRef.current.contains(event.target as Node)
+    ) {
       setMobileNavbarOpen(false);
     }
   };
@@ -41,7 +45,7 @@ export const Header: React.FC = () => {
     >
       <div className="h-full w-[85%] flex items-center justify-between">
         <a href="/" className="logo flex h-full w-2/3 md:w-2/5 items-center">
-          <img src={logo} width={125} alt="Logo" />
+          <img src={logoImg} width={125} alt="Logo" />
         </a>
         <div className="hidden md:flex h-full w-3/4 lg:w-3/5 items-center justify-evenly">
           <a
@@ -53,19 +57,11 @@ export const Header: React.FC = () => {
           </a>
           <Dropdown
             name={"DESTINASI"}
-            options={[
-              "Ragam Wisata", 
-              "Kota & Desa", 
-              "Taman Nasional"
-            ]}
+            options={["Ragam Wisata", "Kota & Desa", "Taman Nasional"]}
           />
           <Dropdown
             name={"INSPIRASI"}
-            options={[
-              "Budaya", 
-              "Kuliner",
-              "Pendidikan"
-              ]}
+            options={["Budaya", "Kuliner", "Pendidikan"]}
           />
         </div>
       </div>
@@ -92,19 +88,11 @@ export const Header: React.FC = () => {
             </a>
             <AccordionMobile
               name={"DESTINASI"}
-              options={[
-                "Ragam Wisata", 
-                "Kota & Desa", 
-                "Taman Nasional"
-              ]}
+              options={["Ragam Wisata", "Kota & Desa", "Taman Nasional"]}
             />
             <AccordionMobile
               name={"INSPIRASI"}
-              options={[
-                "Budaya", 
-                "Kuliner", 
-                "Pendidikan"
-              ]}
+              options={["Budaya", "Kuliner", "Pendidikan"]}
             />
           </div>
         )}
