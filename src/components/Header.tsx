@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState, type RefObject } from "react";
 import { AccordionMobile } from "./AccordionMobile";
 import { Dropdown } from "./Dropdown";
+import logo from "../../static/img/logo-black.png";
 
 export const Header: React.FC = () => {
   const [scrolling, setScrolling] = useState(false);
@@ -40,7 +41,7 @@ export const Header: React.FC = () => {
     >
       <div className="h-full w-[85%] flex items-center justify-between">
         <a href="/" className="logo flex h-full w-2/3 md:w-2/5 items-center">
-          <img src="../../static/img/logo-black.png" width={125} alt="Logo" />
+          <img src={logo} width={125} alt="Logo" />
         </a>
         <div className="hidden md:flex h-full w-3/4 lg:w-3/5 items-center justify-evenly">
           <a
