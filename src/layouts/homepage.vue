@@ -2,6 +2,7 @@
 import { ref } from "vue";
 import CardCityVue from "../components/CardCity.vue";
 import Latest from "../components/Latest.vue";
+import bromoImg from "../../static/img/bromo.jpg";
 
 import blogData from "../data/homepage-blogs.json";
 const blogs = ref(blogData.blogs);
@@ -10,7 +11,7 @@ const blogs = ref(blogData.blogs);
 <template>
   <!-- Hero section -->
   <section class="hero h-[40rem] w-full grid place-items-center bg-center bg-cover bg-no-repeat"
-    :style="{ backgroundImage: 'url(/static/img/bromo.jpg?url)' }">
+    :style="{ backgroundImage: `url(${bromoImg.src})` }">
     <div class="h-[40rem] w-full bg-gradient-to-t md:bg-gradient-to-r from-black opacity-60 z-0 absolute"></div>
     <div class="h-full w-[85%] flex flex-col items-start justify-center z-30">
       <div class="h-full w-1/2 flex flex-col items-start justify-center">
