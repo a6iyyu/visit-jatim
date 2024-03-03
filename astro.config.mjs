@@ -4,7 +4,6 @@ import vue from "@astrojs/vue";
 import react from "@astrojs/react";
 import partytown from "@astrojs/partytown";
 // import vercel from "@astrojs/vercel/serverless";
-import vercel from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
 export default defineConfig({
@@ -17,6 +16,4 @@ export default defineConfig({
   // site: 'https://Afif-Ghifari.github.io',
   // base: '/wdc',
   ,
-  output: "server",
-  adapter: vercel()
 });
