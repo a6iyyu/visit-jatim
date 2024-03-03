@@ -2,7 +2,7 @@
 import { ref } from "vue";
 import GridListVue from "../components/GridList.vue";
 import destination from "../data/destination.json";
-import baluran from '../../static/img/taman-nasional-baluran.jpg';
+import baluran from "../../static/img/taman-nasional-baluran.jpg";
 
 const destinations = ref(destination["taman-nasional"]);
 </script>

@@ -23,12 +23,12 @@ export const ScrollToTop: React.FC = () => {
 
   return (
     <div
-      className={`h-24 w-24 bg-gray-800 cursor-pointer rounded-full fixed grid place-items-center z-30 hover:bg-gray-700 ${
+      className={`h-[4.5rem] w-[4.5rem] lg:h-24 lg:w-24 bg-gray-800 cursor-pointer rounded-full fixed grid place-items-center z-30 hover:bg-gray-700 ${
         showScroll ? "visible opacity-100" : "invisible opacity-0"
       } transition-all duration-300 ease-in-out bottom-8 right-8`}
       onClick={scrollToTop}
     >
-      <img src={ScrollToTopImage} className="rotate-180" width={25} />
+      <img src={ScrollToTopImage} className="rotate-180 w-5 lg:w-6" />
     </div>
   );
 };

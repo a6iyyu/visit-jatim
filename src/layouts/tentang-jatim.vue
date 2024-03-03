@@ -8,7 +8,7 @@ import CardPopulationVue from "../components/CardPopulation.vue";
     :style="{ backgroundImage: 'url(/static/img/kehidupan-4.jpg?url)' }">
     <div class="h-[40rem] w-full bg-gradient-to-t from-black opacity-60 z-0 absolute"></div>
     <div class="h-3/5 w-[85%] flex items-end justify-center z-10">
-      <h1 class="text-5xl text-slate-50 cursor-default font-semibold text-center" data-aos="fade-up">
+      <h1 class="text-4xl lg:text-5xl text-slate-50 cursor-default font-semibold text-center" data-aos="fade-up">
         MARI BERKENALAN
         <br />
         DENGAN JAWA TIMUR

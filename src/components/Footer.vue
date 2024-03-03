@@ -1,5 +1,5 @@
 <template>
-  <footer class="h-44 w-[85%] flex flex-row items-center justify-between mx-auto">
+  <footer class="h-44 w-[85%] flex flex-col lg:flex-row items-start lg:items-center justify-around lg:justify-between mx-auto my-7 lg:my-0">
     <h2 class="text-gray-950 text-2xl cursor-default font-semibold">
       VISIT JATIM
       <p class="text-1xl font-medium">&copy; 2024</p>
