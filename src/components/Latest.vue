@@ -19,7 +19,6 @@ const frontNews = reactive({
   (frontNews.content = array.value[randomIndex].content);
 
 onMounted(() => {
-  //putFrontNews();
   console.log(frontNews);
 });
 
