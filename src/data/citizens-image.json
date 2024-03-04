@@ -1,10 +1,10 @@
 {
     "img": [
-        "../../static/img/kehidupan-1.jpg",
-        "../../static/img/kehidupan-2.jpg",
-        "../../static/img/kehidupan-3.jpg",
-        "../../static/img/kehidupan-4.jpg",
-        "../../static/img/kehidupan-5.jpg",
-        "../../static/img/kehidupan-6.jpg"
+        "/static/img/kehidupan-1.jpg?url",
+        "/static/img/kehidupan-2.jpg?url",
+        "/static/img/kehidupan-3.jpg?url",
+        "/static/img/kehidupan-4.jpg?url",
+        "/static/img/kehidupan-5.jpg?url",
+        "/static/img/kehidupan-6.jpg?url"
     ]
 }

@@ -1,48 +1,48 @@
 {
     "colleges": [
         {
-            "img": "../../static/img/its.jpg",
+            "img": "/static/img/its.jpg?url",
             "link": "https://maps.app.goo.gl/bxV77jRjjS74CNm87"
         },
         {
-            "img": "../../static/img/unair.jpg",
+            "img": "/static/img/unair.jpg?url",
             "link": "https://maps.app.goo.gl/ppsMuhD9Y1MVbKbr5"
         },
         {
-            "img": "../../static/img/ub.jpeg",
+            "img": "/static/img/ub.jpeg?url",
             "link": "https://maps.app.goo.gl/fzUv7GGuZ1Vq2SWF8"
         },
         {
-            "img": "../../static/img/um.jpg",
+            "img": "/static/img/um.jpg?url",
             "link": "https://maps.app.goo.gl/G8D7QAFHBNG6qqsT6"
         },
         {
-            "img": "../../static/img/polinema.jpg",
+            "img": "/static/img/polinema.jpg?url",
             "link": "https://maps.app.goo.gl/qrJ2TyQ5fRzpmzFQ9"
         },
         {
-            "img": "../../static/img/unesa.jpg",
+            "img": "/static/img/unesa.jpg?url",
             "link": "https://maps.app.goo.gl/rFqKjQcyzKaCv5sG8"
         },
         {
-            "img": "../../static/img/unej.jpg",
+            "img": "/static/img/unej.jpg?url",
             "link": "https://maps.app.goo.gl/HPF52Vqn5P7yawP49"
         },
         
         {
-            "img": "../../static/img/upn.jpg",
+            "img": "/static/img/upn.jpg?url",
             "link": "https://maps.app.goo.gl/XWMFmaQurYkF8fNP9"
         },
         {
-            "img": "../../static/img/uin.jpg",
+            "img": "/static/img/uin.jpg?url",
             "link": "https://maps.app.goo.gl/3pXQydBYK6ririYJA"
         },
         {
-            "img": "../../static/img/umm.jpeg",
+            "img": "/static/img/umm.jpeg?url",
             "link": "https://maps.app.goo.gl/6U95xud9suqrY9Ax7"
         },
         {
-            "img": "../../static/img/pens.jpg",
+            "img": "/static/img/pens.jpg?url",
             "link": "https://maps.app.goo.gl/LXeXFFGq1NidexYL6"
         }
     ]
