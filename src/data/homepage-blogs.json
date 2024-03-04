@@ -3,35 +3,35 @@
         {
             "id": 1,
             "link": "https://jatim.viva.co.id/gaya-hidup/9107-10-wisata-kuliner-khas-jawa-timur-yang-wajib-dikunjungi-murah-dan-maknyus",
-            "img": "/public/img/pecel.jpg",
+            "img": "/img/pecel.jpg",
             "title": "10 Wisata Kuliner Khas Jawa Timur yang Wajib Dikunjungi, Murah dan Maknyus",
             "content": "Kuliner khas Jawa Timur memang beragam dan berbeda-beda di setiap daerahnya. Masakan khas orang Jawa Timur umumnya memiliki cita rasa..."
         },
         {
             "id": 2,
             "link": "https://www.kompas.com/tren/read/2023/08/14/124500165/daftar-10-perguruan-tinggi-negeri-terbaik-di-jawa-timur",
-            "img": "/public/img/ub.jpeg",
+            "img": "/img/ub.jpeg",
             "title": "Daftar 10 Perguruan Tinggi Negeri Terbaik di Jawa Timur",
             "content": "Perguruan Tinggi merupakan instansi yang menyelenggarakan pendidikan akademik dan vokasi dalam berbagai macam bidang ilmu pengetahuan..."            
         },
         {
             "id": 3,
             "link": "https://www.detik.com/jatim/budaya/d-7000628/6-budaya-dan-tradisi-jawa-timur-yang-dikagumi-dunia",
-            "img": "/public/img/reog-2.jpeg",
+            "img": "/img/reog-2.jpeg",
             "title": "6 Budaya dan Tradisi Jawa Timur yang Dikagumi Dunia",
             "content": "Jawa Timur memiliki berbagai kearifan lokal. Sebanyak 6 kearifan lokal di Jawa Timur yang dikagumi dunia..."
         },
         {
             "id": 4,
             "link": "https://www.tripadvisor.co.id/Attractions-g2301797-Activities-c47-t17-East_Java_Java.html",
-            "img": "/public/img/candi-jawi.jpg",
+            "img": "/img/candi-jawi.jpg",
             "title": "Tempat Bersejarah di Jawa Timur",
             "content": "Tempat Terkenal di Jawa Timur · 1. Gunung Bromo · 2. Jembatan Suramadu · 3. Mesjid Al-Akbar · 4. Monumen Kapal Selam (Monkasel) · 5. Tugu Pahlawan · 6. Patung Sura ..."
         },
         {
             "id": 5,
             "link": "https://www.jawapos.com/wisata-kuliner/011771965/8-desa-wisata-terbaik-di-jawa-timur-yang-wajib-dikunjungi",
-            "img": "/public/img/pujon-kidul.jpg",
+            "img": "/img/pujon-kidul.jpg",
             "title": "8 Desa Wisata Terbaik di Jawa Timur yang Wajib Dikunjungi",
             "content": "Wisata alam yang disuguhkan yaitu Taman Edelweiss dan Menjemput Matahari Penanjakan Adventure. Selain itu, ada wisata budaya, seperti One Day..."
         }
