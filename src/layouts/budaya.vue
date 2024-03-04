@@ -2,7 +2,7 @@
 import { ref } from "vue";
 import CultureSliderVue from "../components/CultureSlider.vue";
 import Latest from "../components/Latest.vue";
-import candisingosari from "../../static/img/candi-singosari.jpg";
+import candisingosari from "../../public/img/candi-singosari.jpg";
 
 import blogData from "../data/culture-blogs.json";
 const blogs = ref(blogData.blogs);

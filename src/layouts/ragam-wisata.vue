@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 import { ref, watch, onMounted } from "vue";
 import destination from "../data/destination.json";
-import hotel from "../../static/img/hotel-majapahit.jpg";
-import banyuwangi from "../../static/img/banyuwangi.jpg";
+import hotel from "../../public/img/hotel-majapahit.jpg";
+import banyuwangi from "../../public/img/banyuwangi.jpg";
 
 const destinations = ref(destination.places);
 // const arrayDestination = ref([...destinations.value].sort(() => Math.random() - 0.5).slice(0, 6));

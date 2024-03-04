@@ -1,6 +1,6 @@
 <script setup>
 import CardCulinary from "../components/CardCulinary.vue";
-import sotolamongan from "../../static/img/soto-lamongan.jpg";
+import sotolamongan from "../../public/img/soto-lamongan.jpg";
 </script>
 
 <template>
@@ -51,13 +51,13 @@ import sotolamongan from "../../static/img/soto-lamongan.jpg";
     <hr class="h-0.5 w-full bg-gray-950" data-aos="fade-up" />
   </section>
   <section class="h-fit w-[85%] grid place-items-center grid-cols-4 mx-auto" id="fnb-logos">
-    <img src="/static/img/pesen-kopi.jpg?url" alt="Pesen Kopi" class="cursor-default font-semibold mix-blend-multiply"
+    <img src="/public/img/pesen-kopi.jpg?url" alt="Pesen Kopi" class="cursor-default font-semibold mix-blend-multiply"
       width="150" data-aos="fade-right" />
-    <img src="/static/img/gacoan.png?url" alt="Mie Gacoan" class="cursor-default font-semibold mix-blend-multiply"
+    <img src="/public/img/gacoan.png?url" alt="Mie Gacoan" class="cursor-default font-semibold mix-blend-multiply"
       width="150" data-aos="fade-up" />
-    <img src="/static/img/ayam-nelongso.jpg?url" alt="Ayam Nelongso"
+    <img src="/public/img/ayam-nelongso.jpg?url" alt="Ayam Nelongso"
       class="cursor-default font-semibold mix-blend-multiply" width="150" data-aos="fade-up" />
-    <img src="/static/img/kopi-studio-24.png?url" alt="Kopi Studio 24"
+    <img src="/public/img/kopi-studio-24.png?url" alt="Kopi Studio 24"
       class="cursor-default font-semibold mix-blend-multiply" width="150" data-aos="fade-left" />
   </section>
   <section class="h-fit w-[85%] flex items-center mb-8 mx-auto" id="fnb-description">
