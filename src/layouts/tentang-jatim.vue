@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import CardPopulationVue from "../components/CardPopulation.vue";
-import kehidupan1 from "../static/img/kehidupan-1.jpg";
-import seruni from "../static/img/seruni-point.jpg";
+import kehidupan1 from "../../public/img/kehidupan-1.jpg";
+import seruni from "../../public/img/seruni-point.jpg";
 </script>
 
 <template>

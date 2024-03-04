@@ -3,7 +3,7 @@
   <section class="not-found-page h-[40rem] w-full grid place-items-center">
     <div class="h-full w-[90%] block lg:flex">
       <div class="h-[45%] lg:h-full w-1/2 grid place-items-center">
-        <img src="../static/img/404.png?url" alt="404: Not Found!" data-aos="fade-up" />
+        <img src="/public/img/404.png?url" alt="404: Not Found!" data-aos="fade-up" />
       </div>
       <div class="h-[55%] lg:h-full w-1/2 flex flex-col items-center justify-center">
         <div class="h-1/4 w-full flex flex-col items-start justify-end">

@@ -2,8 +2,8 @@
 import { ref } from "vue";
 import CardCityVue from "../components/CardCity.vue";
 import Latest from "../components/Latest.vue";
-import bromo from "../static/img/bromo.jpg";
-import reog from "../static/img/reog.jpg";
+import bromo from "../../public/img/bromo.jpg";
+import reog from "../../public/img/reog.jpg";
 
 import blogData from "../data/homepage-blogs.json";
 const blogs = ref(blogData.blogs);
@@ -88,7 +88,7 @@ const blogs = ref(blogData.blogs);
       </p>
     </div>
     <div class="h-full w-[45%] flex items-center justify-end">
-      <img src="../static/img/istana-gebang.jpeg?url" alt="Istana Gebang" class="rounded-lg" width="600" />
+      <img src="/public/img/istana-gebang.jpeg?url" alt="Istana Gebang" class="rounded-lg" width="600" />
     </div>
   </section>
 
@@ -96,7 +96,7 @@ const blogs = ref(blogData.blogs);
   <section class="tau-gak-sih tau-gak-sih-2 h-fit w-[85%] flex items-center justify-between mx-auto"
     data-aos="fade-up">
     <div class="h-full w-1/2 flex items-center justify-start">
-      <img src="../static/img/museum-sby.jpg?url" alt="Museum Seni Presiden SBY" class="rounded-lg" width="600" />
+      <img src="/public/img/museum-sby.jpg?url" alt="Museum Seni Presiden SBY" class="rounded-lg" width="600" />
     </div>
     <div class="h-full w-[45%] flex flex-col items-start justify-center">
       <h2 class="text-3xl text-gray-950 cursor-default font-semibold">
@@ -128,7 +128,7 @@ const blogs = ref(blogData.blogs);
       </p>
     </div>
     <div class="h-full w-[45%] flex items-center justify-end">
-      <img src="../static/img/pulau-sakala.jpg?url" alt="Ujung Paling Timur Jawa Timur" class="rounded-lg" width="600" />
+      <img src="/public/img/pulau-sakala.jpg?url" alt="Ujung Paling Timur Jawa Timur" class="rounded-lg" width="600" />
     </div>
   </section>
 

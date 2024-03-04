@@ -4,7 +4,7 @@ import collegeData from "../data/college-blogs.json";
 import CollegeSlider from "../components/CollegeSlider.vue";
 import Latest from "../components/Latest.vue";
 import CollegeEntryTips from "../components/CollegeEntryTips.vue";
-import ub from "../static/img/ub.jpeg";
+import ub from "../../public/img/ub.jpeg";
 
 const blogs = ref(collegeData.blogs);
 </script>
@@ -75,7 +75,7 @@ const blogs = ref(collegeData.blogs);
       PADA ANDA SEBAGAI<br />
       GENERASI PENERUS BANGSA
     </h1>
-    <img src="../static/img/businessman.jpg?url" alt="Successful" class="cursor-default font-semibold rounded-lg"
+    <img src="/public/img/businessman.jpg?url" alt="Successful" class="cursor-default font-semibold rounded-lg"
       data-aos="fade-up" :style="{ boxShadow: '0.75rem 0.75rem 0.75rem #bebebe' }" />
   </section>
 
