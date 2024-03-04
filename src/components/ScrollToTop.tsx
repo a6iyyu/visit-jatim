@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import ScrollToTopImage from "/public/img/scroll-to-top.png?url";
+import ScrollToTopImage from "../static/img/scroll-to-top.png?url";
 
 export const ScrollToTop: React.FC = () => {
   const [showScroll, setShowScroll] = useState<boolean>(false);

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState, type RefObject } from "react";
 import { AccordionMobile } from "./AccordionMobile";
 import { Dropdown } from "./Dropdown";
-import logo from "../../public/img/logo-black.png";
+import logo from "../static/img/logo-black.png";
 
 export const Header: React.FC = () => {
   const [scrolling, setScrolling] = useState(false);
