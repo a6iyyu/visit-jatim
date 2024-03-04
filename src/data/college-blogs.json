@@ -3,35 +3,35 @@
         {
             "id": 1,
             "link": "https://www.its.ac.id/news/2024/02/13/ungguli-kampus-top-dunia-barunastra-its-kembali-berjaya-di-amerika/",
-            "img": "/static/img/pendidikan-2.jpg?url",
+            "img": "img/pendidikan-2.jpg?url",
             "title": "Ungguli Kampus Top Dunia, Barunastra ITS Kembali Berjaya di Amerika",
             "content": "Barunastra ITS kembali berhasil mengharumkan nama almamater dan bangsa Indonesia dengan meraih juara ketiga di ajang IRC 2024."
         },
         {
             "id": 2,
             "link": "https://timesindonesia.co.id/pendidikan/484830/buat-aplikasi-signavoice-mahasiswa-polinema-raih-juara-1pimkipnas-2024",
-            "img": "/static/img/pendidikan-3.jpg?url",
+            "img": "img/pendidikan-3.jpg?url",
             "title": "Buat Aplikasi Signavoice, Mahasiswa Polinema Raih Juara 1 Pimkipnas 2024",
             "content": "\"Signavoice adalah aplikasi penerjemah Bahasa Isyarat Indonesia yang memudahkan komunikasi antara penyandang tuna wicara dan masyarakat umum,\" ..."
         },
         {
             "id": 3,
             "link": "https://ff.unair.ac.id/wrt/2146/kembali-peroleh-penghargaan-ff-unair-terbaik-pada-usulan-terobosan-flagship-program-2024.html",
-            "img": "/static/img/pendidikan-4.jpg?url",
+            "img": "img/pendidikan-4.jpg?url",
             "title": "Kembali Peroleh Penghargaan, FF UNAIR Terbaik pada Usulan Terobosan Flagship Program 2024",
             "content": "Pada hari ini (17/1/2024) penghargaan kembali menghampiri FF UNAIR karena terpilih menjadi Fakultas dengan Usulan Terobosan Flagship Program ..."
         },
         {
             "id": 4,
             "link": "https://prasetya.ub.ac.id/fk-panen-juara-di-ajang-simpic-2024/",
-            "img": "/static/img/pendidikan-5.jpg?url",
+            "img": "img/pendidikan-5.jpg?url",
             "title": "FK Panen Juara di Ajang SIMPIC 2024",
             "content": "Kontingen Fakultas Kedokteran Universitas Brawijaya (FK UB) meraih prestasi di ajang bergengsi Sisiraj International Microbiology, ..."
         },
         {
             "id": 5,
             "link": "https://www.rri.co.id/daerah/506390/inilah-capaian-prestasi-jatim-bidang-pendidikan-lima-tahun-terakhir",
-            "img": "/static/img/pendidikan-1.jpeg?url",
+            "img": "img/pendidikan-1.jpeg?url",
             "title": "Inilah Capaian Prestasi Jatim Bidang Pendidikan Lima Tahun Terakhir",
             "content": "KBRN, Surabaya: Gubernur Jawa Timur Khofifah Indar Parawansa optimistis prestasi bidang pendidikan Jatim akan semakin di tahun 2024 ini."
         }
