@@ -1,47 +1,47 @@
 {
     "culinary": [
         {
-            "img": "img/rujak-cingur.jpg?url",
+            "img": "/rujak-cingur.jpg?url",
             "name": "RUJAK CINGUR",
             "origin": "MALANG"
         },
         {
-            "img": "img/pecel.jpg?url",
+            "img": "/pecel.jpg?url",
             "name": "PECEL TUMPANG",
             "origin": "MADIUN"
         },
         {
-            "img": "img/sate-madura.jpg?url",
+            "img": "/sate-madura.jpg?url",
             "name": "SATE MADURA",
             "origin": "PULAU MADURA"
         },
         {
-            "img": "img/soto-lamongan.jpg?url",
+            "img": "/soto-lamongan.jpg?url",
             "name": "SOTO LAMONGAN",
             "origin": "LAMONGAN"
         },
         {
-            "img": "img/lontong-balap.jpg?url",
+            "img": "/lontong-balap.jpg?url",
             "name": "LONTONG BALAP",
             "origin": "SURABAYA"
         },
         {
-            "img": "img/rawon.jpg?url",
+            "img": "/rawon.jpg?url",
             "name": "RAWON",
             "origin": "PONOROGO"
         },
         {
-            "img": "img/rujak-soto.jpg?url",
+            "img": "/rujak-soto.jpg?url",
             "name": "RUJAK SOTO",
             "origin": "BANYUWANGI"
         },
         {
-            "img": "img/nasi-tempong.jpg?url",
+            "img": "/nasi-tempong.jpg?url",
             "name": "NASI TEMPONG",
             "origin": "BANYUWANGI"
         },
         {
-            "img": "img/tahu-tek.jpg?url",
+            "img": "/tahu-tek.jpg?url",
             "name": "TAHU TEK",
             "origin": "LAMONGAN"
         }

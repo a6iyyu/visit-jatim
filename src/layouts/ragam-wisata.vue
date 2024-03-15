@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 import { ref, watch, onMounted } from "vue";
 import destination from "../data/destination.json";
-import hotel from "../../public/img/hotel-majapahit.jpg";
-import banyuwangi from "../../public/img/banyuwangi.jpg";
+import hotel from "../../public/hotel-majapahit.jpg";
+import banyuwangi from "../../public/banyuwangi.jpg";
 
 const destinations = ref(destination.places);
 // const arrayDestination = ref([...destinations.value].sort(() => Math.random() - 0.5).slice(0, 6));
@@ -35,7 +35,7 @@ watch(selectCity, (newSelectCity: string) => {
 
 <template>
   <!-- Hero Dekstop -->
-  <section class="hero h-[45rem] md:h-[35rem] w-full flex items-center justify-end pt-28 mx-auto">
+  <section class="hero h-[45rem] md:h-[35rem] w-full flex items-center justify-end mx-auto">
     <div class="absolute grid place-items-center rounded-2xl bg-slate-400"
       :style="{ boxShadow: '0.5em 0.5em 0.5em #48484850' }">
       <div class="h-full w-3/4 flex flex-col items-start justify-center" data-aos="fade-up">

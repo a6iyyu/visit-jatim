@@ -1,6 +1,6 @@
 <script setup>
 import CardCulinary from "../components/CardCulinary.vue";
-import sotolamongan from "../../public/img/soto-lamongan.jpg";
+import sotolamongan from "../../public/soto-lamongan.jpg";
 </script>
 
 <template>

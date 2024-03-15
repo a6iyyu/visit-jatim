@@ -3,73 +3,73 @@
         {
             "city": "SURABAYA",
             "epithet": "KOTA PAHLAWAN",
-            "img": "img/surabaya.jpg?url",
+            "img": "/surabaya.jpg?url",
             "link": "https://maps.app.goo.gl/tvhMS5eWbugWAij17"
         },
         {
             "city": "BANYUWANGI",
             "epithet": "THE SUNRISE OF JAVA",
-            "img": "img/banyuwangi.jpg?url",
+            "img": "/banyuwangi.jpg?url",
             "link": "https://maps.app.goo.gl/CwQM3WDVWaSCAtAe6"
         },
         {
             "city": "BLITAR",
             "epithet": "KOTA PROKLAMATOR",
-            "img": "img/blitar.jpg?url",
+            "img": "/blitar.jpg?url",
             "link": "https://maps.app.goo.gl/6WPTLzYASDvdMb3d6"
         },
         {
             "city": "BOJONEGORO",
             "epithet": "KOTA LEDRE",
-            "img": "img/bojonegoro.jpg?url",
+            "img": "/bojonegoro.jpg?url",
             "link": "https://maps.app.goo.gl/7yELszm4SZadfcJX9"
         },
         {
             "city": "JEMBER",
             "epithet": "KOTA TEMBAKAU",
-            "img": "img/jember.jpg?url",
+            "img": "/jember.jpg?url",
             "link": "https://maps.app.goo.gl/mBwKLjoad9T1YMxRA"
         },
         {
             "city": "KEDIRI",
             "epithet": "KOTA TAHU",
-            "img": "img/kediri.jpeg",
+            "img": "/kediri.jpeg",
             "link": "https://maps.app.goo.gl/iuf3gzgPMthoqU5m9"
         },
         {
             "city": "MADIUN",
             "epithet": "KOTA SEPUR",
-            "img": "img/madiun.jpg?url",
+            "img": "/madiun.jpg?url",
             "link": "https://maps.app.goo.gl/D1thT7EA5HQBJbVK6"
         },
         {
             "city": "MALANG",
             "epithet": "KOTA PENDIDIKAN",
-            "img": "img/malang.jpg?url",
+            "img": "/malang.jpg?url",
             "link": "https://maps.app.goo.gl/RXHFViDvLoCUFaJD8"
         },
         {
             "city": "MAGETAN",
             "epithet": "THE SUNSET OF JAVA",
-            "img": "img/magetan.jpg?url",
+            "img": "/magetan.jpg?url",
             "link": "https://maps.app.goo.gl/rdBN2RkkFKRonSDz8"
         },
         {
             "city": "MOJOKERTO",
             "epithet": "KOTA ONDE-ONDE",
-            "img": "img/mojokerto.png",
+            "img": "/mojokerto.png",
             "link": "https://maps.app.goo.gl/EWKqbLhTQLiqBKBB9"
         },
         {
             "city": "PASURUAN",
             "epithet": "KOTA SANTRI",
-            "img": "img/pasuruan.jpg?url",
+            "img": "/pasuruan.jpg?url",
             "link": "https://maps.app.goo.gl/QuCF1PRmF6mc28gy7"
         },
         {
             "city": "SIDOARJO",
             "epithet": "KOTA UDANG",
-            "img": "img/sidoarjo.jpg?url",
+            "img": "/sidoarjo.jpg?url",
             "link": "https://maps.app.goo.gl/Mx2hj4LKj94VKUmC9"
         }
     ]

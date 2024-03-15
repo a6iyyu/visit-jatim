@@ -4,7 +4,7 @@ import collegeData from "../data/college-blogs.json";
 import CollegeSlider from "../components/CollegeSlider.vue";
 import Latest from "../components/Latest.vue";
 import CollegeEntryTips from "../components/CollegeEntryTips.vue";
-import ub from "../../public/img/ub.jpeg";
+import ub from "../../public/ub.jpeg";
 
 const blogs = ref(collegeData.blogs);
 </script>
