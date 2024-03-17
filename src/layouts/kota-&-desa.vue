@@ -59,11 +59,16 @@ watch(
 
 <template>
   <!-- Hero section -->
-  <section class="hero h-[40rem] w-full grid place-items-center bg-center bg-cover bg-no-repeat"
-    :style="{ backgroundImage: `url(${surabaya.src})` }">
+  <section
+    class="hero h-[40rem] w-full grid place-items-center bg-center bg-cover bg-no-repeat"
+    :style="{ backgroundImage: `url(${surabaya.src})` }"
+  >
     <div class="h-[40rem] w-full bg-gradient-to-t from-black opacity-60 z-0 absolute"></div>
     <div class="h-3/5 w-[85%] flex items-end justify-center z-10">
-      <h1 class="text-3xl md:text-5xl text-slate-50 cursor-default font-semibold text-center" data-aos="fade-up">
+      <h1
+        class="text-3xl md:text-5xl text-slate-50 cursor-default font-semibold text-center"
+        data-aos="fade-up"
+      >
         BERKELANA
         <br />
         DI KOTA & DESA
@@ -71,13 +76,22 @@ watch(
     </div>
   </section>
 
-  <section class="h-fit w-[85%] flex flex-col items-center mb-10 mt-20 mx-auto" data-aos="fade-up">
-    <h2 class="text-2xl md:text-3xl text-gray-950 cursor-default font-semibold my-3 text-center" data-aos="fade-up">
+  <section
+    class="h-fit w-[85%] flex flex-col items-center mb-10 mt-20 mx-auto"
+    data-aos="fade-up"
+  >
+    <h2
+      class="text-2xl md:text-3xl text-gray-950 cursor-default font-semibold my-3 text-center"
+      data-aos="fade-up"
+    >
       TEMUKAN KEINDAHAN DI SETIAP JALAN KOTA DAN DESA
     </h2>
     <hr class="h-0.5 w-full bg-gray-950" data-aos="fade-up" />
-    <p class="text-base md:text-xl my-3 text-gray-950 cursor-default font-medium text-justify"
-      :style="{ textAlignLast: 'center' }" data-aos="fade-up">
+    <p
+      class="text-base md:text-xl my-3 text-gray-950 cursor-default font-medium text-justify"
+      :style="{ textAlignLast: 'center' }"
+      data-aos="fade-up"
+    >
       Jelajahi pesona kota yang modern dan desa yang asri dalam satu perjalanan!
       Nikmati kehidupan perkotaan yang dinamis dan kemudian meresapi ketenangan
       desa yang memesona. Keindahan di setiap kota dan desa menanti untuk
@@ -87,30 +101,44 @@ watch(
 
   <section class="h-fit w-[85%] mt-14 mx-auto" data-aos="fade-up">
     <div class="my-10 w-full md:w-3/4 lg:w-1/2 grid grid-cols-3 gap-4">
-      <button @click="toggleAllBtn()"
-        class="border border-slate-900 px-4 py-2 hover:bg-slate-900 hover:text-slate-50 transition-colors text-lg focus:text-slate-50 focus:bg-slate-900">
+      <button
+        @click="toggleAllBtn()"
+        class="border border-slate-900 px-4 py-2 hover:bg-slate-900 hover:text-slate-50 transition-colors text-lg focus:text-slate-50 focus:bg-slate-900"
+      >
         Semua
       </button>
-      <button @click="toggleKotaBtn()"
-        class="border border-slate-900 px-4 py-2 hover:bg-slate-900 hover:text-slate-50 transition-colors text-lg focus:text-slate-50 focus:bg-slate-900">
+      <button
+        @click="toggleKotaBtn()"
+        class="border border-slate-900 px-4 py-2 hover:bg-slate-900 hover:text-slate-50 transition-colors text-lg focus:text-slate-50 focus:bg-slate-900"
+      >
         Kota
       </button>
-      <button @click="toggleDesaBtn()"
-        class="border border-slate-900 px-4 py-2 hover:bg-slate-900 hover:text-slate-50 transition-colors text-lg focus:text-slate-50 focus:bg-slate-900">
+      <button
+        @click="toggleDesaBtn()"
+        class="border border-slate-900 px-4 py-2 hover:bg-slate-900 hover:text-slate-50 transition-colors text-lg focus:text-slate-50 focus:bg-slate-900"
+      >
         Desa
       </button>
     </div>
   </section>
 
-  <section class="h-fit w-[85%] grid place-items-center mx-auto my-6" data-aos="fade-up">
-    <div class="w-full h-fit grid items-center sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-3" v-if="filtered != null">
-      <a :href="content.link" v-for="content in filtered" :key="content.city"
+  <section
+    class="h-fit w-[85%] grid place-items-center mx-auto my-6"
+    data-aos="fade-up"
+  >
+    <div
+      class="w-full h-fit grid items-center sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-3"
+      v-if="filtered != null"
+    >
+      <a
+        :href="content.link"
+        v-for="content in filtered"
+        :key="content.city"
         :style="{ 'background-image': 'url(' + content.img + ')' }"
         class="w-full h-64 mx-auto flex flex-col items-center justify-end object-cover object-center bg-cover cursor-pointer"
-        data-aos="fade-up">
-        <div
-          class="min-w-full min-h-full bg-gradient-to-t from-black opacity-50 hover:opacity-80 transition-opacity duration-100 z-20">
-        </div>
+        data-aos="fade-up"
+      >
+        <div class="min-w-full min-h-full bg-gradient-to-t from-black opacity-50 hover:opacity-80 transition-opacity duration-100 z-20"></div>
         <div class="absolute max-w-72 flex flex-col items-center z-20 text-slate-100 font-semibold text-center">
           <h3 class="text-xl lg:text-2xl my-1 mx-7">
             {{ content.city }}
@@ -122,8 +150,10 @@ watch(
       </a>
     </div>
 
-    <h4 class="h-fit w-full text-1xl text-center italic cursor-default font-semibold mb-4 mt-10 mx-auto"
-      data-aos="fade-up">
+    <h4
+      class="h-fit w-full text-1xl text-center italic cursor-default font-semibold mb-4 mt-10 mx-auto"
+      data-aos="fade-up"
+    >
       Dan masih banyak lagi...~
     </h4>
   </section>

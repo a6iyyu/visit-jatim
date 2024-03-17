@@ -11,16 +11,28 @@ const blogs = ref(blogData.blogs);
 
 <template>
   <!-- Hero section -->
-  <section class="hero h-[40rem] w-full grid place-items-center bg-center bg-cover bg-no-repeat"
-    :style="{ backgroundImage: `url(${bromo.src})` }">
-    <div class="h-[40rem] w-full bg-gradient-to-t md:bg-gradient-to-r from-black opacity-60 z-0 absolute"></div>
+  <section
+    class="hero h-[40rem] w-full grid place-items-center bg-center bg-cover bg-no-repeat"
+    :style="{ backgroundImage: `url(${bromo.src})` }"
+  >
+    <div
+      class="h-[40rem] w-full bg-gradient-to-t md:bg-gradient-to-r from-black opacity-60 z-0 absolute"
+    ></div>
     <div class="h-full w-[85%] flex flex-col items-start justify-center z-30">
-      <div class="h-full w-1/2 flex flex-col items-center lg:items-start justify-center">
-        <h1 class="text-4xl lg:text-5xl text-slate-50 cursor-default font-black text-center lg:text-left" data-aos="fade-up">
+      <div
+        class="h-full w-1/2 flex flex-col items-center lg:items-start justify-center"
+      >
+        <h1
+          class="text-4xl lg:text-5xl text-slate-50 cursor-default font-black text-center lg:text-left"
+          data-aos="fade-up"
+        >
           JAWA TIMUR
         </h1>
         <br />
-        <p class="text-lg lg:text-1xl text-slate-50 cursor-default font-medium text-center lg:text-left" data-aos="fade-up">
+        <p
+          class="text-lg lg:text-1xl text-slate-50 cursor-default font-medium text-center lg:text-left"
+          data-aos="fade-up"
+        >
           Sambut keindahan dan keragaman Jawa Timur, sebuah destinasi yang
           menakjubkan bagi pencinta petualangan dan kebudayaan.
         </p>
@@ -29,7 +41,11 @@ const blogs = ref(blogData.blogs);
   </section>
 
   <!-- Explore -->
-  <section class="h-fit w-[85%] block mt-16 mx-auto" id="explore" data-aos="fade-up">
+  <section
+    class="h-fit w-[85%] block mt-16 mx-auto"
+    id="explore"
+    data-aos="fade-up"
+  >
     <p class="text-3xl text-gray-950 cursor-default font-semibold">
       Terbaru di Jatim
     </p>
@@ -37,12 +53,20 @@ const blogs = ref(blogData.blogs);
   </section>
 
   <!-- Blog -->
-  <section class="h-fit w-full grid place-items-center my-4" id="terbaru-di-jatim" data-aos="fade-up">
+  <section
+    class="h-fit w-full grid place-items-center my-4"
+    id="terbaru-di-jatim"
+    data-aos="fade-up"
+  >
     <Latest :data="blogs" />
   </section>
 
   <!-- Jelajahi Jawa Timur-->
-  <section class="h-fit w-full grid place-items-center mt-20" id="jelajahi-jatim" data-aos="fade-up">
+  <section
+    class="h-fit w-full grid place-items-center mt-20"
+    id="jelajahi-jatim"
+    data-aos="fade-up"
+  >
     <div class="h-full w-[85%] grid place-items-center">
       <p class="text-gray-950 text-3xl cursor-default font-semibold">
         Jelajahi Jawa Timur
@@ -66,7 +90,10 @@ const blogs = ref(blogData.blogs);
   </section>
 
   <!-- Tau Gak Sih? -->
-  <section class="h-fit w-full grid place-items-center mt-20" data-aos="fade-up">
+  <section
+    class="h-fit w-full grid place-items-center mt-20"
+    data-aos="fade-up"
+  >
     <p class="text-gray-950 text-3xl cursor-default font-semibold">
       Tau Gak Sih?
     </p>
@@ -74,7 +101,10 @@ const blogs = ref(blogData.blogs);
   </section>
 
   <!-- 1 -->
-  <section class="tau-gak-sih h-fit w-[85%] flex items-center justify-between mt-8 mx-auto" data-aos="fade-up">
+  <section
+    class="tau-gak-sih h-fit w-[85%] flex items-center justify-between mt-8 mx-auto"
+    data-aos="fade-up"
+  >
     <div class="h-full w-1/2 flex flex-col items-start justify-center">
       <h2 class="text-3xl text-gray-950 cursor-default font-semibold">
         Pengen Belajar Sejarah? Ada!
@@ -88,15 +118,27 @@ const blogs = ref(blogData.blogs);
       </p>
     </div>
     <div class="h-full w-[45%] flex items-center justify-end">
-      <img src="/istana-gebang.jpeg?url" alt="Istana Gebang" class="rounded-lg" width="600" />
+      <img
+        src="/istana-gebang.jpeg?url"
+        alt="Istana Gebang"
+        class="rounded-lg"
+        width="600"
+      />
     </div>
   </section>
 
   <!-- 2 -->
-  <section class="tau-gak-sih tau-gak-sih-2 h-fit w-[85%] flex items-center justify-between mx-auto"
-    data-aos="fade-up">
+  <section
+    class="tau-gak-sih tau-gak-sih-2 h-fit w-[85%] flex items-center justify-between mx-auto"
+    data-aos="fade-up"
+  >
     <div class="h-full w-1/2 flex items-center justify-start">
-      <img src="/museum-sby.jpg?url" alt="Museum Seni Presiden SBY" class="rounded-lg" width="600" />
+      <img
+        src="/museum-sby.jpg?url"
+        alt="Museum Seni Presiden SBY"
+        class="rounded-lg"
+        width="600"
+      />
     </div>
     <div class="h-full w-[45%] flex flex-col items-start justify-center">
       <h2 class="text-3xl text-gray-950 cursor-default font-semibold">
@@ -113,9 +155,14 @@ const blogs = ref(blogData.blogs);
   </section>
 
   <!-- 3 -->
-  <section class="tau-gak-sih h-fit w-[85%] flex items-center justify-between mx-auto" data-aos="fade-up">
+  <section
+    class="tau-gak-sih h-fit w-[85%] flex items-center justify-between mx-auto"
+    data-aos="fade-up"
+  >
     <div class="h-full w-1/2 flex flex-col items-start justify-center">
-      <h2 class="text-3xl text-gray-950 cursor-default font-semibold text-center">
+      <h2
+        class="text-3xl text-gray-950 cursor-default font-semibold text-center"
+      >
         Sejauh Ini, Ini yang Paling Jauh
       </h2>
       <br />
@@ -128,12 +175,20 @@ const blogs = ref(blogData.blogs);
       </p>
     </div>
     <div class="h-full w-[45%] flex items-center justify-end">
-      <img src="/pulau-sakala.jpg?url" alt="Ujung Paling Timur Jawa Timur" class="rounded-lg" width="600" />
+      <img
+        src="/pulau-sakala.jpg?url"
+        alt="Ujung Paling Timur Jawa Timur"
+        class="rounded-lg"
+        width="600"
+      />
     </div>
   </section>
 
   <!-- Tunggu Apa Lagi? -->
-  <section class="h-fit w-full mt-12 grid place-items-center" data-aos="fade-up">
+  <section
+    class="h-fit w-full mt-12 grid place-items-center"
+    data-aos="fade-up"
+  >
     <p class="text-gray-950 text-3xl cursor-default font-semibold">
       Tunggu Apa Lagi?
     </p>
@@ -141,12 +196,16 @@ const blogs = ref(blogData.blogs);
     <div class="h-8 w-full"></div>
   </section>
 
-  <section class="h-[40rem] w-full bg-center bg-cover bg-no-repeat"
-    :style="{ backgroundImage: `url(${reog.src})` }">
+  <section
+    class="h-[40rem] w-full bg-center bg-cover bg-no-repeat"
+    :style="{ backgroundImage: `url(${reog.src})` }"
+  >
     <div class="h-[40rem] w-full bg-gradient-to-t md:bg-gradient-to-r from-black opacity-60 z-20 absolute"></div>
     <div class="h-full w-full md:w-3/4 lg:w-1/2 px-10 md:px-28 flex items-end md:items-center content-end justify-center">
-      <p class="text-3xl md:text-5xl mb-44 md:mb-0 text-slate-50 text-center md:text-left cursor-default font-black z-30"
-        data-aos="fade-right">
+      <p
+        class="text-3xl md:text-5xl mb-44 md:mb-0 text-slate-50 text-center md:text-left cursor-default font-black z-30"
+        data-aos="fade-right"
+      >
         KAMI TUNGGU KEHADIRAN ANDA
       </p>
     </div>
