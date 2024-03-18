@@ -1,4 +1,4 @@
-    # Visit Jatim   
+# Visit Jatim   
 
 Visit Jatim is not just a regular online travel guide, but also features informative news and readings that explore various interesting aspects of East Java, from culture and history, to culinary and hidden tourist destinations. Through this site, visitors can explore all that East Java has to offer, from its rich culture to its mouth-watering local culinary delights. In addition, this site also reveals hidden destinations that are not yet widely known. Let's go on an adventure together in East Java!
 
