@@ -53,20 +53,20 @@ watch(
         .sort(() => Math.random() - 0.5)
         .slice(0, 6);
     }
-  }
+  },
 );
 </script>
 
 <template>
   <!-- Hero section -->
   <section
-    class="hero h-[40rem] w-full grid place-items-center bg-center bg-cover bg-no-repeat"
+    class="hero grid h-[40rem] w-full place-items-center bg-cover bg-center bg-no-repeat"
     :style="{ backgroundImage: `url(${surabaya.src})` }"
   >
-    <div class="h-[40rem] w-full bg-gradient-to-t from-black opacity-60 z-0 absolute"></div>
-    <div class="h-3/5 w-[85%] flex items-end justify-center z-10">
+    <div class="absolute z-0 h-[40rem] w-full bg-gradient-to-t from-black opacity-60"></div>
+    <div class="z-10 flex h-3/5 w-[85%] items-end justify-center">
       <h1
-        class="text-3xl md:text-5xl text-slate-50 cursor-default font-semibold text-center"
+        class="cursor-default text-center text-3xl font-semibold text-slate-50 md:text-5xl"
         data-aos="fade-up"
       >
         BERKELANA
@@ -77,18 +77,18 @@ watch(
   </section>
 
   <section
-    class="h-fit w-[85%] flex flex-col items-center mb-10 mt-20 mx-auto"
+    class="mx-auto mb-10 mt-20 flex h-fit w-[85%] flex-col items-center"
     data-aos="fade-up"
   >
     <h2
-      class="text-2xl md:text-3xl text-gray-950 cursor-default font-semibold my-3 text-center"
+      class="my-3 cursor-default text-center text-2xl font-semibold text-gray-950 md:text-3xl"
       data-aos="fade-up"
     >
       TEMUKAN KEINDAHAN DI SETIAP JALAN KOTA DAN DESA
     </h2>
     <hr class="h-0.5 w-full bg-gray-950" data-aos="fade-up" />
     <p
-      class="text-base md:text-xl my-3 text-gray-950 cursor-default font-medium text-justify"
+      class="my-3 cursor-default text-justify text-base font-medium text-gray-950 md:text-xl"
       :style="{ textAlignLast: 'center' }"
       data-aos="fade-up"
     >
@@ -99,23 +99,23 @@ watch(
     </p>
   </section>
 
-  <section class="h-fit w-[85%] mt-14 mx-auto" data-aos="fade-up">
-    <div class="my-10 w-full md:w-3/4 lg:w-1/2 grid grid-cols-3 gap-4">
+  <section class="mx-auto mt-14 h-fit w-[85%]" data-aos="fade-up">
+    <div class="my-10 grid w-full grid-cols-3 gap-4 md:w-3/4 lg:w-1/2">
       <button
         @click="toggleAllBtn()"
-        class="border border-slate-900 px-4 py-2 hover:bg-slate-900 hover:text-slate-50 transition-colors text-lg focus:text-slate-50 focus:bg-slate-900"
+        class="border border-slate-900 px-4 py-2 text-lg transition-colors hover:bg-slate-900 hover:text-slate-50 focus:bg-slate-900 focus:text-slate-50"
       >
         Semua
       </button>
       <button
         @click="toggleKotaBtn()"
-        class="border border-slate-900 px-4 py-2 hover:bg-slate-900 hover:text-slate-50 transition-colors text-lg focus:text-slate-50 focus:bg-slate-900"
+        class="border border-slate-900 px-4 py-2 text-lg transition-colors hover:bg-slate-900 hover:text-slate-50 focus:bg-slate-900 focus:text-slate-50"
       >
         Kota
       </button>
       <button
         @click="toggleDesaBtn()"
-        class="border border-slate-900 px-4 py-2 hover:bg-slate-900 hover:text-slate-50 transition-colors text-lg focus:text-slate-50 focus:bg-slate-900"
+        class="border border-slate-900 px-4 py-2 text-lg transition-colors hover:bg-slate-900 hover:text-slate-50 focus:bg-slate-900 focus:text-slate-50"
       >
         Desa
       </button>
@@ -123,11 +123,11 @@ watch(
   </section>
 
   <section
-    class="h-fit w-[85%] grid place-items-center mx-auto my-6"
+    class="mx-auto my-6 grid h-fit w-[85%] place-items-center"
     data-aos="fade-up"
   >
     <div
-      class="w-full h-fit grid items-center sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-3"
+      class="grid h-fit w-full items-center gap-x-6 gap-y-3 sm:grid-cols-2 md:grid-cols-3"
       v-if="filtered != null"
     >
       <a
@@ -135,15 +135,15 @@ watch(
         v-for="content in filtered"
         :key="content.city"
         :style="{ 'background-image': 'url(' + content.img + ')' }"
-        class="w-full h-64 mx-auto flex flex-col items-center justify-end object-cover object-center bg-cover cursor-pointer"
+        class="mx-auto flex h-64 w-full cursor-pointer flex-col items-center justify-end bg-cover object-cover object-center"
         data-aos="fade-up"
       >
-        <div class="min-w-full min-h-full bg-gradient-to-t from-black opacity-50 hover:opacity-80 transition-opacity duration-100 z-20"></div>
-        <div class="absolute max-w-72 flex flex-col items-center z-20 text-slate-100 font-semibold text-center">
-          <h3 class="text-xl lg:text-2xl my-1 mx-7">
+        <div class="z-20 min-h-full min-w-full bg-gradient-to-t from-black opacity-50 transition-opacity duration-100 hover:opacity-80"></div>
+        <div class="absolute z-20 flex max-w-72 flex-col items-center text-center font-semibold text-slate-100">
+          <h3 class="mx-7 my-1 text-xl lg:text-2xl">
             {{ content.city }}
           </h3>
-          <h4 class="text-base lg:text-lg mb-6">
+          <h4 class="mb-6 text-base lg:text-lg">
             {{ content.destination }}
           </h4>
         </div>
@@ -151,7 +151,7 @@ watch(
     </div>
 
     <h4
-      class="h-fit w-full text-1xl text-center italic cursor-default font-semibold mb-4 mt-10 mx-auto"
+      class="text-1xl mx-auto mb-4 mt-10 h-fit w-full cursor-default text-center font-semibold italic"
       data-aos="fade-up"
     >
       Dan masih banyak lagi...~

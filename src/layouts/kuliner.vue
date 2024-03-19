@@ -5,21 +5,21 @@ import sotolamongan from "../../public/soto-lamongan.jpg";
 
 <template>
   <section
-    class="h-[35rem] w-full mx-auto bg-center bg-cover bg-no-repeat"
+    class="mx-auto h-[35rem] w-full bg-cover bg-center bg-no-repeat"
     :style="{ backgroundImage: `url(${sotolamongan.src})` }"
   >
-    <div class="h-[35rem] w-full bg-gradient-to-t md:bg-gradient-to-r from-black opacity-60 z-0 absolute"></div>
+    <div class="absolute z-0 h-[35rem] w-full bg-gradient-to-t from-black opacity-60 md:bg-gradient-to-r"></div>
   </section>
 
   <!-- Opening section -->
   <section
-    class="absolute h-60 grid place-items-center top-[27rem] rounded-xl bg-gradient-to-tr from-slate-300 to-slate-200"
+    class="absolute top-[27rem] grid h-60 place-items-center rounded-xl bg-gradient-to-tr from-slate-300 to-slate-200"
     id="jangan-khawatir"
     :style="{ boxShadow: '0.75rem 0.75rem 0.75rem #48484850' }"
   >
-    <div class="h-full w-[85%] grid place-items-center">
-      <p class="text-3xl text-gray-950 text-center cursor-default font-semibold">
-        Laper? 
+    <div class="grid h-full w-[85%] place-items-center">
+      <p class="cursor-default text-center text-3xl font-semibold text-gray-950">
+        Laper?
         <br />
         Jangan Khawatir!
       </p>
@@ -27,9 +27,9 @@ import sotolamongan from "../../public/soto-lamongan.jpg";
   </section>
 
   <!-- Nikmati Berbagai Macam Jens Kuliner -->
-  <section class="h-fit w-[85%] flex flex-col items-center justify-center mt-52 mx-auto">
+  <section class="mx-auto mt-52 flex h-fit w-[85%] flex-col items-center justify-center">
     <p
-      class="text-3xl text-gray-950 text-center cursor-default font-semibold"
+      class="cursor-default text-center text-3xl font-semibold text-gray-950"
       data-aos="fade-up"
     >
       Nikmati Berbagai Macam Jenis Kuliner di Jatim!
@@ -37,7 +37,7 @@ import sotolamongan from "../../public/soto-lamongan.jpg";
     <hr class="h-0.5 w-full bg-gray-950" data-aos="fade-up" />
   </section>
   <section
-    class="h-[25rem] w-full grid place-items-center mt-4"
+    class="mt-4 grid h-[25rem] w-full place-items-center"
     data-aos="fade-up"
   >
     <div class="splide splide__1 h-full w-[85%] overflow-hidden">
@@ -49,18 +49,18 @@ import sotolamongan from "../../public/soto-lamongan.jpg";
     </div>
   </section>
   <section
-    class="h-fit w-[85%] grid place-items-center mx-auto mb-14 mt-4"
+    class="mx-auto mb-14 mt-4 grid h-fit w-[85%] place-items-center"
     data-aos="fade-up"
   >
-    <h4 class="text-1xl italic cursor-default font-semibold">
+    <h4 class="text-1xl cursor-default font-semibold italic">
       Dan masih banyak lagi...~
     </h4>
   </section>
 
   <!-- FnB Terkenal -->
-  <section class="h-fit w-[85%] flex flex-col items-center justify-center mt-8 mx-auto">
+  <section class="mx-auto mt-8 flex h-fit w-[85%] flex-col items-center justify-center">
     <p
-      class="text-3xl text-gray-950 text-center cursor-default font-semibold"
+      class="cursor-default text-center text-3xl font-semibold text-gray-950"
       data-aos="fade-up"
     >
       Memperkenalkan FnB Terkenal Khas Jatim
@@ -68,7 +68,7 @@ import sotolamongan from "../../public/soto-lamongan.jpg";
     <hr class="h-0.5 w-full bg-gray-950" data-aos="fade-up" />
   </section>
   <section
-    class="h-fit w-[85%] grid place-items-center grid-cols-4 mx-auto"
+    class="mx-auto grid h-fit w-[85%] grid-cols-4 place-items-center"
     id="fnb-logos"
   >
     <img
@@ -101,11 +101,11 @@ import sotolamongan from "../../public/soto-lamongan.jpg";
     />
   </section>
   <section
-    class="h-fit w-[85%] flex items-center mb-8 mx-auto"
+    class="mx-auto mb-8 flex h-fit w-[85%] items-center"
     id="fnb-description"
   >
     <p
-      class="text-gray-900 text-1xl cursor-default font-medium text-justify tracking-wide"
+      class="text-1xl cursor-default text-justify font-medium tracking-wide text-gray-900"
       :style="{ lineHeight: '1.5' }"
       data-aos="fade-up"
     >

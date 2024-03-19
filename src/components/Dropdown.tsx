@@ -29,7 +29,7 @@ export const Dropdown = ({options, name}: {options: string[]; name: string}) => 
       </button>
       {isExpanded && (
         <div
-          className="absolute z-40 w-64 h-52 flex flex-col justify-evenly shadow-lg rounded-md top-24 bg-gray-50 text-slate-950"
+          className="absolute top-24 z-40 flex h-52 w-64 flex-col justify-evenly rounded-md bg-gray-50 text-slate-950 shadow-lg"
           data-aos={isExpanded ? "fade-down" : "fade-up"}
         >
           {options.map((option, index) => (

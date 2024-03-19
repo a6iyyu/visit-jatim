@@ -26,7 +26,7 @@ watch(
   () => props.data,
   () => {
     array.value = [...props.data];
-  }
+  },
 );
 
 const blogs = computed(() => {
@@ -36,36 +36,54 @@ const blogs = computed(() => {
 
 <template>
   <!-- Main -->
-  <div class="h-full w-[85%] flex items-center justify-between">
-    <div class="h-full w-1/2 flex flex-col">
-      <a :href="frontNews.link" class="h-full w-full block" target="_blank">
-        <img :src="frontNews.img" class="h-80 w-full rounded-md bg-bottom bg-cover bg-no-repeat shadow-md" alt="" />
+  <div class="flex h-full w-[85%] items-center justify-between">
+    <div class="flex h-full w-1/2 flex-col">
+      <a :href="frontNews.link" class="block h-full w-full" target="_blank">
+        <img
+          :src="frontNews.img"
+          class="h-80 w-full rounded-md bg-cover bg-bottom bg-no-repeat shadow-md"
+          alt=""
+        />
         <br />
-        <p class="h-fit w-full text-2xl text-gray-950 font-semibold text-justify hover:text-gray-800 hover:underline"
-          :style="{ transition: 'all 0.3s ease-in-out' }">
+        <p
+          class="h-fit w-full text-justify text-2xl font-semibold text-gray-950 hover:text-gray-800 hover:underline"
+          :style="{ transition: 'all 0.3s ease-in-out' }"
+        >
           {{ frontNews.title }}
         </p>
         <br />
-        <p class="h-fit w-full text-xl text-gray-950 font-medium text-justify hover:text-gray-800 hover:underline"
-          :style="{ transition: 'all 0.3s ease-in-out' }">
+        <p
+          class="h-fit w-full text-justify text-xl font-medium text-gray-950 hover:text-gray-800 hover:underline"
+          :style="{ transition: 'all 0.3s ease-in-out' }"
+        >
           {{ frontNews.content }}
         </p>
         <br />
-        <p class="h-fit w-full text-1xl text-gray-950 font-semibold text-justify hover:text-gray-800 hover:underline"
-          :style="{ transition: 'all 0.3s ease-in-out' }">
+        <p
+          class="text-1xl h-fit w-full text-justify font-semibold text-gray-950 hover:text-gray-800 hover:underline"
+          :style="{ transition: 'all 0.3s ease-in-out' }"
+        >
           Baca Selengkapnya &#10132;
         </p>
       </a>
     </div>
 
     <!-- Side -->
-    <div class="blog-slider flex flex-col overflow-y-auto ml-8">
-      <a v-for="blog in blogs" :key="blog.id" :href="blog.link" class="max-h-60 h-full w-full flex justify-between py-2"
-        target="_blank">
-        <img :src="blog.img" class="blogs max-h-32 h-32 w-2/5 rounded bg-center bg-cover bg-no-repeat"
-          :style="{ boxShadow: '0.4rem 0.4rem 0.4rem #bebebe' }" />
-        <div class="h-full w-[55%] m-auto">
-          <p class="text-sm md:text-1xl text-gray-950 font-semibold mr-3 hover:text-gray-800 hover:underline">
+    <div class="blog-slider ml-8 flex flex-col overflow-y-auto">
+      <a
+        v-for="blog in blogs"
+        :key="blog.id"
+        :href="blog.link"
+        class="flex h-full max-h-60 w-full justify-between py-2"
+        target="_blank"
+      >
+        <img
+          :src="blog.img"
+          class="blogs h-32 max-h-32 w-2/5 rounded bg-cover bg-center bg-no-repeat"
+          :style="{ boxShadow: '0.4rem 0.4rem 0.4rem #bebebe' }"
+        />
+        <div class="m-auto h-full w-[55%]">
+          <p class="md:text-1xl mr-3 text-sm font-semibold text-gray-950 hover:text-gray-800 hover:underline">
             {{ blog.title }}
           </p>
         </div>

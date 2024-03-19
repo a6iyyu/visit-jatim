@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-blue-500 h-1 fixed inset-0 z-[999]"
+    class="fixed inset-0 z-[999] h-1 bg-blue-500"
     :style="{ width: scrollPercentage + '%' }"
   ></div>
 </template>

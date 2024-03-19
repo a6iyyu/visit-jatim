@@ -12,25 +12,21 @@ const blogs = ref(blogData.blogs);
 <template>
   <!-- Hero section -->
   <section
-    class="hero h-[40rem] w-full grid place-items-center bg-center bg-cover bg-no-repeat"
+    class="hero grid h-[40rem] w-full place-items-center bg-cover bg-center bg-no-repeat"
     :style="{ backgroundImage: `url(${bromo.src})` }"
   >
-    <div
-      class="h-[40rem] w-full bg-gradient-to-t md:bg-gradient-to-r from-black opacity-60 z-0 absolute"
-    ></div>
-    <div class="h-full w-[85%] flex flex-col items-start justify-center z-30">
-      <div
-        class="h-full w-1/2 flex flex-col items-center lg:items-start justify-center"
-      >
+    <div class="absolute z-0 h-[40rem] w-full bg-gradient-to-t from-black opacity-60 md:bg-gradient-to-r"></div>
+    <div class="z-30 flex h-full w-[85%] flex-col items-start justify-center">
+      <div class="flex h-full w-1/2 flex-col items-center justify-center lg:items-start">
         <h1
-          class="text-4xl lg:text-5xl text-slate-50 cursor-default font-black text-center lg:text-left"
+          class="cursor-default text-center text-4xl font-black text-slate-50 lg:text-left lg:text-5xl"
           data-aos="fade-up"
         >
           JAWA TIMUR
         </h1>
         <br />
         <p
-          class="text-lg lg:text-1xl text-slate-50 cursor-default font-medium text-center lg:text-left"
+          class="lg:text-1xl cursor-default text-center text-lg font-medium text-slate-50 lg:text-left"
           data-aos="fade-up"
         >
           Sambut keindahan dan keragaman Jawa Timur, sebuah destinasi yang
@@ -42,19 +38,19 @@ const blogs = ref(blogData.blogs);
 
   <!-- Explore -->
   <section
-    class="h-fit w-[85%] block mt-16 mx-auto"
+    class="mx-auto mt-16 block h-fit w-[85%]"
     id="explore"
     data-aos="fade-up"
   >
-    <p class="text-3xl text-gray-950 cursor-default font-semibold">
+    <p class="cursor-default text-3xl font-semibold text-gray-950">
       Terbaru di Jatim
     </p>
-    <hr class="h-1 w-60 bg-gray-950 rounded-md" />
+    <hr class="h-1 w-60 rounded-md bg-gray-950" />
   </section>
 
   <!-- Blog -->
   <section
-    class="h-fit w-full grid place-items-center my-4"
+    class="my-4 grid h-fit w-full place-items-center"
     id="terbaru-di-jatim"
     data-aos="fade-up"
   >
@@ -63,23 +59,23 @@ const blogs = ref(blogData.blogs);
 
   <!-- Jelajahi Jawa Timur-->
   <section
-    class="h-fit w-full grid place-items-center mt-20"
+    class="mt-20 grid h-fit w-full place-items-center"
     id="jelajahi-jatim"
     data-aos="fade-up"
   >
-    <div class="h-full w-[85%] grid place-items-center">
-      <p class="text-gray-950 text-3xl cursor-default font-semibold">
+    <div class="grid h-full w-[85%] place-items-center">
+      <p class="cursor-default text-3xl font-semibold text-gray-950">
         Jelajahi Jawa Timur
       </p>
       <hr class="h-1 w-60 rounded-md bg-gray-950" />
       <div class="h-4 w-full"></div>
-      <p class="text-gray-950 text-2xl cursor-default font-medium text-center">
+      <p class="cursor-default text-center text-2xl font-medium text-gray-950">
         Hal-Hal Unik dan Indah Menunggu Anda di Jawa Timur!
       </p>
       <div class="h-8 w-full"></div>
     </div>
   </section>
-  <section class="h-[35rem] w-full grid place-items-center" data-aos="fade-up">
+  <section class="grid h-[35rem] w-full place-items-center" data-aos="fade-up">
     <div class="splide splide__1 h-full w-[90%] overflow-hidden">
       <div class="splide__track h-full w-full">
         <ul class="splide__list">
@@ -91,10 +87,10 @@ const blogs = ref(blogData.blogs);
 
   <!-- Tau Gak Sih? -->
   <section
-    class="h-fit w-full grid place-items-center mt-20"
+    class="mt-20 grid h-fit w-full place-items-center"
     data-aos="fade-up"
   >
-    <p class="text-gray-950 text-3xl cursor-default font-semibold">
+    <p class="cursor-default text-3xl font-semibold text-gray-950">
       Tau Gak Sih?
     </p>
     <hr class="h-1 w-44 rounded-md bg-gray-950" />
@@ -102,22 +98,22 @@ const blogs = ref(blogData.blogs);
 
   <!-- 1 -->
   <section
-    class="tau-gak-sih h-fit w-[85%] flex items-center justify-between mt-8 mx-auto"
+    class="tau-gak-sih mx-auto mt-8 flex h-fit w-[85%] items-center justify-between"
     data-aos="fade-up"
   >
-    <div class="h-full w-1/2 flex flex-col items-start justify-center">
-      <h2 class="text-3xl text-gray-950 cursor-default font-semibold">
+    <div class="flex h-full w-1/2 flex-col items-start justify-center">
+      <h2 class="cursor-default text-3xl font-semibold text-gray-950">
         Pengen Belajar Sejarah? Ada!
       </h2>
       <br />
-      <p class="text-1xl text-gray-950 cursor-default font-medium text-justify">
+      <p class="text-1xl cursor-default text-justify font-medium text-gray-950">
         Di Blitar, ada lho peninggalan bersejarah yang menarik dimana tempat ini
         dulunya menjadi saksi bisu dari mendiang Presiden Soekarno. Nama
         tempatnya adalah Istana Gebang yang menjadi tempat tinggal bagi beliau
         semasa remaja.
       </p>
     </div>
-    <div class="h-full w-[45%] flex items-center justify-end">
+    <div class="flex h-full w-[45%] items-center justify-end">
       <img
         src="/istana-gebang.jpeg?url"
         alt="Istana Gebang"
@@ -129,10 +125,10 @@ const blogs = ref(blogData.blogs);
 
   <!-- 2 -->
   <section
-    class="tau-gak-sih tau-gak-sih-2 h-fit w-[85%] flex items-center justify-between mx-auto"
+    class="tau-gak-sih tau-gak-sih-2 mx-auto flex h-fit w-[85%] items-center justify-between"
     data-aos="fade-up"
   >
-    <div class="h-full w-1/2 flex items-center justify-start">
+    <div class="flex h-full w-1/2 items-center justify-start">
       <img
         src="/museum-sby.jpg?url"
         alt="Museum Seni Presiden SBY"
@@ -140,12 +136,12 @@ const blogs = ref(blogData.blogs);
         width="600"
       />
     </div>
-    <div class="h-full w-[45%] flex flex-col items-start justify-center">
-      <h2 class="text-3xl text-gray-950 cursor-default font-semibold">
+    <div class="flex h-full w-[45%] flex-col items-start justify-center">
+      <h2 class="cursor-default text-3xl font-semibold text-gray-950">
         Emang Ada Museum di Jatim?
       </h2>
       <br />
-      <p class="text-1xl text-gray-950 cursor-default font-medium text-justify">
+      <p class="text-1xl cursor-default text-justify font-medium text-gray-950">
         Ada banyak pilihan museum yang bisa kalian kunjungi pas lagi berkunjung
         ke Jawa Timur, contohnya kayak Museum Seni SBY di Pacitan atau Museum
         Angkot di Batu. Museum Seni SBY pamerin hasil karya lukisan dari mantan
@@ -156,17 +152,15 @@ const blogs = ref(blogData.blogs);
 
   <!-- 3 -->
   <section
-    class="tau-gak-sih h-fit w-[85%] flex items-center justify-between mx-auto"
+    class="tau-gak-sih mx-auto flex h-fit w-[85%] items-center justify-between"
     data-aos="fade-up"
   >
-    <div class="h-full w-1/2 flex flex-col items-start justify-center">
-      <h2
-        class="text-3xl text-gray-950 cursor-default font-semibold text-center"
-      >
+    <div class="flex h-full w-1/2 flex-col items-start justify-center">
+      <h2 class="cursor-default text-center text-3xl font-semibold text-gray-950">
         Sejauh Ini, Ini yang Paling Jauh
       </h2>
       <br />
-      <p class="text-1xl text-gray-950 cursor-default font-medium text-justify">
+      <p class="text-1xl cursor-default text-justify font-medium text-gray-950">
         Di Kabupaten Sumenep, ada wilayahnya yang nyasarnya jauh banget bahkan
         letaknya sampe di utaranya pulau NTB. Kenalin, namanya Pulau Sakala yang
         jadi pulau paling timur dari Jawa Timur. Lihat aja gambar di samping,
@@ -174,7 +168,7 @@ const blogs = ref(blogData.blogs);
         infrastruktur menjadi terhambat, salah satunya adalah internet.
       </p>
     </div>
-    <div class="h-full w-[45%] flex items-center justify-end">
+    <div class="flex h-full w-[45%] items-center justify-end">
       <img
         src="/pulau-sakala.jpg?url"
         alt="Ujung Paling Timur Jawa Timur"
@@ -186,10 +180,10 @@ const blogs = ref(blogData.blogs);
 
   <!-- Tunggu Apa Lagi? -->
   <section
-    class="h-fit w-full mt-12 grid place-items-center"
+    class="mt-12 grid h-fit w-full place-items-center"
     data-aos="fade-up"
   >
-    <p class="text-gray-950 text-3xl cursor-default font-semibold">
+    <p class="cursor-default text-3xl font-semibold text-gray-950">
       Tunggu Apa Lagi?
     </p>
     <hr class="h-1 w-60 rounded-md bg-gray-950" />
@@ -197,13 +191,13 @@ const blogs = ref(blogData.blogs);
   </section>
 
   <section
-    class="h-[40rem] w-full bg-center bg-cover bg-no-repeat"
+    class="h-[40rem] w-full bg-cover bg-center bg-no-repeat"
     :style="{ backgroundImage: `url(${reog.src})` }"
   >
-    <div class="h-[40rem] w-full bg-gradient-to-t md:bg-gradient-to-r from-black opacity-60 z-20 absolute"></div>
-    <div class="h-full w-full md:w-3/4 lg:w-1/2 px-10 md:px-28 flex items-end md:items-center content-end justify-center">
+    <div class="absolute z-20 h-[40rem] w-full bg-gradient-to-t from-black opacity-60 md:bg-gradient-to-r"></div>
+    <div class="flex h-full w-full content-end items-end justify-center px-10 md:w-3/4 md:items-center md:px-28 lg:w-1/2">
       <p
-        class="text-3xl md:text-5xl mb-44 md:mb-0 text-slate-50 text-center md:text-left cursor-default font-black z-30"
+        class="z-30 mb-44 cursor-default text-center text-3xl font-black text-slate-50 md:mb-0 md:text-left md:text-5xl"
         data-aos="fade-right"
       >
         KAMI TUNGGU KEHADIRAN ANDA

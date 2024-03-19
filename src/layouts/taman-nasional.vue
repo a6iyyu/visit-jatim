@@ -9,22 +9,20 @@ const destinations = ref(destination["taman-nasional"]);
 
 <template>
   <section
-    class="h-[35rem] w-full mx-auto bg-center bg-cover bg-no-repeat z-10"
-    :style="{
-      backgroundImage: `url(${baluran.src})`,
-    }"
+    class="z-10 mx-auto h-[35rem] w-full bg-cover bg-center bg-no-repeat"
+    :style="{backgroundImage: `url(${baluran.src})`}"
   >
-    <div class="h-[35rem] w-full bg-gradient-to-t md:bg-gradient-to-t from-black opacity-60 z-20"></div>
+    <div class="z-20 h-[35rem] w-full bg-gradient-to-t from-black opacity-60 md:bg-gradient-to-t"></div>
   </section>
 
   <!-- Opening section -->
   <section
-    class="absolute h-60 w-4/5 md:w-3/5 lg:w-2/5 left-1/2 transform -translate-x-1/2 grid place-items-center top-[27rem] rounded-xl bg-gradient-to-tr from-slate-400 to-slate-300 z-20"
+    class="absolute left-1/2 top-[27rem] z-20 grid h-60 w-4/5 -translate-x-1/2 transform place-items-center rounded-xl bg-gradient-to-tr from-slate-400 to-slate-300 md:w-3/5 lg:w-2/5"
     :style="{ boxShadow: '0.75rem 0.75rem 0.75rem #48484825' }"
   >
-    <div class="h-full w-full grid place-items-center px-10">
+    <div class="grid h-full w-full place-items-center px-10">
       <p
-        class="text-2xl md:text-3xl text-gray-950 text-center cursor-default font-semibold"
+        class="cursor-default text-center text-2xl font-semibold text-gray-950 md:text-3xl"
         data-aos="fade-up"
       >
         Menyatu dengan Alam di <br />
@@ -33,18 +31,18 @@ const destinations = ref(destination["taman-nasional"]);
     </div>
   </section>
 
-  <section class="h-fit w-full flex flex-col items-center mt-56 mx-auto">
+  <section class="mx-auto mt-56 flex h-fit w-full flex-col items-center">
     <h2
-      class="text-2xl md:text-3xl text-gray-950 cursor-default font-semibold text-center mb-2"
+      class="mb-2 cursor-default text-center text-2xl font-semibold text-gray-950 md:text-3xl"
       data-aos="fade-up"
     >
       MENJELAJAH DI ALAM LIAR
     </h2>
     <hr class="h-0.5 w-[85%] bg-gray-950" data-aos="fade-up" />
   </section>
-  <section class="h-fit w-[85%] grid place-items-center mb-6 mt-1 mx-auto">
+  <section class="mx-auto mb-6 mt-1 grid h-fit w-[85%] place-items-center">
     <p
-      class="text-base md:text-xl my-3 text-gray-950 cursor-default font-medium text-justify"
+      class="my-3 cursor-default text-justify text-base font-medium text-gray-950 md:text-xl"
       :style="{ textAlignLast: 'center' }"
       data-aos="fade-up"
     >
@@ -56,14 +54,14 @@ const destinations = ref(destination["taman-nasional"]);
     </p>
   </section>
 
-  <section class="h-fit w-[85%] grid place-items-center mx-auto my-8">
+  <section class="mx-auto my-8 grid h-fit w-[85%] place-items-center">
     <GridListVue :data="destinations" />
   </section>
   <section
-    class="h-fit w-[85%] grid place-items-center mb-12 sm:mb-4 mx-auto"
+    class="mx-auto mb-12 grid h-fit w-[85%] place-items-center sm:mb-4"
     data-aos="fade-up"
   >
-    <h4 class="text-1xl italic cursor-default font-semibold">
+    <h4 class="text-1xl cursor-default font-semibold italic">
       Dan masih banyak lagi...~
     </h4>
   </section>

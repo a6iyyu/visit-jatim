@@ -24,10 +24,10 @@ export const AccordionMobile = ({options, name}: {options: string[]; name: strin
   return (
     <div
       onClick={handleOpenAccordion}
-      className={`font-semibold transition active:bg-transparent cursor-pointer ${accordionOpen ? "hover:bg-transparent hover:text-slate-900" : "hover:bg-slate-900 hover:text-gray-50"}`}
+      className={`cursor-pointer font-semibold transition active:bg-transparent ${accordionOpen ? "hover:bg-transparent hover:text-slate-900" : "hover:bg-slate-900 hover:text-gray-50"}`}
       ref={accordionRef}
     >
-      <button className="px-10 flex justify-between w-full cursor-pointer mt-4">
+      <button className="mt-4 flex w-full cursor-pointer justify-between px-10">
         <h3 className="pl-5">{name}</h3>
         <span>
           <i
@@ -43,12 +43,10 @@ export const AccordionMobile = ({options, name}: {options: string[]; name: strin
             <li className="border-t-2 border-slate-900 py-3 hover:bg-slate-900 hover:text-gray-50">
               <a
                 href={`/${option.toLowerCase().replace(/ /g, "%20").replace(/%20/g, "-")}`}
-                className="cursor-pointer flex items-center"
+                className="flex cursor-pointer items-center"
                 key={index}
               >
-                <h2 className="pl-14">
-                  {option}
-                </h2>
+                <h2 className="pl-14">{option}</h2>
               </a>
             </li>
           ))}

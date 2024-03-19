@@ -12,13 +12,13 @@ const blogs = ref(collegeData.blogs);
 <template>
   <!-- Hero section -->
   <section
-    class="h-[40rem] w-full grid place-items-center mx-auto bg-bottom bg-cover bg-no-repeat"
+    class="mx-auto grid h-[40rem] w-full place-items-center bg-cover bg-bottom bg-no-repeat"
     :style="{ backgroundImage: `url(${ub.src})` }"
   >
-    <div class="h-[40rem] w-full bg-gradient-to-t md:bg-gradient-to-r from-black opacity-60 z-0 absolute"></div>
-    <div class="h-3/5 w-[85%] flex items-end justify-center z-10">
+    <div class="absolute z-0 h-[40rem] w-full bg-gradient-to-t from-black opacity-60 md:bg-gradient-to-r"></div>
+    <div class="z-10 flex h-3/5 w-[85%] items-end justify-center">
       <h1
-        class="text-5xl text-slate-50 cursor-default font-semibold text-center"
+        class="cursor-default text-center text-5xl font-semibold text-slate-50"
         data-aos="fade-out"
       >
         YUK CARI
@@ -30,17 +30,17 @@ const blogs = ref(collegeData.blogs);
 
   <!-- Apakah pendidikan itu penting -->
   <section
-    class="h-fit w-[85%] my-20 mx-auto grid grid-cols-2 gap-10"
+    class="mx-auto my-20 grid h-fit w-[85%] grid-cols-2 gap-10"
     id="pendidikan-penting"
   >
     <h1
-      class="text-3xl text-gray-950 cursor-default font-semibold text-justify"
+      class="cursor-default text-justify text-3xl font-semibold text-gray-950"
       data-aos="fade-right"
     >
       Mengapa Pendidikan Itu Penting?
     </h1>
     <h4
-      class="text-1xl text-gray-950 cursor-default font-medium text-justify"
+      class="text-1xl cursor-default text-justify font-medium text-gray-950"
       :style="{ lineHeight: '1.5' }"
       data-aos="fade-left"
     >
@@ -55,17 +55,17 @@ const blogs = ref(collegeData.blogs);
 
   <!-- Karosel kuliah -->
   <section
-    class="h-fit w-[85%] block mt-16 mx-auto"
+    class="mx-auto mt-16 block h-fit w-[85%]"
     id="latest"
     data-aos="fade-up"
   >
-    <p class="text-3xl text-gray-950 cursor-default font-semibold">
+    <p class="cursor-default text-3xl font-semibold text-gray-950">
       Pilih Kampus Impianmu!
     </p>
-    <hr class="h-0.5 w-full bg-gray-950 rounded-md" />
+    <hr class="h-0.5 w-full rounded-md bg-gray-950" />
   </section>
   <section
-    class="h-[25rem] w-full grid place-items-center mt-8"
+    class="mt-8 grid h-[25rem] w-full place-items-center"
     id="college-slider"
     data-aos="fade-up"
   >
@@ -80,18 +80,18 @@ const blogs = ref(collegeData.blogs);
 
   <!-- Terbaru di Pendidikan -->
   <section
-    class="h-fit w-[85%] block mt-16 mx-auto"
+    class="mx-auto mt-16 block h-fit w-[85%]"
     id="latest"
     data-aos="fade-up"
   >
-    <p class="text-3xl text-gray-950 cursor-default font-semibold">
+    <p class="cursor-default text-3xl font-semibold text-gray-950">
       Terbaru di Pendidikan
     </p>
-    <hr class="h-0.5 w-full bg-gray-950 rounded-md" />
+    <hr class="h-0.5 w-full rounded-md bg-gray-950" />
   </section>
 
   <section
-    class="h-fit w-full grid place-items-center my-4"
+    class="my-4 grid h-fit w-full place-items-center"
     id="terbaru-di-pendidikan"
     data-aos="fade-up"
   >
@@ -100,11 +100,11 @@ const blogs = ref(collegeData.blogs);
 
   <!-- Kami Percaya Pada Anda -->
   <section
-    class="h-fit w-[85%] my-20 mx-auto grid grid-cols-2 gap-10"
+    class="mx-auto my-20 grid h-fit w-[85%] grid-cols-2 gap-10"
     id="kami-percaya"
   >
     <h1
-      class="flex flex-col items-start justify-center text-3xl text-gray-950 cursor-default font-semibold text-justify"
+      class="flex cursor-default flex-col items-start justify-center text-justify text-3xl font-semibold text-gray-950"
       data-aos="fade-up"
     >
       KAMI PERCAYA<br />
@@ -114,15 +114,15 @@ const blogs = ref(collegeData.blogs);
     <img
       src="/public/img/businessman.jpg?url"
       alt="Successful"
-      class="cursor-default font-semibold rounded-lg"
+      class="cursor-default rounded-lg font-semibold"
       data-aos="fade-up"
       :style="{ boxShadow: '0.75rem 0.75rem 0.75rem #bebebe' }"
     />
   </section>
 
-  <section class="h-[40rem] w-full grid place-items-center bg-gray-950">
+  <section class="grid h-[40rem] w-full place-items-center bg-gray-950">
     <p
-      class="h-fit w-[85%] text-slate-50 text-4xl cursor-default font-semibold m-auto"
+      class="m-auto h-fit w-[85%] cursor-default text-4xl font-semibold text-slate-50"
       data-aos="fade-right"
     >
       Udah nentuin<br />
@@ -132,19 +132,19 @@ const blogs = ref(collegeData.blogs);
 
   <!-- Tips Masuk PTN Impian -->
   <section
-    class="h-fit w-[85%] block mt-16 mb-6 mx-auto"
+    class="mx-auto mb-6 mt-16 block h-fit w-[85%]"
     id="latest"
     data-aos="fade-right"
   >
-    <p class="text-3xl text-gray-950 cursor-default font-semibold">
+    <p class="cursor-default text-3xl font-semibold text-gray-950">
       Tips Masuk PTN Impian
     </p>
-    <hr class="h-0.5 w-full bg-gray-950 rounded-md" />
+    <hr class="h-0.5 w-full rounded-md bg-gray-950" />
   </section>
 
-  <section class="h-fit w-[85%] flex flex-col items-start justify-center mx-auto mb-8">
+  <section class="mx-auto mb-8 flex h-fit w-[85%] flex-col items-start justify-center">
     <p
-      class="text-1xl cursor-default font-medium text-justify"
+      class="text-1xl cursor-default text-justify font-medium"
       data-aos="fade-right"
       :style="{ lineHeight: '1.5' }"
     >
@@ -158,7 +158,7 @@ const blogs = ref(collegeData.blogs);
   </section>
 
   <section
-    class="h-80 w-full grid place-items-center mt-8"
+    class="mt-8 grid h-80 w-full place-items-center"
     id="college-entry"
     data-aos="fade-up"
   >
@@ -172,9 +172,9 @@ const blogs = ref(collegeData.blogs);
   </section>
 
   <!-- Reminder -->
-  <p class="h-fit w-[85%] grid place-items-center mt-16 mb-8 mx-auto">
+  <p class="mx-auto mb-8 mt-16 grid h-fit w-[85%] place-items-center">
     <q
-      class="text-center text-gray-900 text-xl md:text-2xl cursor-default font-semibold"
+      class="cursor-default text-center text-xl font-semibold text-gray-900 md:text-2xl"
       data-aos="fade-left"
     >
       Hanya pendidikan yang bisa menyelamatkan masa depan, tanpa pendidikan

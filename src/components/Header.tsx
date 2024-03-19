@@ -11,10 +11,7 @@ export const Header: React.FC = () => {
 
   const handleMobileNavbar = () => setMobileNavbarOpen(!mobileNavbarOpen);
   const clickOutside = (event: MouseEvent) => {
-    if (
-      mobileNavbarRef.current &&
-      !mobileNavbarRef.current.contains(event.target as Node)
-    ) {
+    if (mobileNavbarRef.current && !mobileNavbarRef.current.contains(event.target as Node)) {
       setMobileNavbarOpen(false);
     }
   };
@@ -37,17 +34,17 @@ export const Header: React.FC = () => {
 
   return (
     <nav
-      className={`h-28 w-full flex items-center justify-center fixed z-50 ${
+      className={`fixed z-50 flex h-28 w-full items-center justify-center ${
         scrolling || mobileNavbarOpen
-          ? "text-slate-900 bg-slate-50 shadow-lg transition-all ease-in-out duration-200"
-          : "navbar bg-transparent transition-all ease-in-out duration-200"
+          ? "bg-slate-50 text-slate-900 shadow-lg transition-all duration-200 ease-in-out"
+          : "navbar bg-transparent transition-all duration-200 ease-in-out"
       }`}
     >
-      <div className="h-full w-[85%] flex items-center justify-between">
-        <a href="/" className="logo flex h-full w-2/3 md:w-2/5 items-center">
+      <div className="flex h-full w-[85%] items-center justify-between">
+        <a href="/" className="logo flex h-full w-2/3 items-center md:w-2/5">
           <img src={logoImg} width={125} alt="Logo" />
         </a>
-        <div className="hidden md:flex h-full w-3/4 lg:w-3/5 items-center justify-evenly">
+        <div className="hidden h-full w-3/4 items-center justify-evenly md:flex lg:w-3/5">
           <a
             href="/tentang-jatim"
             className="text-base font-semibold transition-all hover:underline"
@@ -69,19 +66,19 @@ export const Header: React.FC = () => {
       <div ref={mobileNavbarRef} className="mr-5">
         <button
           onClick={handleMobileNavbar}
-          className="flex md:hidden p-2 border-[3px] border-gray-50 rounded-sm bg-transparent hover:border-slate-900 hover:bg-gray-50 hover:text-slate-900"
+          className="flex rounded-sm border-[3px] border-gray-50 bg-transparent p-2 hover:border-slate-900 hover:bg-gray-50 hover:text-slate-900 md:hidden"
         >
           <i className="bi bi-list text-4xl"></i>
         </button>
         {mobileNavbarOpen && (
           <div
-            className={`absolute right-0 top-28 w-full h-fit bg-gray-50 shadow-md flex flex-col justify-evenly border text-slate-950 transition-all ease-in-out duration-200`}
+            className={`absolute right-0 top-28 flex h-fit w-full flex-col justify-evenly border bg-gray-50 text-slate-950 shadow-md transition-all duration-200 ease-in-out`}
             data-aos={mobileNavbarOpen ? "fade-down" : "fade-up"}
             data-aos-duration-200
           >
             <a
               href="/tentang-jatim"
-              className="px-10 py-5 flex justify-between font-semibold bg-transparent hover:bg-slate-900 hover:text-gray-50 transition cursor-pointer"
+              className="flex cursor-pointer justify-between bg-transparent px-10 py-5 font-semibold transition hover:bg-slate-900 hover:text-gray-50"
             >
               <h2 className="pl-5">TENTANG JATIM</h2>
               <span></span>

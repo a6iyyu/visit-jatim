@@ -10,22 +10,20 @@ const blogs = ref(blogData.blogs);
 
 <template>
   <section
-    class="h-[35rem] w-full mx-auto bg-center bg-cover bg-no-repeat z-10"
-    :style="{
-      backgroundImage: `url(${candisingosari.src})`,
-    }"
+    class="z-10 mx-auto h-[35rem] w-full bg-cover bg-center bg-no-repeat"
+    :style="{backgroundImage: `url(${candisingosari.src})`}"
   >
-    <div class="h-[35rem] w-full bg-gradient-to-t md:bg-gradient-to-t from-black opacity-60 z-20"></div>
+    <div class="z-20 h-[35rem] w-full bg-gradient-to-t from-black opacity-60 md:bg-gradient-to-t"></div>
   </section>
 
   <!-- Opening section -->
   <section
-    class="absolute h-60 w-4/5 md:w-3/5 lg:w-2/5 left-1/2 transform -translate-x-1/2 grid place-items-center top-[27rem] rounded-xl bg-gradient-to-tr from-slate-400 to-slate-300 z-20"
+    class="absolute left-1/2 top-[27rem] z-20 grid h-60 w-4/5 -translate-x-1/2 transform place-items-center rounded-xl bg-gradient-to-tr from-slate-400 to-slate-300 md:w-3/5 lg:w-2/5"
     :style="{ boxShadow: '0.75rem 0.75rem 0.75rem #48484825' }"
   >
-    <div class="h-full w-full grid place-items-center px-10">
+    <div class="grid h-full w-full place-items-center px-10">
       <p
-        class="text-2xl md:text-3xl text-gray-950 text-center cursor-default font-semibold"
+        class="cursor-default text-center text-2xl font-semibold text-gray-950 md:text-3xl"
         data-aos="fade-up"
       >
         Mari Telusuri Ragam
@@ -37,17 +35,17 @@ const blogs = ref(blogData.blogs);
 
   <!-- Karosel Kebudayaan -->
   <section
-    class="h-fit w-[85%] block mt-44 mx-auto"
+    class="mx-auto mt-44 block h-fit w-[85%]"
     id="kenali-kebudayaan"
     data-aos="fade-up"
   >
-    <p class="text-3xl text-gray-950 text-center cursor-default font-semibold">
+    <p class="cursor-default text-center text-3xl font-semibold text-gray-950">
       Upacara Adat Khas Jawa Timur
     </p>
-    <hr class="h-0.5 w-full bg-gray-950 rounded-md" />
+    <hr class="h-0.5 w-full rounded-md bg-gray-950" />
   </section>
   <section
-    class="h-[25rem] w-full grid place-items-center mt-6"
+    class="mt-6 grid h-[25rem] w-full place-items-center"
     data-aos="fade-up"
   >
     <div class="splide splide__1 h-full w-[85%] overflow-hidden">
@@ -58,9 +56,9 @@ const blogs = ref(blogData.blogs);
       </div>
     </div>
   </section>
-  <section class="h-full w-[85%] mt-4 mx-auto grid place-items-center">
+  <section class="mx-auto mt-4 grid h-full w-[85%] place-items-center">
     <p
-      class="text-gray-900 text-1xl cursor-default font-medium text-justify tracking-wide"
+      class="text-1xl cursor-default text-justify font-medium tracking-wide text-gray-900"
       :style="{ lineHeight: '1.5' }"
       data-aos="fade-up"
     >
@@ -75,17 +73,17 @@ const blogs = ref(blogData.blogs);
     </p>
   </section>
   <section
-    class="h-fit w-[85%] block mt-16 mx-auto"
+    class="mx-auto mt-16 block h-fit w-[85%]"
     id="latest"
     data-aos="fade-up"
   >
-    <p class="text-3xl text-gray-950 text-center cursor-default font-semibold">
+    <p class="cursor-default text-center text-3xl font-semibold text-gray-950">
       Kenali Kebudayaan Lokalnya
     </p>
-    <hr class="h-0.5 w-full bg-gray-950 rounded-md" />
+    <hr class="h-0.5 w-full rounded-md bg-gray-950" />
   </section>
   <section
-    class="h-fit w-full grid place-items-center mx-auto my-12"
+    class="mx-auto my-12 grid h-fit w-full place-items-center"
     id="blog-kebudayaan"
     data-aos="fade-up"
   >

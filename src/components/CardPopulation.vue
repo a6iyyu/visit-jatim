@@ -1,7 +1,13 @@
 <template>
-  <div class="splide__slide h-full w-full grid place-items-center" v-for="(citizen, index) in citizens" :key="index">
-    <div class="h-full w-[95%] bg-center bg-cover bg-no-repeat rounded-xl transition-all duration-500 ease-in-out"
-      :style="{ backgroundImage: 'url(' + citizen + ')' }"></div>
+  <div
+    class="splide__slide grid h-full w-full place-items-center"
+    v-for="(citizen, index) in citizens"
+    :key="index"
+  >
+    <div
+      class="h-full w-[95%] rounded-xl bg-cover bg-center bg-no-repeat transition-all duration-500 ease-in-out"
+      :style="{ backgroundImage: 'url(' + citizen + ')' }"
+    ></div>
   </div>
 </template>
 

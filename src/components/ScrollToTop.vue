@@ -1,13 +1,13 @@
 <template>
   <div
-    class="h-[4.5rem] w-[4.5rem] lg:h-24 lg:w-24 bg-gray-800 cursor-pointer rounded-full fixed grid place-items-center z-30 hover:bg-gray-700 transition-all duration-300 ease-in-out bottom-8 right-8"
+    class="fixed bottom-8 right-8 z-30 grid h-[4.5rem] w-[4.5rem] cursor-pointer place-items-center rounded-full bg-gray-800 transition-all duration-300 ease-in-out hover:bg-gray-700 lg:h-24 lg:w-24"
     :class="{
       'visible opacity-100': showScroll,
       'invisible opacity-0': !showScroll,
     }"
     @click="scrollToTop"
   >
-    <img src="/scroll-to-top.png?url" class="rotate-180 w-5 lg:w-6" />
+    <img src="/scroll-to-top.png?url" class="w-5 rotate-180 lg:w-6" />
   </div>
 </template>
 

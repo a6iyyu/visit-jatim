@@ -1,24 +1,24 @@
 {
-    "culture": [
-        {
-            "img": "/yadnya-kasada.jpg?url",
-            "name": "YADNYA KASADA",
-            "origin": "MALANG"
-        },
-        {
-            "img": "/keduk-beji.jpeg?url",
-            "name": "KEDUK BEJI",
-            "origin": "NGAWI"
-        },
-        {
-            "img": "/larungsembonyo.jpg?url",
-            "name": "LARUNG SEMBONYO",
-            "origin": "TRENGGALEK"
-        },
-        {
-            "img": "/kebo-keboan.jpg?url",
-            "name": "KEBO-KEBOAN",
-            "origin": "BANYUWANGI"
-        }
-    ]
+  "culture": [
+    {
+      "img": "/yadnya-kasada.jpg?url",
+      "name": "YADNYA KASADA",
+      "origin": "MALANG"
+    },
+    {
+      "img": "/keduk-beji.jpeg?url",
+      "name": "KEDUK BEJI",
+      "origin": "NGAWI"
+    },
+    {
+      "img": "/larungsembonyo.jpg?url",
+      "name": "LARUNG SEMBONYO",
+      "origin": "TRENGGALEK"
+    },
+    {
+      "img": "/kebo-keboan.jpg?url",
+      "name": "KEBO-KEBOAN",
+      "origin": "BANYUWANGI"
+    }
+  ]
 }

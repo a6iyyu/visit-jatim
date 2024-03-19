@@ -1,10 +1,10 @@
 <template>
-  <footer class="h-44 w-[85%] flex flex-col lg:flex-row items-start lg:items-center justify-around lg:justify-between mx-auto my-7 lg:my-0">
-    <h2 class="text-gray-950 text-2xl cursor-default font-semibold">
+  <footer class="mx-auto my-7 flex h-44 w-[85%] flex-col items-start justify-around lg:my-0 lg:flex-row lg:items-center lg:justify-between">
+    <h2 class="cursor-default text-2xl font-semibold text-gray-950">
       VISIT JATIM
       <p class="text-1xl font-medium">&copy; 2024</p>
     </h2>
-    <h2 class="text-gray-950 text-2xl cursor-default font-semibold flex flex-col">
+    <h2 class="flex cursor-default flex-col text-2xl font-semibold text-gray-950">
       Created By:
       <a
         href="https://github.com/Afif-Ghifari"
