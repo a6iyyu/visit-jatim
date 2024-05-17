@@ -1,0 +1,14 @@
+---
+import { getCollection } from "astro:content";
+import MainLayout from "../layouts/main-layout.astro";
+import WisataPage from "../layouts/wisata.astro";
+
+const posts = await getCollection("wisata");
+---
+
+<MainLayout
+  title="Wisata"
+  description="Rencanakan Perjalanan Wisata Terbaik di Jawa Timur, Nikmati Angin Segar dan Pemandangan Indah Mengiringi Tiap Langkahmu!"
+>
+  <WisataPage />
+</MainLayout>

@@ -1,15 +1,14 @@
 ---
-import "bootstrap-icons/font/bootstrap-icons.css";
-import Logo from "../../public/logo-black.png?url";
-import ScrollIndicator from "../components/ScrollIndicator.vue";
-import ScrollToTop from "../components/ScrollToTop.vue";
-import { Header } from "../components/Header";
-import Footer from "../components/Footer.vue";
+import Style from "../components/global/style.astro";
+import ScrollIndicator from "../components/global/scroll-indicator.vue";
+import Header from "../components/global/header.vue";
+import ScrollToTop from "../components/global/scroll-to-top.vue";
+import Footer from "../components/global/footer.vue";
 
 const { description, title } = Astro.props;
 ---
 
-<html lang="en">
+<html lang="en" class="scroll-p-20 lg:scroll-p-28">
   <head>
     <meta name="description" content={description} />
     <meta charset="utf-8" />
@@ -17,35 +16,15 @@ const { description, title } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
-    <link rel="icon" href={Logo} />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
-    />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" href={"/logo-white.png"} />
+    <Style />
   </head>
-  <body>
+  <body class="overflow-x-hidden" style="background-image: linear-gradient(to right, #0c0c1e, #141414)">
     <ScrollIndicator client:only="vue" />
     <ScrollToTop client:only="vue" />
-    <Header client:only="react" />
+    <Header client:only="vue" />
     <slot />
     <Footer />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/js/splide.min.js" integrity="sha512-4TcjHXQMLM7Y6eqfiasrsnRCc8D/unDeY1UGKGgfwyLUCTsHYMxF7/UHayjItKQKIoP6TTQ6AMamb9w2GMAvNg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </body>
-  <script crossorigin="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-  <script
-    type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"
-  ></script>
-  <script
-    type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"
-  ></script>
-  <script
-    type="text/javascript"
-    src="https://unpkg.com/aos@next/dist/aos.js"
-  ></script>
-  <script type="text/javascript">
-    AOS.init();
-  </script>
 </html>

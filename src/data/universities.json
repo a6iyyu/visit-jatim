@@ -1,0 +1,52 @@
+{
+    "universities": [
+        {
+            "name": "Institut Teknologi Sepuluh November",
+            "image": "/its.jpg?url"
+        },
+        {
+            "name": "Politeknik Elektronika Negeri Surabaya",
+            "image": "/pens.jpg?url"
+        },
+        {
+            "name": "Politeknik Negeri Malang",
+            "image": "/polinema.jpg?url"
+        },
+        {
+            "name": "Universitas Airlangga",
+            "image": "/unair.jpg?url"
+        },
+        {
+            "name": "Universitas Brawijaya",
+            "image": "/ub.jpeg?url"
+        },
+        {
+            "name": "Universitas Islam Negeri Maulana Malik Ibrahim",
+            "image": "/uin.jpg?url"
+        },
+        {
+            "name": "Universitas Jember",
+            "image": "/unej.png?url"
+        },
+        {
+            "name": "Universitas Muhammadiyah Malang",
+            "image": "/umm.jpeg?url"
+        },
+        {
+            "name": "Universitas Negeri Malang",
+            "image": "/um.jpg?url"
+        },
+        {
+            "name": "Universitas Negeri Surabaya",
+            "image": "/unesa.jpg?url"
+        },
+        {
+            "name": "Universitas Pembangunan Nasional Veteran",
+            "image": "/upn.jpg?url"
+        },
+        {
+            "name": "Universitas Trunojoyo Madura",
+            "image": "/utm.jpg?url"
+        }
+    ]
+}

@@ -1,15 +1,11 @@
 import { defineConfig } from "astro/config";
-import tailwind from "@astrojs/tailwind";
 import vue from "@astrojs/vue";
-import react from "@astrojs/react";
-import partytown from "@astrojs/partytown";
-// import vercel from "@astrojs/vercel/serverless";
+import tailwind from "@astrojs/tailwind";
+import mdx from "@astrojs/mdx";
 
 export default defineConfig({
-  integrations: [tailwind(), vue(), react(), partytown()],
+  integrations: [vue(), tailwind(), mdx()],
   server: {
     port: 5000,
   },
-  // output: "server",
-  // adapter: vercel(),
 });
