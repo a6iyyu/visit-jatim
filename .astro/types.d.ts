@@ -152,6 +152,13 @@ declare module 'astro:content' {
 } & { render(): Render[".mdx"] };
 };
 "wisata": {
+"bromo-tengger-semeru.mdx": {
+	id: "bromo-tengger-semeru.mdx";
+  slug: "bromo-tengger-semeru";
+  body: string;
+  collection: "wisata";
+  data: InferEntrySchema<"wisata">
+} & { render(): Render[".mdx"] };
 "taman-nasional-baluran.mdx": {
 	id: "taman-nasional-baluran.mdx";
   slug: "taman-nasional-baluran";

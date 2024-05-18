@@ -17,7 +17,7 @@ export const collections = {
       location: z.string().max(50, { message: "Title must be 50 characters or less!" }),
       description: z.string().max(250, { message: "Title must be 250 characters or less!" }),
       image: z.string().optional(),
-      category: z.enum(["Taman Nasional", "Wisata Umum", "Wisata Religi"]),
+      category: z.enum(["Pegunungan", "Perairan", "Taman Nasional"]),
     }),
   }),
 };

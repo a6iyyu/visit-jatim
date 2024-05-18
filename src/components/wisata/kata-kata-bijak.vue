@@ -8,13 +8,13 @@ import PatternSquare from "/public/pattern-square.png";
     id="kata-kata-bijak"
     :style="{ backgroundImage: `url(${PatternSquare.src})` }"
   >
-    <section class="mx-auto my-20 flex h-fit w-4/5 flex-col">
-      <b class="cursor-default text-4xl leading-snug text-transparent lg:text-5xl">
+    <section class="mx-auto my-20 flex h-fit w-4/5 cursor-default flex-col text-4xl text-gray-50 lg:text-5xl">
+      <b>
         Terkadang kamu tidak akan pernah menyadari nilai sebuah momen sampai itu
         menjadi kenangan.
       </b>
-      <h3 class="my-5 cursor-default text-center text-3xl text-gray-50">•</h3>
-      <b class="cursor-default text-right text-4xl leading-snug text-transparent lg:text-5xl">
+      <h3 class="my-5 text-center selection:bg-none">•</h3>
+      <b class="text-right">
         Alam adalah kenikmatan dari kesederhanaan dan memberikan kita pikiran
         yang segar.
       </b>
@@ -23,31 +23,7 @@ import PatternSquare from "/public/pattern-square.png";
 </template>
 
 <style scoped>
-main b {
-  animation: animation 10s cubic-bezier(0.3, 0.5, 0.7, 0.5) infinite;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  background-size: 120%;
-}
-
-main b:first-child {
-  background-image: url(/summer-beach.jpg?url);
-}
-
-main b:last-child {
-  background-image: url(/summer-trees.jpg?url);
-}
-
-@keyframes animation {
-  0% {
-    background-position: 60% 60%;
-  }
-  50% {
-    background-position: 80% 80%;
-  }
-  100% {
-    background-position: 60% 60%;
-  }
+b {
+  line-height: 1.375;
 }
 </style>

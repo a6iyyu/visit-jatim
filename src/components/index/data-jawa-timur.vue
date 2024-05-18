@@ -31,7 +31,7 @@ const NumberCounting = ref([
   >
   </span>
   <section
-    class="z-30 mx-auto grid h-fit w-4/5 grid-cols-1 place-items-center gap-x-10 rounded-xl border border-gray-50 bg-gradient-to-tr from-gray-950 to-gray-800 shadow-lg lg:grid-cols-3"
+    class="z-30 mx-auto grid h-fit w-3/4 grid-cols-1 place-items-center gap-x-10 rounded-xl border border-gray-50 bg-gradient-to-tr from-gray-950 to-gray-800 shadow-lg lg:w-4/5 lg:grid-cols-3"
     style="box-shadow: 0.3rem 0.3rem 0 #bcbcbc"
   >
     <div
