@@ -1,19 +1,17 @@
 ---
 import Hero from "../components/wisata/hero.vue";
 import KataKataBijak from "../components/wisata/kata-kata-bijak.vue";
-import BacaanSingkat from "../components/wisata/kategori.vue";
+import DestinasiFavorit from "../components/wisata/destinasi-favorit.astro";
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("mari-jelajahi").addEventListener("click", () => {
+    document.getElementById("kata-kata-bijak").scrollIntoView({
+      behavior: "smooth",
+    });
+  });
+});
 ---
 
 <Hero />
 <KataKataBijak />
-<BacaanSingkat />
-
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("mari-jelajahi").addEventListener("click", () => {
-      document.getElementById("kata-kata-bijak").scrollIntoView({
-        behavior: "smooth",
-      });
-    });
-  });
-</script>
+<DestinasiFavorit />
