@@ -6,7 +6,7 @@ import TraditionalCeremonies from "/src/data/traditional-ceremonies.json";
 const images = ref(TraditionalCeremonies.ceremonies);
 
 onMounted(() => {
-  new Splide("#splide-1", {
+  new Splide("#splide-3", {
     autoplay: true,
     drag: "free",
     snap: true,
@@ -28,7 +28,7 @@ onMounted(() => {
 
 <template>
   <main class="mx-auto my-8 grid h-[35rem] w-4/5 place-items-center">
-    <section class="splide h-full w-full overflow-hidden" id="splide-1">
+    <section class="splide h-full w-full overflow-hidden" id="splide-3">
       <article class="splide__track h-full w-full py-4">
         <ul class="splide__list">
           <li

@@ -1,17 +1,20 @@
----
+<script setup>
+import { onMounted } from "vue";
 import Hero from "../components/wisata/hero.vue";
 import KataKataBijak from "../components/wisata/kata-kata-bijak.vue";
-import DestinasiFavorit from "../components/wisata/destinasi-favorit.astro";
+import DestinasiFavorit from "../components/wisata/destinasi-favorit.vue";
 
-document.addEventListener("DOMContentLoaded", () => {
+onMounted(() => {
   document.getElementById("mari-jelajahi").addEventListener("click", () => {
     document.getElementById("kata-kata-bijak").scrollIntoView({
       behavior: "smooth",
     });
   });
 });
----
+</script>
 
-<Hero />
-<KataKataBijak />
-<DestinasiFavorit />
+<template>
+  <Hero />
+  <KataKataBijak />
+  <DestinasiFavorit />
+</template>

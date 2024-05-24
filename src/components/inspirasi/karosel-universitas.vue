@@ -6,7 +6,7 @@ import Universities from "/src/data/universities.json";
 const images = ref(Universities.universities);
 
 onMounted(() => {
-  new Splide("#splide", {
+  new Splide("#splide-2", {
     autoplay: true,
     drag: "free",
     snap: true,
@@ -31,7 +31,7 @@ onMounted(() => {
 
 <template>
   <main class="mb-10 mt-8 grid h-[35rem] w-full place-items-center">
-    <section class="splide h-full w-full overflow-hidden" id="splide">
+    <section class="splide h-full w-full overflow-hidden" id="splide-2">
       <article class="splide__track h-full w-full py-4">
         <ul class="splide__list">
           <li

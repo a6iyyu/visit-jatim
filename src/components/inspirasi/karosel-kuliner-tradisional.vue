@@ -6,7 +6,7 @@ import TraditionalCulinary from "/src/data/traditional-culinaries.json";
 const images = ref(TraditionalCulinary.culinaries);
 
 onMounted(() => {
-  new Splide("#splide-2", {
+  new Splide("#splide-1", {
     autoplay: true,
     drag: "free",
     snap: true,
@@ -28,7 +28,7 @@ onMounted(() => {
 
 <template>
   <main class="mx-auto mb-8 grid h-[35rem] w-4/5 place-items-center">
-    <section class="splide h-full w-full overflow-hidden" id="splide-2">
+    <section class="splide h-full w-full overflow-hidden" id="splide-1">
       <article class="splide__track h-full w-full py-4">
         <ul class="splide__list">
           <li
