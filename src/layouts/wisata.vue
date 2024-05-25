@@ -2,7 +2,6 @@
 import { onMounted } from "vue";
 import Hero from "../components/wisata/hero.vue";
 import KataKataBijak from "../components/wisata/kata-kata-bijak.vue";
-import DestinasiFavorit from "../components/wisata/destinasi-favorit.vue";
 
 onMounted(() => {
   document.getElementById("mari-jelajahi").addEventListener("click", () => {
@@ -16,5 +15,4 @@ onMounted(() => {
 <template>
   <Hero />
   <KataKataBijak />
-  <DestinasiFavorit />
 </template>

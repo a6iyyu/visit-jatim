@@ -3,8 +3,18 @@ import PatternSquare from "/public/pattern-square.png";
 </script>
 
 <template>
+  <span
+    class="absolute z-0 h-40 w-40"
+    style="background-color: #ff85ad; filter: blur(8rem)"
+  >
+  </span>
+  <span
+    class="absolute right-0 z-0 h-40 w-40"
+    style="background-color: #d88f08; filter: blur(8rem); top: 65rem"
+  >
+  </span>
   <main
-    class="grid h-fit w-full place-items-center bg-cover bg-center bg-no-repeat"
+    class="z-10 grid h-fit w-full place-items-center bg-cover bg-center bg-no-repeat"
     id="kata-kata-bijak"
     :style="{ backgroundImage: `url(${PatternSquare.src})` }"
   >

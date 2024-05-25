@@ -159,6 +159,13 @@ declare module 'astro:content' {
   collection: "wisata";
   data: InferEntrySchema<"wisata">
 } & { render(): Render[".mdx"] };
+"kawah-ijen.mdx": {
+	id: "kawah-ijen.mdx";
+  slug: "kawah-ijen";
+  body: string;
+  collection: "wisata";
+  data: InferEntrySchema<"wisata">
+} & { render(): Render[".mdx"] };
 "taman-nasional-baluran.mdx": {
 	id: "taman-nasional-baluran.mdx";
   slug: "taman-nasional-baluran";
