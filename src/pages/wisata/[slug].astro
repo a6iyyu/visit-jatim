@@ -1,0 +1,47 @@
+---
+import MainLayout from "../../layouts/main-layout.astro";
+import { type CollectionEntry, getCollection } from "astro:content";
+
+export const getStaticPaths = async () => {
+  const WisataEntries = await getCollection("destinasi-favorit");
+  return WisataEntries.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+};
+
+type Props = {
+  entry: CollectionEntry<"destinasi-favorit">;
+};
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+
+<MainLayout frontmatter={entry.data} slug={entry.slug} title={entry.data.title}>
+  {
+    entry.data && (
+      <main class="mx-auto mt-60 grid h-fit w-4/5 place-items-center rounded-t-3xl">
+        <img
+          src={entry.data.image}
+          alt={entry.data.title}
+          class="h-full w-full rounded-3xl"
+        />
+        <section class="mt-10 flex h-full w-full cursor-default flex-col text-slate-50 xl:flex-row">
+          <div class="flex h-full w-full flex-col justify-center xl:w-1/2">
+            <h3 class="text-4xl font-black">{entry.data.title}</h3>
+            <h5 class="text-lg font-semibold">{entry.data.category}</h5>
+          </div>
+          <div class="flex h-full w-full items-center justify-start text-lg xl:w-1/2 xl:justify-end xl:text-xl">
+            <i class="fas fa-map-marker-alt" />
+            <h5>&emsp;{entry.data.location}</h5>
+          </div>
+        </section>
+        <hr class="my-6 h-0.5 w-full rounded-full bg-slate-50" />
+        <section class="mb-10 cursor-default text-justify text-gray-50">
+          <Content />
+        </section>
+      </main>
+    )
+  }
+</MainLayout>

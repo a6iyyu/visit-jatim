@@ -135,65 +135,69 @@ declare module 'astro:content' {
 	>;
 
 	type ContentEntryMap = {
-		"destinasi": {
+		"desa-dan-kota": {
 "kabupaten-malang.mdx": {
 	id: "kabupaten-malang.mdx";
   slug: "kabupaten-malang";
   body: string;
-  collection: "destinasi";
+  collection: "desa-dan-kota";
   data: any
 } & { render(): Render[".mdx"] };
 "kota-malang.mdx": {
 	id: "kota-malang.mdx";
   slug: "kota-malang";
   body: string;
-  collection: "destinasi";
+  collection: "desa-dan-kota";
   data: any
 } & { render(): Render[".mdx"] };
 };
-"wisata": {
+"destinasi": {
+};
+"destinasi-favorit": {
 "air-terjun-tumpak-sewu.mdx": {
 	id: "air-terjun-tumpak-sewu.mdx";
   slug: "air-terjun-tumpak-sewu";
   body: string;
-  collection: "wisata";
+  collection: "destinasi-favorit";
   data: any
 } & { render(): Render[".mdx"] };
 "bromo-tengger-semeru.mdx": {
 	id: "bromo-tengger-semeru.mdx";
   slug: "bromo-tengger-semeru";
   body: string;
-  collection: "wisata";
+  collection: "destinasi-favorit";
   data: any
 } & { render(): Render[".mdx"] };
 "kawah-ijen.mdx": {
 	id: "kawah-ijen.mdx";
   slug: "kawah-ijen";
   body: string;
-  collection: "wisata";
+  collection: "destinasi-favorit";
   data: any
 } & { render(): Render[".mdx"] };
 "taman-nasional-baluran.mdx": {
 	id: "taman-nasional-baluran.mdx";
   slug: "taman-nasional-baluran";
   body: string;
-  collection: "wisata";
+  collection: "destinasi-favorit";
   data: any
 } & { render(): Render[".mdx"] };
 "taman-nasional-meru-betiri.mdx": {
 	id: "taman-nasional-meru-betiri.mdx";
   slug: "taman-nasional-meru-betiri";
   body: string;
-  collection: "wisata";
+  collection: "destinasi-favorit";
   data: any
 } & { render(): Render[".mdx"] };
 "telaga-sarangan.mdx": {
 	id: "telaga-sarangan.mdx";
   slug: "telaga-sarangan";
   body: string;
-  collection: "wisata";
+  collection: "destinasi-favorit";
   data: any
 } & { render(): Render[".mdx"] };
+};
+"wisata": {
 };
 
 	};
