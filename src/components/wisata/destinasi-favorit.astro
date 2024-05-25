@@ -1,3 +1,9 @@
+---
+import { getCollection } from "astro:content";
+
+const TourList = await getCollection("wisata");
+---
+
 <script>
   import Splide from "@splidejs/splide";
 
@@ -24,7 +30,7 @@
 </script>
 
 <main class="z-20 -mt-10 grid h-fit w-full place-items-center">
-  <section class="mb-10 mt-16 flex h-fit w-4/5 cursor-default text-4xl text-gray-50">
+  <section class="mb-4 mt-16 flex h-fit w-4/5 cursor-default text-3xl text-gray-50 lg:text-4xl">
     <i class="fas fa-map-marker-alt"></i>
     <h3 class="text-left font-bold">&ensp;Destinasi Favorit</h3>
   </section>
@@ -32,9 +38,21 @@
     <article class="splide h-full w-full overflow-hidden" id="splide-4">
       <div class="splide__track h-full w-full py-4">
         <ul class="splide__list">
-          <li class="splide__slide flex h-full w-full">
-            <span></span>
-          </li>
+          {
+            TourList.map((tour) => (
+              <li class="splide__slide flex h-full w-full">
+                <a
+                  href={`/wisata/${tour.slug}`}
+                  class="grid h-full place-items-center rounded-xl bg-cover bg-center bg-no-repeat"
+                  style={{ backgroundImage: `url(${tour.data.image})` }}
+                >
+                  <h4 class="mx-auto flex h-4/5 w-4/5 items-end justify-center text-center text-2xl font-bold text-gray-50">
+                    {tour.data.title}
+                  </h4>
+                </a>
+              </li>
+            ))
+          }
         </ul>
       </div>
     </article>
@@ -42,8 +60,47 @@
 </main>
 
 <style scoped>
-  main {
-    background-image: linear-gradient(to right, #0c0c1e, #141414);
-    border-radius: 20% 20% 10% 10% / 10% 10% 0% 0%;
+  @media screen and (max-width: 3120px) {
+    main {
+      background-image: linear-gradient(to right, #0c0c1e, #141414);
+      border-radius: 20% 20% 10% 10% / 10% 10% 0% 0%;
+    }
+    main .splide__slide:nth-child(4n + 1) {
+      justify-content: flex-start;
+    }
+    main .splide__slide:nth-child(4n + 2),
+    main .splide__slide:nth-child(4n + 3) {
+      justify-content: center;
+    }
+    main .splide__slide:nth-child(4n) {
+      justify-content: flex-end;
+    }
+    main .splide__slide a {
+      width: 97.5%;
+    }
+  }
+  @media screen and (max-width: 1800px) {
+    main .splide__slide:nth-child(3n + 1) {
+      justify-content: flex-start;
+    }
+    main .splide__slide:nth-child(3n + 2) {
+      justify-content: center;
+    }
+    main .splide__slide:nth-child(3n) {
+      justify-content: flex-end;
+    }
+  }
+  @media screen and (max-width: 1280px) {
+    main .splide__slide:nth-child(even) {
+      justify-content: flex-end;
+    }
+    main .splide__slide:nth-child(odd) {
+      justify-content: flex-start;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    main .splide__slide a {
+      width: 100%;
+    }
   }
 </style>

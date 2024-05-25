@@ -141,44 +141,58 @@ declare module 'astro:content' {
   slug: "kabupaten-malang";
   body: string;
   collection: "destinasi";
-  data: InferEntrySchema<"destinasi">
+  data: any
 } & { render(): Render[".mdx"] };
 "kota-malang.mdx": {
 	id: "kota-malang.mdx";
   slug: "kota-malang";
   body: string;
   collection: "destinasi";
-  data: InferEntrySchema<"destinasi">
+  data: any
 } & { render(): Render[".mdx"] };
 };
 "wisata": {
+"air-terjun-tumpak-sewu.mdx": {
+	id: "air-terjun-tumpak-sewu.mdx";
+  slug: "air-terjun-tumpak-sewu";
+  body: string;
+  collection: "wisata";
+  data: any
+} & { render(): Render[".mdx"] };
 "bromo-tengger-semeru.mdx": {
 	id: "bromo-tengger-semeru.mdx";
   slug: "bromo-tengger-semeru";
   body: string;
   collection: "wisata";
-  data: InferEntrySchema<"wisata">
+  data: any
 } & { render(): Render[".mdx"] };
 "kawah-ijen.mdx": {
 	id: "kawah-ijen.mdx";
   slug: "kawah-ijen";
   body: string;
   collection: "wisata";
-  data: InferEntrySchema<"wisata">
+  data: any
 } & { render(): Render[".mdx"] };
 "taman-nasional-baluran.mdx": {
 	id: "taman-nasional-baluran.mdx";
   slug: "taman-nasional-baluran";
   body: string;
   collection: "wisata";
-  data: InferEntrySchema<"wisata">
+  data: any
+} & { render(): Render[".mdx"] };
+"taman-nasional-meru-betiri.mdx": {
+	id: "taman-nasional-meru-betiri.mdx";
+  slug: "taman-nasional-meru-betiri";
+  body: string;
+  collection: "wisata";
+  data: any
 } & { render(): Render[".mdx"] };
 "telaga-sarangan.mdx": {
 	id: "telaga-sarangan.mdx";
   slug: "telaga-sarangan";
   body: string;
   collection: "wisata";
-  data: InferEntrySchema<"wisata">
+  data: any
 } & { render(): Render[".mdx"] };
 };
 
@@ -190,5 +204,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	export type ContentConfig = typeof import("./../src/content/config.js");
+	export type ContentConfig = never;
 }
