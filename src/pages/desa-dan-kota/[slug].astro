@@ -1,0 +1,57 @@
+---
+import MainLayout from "../../layouts/main-layout.astro";
+import { type CollectionEntry, getCollection } from "astro:content";
+
+export const getStaticPaths = async () => {
+  const WisataEntries = await getCollection("desa_kota");
+  return WisataEntries.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+};
+
+type Props = {
+  entry: CollectionEntry<"desa_kota">;
+};
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+
+<MainLayout frontmatter={entry.data} slug={entry.slug} title={entry.data.title}>
+  <main class="mx-auto mt-60 grid h-fit w-4/5 place-items-center rounded-t-3xl">
+    <img
+      src={entry.data.image}
+      alt={entry.data.title}
+      class="h-full w-full rounded-3xl"
+    />
+    <section class="mt-10 flex h-full w-full cursor-default flex-col text-slate-50 xl:flex-row">
+      <div class="flex h-full w-full flex-col justify-center xl:w-1/2">
+        <h3 class="text-4xl font-black">{entry.data.title}</h3>
+        <h5 class="text-lg font-semibold">{entry.data.category}</h5>
+      </div>
+      <div class="flex h-full w-full items-center justify-start text-lg xl:w-1/2 xl:justify-end xl:text-xl">
+        <i class="fas fa-map-marker-alt"></i>
+        <h5>&numsp;{entry.data.location}</h5>
+      </div>
+    </section>
+    <q class="mt-6 h-full w-full cursor-default text-center italic text-slate-50">
+      {entry.data.description}
+    </q>
+    <hr class="my-6 h-0.5 w-full rounded-full bg-slate-50" />
+    <section class="mb-10 cursor-default text-justify text-gray-50">
+      <Content />
+    </section>
+    <section class="h-fit w-full">
+      <a
+        href=`https://github.com/a6iyyu/visit-jatim/src/content/destinasi_favorit/${entry.slug}.mdx`
+        target="_blank"
+        class="flex h-fit w-fit cursor-pointer items-center justify-center rounded-full bg-slate-50 px-4 py-3 font-bold text-gray-950 transition-all duration-300 ease-in-out hover:bg-slate-200"
+        style="box-shadow: 0.3rem 0.3rem 0 #bcbcbc50"
+      >
+        <i class="fa fa-arrow-left ml-3 mr-6"></i>
+        <h4 class="mr-6">Edit this page<br />on GitHub</h4>
+      </a>
+    </section>
+  </main>
+</MainLayout>

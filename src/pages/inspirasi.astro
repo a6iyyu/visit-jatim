@@ -1,6 +1,7 @@
 ---
 import MainLayout from "../layouts/main-layout.astro";
 import InspirasiPage from "../layouts/inspirasi.vue";
+import KaroselUniversitas from "../components/inspirasi/karosel-universitas.astro";
 ---
 
 <MainLayout
@@ -8,4 +9,5 @@ import InspirasiPage from "../layouts/inspirasi.vue";
   description="Kupas tuntas seputar pendidikan dan kebudayaan di Jawa Timur dengan bacaan informatif."
 >
   <InspirasiPage client:only="vue" />
+  
 </MainLayout>

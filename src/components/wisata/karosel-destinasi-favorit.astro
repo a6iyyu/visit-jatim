@@ -1,7 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 
-const TourList = await getCollection("destinasi-favorit");
+const TourList = await getCollection("destinasi_favorit");
 ---
 
 <script>
@@ -42,7 +42,7 @@ const TourList = await getCollection("destinasi-favorit");
             TourList.map((tour) => (
               <li class="splide__slide flex h-full w-full">
                 <a
-                  href={`/wisata/${tour.slug}`}
+                  href={`/destinasi-favorit/${tour.slug}`}
                   class="grid h-full place-items-center rounded-xl bg-cover bg-center bg-no-repeat"
                   style={{ backgroundImage: `url(${tour.data.image})` }}
                 >
