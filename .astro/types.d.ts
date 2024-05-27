@@ -141,99 +141,99 @@ declare module "astro:content" {
     >;
 
   type ContentEntryMap = {
-    destinasi_favorit: {
+    "destinasi-favorit": {
       "air-terjun-coban-rondo.mdx": {
         id: "air-terjun-coban-rondo.mdx";
         slug: "air-terjun-coban-rondo";
         body: string;
-        collection: "destinasi_favorit";
-        data: InferEntrySchema<"destinasi_favorit">;
+        collection: "destinasi-favorit";
+        data: any;
       } & { render(): Render[".mdx"] };
       "air-terjun-tumpak-sewu.mdx": {
         id: "air-terjun-tumpak-sewu.mdx";
         slug: "air-terjun-tumpak-sewu";
         body: string;
-        collection: "destinasi_favorit";
-        data: InferEntrySchema<"destinasi_favorit">;
+        collection: "destinasi-favorit";
+        data: any;
       } & { render(): Render[".mdx"] };
       "bromo-tengger-semeru.mdx": {
         id: "bromo-tengger-semeru.mdx";
         slug: "bromo-tengger-semeru";
         body: string;
-        collection: "destinasi_favorit";
-        data: InferEntrySchema<"destinasi_favorit">;
+        collection: "destinasi-favorit";
+        data: any;
       } & { render(): Render[".mdx"] };
       "candi-singosari.mdx": {
         id: "candi-singosari.mdx";
         slug: "candi-singosari";
         body: string;
-        collection: "destinasi_favorit";
-        data: InferEntrySchema<"destinasi_favorit">;
+        collection: "destinasi-favorit";
+        data: any;
       } & { render(): Render[".mdx"] };
       "kawah-ijen.mdx": {
         id: "kawah-ijen.mdx";
         slug: "kawah-ijen";
         body: string;
-        collection: "destinasi_favorit";
-        data: InferEntrySchema<"destinasi_favorit">;
+        collection: "destinasi-favorit";
+        data: any;
       } & { render(): Render[".mdx"] };
       "museum-kereta-api-bondowoso.mdx": {
         id: "museum-kereta-api-bondowoso.mdx";
         slug: "museum-kereta-api-bondowoso";
         body: string;
-        collection: "destinasi_favorit";
-        data: InferEntrySchema<"destinasi_favorit">;
+        collection: "destinasi-favorit";
+        data: any;
       } & { render(): Render[".mdx"] };
       "taman-nasional-baluran.mdx": {
         id: "taman-nasional-baluran.mdx";
         slug: "taman-nasional-baluran";
         body: string;
-        collection: "destinasi_favorit";
-        data: InferEntrySchema<"destinasi_favorit">;
+        collection: "destinasi-favorit";
+        data: any;
       } & { render(): Render[".mdx"] };
       "taman-nasional-meru-betiri.mdx": {
         id: "taman-nasional-meru-betiri.mdx";
         slug: "taman-nasional-meru-betiri";
         body: string;
-        collection: "destinasi_favorit";
-        data: InferEntrySchema<"destinasi_favorit">;
+        collection: "destinasi-favorit";
+        data: any;
       } & { render(): Render[".mdx"] };
       "telaga-sarangan.mdx": {
         id: "telaga-sarangan.mdx";
         slug: "telaga-sarangan";
         body: string;
-        collection: "destinasi_favorit";
-        data: InferEntrySchema<"destinasi_favorit">;
+        collection: "destinasi-favorit";
+        data: any;
       } & { render(): Render[".mdx"] };
     };
-    kota_desa: {
+    "kota-dan-desa": {
       "kabupaten-bangkalan.mdx": {
         id: "kabupaten-bangkalan.mdx";
         slug: "kabupaten-bangkalan";
         body: string;
-        collection: "kota_desa";
-        data: InferEntrySchema<"kota_desa">;
+        collection: "kota-dan-desa";
+        data: any;
       } & { render(): Render[".mdx"] };
       "kabupaten-blitar.mdx": {
         id: "kabupaten-blitar.mdx";
         slug: "kabupaten-blitar";
         body: string;
-        collection: "kota_desa";
-        data: InferEntrySchema<"kota_desa">;
+        collection: "kota-dan-desa";
+        data: any;
       } & { render(): Render[".mdx"] };
       "kabupaten-malang.mdx": {
         id: "kabupaten-malang.mdx";
         slug: "kabupaten-malang";
         body: string;
-        collection: "kota_desa";
-        data: InferEntrySchema<"kota_desa">;
+        collection: "kota-dan-desa";
+        data: any;
       } & { render(): Render[".mdx"] };
       "kota-malang.mdx": {
         id: "kota-malang.mdx";
         slug: "kota-malang";
         body: string;
-        collection: "kota_desa";
-        data: InferEntrySchema<"kota_desa">;
+        collection: "kota-dan-desa";
+        data: any;
       } & { render(): Render[".mdx"] };
     };
     universitas: {
@@ -242,84 +242,84 @@ declare module "astro:content" {
         slug: "its";
         body: string;
         collection: "universitas";
-        data: InferEntrySchema<"universitas">;
+        data: any;
       } & { render(): Render[".mdx"] };
       "pens.mdx": {
         id: "pens.mdx";
         slug: "pens";
         body: string;
         collection: "universitas";
-        data: InferEntrySchema<"universitas">;
+        data: any;
       } & { render(): Render[".mdx"] };
       "polinema.mdx": {
         id: "polinema.mdx";
         slug: "polinema";
         body: string;
         collection: "universitas";
-        data: InferEntrySchema<"universitas">;
+        data: any;
       } & { render(): Render[".mdx"] };
       "ub.mdx": {
         id: "ub.mdx";
         slug: "ub";
         body: string;
         collection: "universitas";
-        data: InferEntrySchema<"universitas">;
+        data: any;
       } & { render(): Render[".mdx"] };
       "uin-malang.mdx": {
         id: "uin-malang.mdx";
         slug: "uin-malang";
         body: string;
         collection: "universitas";
-        data: InferEntrySchema<"universitas">;
+        data: any;
       } & { render(): Render[".mdx"] };
       "um.mdx": {
         id: "um.mdx";
         slug: "um";
         body: string;
         collection: "universitas";
-        data: InferEntrySchema<"universitas">;
+        data: any;
       } & { render(): Render[".mdx"] };
       "umm.mdx": {
         id: "umm.mdx";
         slug: "umm";
         body: string;
         collection: "universitas";
-        data: InferEntrySchema<"universitas">;
+        data: any;
       } & { render(): Render[".mdx"] };
       "unair.mdx": {
         id: "unair.mdx";
         slug: "unair";
         body: string;
         collection: "universitas";
-        data: InferEntrySchema<"universitas">;
+        data: any;
       } & { render(): Render[".mdx"] };
       "unej.mdx": {
         id: "unej.mdx";
         slug: "unej";
         body: string;
         collection: "universitas";
-        data: InferEntrySchema<"universitas">;
+        data: any;
       } & { render(): Render[".mdx"] };
       "unesa.mdx": {
         id: "unesa.mdx";
         slug: "unesa";
         body: string;
         collection: "universitas";
-        data: InferEntrySchema<"universitas">;
+        data: any;
       } & { render(): Render[".mdx"] };
       "upn-veteran.mdx": {
         id: "upn-veteran.mdx";
         slug: "upn-veteran";
         body: string;
         collection: "universitas";
-        data: InferEntrySchema<"universitas">;
+        data: any;
       } & { render(): Render[".mdx"] };
       "utm.mdx": {
         id: "utm.mdx";
         slug: "utm";
         body: string;
         collection: "universitas";
-        data: InferEntrySchema<"universitas">;
+        data: any;
       } & { render(): Render[".mdx"] };
     };
   };
@@ -328,5 +328,5 @@ declare module "astro:content" {
 
   type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-  export type ContentConfig = typeof import("./../src/content/config.js");
+  export type ContentConfig = never;
 }

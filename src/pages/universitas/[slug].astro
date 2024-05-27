@@ -29,11 +29,14 @@ const { Content } = await entry.render();
       <div class="flex h-full w-full flex-col justify-center xl:w-1/2">
         <h3 class="text-4xl font-black">{entry.data.acronym}</h3>
         <h5 class="text-lg font-semibold">{entry.data.title}</h5>
-        <i class="text-base font-normal">{entry.data.category}</i>
       </div>
       <div class="flex h-full w-full items-center justify-start text-lg xl:w-1/2 xl:justify-end xl:text-xl">
         <i class="fas fa-map-marker-alt"></i>
-        <h5>&numsp;{entry.data.location}</h5>
+        <h5>
+          &numsp;{entry.data.location}
+          <br />
+          <p class="text-base">&emsp;{entry.data.category}</p>
+        </h5>
       </div>
     </section>
     <q class="mt-6 h-full w-full cursor-default text-center italic text-slate-50">
