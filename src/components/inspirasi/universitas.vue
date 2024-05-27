@@ -1,7 +1,3 @@
-<script setup>
-import KaroselUniversitas from "./karosel-universitas.vue";
-</script>
-
 <template>
   <span
     class="absolute top-[125rem] z-0 h-40 w-40"

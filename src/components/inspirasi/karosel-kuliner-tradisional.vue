@@ -66,7 +66,6 @@ onMounted(() => {
     width: 97.5%;
   }
 }
-
 @media screen and (max-width: 1280px) {
   main .splide__slide:nth-child(even) {
     justify-content: flex-end;
@@ -75,7 +74,6 @@ onMounted(() => {
     justify-content: flex-start;
   }
 }
-
 @media screen and (max-width: 768px) {
   main .splide__slide span {
     width: 100%;
