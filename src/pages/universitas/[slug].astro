@@ -19,18 +19,29 @@ const { Content } = await entry.render();
 ---
 
 <MainLayout frontmatter={entry.data} slug={entry.slug} title={entry.data.title}>
-  <main class="mx-auto mt-48 grid h-fit w-4/5 place-items-center rounded-t-3xl lg:mt-60">
+  <section class="mx-auto mb-6 mt-48 h-fit w-4/5 text-lg text-slate-50 lg:mt-60 lg:text-2xl">
+    <a
+      href="/inspirasi"
+      class="flex h-fit w-fit items-center transition-all duration-300 ease-in-out"
+    >
+      <i class="fa fa-arrow-left"></i>
+      &emsp;
+      <h4 class="font-semibold hover:text-slate-200 hover:underline">Back</h4>
+    </a>
+  </section>
+  <main class="mx-auto grid h-fit w-4/5 place-items-center rounded-t-3xl">
     <img
       src={entry.data.image}
       alt={entry.data.title}
       class="h-full w-full rounded-3xl"
+      style="box-shadow: 0.5rem 0.5rem 0 #bcbcbc50"
     />
-    <section class="mt-10 flex h-full w-full cursor-default flex-col text-slate-50 xl:flex-row">
-      <div class="flex h-full w-full flex-col justify-center xl:w-1/2">
+    <section class="flex h-full w-full cursor-default flex-col text-slate-50 xl:flex-row">
+      <div class="mt-6 flex h-full w-full flex-col justify-center xl:w-1/2">
         <h3 class="text-4xl font-black">{entry.data.acronym}</h3>
         <h5 class="text-lg font-semibold">{entry.data.title}</h5>
       </div>
-      <div class="flex h-full w-full items-center justify-start text-lg xl:w-1/2 xl:justify-end xl:text-xl">
+      <div class="mt-4 flex h-full w-full items-center justify-start text-lg xl:w-1/2 xl:justify-end xl:text-xl">
         <i class="fas fa-map-marker-alt"></i>
         <h5>
           &numsp;{entry.data.location}
@@ -39,7 +50,7 @@ const { Content } = await entry.render();
         </h5>
       </div>
     </section>
-    <q class="mt-6 h-full w-full cursor-default text-center italic text-slate-50">
+    <q class="mt-12 h-full w-full cursor-default text-center italic text-slate-50">
       {entry.data.description}
     </q>
     <hr class="mb-6 mt-3 h-0.5 w-full rounded-full bg-slate-50" />
