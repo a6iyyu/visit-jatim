@@ -15,7 +15,7 @@ import FaktaJawaTimur from "./fakta-jawa-timur.vue";
     id="apa-itu-jawa-timur"
     :style="{ backgroundImage: `url(${PatternSquare.src})` }"
   >
-    <h3 class="mt-20 w-fit cursor-default text-center text-4xl font-bold text-gray-50 underline lg:text-5xl">
+    <h3 class="mx-auto mt-20 w-4/5 cursor-default text-center text-4xl font-bold text-gray-50 underline lg:text-5xl">
       Mengenal Jawa Timur
     </h3>
     <section class="mx-auto mb-28 mt-10 flex h-fit w-4/5 flex-col-reverse place-items-center items-center gap-x-10 lg:grid lg:grid-cols-2">

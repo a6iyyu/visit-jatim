@@ -4,13 +4,13 @@ import bromo from "/public/bromo.jpg";
 
 <template>
   <main
-    class="z-20 flex h-[41rem] w-full flex-col bg-cover bg-center bg-no-repeat"
+    class="z-20 flex h-[43rem] w-full flex-col bg-cover bg-center bg-no-repeat"
     :style="{ backgroundImage: `url(${bromo.src})`, letterSpacing: '0.1rem' }"
   >
-    <div class="absolute z-0 h-[41rem] w-full bg-gradient-to-t from-black opacity-60 md:bg-gradient-to-r"></div>
+    <div class="absolute z-0 h-[43rem] w-full bg-gradient-to-t from-black opacity-60 md:bg-gradient-to-r"></div>
     <section class="z-10 mx-auto mb-32 mt-72 flex h-fit w-4/5">
       <div class="flex h-full flex-col">
-        <h2 class="cursor-default text-5xl font-black text-gray-50">
+        <h2 class="cursor-default text-center text-4xl font-black text-gray-50 md:text-left md:text-5xl">
           JAWA TIMUR
         </h2>
         <br />
@@ -37,13 +37,11 @@ import bromo from "/public/bromo.jpg";
     width: 30%;
   }
 }
-
 @media screen and (max-width: 1800px) {
   main > section > div:first-child {
     width: 50%;
   }
 }
-
 @media screen and (max-width: 1024px) {
   main > section > div:first-child {
     width: 100%;
@@ -53,7 +51,6 @@ import bromo from "/public/bromo.jpg";
     text-align-last: center;
   }
 }
-
 @media screen and (max-width: 360px) {
   main,
   main div {

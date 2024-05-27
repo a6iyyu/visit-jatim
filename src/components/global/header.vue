@@ -18,7 +18,7 @@ window.addEventListener("scroll", CheckHeaderSticky);
 
 <template>
   <header
-    class="fixed top-0 z-50 grid h-32 w-full place-items-center transition-all duration-300 ease-in-out lg:h-36"
+    class="fixed top-0 z-50 grid h-24 w-full place-items-center transition-all duration-300 ease-in-out lg:h-36"
     :class="HeaderSticky ? 'bg-gradient-to-tr from-gray-900 to-gray-800 shadow-lg' : 'bg-none'"
   >
     <nav class="flex h-full w-4/5">
@@ -27,8 +27,7 @@ window.addEventListener("scroll", CheckHeaderSticky);
           <img
             src="/logo-white.png"
             alt="Logo"
-            class="font-semibold text-gray-50"
-            width="100"
+            class="w-16 font-semibold text-gray-50 lg:w-[6.25rem]"
           />
         </a>
       </section>

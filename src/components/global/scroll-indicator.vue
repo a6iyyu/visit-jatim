@@ -15,7 +15,7 @@ onUnmounted(() => window.removeEventListener("scroll", ScrollPercentage));
 
 <template>
   <section
-    class="fixed inset-0 top-32 z-50 h-1 bg-blue-500 lg:top-36"
+    class="fixed inset-0 top-24 z-50 h-1 bg-blue-500 lg:top-36"
     :style="{ width: WidthScrollBar + '%' }"
   ></section>
 </template>

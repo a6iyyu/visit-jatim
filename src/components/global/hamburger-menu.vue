@@ -1,5 +1,5 @@
 <template>
-  <i class="fa-solid fa-bars flex cursor-pointer text-4xl text-gray-50"></i>
+  <i class="fa-solid fa-bars flex cursor-pointer text-3xl text-gray-50"></i>
 </template>
 
 <style scoped>

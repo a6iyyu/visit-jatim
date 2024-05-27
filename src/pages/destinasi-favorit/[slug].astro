@@ -19,7 +19,7 @@ const { Content } = await entry.render();
 ---
 
 <MainLayout frontmatter={entry.data} slug={entry.slug} title={entry.data.title}>
-  <section class="mx-auto mb-6 mt-48 h-fit w-4/5 text-lg text-slate-50 lg:mt-60 lg:text-2xl">
+  <section class="mx-auto mb-6 mt-36 h-fit w-4/5 text-lg text-slate-50 lg:mt-60 lg:text-2xl">
     <a
       href="/inspirasi"
       class="flex h-fit w-fit items-center transition-all duration-300 ease-in-out"
@@ -46,9 +46,9 @@ const { Content } = await entry.render();
         <h5>&numsp;{entry.data.location}</h5>
       </div>
     </section>
-    <q class="mt-12 h-full w-full cursor-default text-center italic text-slate-50">
+    <em class="mt-12 h-full w-full cursor-default text-center text-slate-50">
       {entry.data.description}
-    </q>
+    </em>
     <hr class="mb-6 mt-3 h-0.5 w-full rounded-full bg-slate-50" />
     <section class="mb-10 cursor-default text-justify text-slate-50">
       <Content />
