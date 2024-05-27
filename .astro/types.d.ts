@@ -147,97 +147,181 @@ declare module "astro:content" {
         slug: "air-terjun-coban-rondo";
         body: string;
         collection: "destinasi-favorit";
-        data: any;
+        data: InferEntrySchema<"destinasi-favorit">;
       } & { render(): Render[".mdx"] };
       "air-terjun-tumpak-sewu.mdx": {
         id: "air-terjun-tumpak-sewu.mdx";
         slug: "air-terjun-tumpak-sewu";
         body: string;
         collection: "destinasi-favorit";
-        data: any;
+        data: InferEntrySchema<"destinasi-favorit">;
       } & { render(): Render[".mdx"] };
       "bromo-tengger-semeru.mdx": {
         id: "bromo-tengger-semeru.mdx";
         slug: "bromo-tengger-semeru";
         body: string;
         collection: "destinasi-favorit";
-        data: any;
+        data: InferEntrySchema<"destinasi-favorit">;
       } & { render(): Render[".mdx"] };
       "candi-singosari.mdx": {
         id: "candi-singosari.mdx";
         slug: "candi-singosari";
         body: string;
         collection: "destinasi-favorit";
-        data: any;
+        data: InferEntrySchema<"destinasi-favorit">;
       } & { render(): Render[".mdx"] };
       "kawah-ijen.mdx": {
         id: "kawah-ijen.mdx";
         slug: "kawah-ijen";
         body: string;
         collection: "destinasi-favorit";
-        data: any;
+        data: InferEntrySchema<"destinasi-favorit">;
       } & { render(): Render[".mdx"] };
       "museum-kereta-api-bondowoso.mdx": {
         id: "museum-kereta-api-bondowoso.mdx";
         slug: "museum-kereta-api-bondowoso";
         body: string;
         collection: "destinasi-favorit";
-        data: any;
+        data: InferEntrySchema<"destinasi-favorit">;
       } & { render(): Render[".mdx"] };
       "taman-nasional-baluran.mdx": {
         id: "taman-nasional-baluran.mdx";
         slug: "taman-nasional-baluran";
         body: string;
         collection: "destinasi-favorit";
-        data: any;
+        data: InferEntrySchema<"destinasi-favorit">;
       } & { render(): Render[".mdx"] };
       "taman-nasional-meru-betiri.mdx": {
         id: "taman-nasional-meru-betiri.mdx";
         slug: "taman-nasional-meru-betiri";
         body: string;
         collection: "destinasi-favorit";
-        data: any;
+        data: InferEntrySchema<"destinasi-favorit">;
       } & { render(): Render[".mdx"] };
       "telaga-sarangan.mdx": {
         id: "telaga-sarangan.mdx";
         slug: "telaga-sarangan";
         body: string;
         collection: "destinasi-favorit";
-        data: any;
+        data: InferEntrySchema<"destinasi-favorit">;
       } & { render(): Render[".mdx"] };
     };
-    destinasi_favorit: {};
     "kota-dan-desa": {
       "kabupaten-bangkalan.mdx": {
         id: "kabupaten-bangkalan.mdx";
         slug: "kabupaten-bangkalan";
         body: string;
         collection: "kota-dan-desa";
-        data: any;
+        data: InferEntrySchema<"kota-dan-desa">;
       } & { render(): Render[".mdx"] };
       "kabupaten-blitar.mdx": {
         id: "kabupaten-blitar.mdx";
         slug: "kabupaten-blitar";
         body: string;
         collection: "kota-dan-desa";
-        data: any;
+        data: InferEntrySchema<"kota-dan-desa">;
       } & { render(): Render[".mdx"] };
       "kabupaten-malang.mdx": {
         id: "kabupaten-malang.mdx";
         slug: "kabupaten-malang";
         body: string;
         collection: "kota-dan-desa";
-        data: any;
+        data: InferEntrySchema<"kota-dan-desa">;
       } & { render(): Render[".mdx"] };
       "kota-malang.mdx": {
         id: "kota-malang.mdx";
         slug: "kota-malang";
         body: string;
         collection: "kota-dan-desa";
-        data: any;
+        data: InferEntrySchema<"kota-dan-desa">;
       } & { render(): Render[".mdx"] };
     };
-    kota_desa: {};
+    "kuliner-tradisional": {
+      "gado-gado.mdx": {
+        id: "gado-gado.mdx";
+        slug: "gado-gado";
+        body: string;
+        collection: "kuliner-tradisional";
+        data: InferEntrySchema<"kuliner-tradisional">;
+      } & { render(): Render[".mdx"] };
+      "gethuk-pisang.mdx": {
+        id: "gethuk-pisang.mdx";
+        slug: "gethuk-pisang";
+        body: string;
+        collection: "kuliner-tradisional";
+        data: InferEntrySchema<"kuliner-tradisional">;
+      } & { render(): Render[".mdx"] };
+      "lontong-balap.mdx": {
+        id: "lontong-balap.mdx";
+        slug: "lontong-balap";
+        body: string;
+        collection: "kuliner-tradisional";
+        data: InferEntrySchema<"kuliner-tradisional">;
+      } & { render(): Render[".mdx"] };
+      "nasi-krawu.mdx": {
+        id: "nasi-krawu.mdx";
+        slug: "nasi-krawu";
+        body: string;
+        collection: "kuliner-tradisional";
+        data: InferEntrySchema<"kuliner-tradisional">;
+      } & { render(): Render[".mdx"] };
+      "nasi-tempong.mdx": {
+        id: "nasi-tempong.mdx";
+        slug: "nasi-tempong";
+        body: string;
+        collection: "kuliner-tradisional";
+        data: InferEntrySchema<"kuliner-tradisional">;
+      } & { render(): Render[".mdx"] };
+      "pecel.mdx": {
+        id: "pecel.mdx";
+        slug: "pecel";
+        body: string;
+        collection: "kuliner-tradisional";
+        data: InferEntrySchema<"kuliner-tradisional">;
+      } & { render(): Render[".mdx"] };
+      "rawon.mdx": {
+        id: "rawon.mdx";
+        slug: "rawon";
+        body: string;
+        collection: "kuliner-tradisional";
+        data: InferEntrySchema<"kuliner-tradisional">;
+      } & { render(): Render[".mdx"] };
+      "rujak-cingur.mdx": {
+        id: "rujak-cingur.mdx";
+        slug: "rujak-cingur";
+        body: string;
+        collection: "kuliner-tradisional";
+        data: InferEntrySchema<"kuliner-tradisional">;
+      } & { render(): Render[".mdx"] };
+      "rujak-soto.mdx": {
+        id: "rujak-soto.mdx";
+        slug: "rujak-soto";
+        body: string;
+        collection: "kuliner-tradisional";
+        data: InferEntrySchema<"kuliner-tradisional">;
+      } & { render(): Render[".mdx"] };
+      "sate-madura.mdx": {
+        id: "sate-madura.mdx";
+        slug: "sate-madura";
+        body: string;
+        collection: "kuliner-tradisional";
+        data: InferEntrySchema<"kuliner-tradisional">;
+      } & { render(): Render[".mdx"] };
+      "soto-lamongan.mdx": {
+        id: "soto-lamongan.mdx";
+        slug: "soto-lamongan";
+        body: string;
+        collection: "kuliner-tradisional";
+        data: InferEntrySchema<"kuliner-tradisional">;
+      } & { render(): Render[".mdx"] };
+      "tahu-tek.mdx": {
+        id: "tahu-tek.mdx";
+        slug: "tahu-tek";
+        body: string;
+        collection: "kuliner-tradisional";
+        data: InferEntrySchema<"kuliner-tradisional">;
+      } & { render(): Render[".mdx"] };
+    };
     universitas: {
       "its.mdx": {
         id: "its.mdx";
@@ -322,6 +406,50 @@ declare module "astro:content" {
         body: string;
         collection: "universitas";
         data: InferEntrySchema<"universitas">;
+      } & { render(): Render[".mdx"] };
+    };
+    "upacara-adat": {
+      "kebo-keboan.mdx": {
+        id: "kebo-keboan.mdx";
+        slug: "kebo-keboan";
+        body: string;
+        collection: "upacara-adat";
+        data: InferEntrySchema<"upacara-adat">;
+      } & { render(): Render[".mdx"] };
+      "keduk-beji.mdx": {
+        id: "keduk-beji.mdx";
+        slug: "keduk-beji";
+        body: string;
+        collection: "upacara-adat";
+        data: InferEntrySchema<"upacara-adat">;
+      } & { render(): Render[".mdx"] };
+      "labuh-sesaji.mdx": {
+        id: "labuh-sesaji.mdx";
+        slug: "labuh-sesaji";
+        body: string;
+        collection: "upacara-adat";
+        data: InferEntrySchema<"upacara-adat">;
+      } & { render(): Render[".mdx"] };
+      "larung-sembonyo.mdx": {
+        id: "larung-sembonyo.mdx";
+        slug: "larung-sembonyo";
+        body: string;
+        collection: "upacara-adat";
+        data: InferEntrySchema<"upacara-adat">;
+      } & { render(): Render[".mdx"] };
+      "reog.mdx": {
+        id: "reog.mdx";
+        slug: "reog";
+        body: string;
+        collection: "upacara-adat";
+        data: InferEntrySchema<"upacara-adat">;
+      } & { render(): Render[".mdx"] };
+      "yadnya-kasada.mdx": {
+        id: "yadnya-kasada.mdx";
+        slug: "yadnya-kasada";
+        body: string;
+        collection: "upacara-adat";
+        data: InferEntrySchema<"upacara-adat">;
       } & { render(): Render[".mdx"] };
     };
   };
