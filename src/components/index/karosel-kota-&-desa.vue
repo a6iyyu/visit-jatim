@@ -27,7 +27,7 @@ onMounted(() => {
       <h3 class="mb-8 mt-52 text-center text-4xl font-bold text-gray-50 underline">
         Kenali Kota & Desa
       </h3>
-      <section class="mb-10 grid h-[35rem] w-full place-items-center">
+      <section class="mb-4 grid h-[35rem] w-full place-items-center">
         <article class="splide h-full w-full overflow-hidden" id="splide">
           <div class="splide__track h-full w-full py-4">
             <ul class="splide__list">
