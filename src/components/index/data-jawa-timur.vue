@@ -10,9 +10,9 @@ const NumberCounting = ref([
     total: 41416407,
   },
   {
-    title: "PDRB Per Kapita (Ribu Rupiah)",
+    title: "PDRB Per Kapita",
     img: "/pdrb.png?url",
-    alt: "PDRB Per Kapita (Ribu Rupiah)",
+    alt: "PDRB Per Kapita",
     total: 66364,
   },
   {

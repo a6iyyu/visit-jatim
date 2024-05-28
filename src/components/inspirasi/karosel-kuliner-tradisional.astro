@@ -38,7 +38,9 @@ const CulinaryList = await getCollection("kuliner-tradisional");
                 class="grid h-full place-items-center rounded-xl bg-cover bg-center bg-no-repeat"
                 style={{ backgroundImage: `url(${culinary.data.image})` }}
               >
-                <h4 class="mx-auto flex h-4/5 w-4/5 items-end text-4xl font-bold text-gray-50" />
+                <h4 class="mx-auto flex h-4/5 w-4/5 items-end justify-center text-4xl font-bold text-gray-50">
+                  {culinary.data.title}
+                </h4>
               </a>
             </li>
           ))
