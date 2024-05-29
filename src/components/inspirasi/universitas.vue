@@ -26,7 +26,6 @@
           dengan status negeri maupun swasta.
         </h4>
       </div>
-      <KaroselUniversitas />
     </section>
   </main>
 </template>
