@@ -25,6 +25,7 @@ export const collections = {
     schema: z.object({
       title: z.string().max(50, { message: "Title must be 50 characters or less!" }),
       location: z.string().max(50, { message: "Location must be 50 characters or less!" }),
+      estimation: z.string(),
       description: z.string().max(250, { message: "Description must be 250 characters or less!" }),
       image: z.string().optional(),
     }),
