@@ -24,16 +24,8 @@ const Reading = ref([
 </script>
 
 <template>
-  <span
-    class="absolute left-0 top-[125rem] z-0 h-40 w-40"
-    style="background-color: #be3475; filter: blur(8rem)"
-  >
-  </span>
-  <span
-    class="absolute right-0 top-[160rem] z-0 h-40 w-40"
-    style="background-color: #2c862c; filter: blur(8rem)"
-  >
-  </span>
+  <span class="absolute left-0 top-[125rem] z-0 h-40 w-40" style="background-color: #be3475; filter: blur(8rem)"></span>
+  <span class="absolute right-0 top-[160rem] z-0 h-40 w-40" style="background-color: #2c862c; filter: blur(8rem)"></span>
   <main class="z-20 mx-auto mb-20 mt-8 h-full w-4/5">
     <section
       v-for="(read, index) in Reading"
@@ -48,12 +40,7 @@ const Reading = ref([
           {{ read.description }}
         </h5>
       </div>
-      <img
-        :src="read.img"
-        :alt="read.alt"
-        class="w-full font-bold text-gray-50 xl:w-[55%]"
-        style="box-shadow: 0.5rem 0.5rem 0 #bcbcbc"
-      />
+      <img :src="read.img" :alt="read.alt" class="w-full font-bold text-gray-50 xl:w-[55%]" style="box-shadow: 0.5rem 0.5rem 0 #bcbcbc" />
     </section>
   </main>
 </template>
@@ -64,7 +51,6 @@ const Reading = ref([
     flex-direction: row-reverse;
   }
 }
-
 @media screen and (max-width: 1279px) {
   main section:nth-child(2) {
     flex-direction: column-reverse;

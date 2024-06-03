@@ -1,0 +1,17 @@
+---
+import Hero from "../components/penduduk/hero.vue";
+import MenjelajahiKotaDanDesa from "../components/penduduk/menjelajahi-kota-dan-desa.vue";
+---
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("mari-jelajahi").addEventListener("click", () => {
+      document.getElementById("menjelajahi-kota-dan-desa").scrollIntoView({
+        behavior: "smooth",
+      });
+    });
+  });
+</script>
+
+<Hero />
+<MenjelajahiKotaDanDesa />

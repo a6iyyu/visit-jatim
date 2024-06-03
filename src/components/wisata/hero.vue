@@ -3,10 +3,7 @@ import Baluran from "/public/taman-nasional-baluran.jpg";
 </script>
 
 <template>
-  <main
-    class="z-20 flex h-[41rem] w-full flex-col bg-cover bg-center bg-no-repeat"
-    :style="{ backgroundImage: `url(${Baluran.src})`, letterSpacing: '0.1rem' }"
-  >
+  <main class="z-20 flex h-[41rem] w-full flex-col bg-cover bg-center bg-no-repeat" :style="{ backgroundImage: `url(${Baluran.src})`, letterSpacing: '0.1rem' }">
     <div class="absolute z-0 h-[41rem] w-full bg-gradient-to-t from-black opacity-60 md:bg-gradient-to-r"></div>
     <section class="z-10 mx-auto mb-32 mt-72 flex h-fit w-4/5">
       <div class="flex h-full flex-col">
@@ -35,13 +32,11 @@ import Baluran from "/public/taman-nasional-baluran.jpg";
     width: 30%;
   }
 }
-
 @media screen and (max-width: 1800px) {
   main > section > div:first-child {
     width: 50%;
   }
 }
-
 @media screen and (max-width: 1024px) {
   main > section > div:first-child {
     width: 100%;

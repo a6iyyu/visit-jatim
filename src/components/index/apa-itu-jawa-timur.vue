@@ -5,11 +5,7 @@ import FaktaJawaTimur from "./fakta-jawa-timur.vue";
 </script>
 
 <template>
-  <span
-    class="absolute z-0 h-40 w-40"
-    style="background-color: #ff85ad; filter: blur(8rem)"
-  >
-  </span>
+  <span class="absolute z-0 h-40 w-40" style="background-color: #ff85ad; filter: blur(8rem)"></span>
   <main
     class="z-10 flex h-fit w-full flex-col items-center bg-cover bg-center bg-no-repeat"
     id="apa-itu-jawa-timur"

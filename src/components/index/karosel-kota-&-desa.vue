@@ -31,11 +31,7 @@ onMounted(() => {
         <article class="splide h-full w-full overflow-hidden" id="splide">
           <div class="splide__track h-full w-full py-4">
             <ul class="splide__list">
-              <li
-                class="splide__slide flex h-full w-full"
-                v-for="(image, index) in images"
-                :key="index"
-              >
+              <li class="splide__slide flex h-full w-full" v-for="(image, index) in images" :key="index">
                 <span
                   class="grid h-full place-items-center rounded-xl bg-cover bg-center bg-no-repeat"
                   :style="{ backgroundImage: 'url(' + image.image + ')' }"
@@ -58,7 +54,6 @@ main {
   background-image: linear-gradient(to right, #0c0c1e, #141414);
   border-radius: 20% 20% 10% 10% / 10% 10% 0% 0%;
 }
-
 @media screen and (max-width: 3120px) {
   main section .splide__slide:nth-child(even) {
     justify-content: flex-end;
@@ -70,7 +65,6 @@ main {
     width: 97.5%;
   }
 }
-
 @media screen and (max-width: 1280px) {
   main section .splide__slide span {
     width: 100%;

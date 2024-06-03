@@ -42,7 +42,6 @@
     width: 30%;
   }
 }
-
 @media screen and (max-width: 1800px) {
   main {
     height: 40rem;
@@ -51,7 +50,6 @@
     width: fit-content;
   }
 }
-
 @media screen and (max-width: 960px) {
   main {
     height: fit-content;

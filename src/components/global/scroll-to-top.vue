@@ -25,10 +25,6 @@ onUnmounted(() => window.removeEventListener("scroll", CheckShowScroll));
     :class="ShowScroll ? 'visible opacity-100' : 'invisible opacity-0'"
     @click="ScrollToTop"
   >
-    <img
-      src="/scroll-to-top.png"
-      alt="Scroll To Top"
-      class="w-12 text-center text-sm font-semibold text-gray-950 lg:w-16"
-    />
+    <img src="/scroll-to-top.png" alt="Scroll To Top" class="w-12 text-center text-sm font-semibold text-gray-950 lg:w-16" />
   </section>
 </template>
