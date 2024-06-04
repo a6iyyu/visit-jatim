@@ -22,7 +22,7 @@
       <img
         src="/jelajahi-kebudayaan.jpg?url"
         alt="Upacara Adat"
-        class="-order-1 mt-6 w-full rounded-xl font-semibold text-gray-50 xl:order-1 xl:mt-0 xl:h-4/5 xl:w-4/5"
+        class="-order-1 mt-6 w-full rounded-xl font-semibold text-gray-50 transition-all duration-500 ease-in-out xl:order-1 xl:mt-0 xl:h-4/5 xl:w-4/5"
         style="box-shadow: 0.3rem 0.3rem 0 #bcbcbc"
       />
     </section>
@@ -35,5 +35,8 @@ main h5::first-letter {
   font-size: 6rem;
   font-weight: bold;
   line-height: 4.5rem;
+}
+section > img:hover {
+  transform: scale(1.05);
 }
 </style>

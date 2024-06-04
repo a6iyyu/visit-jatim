@@ -23,9 +23,20 @@ import TokohInspiratif from "./tokoh-inspiratif.vue";
           keragaman dan pesona yang ditawarkan oleh setiap wilayah.
         </h4>
       </div>
-      <img src="/peta-jawa-timur.png" alt="Jawa Timur" class="font-semibold text-gray-50" />
+      <img
+        src="/menjelajahi-kota-dan-desa.jpg"
+        alt="Jawa Timur"
+        class="rounded-2xl font-semibold text-gray-50 transition-all duration-300 ease-in-out"
+        style="box-shadow: 0.4rem 0.4rem 0 #bcbcbc99"
+      />
     </section>
     <KehidupanMasyarakat />
     <TokohInspiratif />
   </main>
 </template>
+
+<style>
+main img:hover{
+  transform: scale(1.05);
+}
+</style>

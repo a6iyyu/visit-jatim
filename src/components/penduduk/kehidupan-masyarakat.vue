@@ -1,6 +1,11 @@
 <template>
   <section class="mx-auto mb-24 flex h-fit w-4/5 flex-col place-items-center items-center gap-x-16 lg:grid lg:grid-cols-2">
-    <img src="/peta-jawa-timur.png" alt="Jawa Timur" class="font-semibold text-gray-50" />
+    <img
+      src="/kehidupan-masyarakat.jpg"
+      alt="Jawa Timur"
+      class="rounded-2xl font-semibold text-gray-50 transition-all duration-300 ease-in-out"
+      style="box-shadow: 0.4rem 0.4rem 0 #bcbcbc99"  
+    />
     <div class="mt-8 flex cursor-default flex-col leading-relaxed text-gray-50 lg:mt-0">
       <h2 class="text-center text-4xl font-bold lg:text-left">
         Kehidupan Masyarakat Jawa Timur

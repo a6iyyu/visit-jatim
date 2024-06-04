@@ -12,6 +12,11 @@
         mempengaruhi kehidupan di sekitar mereka.
       </h4>
     </div>
-    <img src="/peta-jawa-timur.png" alt="Jawa Timur" class="font-semibold text-gray-50" />
+    <img
+      src="/tokoh-inspiratif.jpg"
+      alt="Jawa Timur"
+      class="rounded-2xl font-semibold text-gray-50 transition-all duration-300 ease-in-out"
+      style="box-shadow: 0.4rem 0.4rem 0 #bcbcbc99"  
+    />
   </section>
 </template>

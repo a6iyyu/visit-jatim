@@ -11,7 +11,7 @@ import JumlahMelekHuruf from "./jumlah-melek-huruf.vue";
       <img
         src="/siswa-membaca-buku.jpg?url"
         alt="Siswa Membaca Buku"
-        class="mt-8 w-full rounded-xl font-semibold text-gray-50 xl:mt-0 xl:h-4/5"
+        class="mt-8 w-full rounded-xl font-semibold text-gray-50 transition-all duration-300 ease-in-out xl:mt-0 xl:h-4/5"
         style="box-shadow: 0.3rem 0.3rem 0 #bcbcbc"
       />
       <h5 class="mt-8 cursor-default text-justify leading-relaxed xl:mt-0">
@@ -35,5 +35,8 @@ main h5::first-letter {
   font-size: 6rem;
   font-weight: bold;
   line-height: 4rem;
+}
+section > img:hover {
+  transform: scale(1.05);
 }
 </style>

@@ -2,6 +2,7 @@
 import MainLayout from "../layouts/main-layout.astro";
 import WisataPage from "../layouts/wisata.vue";
 import DestinasiFavorit from "../components/wisata/karosel-destinasi-favorit.astro";
+import DeskripsiDestinasiFavorit from "../components/wisata/deskripsi-destinasi-favorit.vue";
 ---
 
 <MainLayout
@@ -10,4 +11,5 @@ import DestinasiFavorit from "../components/wisata/karosel-destinasi-favorit.ast
 >
   <WisataPage client:only="vue" />
   <DestinasiFavorit />
+  <DeskripsiDestinasiFavorit />
 </MainLayout>

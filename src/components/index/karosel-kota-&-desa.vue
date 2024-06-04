@@ -50,11 +50,11 @@ onMounted(() => {
 </template>
 
 <style scoped>
-main {
-  background-image: linear-gradient(to right, #0c0c1e, #141414);
-  border-radius: 20% 20% 10% 10% / 10% 10% 0% 0%;
-}
 @media screen and (max-width: 3120px) {
+  main {
+    background-image: linear-gradient(to right, #0c0c1e, #141414);
+    border-radius: 20% 20% 10% 10% / 10% 10% 0% 0%;
+  }
   main section .splide__slide:nth-child(even) {
     justify-content: flex-end;
   }
@@ -66,6 +66,9 @@ main {
   }
 }
 @media screen and (max-width: 1280px) {
+  main {
+    border-radius: 10% 10% 5% 5% / 5% 5% 0% 0%;
+  }
   main section .splide__slide span {
     width: 100%;
   }
