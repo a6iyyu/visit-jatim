@@ -5,15 +5,7 @@ import HamburgerMenu from "./hamburger-menu.vue";
 const menus = ["Inspirasi", "Penduduk", "Wisata"];
 const HeaderSticky = ref(false);
 
-const CheckHeaderSticky = () => {
-  if (window.scrollY > 5) {
-    HeaderSticky.value = true;
-  } else {
-    HeaderSticky.value = false;
-  }
-};
-
-window.addEventListener("scroll", CheckHeaderSticky);
+window.addEventListener("scroll", () => (HeaderSticky.value = window.scrollY > 5));
 </script>
 
 <template>
@@ -35,8 +27,7 @@ window.addEventListener("scroll", CheckHeaderSticky);
         <a
           v-for="menu in menus"
           :href="`/${menu.toLowerCase()}`"
-          class="hidden font-black text-white transition-all duration-300 ease-in-out hover:text-gray-200 hover:underline lg:flex"
-          style="letter-spacing: 0.1rem"
+          class="hidden font-black text-white transition-all duration-300 ease-in-out [letter-spacing:0.1rem] hover:text-gray-200 hover:underline lg:flex"
         >
           {{ menu }}
         </a>

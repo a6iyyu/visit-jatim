@@ -1,8 +1,5 @@
 <template>
-  <span
-    class="absolute top-[125rem] z-0 h-40 w-40"
-    style="background-color: #2c862c; filter: blur(8rem)"
-  >
+  <span class="absolute top-[125rem] z-0 h-40 w-40 bg-[#2c862c] [filter:blur(8rem)]">
   </span>
   <main class="z-10 mt-8 grid h-fit w-full place-items-center">
     <section class="flex h-fit w-4/5 cursor-default flex-col items-center">

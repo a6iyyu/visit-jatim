@@ -3,16 +3,12 @@ import JumlahMelekHuruf from "./jumlah-melek-huruf.vue";
 </script>
 
 <template>
-  <main
-    class="z-10 mx-auto flex h-fit w-4/5 flex-col items-center text-gray-50"
-    id="mengulik-pendidikan"
-  >
+  <main class="z-10 mx-auto flex h-fit w-4/5 flex-col items-center text-gray-50">
     <section class="mb-8 mt-4 grid grid-cols-1 place-items-center gap-x-10 xl:grid-cols-2">
       <img
         src="/siswa-membaca-buku.jpg?url"
         alt="Siswa Membaca Buku"
-        class="mt-8 w-full rounded-xl font-semibold text-gray-50 transition-all duration-300 ease-in-out xl:mt-0 xl:h-4/5"
-        style="box-shadow: 0.3rem 0.3rem 0 #bcbcbc"
+        class="mt-8 w-full rounded-xl font-semibold text-gray-50 transition-all duration-300 ease-in-out [box-shadow:0.3rem_0.3rem_0_#bcbcbc] xl:mt-0 xl:h-4/5"
       />
       <h5 class="mt-8 cursor-default text-justify leading-relaxed xl:mt-0">
         Buku adalah jendela dunia. Selain menambah ilmu pengetahuan, kegiatan

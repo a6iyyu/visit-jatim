@@ -5,7 +5,7 @@ import FaktaJawaTimur from "./fakta-jawa-timur.vue";
 </script>
 
 <template>
-  <span class="absolute z-0 h-40 w-40" style="background-color: #ff85ad; filter: blur(8rem)"></span>
+  <span class="absolute z-0 h-40 w-40 bg-[#ff85ad] [filter:blur(8rem)]"></span>
   <main
     class="z-10 flex h-fit w-full flex-col items-center bg-cover bg-center bg-no-repeat"
     id="apa-itu-jawa-timur"
@@ -26,11 +26,7 @@ import FaktaJawaTimur from "./fakta-jawa-timur.vue";
         sebesar 47.799,75 Km2. Pulau Madura merupakan Pulau Terbesar di Provinsi
         Jawa Timur.
       </h4>
-      <img
-        src="/peta-jawa-timur.png"
-        alt="Jawa Timur"
-        class="font-semibold text-gray-50"
-      />
+      <img src="/peta-jawa-timur.png" alt="Jawa Timur" class="font-semibold text-gray-50" />
     </section>
     <DataJawaTimur />
     <FaktaJawaTimur />

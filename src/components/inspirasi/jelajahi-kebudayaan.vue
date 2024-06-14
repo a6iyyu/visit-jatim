@@ -1,10 +1,7 @@
 <template>
-  <span
-    class="absolute right-0 z-0 h-40 w-40 opacity-50"
-    style="background-color: #00d4ff; filter: blur(8rem)"
-  >
+  <span class="absolute right-0 z-0 h-40 w-40 bg-[#00d4ff] opacity-50 [filter:blur(8rem)]">
   </span>
-  <hr class="mx-auto mb-4 h-0.5 w-4/5 rounded-full bg-gray-50 opacity-70" />
+  <hr class="mx-auto mb-10 h-0.5 w-4/5 rounded-full bg-gray-50 opacity-70" />
   <main class="z-10 mx-auto flex h-fit w-4/5 flex-col items-center text-gray-50">
     <h3 class="mb-4 mt-6 cursor-default text-center text-4xl font-bold underline lg:text-5xl">
       Jelajahi Kebudayaan
@@ -22,8 +19,7 @@
       <img
         src="/jelajahi-kebudayaan.jpg?url"
         alt="Upacara Adat"
-        class="-order-1 mt-6 w-full rounded-xl font-semibold text-gray-50 transition-all duration-500 ease-in-out xl:order-1 xl:mt-0 xl:h-4/5 xl:w-4/5"
-        style="box-shadow: 0.3rem 0.3rem 0 #bcbcbc"
+        class="-order-1 mt-6 w-full rounded-xl font-semibold text-gray-50 transition-all duration-500 ease-in-out [box-shadow:0.3rem_0.3rem_0_#bcbcbc] xl:order-1 xl:mt-0 xl:h-4/5 xl:w-4/5"
       />
     </section>
   </main>

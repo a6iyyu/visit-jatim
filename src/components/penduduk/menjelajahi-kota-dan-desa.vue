@@ -5,7 +5,7 @@ import TokohInspiratif from "./tokoh-inspiratif.vue";
 </script>
 
 <template>
-  <span class="absolute z-0 h-40 w-40" style="background-color: #ff85ad; filter: blur(8rem)"></span>
+  <span class="bg-[#ff85ad [filter:blur(8rem)]] absolute z-0 h-40 w-40"></span>
   <main
     class="z-10 flex h-fit w-full flex-col items-center bg-cover bg-center bg-no-repeat"
     id="menjelajahi-kota-dan-desa"
@@ -26,8 +26,7 @@ import TokohInspiratif from "./tokoh-inspiratif.vue";
       <img
         src="/menjelajahi-kota-dan-desa.jpg"
         alt="Jawa Timur"
-        class="rounded-2xl font-semibold text-gray-50 transition-all duration-300 ease-in-out"
-        style="box-shadow: 0.4rem 0.4rem 0 #bcbcbc99"
+        class="rounded-2xl font-semibold text-gray-50 transition-all duration-300 ease-in-out [box-shadow:0.4rem_0.4rem_0_#bcbcbc99]"
       />
     </section>
     <KehidupanMasyarakat />
@@ -36,7 +35,7 @@ import TokohInspiratif from "./tokoh-inspiratif.vue";
 </template>
 
 <style>
-main img:hover{
+main img:hover {
   transform: scale(1.05);
 }
 </style>

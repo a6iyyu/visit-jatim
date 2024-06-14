@@ -1,9 +1,6 @@
 <template>
-  <span class="absolute z-0 h-40 w-40 opacity-50" style="background-color: #ff85ad; filter: blur(8rem)"></span>
-  <main
-    class="z-10 mx-auto flex h-fit w-4/5 flex-col items-center text-gray-50"
-    id="mengulik-pendidikan"
-  >
+  <span class="absolute z-0 h-40 w-40 bg-[#ff85ad] opacity-50 [filter:blur(8rem)]"></span>
+  <main class="z-10 mx-auto flex h-fit w-4/5 flex-col items-center text-gray-50" id="mengulik-pendidikan">
     <section class="mb-8 grid grid-cols-1 place-items-center gap-x-10 xl:grid-cols-2">
       <img
         src="/makanan-tradisional.jpg?url"

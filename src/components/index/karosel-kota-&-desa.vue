@@ -4,9 +4,10 @@ import Splide from "@splidejs/splide";
 import Cities from "/src/data/cities.json";
 
 const images = ref(Cities.cities);
+const splide = ref(null);
 
 onMounted(() => {
-  new Splide("#splide", {
+  new Splide(splide.value, {
     autoplay: true,
     drag: "free",
     perPage: 2,
@@ -28,14 +29,11 @@ onMounted(() => {
         Kenali Kota & Desa
       </h3>
       <section class="mb-4 grid h-[35rem] w-full place-items-center">
-        <article class="splide h-full w-full overflow-hidden" id="splide">
+        <article class="splide h-full w-full overflow-hidden" ref="splide">
           <div class="splide__track h-full w-full py-4">
             <ul class="splide__list">
               <li class="splide__slide flex h-full w-full" v-for="(image, index) in images" :key="index">
-                <span
-                  class="grid h-full place-items-center rounded-xl bg-cover bg-center bg-no-repeat"
-                  :style="{ backgroundImage: 'url(' + image.image + ')' }"
-                >
+                <span class="grid h-full place-items-center rounded-xl bg-cover bg-center bg-no-repeat" :style="{ backgroundImage: 'url(' + image.image + ')' }">
                   <h4 class="mx-auto flex h-4/5 w-4/5 items-end justify-center text-4xl font-bold text-gray-50">
                     {{ image.name }}
                   </h4>

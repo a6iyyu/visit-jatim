@@ -25,11 +25,8 @@ const NumberCounting = ref([
 </script>
 
 <template>
-  <span class="absolute right-0 top-[80rem] z-0 h-40 w-40" style="background-color: #1fddff; filter: blur(8rem)"></span>
-  <section
-    class="z-30 mx-auto grid h-fit w-3/4 grid-cols-1 place-items-center gap-x-10 rounded-xl border border-gray-50 bg-gradient-to-tr from-gray-950 to-gray-800 shadow-lg lg:w-4/5 lg:grid-cols-3"
-    style="box-shadow: 0.3rem 0.3rem 0 #bcbcbc"
-  >
+  <span class="absolute right-0 top-[80rem] z-0 h-40 w-40 bg-[#1fddff] [filter:blur(8rem)]"></span>
+  <section class="z-30 mx-auto grid h-fit w-3/4 grid-cols-1 place-items-center gap-x-10 rounded-xl border border-gray-50 bg-gradient-to-tr from-gray-950 to-gray-800 shadow-lg [box-shadow:0.3rem_0.3rem_0_#bcbcbc] lg:w-4/5 lg:grid-cols-3">
     <div class="my-8 cursor-default text-gray-50" v-for="(number, index) in NumberCounting" :key="index">
       <img :src="number.img" :alt="number.alt" width="100" class="mx-auto mb-4" />
       <CountUp

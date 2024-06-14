@@ -3,11 +3,8 @@ import JumlahSekolah from "./jumlah-sekolah.vue";
 </script>
 
 <template>
-  <span class="absolute z-0 h-40 w-40 opacity-50" style="background-color: #ff85ad; filter: blur(8rem)"></span>
-  <main
-    class="z-10 mx-auto flex h-fit w-4/5 flex-col items-center text-gray-50"
-    id="mengulik-pendidikan"
-  >
+  <span class="absolute z-0 h-40 w-40 bg-[#ff85ad] opacity-50 [filter:blur(8rem)]"></span>
+  <main class="z-10 mx-auto flex h-fit w-4/5 flex-col items-center text-gray-50" id="mengulik-pendidikan">
     <h3 class="mt-20 cursor-default text-center text-4xl font-bold underline lg:text-5xl">
       Mengulik Pendidikan
     </h3>
@@ -25,8 +22,7 @@ import JumlahSekolah from "./jumlah-sekolah.vue";
       <img
         src="/pendidikan.jpg?url"
         alt="Pendidikan"
-        class="-order-1 mt-6 w-full rounded-xl font-semibold text-gray-50 transition-all duration-300 ease-in-out xl:order-1 xl:mt-0 xl:h-4/5 xl:w-4/5"
-        style="box-shadow: 0.3rem 0.3rem 0 #bcbcbc"
+        class="-order-1 mt-6 w-full rounded-xl font-semibold text-gray-50 transition-all duration-300 ease-in-out [box-shadow:0.3rem_0.3rem_0_#bcbcbc] xl:order-1 xl:mt-0 xl:h-4/5 xl:w-4/5"
       />
     </section>
     <JumlahSekolah />

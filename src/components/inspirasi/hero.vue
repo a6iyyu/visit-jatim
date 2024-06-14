@@ -4,9 +4,9 @@ import reog from "/public/reog.jpg";
 
 <template>
   <main
-    class="z-20 flex h-[41rem] w-full flex-col bg-cover bg-center bg-no-repeat"
+    class="z-20 flex h-[41rem] w-full flex-col bg-cover bg-center bg-no-repeat [letter-spacing:0.1rem]"
     id="mari-jelajahi"
-    :style="{ backgroundImage: `url(${reog.src})`, letterSpacing: '0.1rem' }"
+    :style="{ backgroundImage: `url(${reog.src})` }"
   >
     <div class="absolute z-0 h-[41rem] w-full bg-gradient-to-t from-black opacity-60 md:bg-gradient-to-r"></div>
     <section class="z-10 mx-auto mb-32 mt-72 flex h-fit w-4/5">
@@ -38,13 +38,11 @@ import reog from "/public/reog.jpg";
     width: 30%;
   }
 }
-
 @media screen and (max-width: 1800px) {
   main > section > div:first-child {
     width: 50%;
   }
 }
-
 @media screen and (max-width: 1024px) {
   main > section > div:first-child {
     width: 100%;
@@ -54,7 +52,6 @@ import reog from "/public/reog.jpg";
     text-align-last: center;
   }
 }
-
 @media screen and (max-width: 360px) {
   main,
   main div {

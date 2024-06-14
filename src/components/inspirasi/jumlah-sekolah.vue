@@ -24,7 +24,7 @@ const School = ref([
 
 <template>
   <span class="absolute right-0 top-[70rem] z-0 h-40 w-40 opacity-50" style="background-color: #1fddff; filter: blur(8rem)"></span>
-  <section class="z-10 mb-8 grid h-fit w-full grid-cols-2 grid-rows-2 place-items-center gap-5 lg:grid-cols-4 lg:grid-rows-1 lg:gap-0 lg:gap-x-10">
+  <section class="z-10 mb-20 grid h-fit w-full grid-cols-2 grid-rows-2 place-items-center gap-5 lg:grid-cols-4 lg:grid-rows-1 lg:gap-0 lg:gap-x-10">
     <div
       v-for="(stats, index) in School"
       :key="index"

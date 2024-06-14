@@ -27,11 +27,7 @@
       </h4>
     </section>
     <section class="my-8 grid h-fit w-full place-items-center">
-      <a
-        href="/penduduk"
-        class="h-fit w-fit cursor-pointer rounded-full bg-slate-50 px-10 py-5 text-xl font-bold text-slate-950 transition-all duration-300 ease-in-out hover:bg-slate-200"
-        style="box-shadow: 0.3rem 0.3rem 0 #bcbcbc50"
-      >
+      <a href="/penduduk" class="h-fit w-fit cursor-pointer rounded-full bg-slate-50 px-10 py-5 text-xl font-bold text-slate-950 transition-all duration-300 ease-in-out [box-shadow:0.3rem_0.3rem_0_#bcbcbc50] hover:bg-slate-200">
         Mari Cari Tahu
       </a>
     </section>

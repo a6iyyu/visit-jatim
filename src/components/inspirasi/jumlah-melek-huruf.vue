@@ -39,13 +39,12 @@ const School = ref([
 </script>
 
 <template>
-  <span class="absolute right-0 top-[90rem] z-0 h-40 w-40 opacity-50" style="background-color: #1fddff; filter: blur(8rem)"></span>
-  <section class="z-10 mb-8 grid h-fit w-full grid-cols-2 grid-rows-4 place-items-center gap-5 lg:grid-cols-4 lg:grid-rows-2">
+  <span class="absolute right-0 top-[90rem] z-0 h-40 w-40 bg-[#1fddff] opacity-50 [filter:blur(8rem)]"></span>
+  <section class="z-10 mb-20 grid h-fit w-full grid-cols-2 grid-rows-4 place-items-center gap-5 lg:grid-cols-4 lg:grid-rows-2">
     <div
       v-for="(stats, index) in School"
       :key="index"
-      class="grid h-full w-full cursor-default place-items-center rounded-xl border-2 border-gray-50 bg-gradient-to-tr from-gray-950 to-gray-800 py-8 shadow-lg transition-all duration-300 ease-in-out"
-      style="box-shadow: 0.3rem 0.3rem 0 #bcbcbc"
+      class="grid h-full w-full cursor-default place-items-center rounded-xl border-2 border-gray-50 bg-gradient-to-tr from-gray-950 to-gray-800 py-8 shadow-lg transition-all duration-300 ease-in-out [box-shadow:0.3rem_0.3rem_0_#bcbcbc]"
     >
       <span class="flex h-fit w-fit">
         <CountUp

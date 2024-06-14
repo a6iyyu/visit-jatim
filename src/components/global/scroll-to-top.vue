@@ -11,9 +11,7 @@ const CheckShowScroll = () => {
   }
 };
 
-const ScrollToTop = () => {
-  window.scrollTo({ behavior: "smooth", top: 0 });
-};
+const ScrollToTop = () => window.scrollTo({ behavior: "smooth", top: 0 });
 
 onMounted(() => window.addEventListener("scroll", CheckShowScroll));
 onUnmounted(() => window.removeEventListener("scroll", CheckShowScroll));

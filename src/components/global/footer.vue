@@ -4,19 +4,13 @@
       <h2 class="cursor-default text-4xl font-black tracking-widest">
         VISIT JATIM
       </h2>
-      <h4
-        class="mt-4 hidden cursor-default text-justify font-normal leading-relaxed tracking-wider lg:flex"
-        style="text-align-last: center"
-      >
+      <h4 class="mt-4 hidden cursor-default text-justify font-normal leading-relaxed tracking-wider [text-align-last:center] lg:flex">
         Visit Jatim is not just a regular online travel guide, but also features
         informative readings that explore various interesting aspects of East
         Java, from culture and history, to culinary and hidden tourist
         destinations. Let's go on an adventure together in East Java!
       </h4>
-      <h4
-        class="mt-4 flex cursor-default text-justify font-normal leading-relaxed tracking-wider lg:hidden"
-        style="text-align-last: center"
-      >
+      <h4 class="mt-4 flex cursor-default text-justify font-normal leading-relaxed tracking-wider [text-align-last:center] lg:hidden">
         Visit Jatim provides interesting information exploration of East Java's
         culture, history, culinary, and destinations.
       </h4>

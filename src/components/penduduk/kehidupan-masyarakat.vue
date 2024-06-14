@@ -3,8 +3,7 @@
     <img
       src="/kehidupan-masyarakat.jpg"
       alt="Jawa Timur"
-      class="rounded-2xl font-semibold text-gray-50 transition-all duration-300 ease-in-out"
-      style="box-shadow: 0.4rem 0.4rem 0 #bcbcbc99"  
+      class="rounded-2xl font-semibold text-gray-50 transition-all duration-300 ease-in-out [box-shadow:0.4rem_0.4rem_0_#bcbcbc99]"
     />
     <div class="mt-8 flex cursor-default flex-col leading-relaxed text-gray-50 lg:mt-0">
       <h2 class="text-center text-4xl font-bold lg:text-left">
