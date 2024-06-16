@@ -34,7 +34,7 @@ import TokohInspiratif from "./tokoh-inspiratif.vue";
   </main>
 </template>
 
-<style>
+<style scoped>
 main img:hover {
   transform: scale(1.05);
 }

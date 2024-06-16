@@ -16,11 +16,7 @@ import bromo from "/public/bromo.jpg";
           menakjubkan bagi pencinta petualangan dan kebudayaan.
         </h4>
         <br />
-        <button
-          class="mt-2 h-fit w-fit cursor-pointer rounded-full bg-gray-200 px-10 py-5 text-lg font-black transition-all duration-300 ease-in-out hover:bg-gray-300"
-          style="box-shadow: 0.3rem 0.3rem 0 #bcbcbc"
-          id="mari-jelajahi"
-        >
+        <button id="mari-jelajahi" class="mt-2 h-fit w-fit cursor-pointer rounded-full bg-gray-200 px-10 py-5 text-lg font-black transition-all duration-300 ease-in-out [box-shadow:0.3rem_0.3rem_0_#bcbcbc] hover:bg-gray-300">
           Mari Jelajahi &#10132;
         </button>
       </div>

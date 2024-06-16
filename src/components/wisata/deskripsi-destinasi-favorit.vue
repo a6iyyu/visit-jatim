@@ -29,9 +29,16 @@
 </template>
 
 <style scoped>
-main h5::first-letter {
-  float: left;
-  font-size: 5.5rem;
-  line-height: 3.75rem;
+@media screen and (max-width: 3120px) {
+  main h5::first-letter {
+    float: left;
+    font-size: 5.5rem;
+    line-height: 3.75rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  main h5:last-child {
+    display: none;
+  }
 }
 </style>

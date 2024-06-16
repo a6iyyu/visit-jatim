@@ -18,3 +18,9 @@
     </div>
   </section>
 </template>
+
+<style scoped>
+main img:hover {
+  transform: scale(1.05);
+}
+</style>

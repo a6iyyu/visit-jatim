@@ -1,0 +1,41 @@
+---
+import { getCollection } from "astro:content";
+
+const Kabupaten = await getCollection("kota-dan-desa").then(e => e.filter(e => e.data.category === "Kabupaten"));
+---
+
+<main class="-mt-72 mb-20 h-full w-full bg-gradient-to-r from-[#0c0c1e] to-[#141414] [border-radius:45%_55%_10%_10%_/_2.5%_2.5%_0%_0%] lg:[border-radius:20%_20%_10%_10%_/_10%_10%_0%_0%]">
+  <h3 class="mx-auto h-full w-4/5 cursor-default pt-56 text-center text-4xl font-bold text-slate-50 lg:text-left">
+    Cari Kabupaten
+  </h3>
+  <section class="mx-auto grid h-full w-4/5 grid-cols-1 grid-rows-1 gap-x-6 text-slate-50 lg:grid-cols-3 lg:grid-rows-2">
+    {Kabupaten.map(kab => (
+      <a href={`/cari-kabupaten/${kab.data.title.replace(/ /g, "-").toLowerCase()}`} class="mt-8 flex h-fit w-fit flex-col transition-all duration-300 ease-in-out">
+        <div class="h-72 w-full lg:h-60">
+          <img src={kab.data.image} alt={kab.data.title} class="h-full w-full rounded-lg object-cover" />
+        </div>
+        <h2 class="group mt-4 text-center text-2xl font-bold text-slate-50 transition-all duration-300 ease-in-out lg:text-left">
+          <span class="bg-gradient-to-r from-sky-500 to-sky-500 bg-[length:0%_0.125rem] bg-left-bottom bg-no-repeat transition-all duration-500 ease-out group-hover:bg-[length:100%_0.125rem]">
+            {kab.data.title}
+          </span>
+        </h2>
+        <h4 class="group mt-4 text-justify text-slate-50 transition-all duration-300 ease-in-out">
+          <span class="bg-gradient-to-r from-sky-500 to-sky-500 bg-[length:0%_0.125rem] bg-left-bottom bg-no-repeat transition-all duration-500 ease-out group-hover:bg-[length:100%_0.125rem]">
+            {kab.data.description}
+          </span>
+        </h4>
+      </a>
+    ))}
+  </section>
+</main>
+
+<style scoped>
+  a:hover {
+    filter: blur(0);
+    transform: scale(1.05);
+  }
+  section:hover a:not(:hover) {
+    filter: blur(0.1rem);
+    transform: scale(0.95);
+  }
+</style>

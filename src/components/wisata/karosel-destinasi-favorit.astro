@@ -38,21 +38,19 @@ const TourList = await getCollection("destinasi-favorit");
     <article class="splide h-full w-full overflow-hidden" id="splide-4">
       <div class="splide__track h-full w-full py-4">
         <ul class="splide__list">
-          {
-            TourList.map((tour) => (
-              <li class="splide__slide flex h-full w-full">
-                <a
-                  href={`/destinasi-favorit/${tour.slug}`}
-                  class="grid h-full place-items-center rounded-xl bg-cover bg-center bg-no-repeat"
-                  style={{ backgroundImage: `url(${tour.data.image})` }}
-                >
-                  <h4 class="mx-auto flex h-4/5 w-4/5 items-end justify-center text-center text-2xl font-bold text-gray-50">
-                    {tour.data.title}
-                  </h4>
-                </a>
-              </li>
-            ))
-          }
+          {TourList.map(tour => (
+            <li class="splide__slide flex h-full w-full">
+              <a
+                href={`/destinasi-favorit/${tour.slug}`}
+                class="grid h-full place-items-center rounded-xl bg-cover bg-center bg-no-repeat transition-all duration-300 ease-in-out"
+                style={{ backgroundImage: `url(${tour.data.image})` }}
+              >
+                <h4 class="mx-auto flex h-4/5 w-4/5 items-end justify-center text-center text-2xl font-bold text-gray-50">
+                  {tour.data.title}
+                </h4>
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
     </article>
@@ -77,6 +75,10 @@ const TourList = await getCollection("destinasi-favorit");
     }
     main .splide__slide a {
       width: 97.5%;
+    }
+    section:hover .splide__slide a:not(:hover) {
+      filter: blur(0.1rem);
+      transform: scale(0.95);
     }
   }
   @media screen and (max-width: 1800px) {

@@ -1,8 +1,6 @@
 ---
 import MainLayout from "../layouts/main-layout.astro";
-import WisataPage from "../layouts/wisata.vue";
-import DestinasiFavorit from "../components/wisata/karosel-destinasi-favorit.astro";
-import DeskripsiDestinasiFavorit from "../components/wisata/deskripsi-destinasi-favorit.vue";
+import WisataPage from "../layouts/wisata.astro";
 ---
 
 <MainLayout
@@ -10,6 +8,4 @@ import DeskripsiDestinasiFavorit from "../components/wisata/deskripsi-destinasi-
   description="Rencanakan Perjalanan Wisata Terbaik di Jawa Timur, Nikmati Angin Segar dan Pemandangan Indah Mengiringi Tiap Langkahmu!"
 >
   <WisataPage client:only="vue" />
-  <DestinasiFavorit />
-  <DeskripsiDestinasiFavorit />
 </MainLayout>

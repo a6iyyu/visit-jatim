@@ -30,21 +30,19 @@ const CeremoniesList = await getCollection("upacara-adat");
   <section class="splide h-full w-full overflow-hidden" id="splide-3">
     <article class="splide__track h-full w-full py-4">
       <ul class="splide__list">
-        {
-          CeremoniesList.map((ceremony) => (
-            <li class="splide__slide flex h-full w-full">
-              <a
-                href={`/upacara-adat/${ceremony.slug}`}
-                class="grid h-full place-items-center rounded-xl bg-cover bg-center bg-no-repeat"
-                style={{ backgroundImage: `url(${ceremony.data.image})` }}
-              >
-                <h4 class="mx-auto flex h-4/5 w-4/5 items-end text-4xl font-bold text-gray-50">
-                  {ceremony.data.title}
-                </h4>
-              </a>
-            </li>
-          ))
-        }
+        {CeremoniesList.map(ceremony => (
+          <li class="splide__slide flex h-full w-full">
+            <a
+              href={`/upacara-adat/${ceremony.slug}`}
+              class="grid h-full place-items-center rounded-xl bg-cover bg-center bg-no-repeat transition-all duration-300 ease-in-out"
+              style={{ backgroundImage: `url(${ceremony.data.image})` }}
+            >
+              <h4 class="mx-auto flex h-4/5 w-4/5 items-end text-4xl font-bold text-gray-50">
+                {ceremony.data.title}
+              </h4>
+            </a>
+          </li>
+        ))}
       </ul>
     </article>
   </section>
@@ -63,6 +61,10 @@ const CeremoniesList = await getCollection("upacara-adat");
     }
     main .splide__slide a {
       width: 97.5%;
+    }
+    section:hover .splide__slide a:not(:hover) {
+      filter: blur(0.1rem);
+      transform: scale(0.95);
     }
   }
   @media screen and (max-width: 1280px) {

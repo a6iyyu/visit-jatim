@@ -4,7 +4,7 @@ import { type CollectionEntry, getCollection } from "astro:content";
 
 export const getStaticPaths = async () => {
   const WisataEntries = await getCollection("kota-dan-desa");
-  return WisataEntries.map((entry) => ({
+  return WisataEntries.map(entry => ({
     params: { slug: entry.slug },
     props: { entry },
   }));
@@ -18,24 +18,16 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 ---
 
-<MainLayout frontmatter={entry.data} slug={entry.slug} title={entry.data.title}>
+<MainLayout title={entry.data.title} description={entry.data.description}>
   <section class="mx-auto mb-6 mt-36 h-fit w-4/5 text-lg text-slate-50 lg:mt-60 lg:text-2xl">
-    <a
-      href="/inspirasi"
-      class="flex h-fit w-fit items-center transition-all duration-300 ease-in-out"
-    >
+    <a href="/inspirasi" class="flex h-fit w-fit items-center transition-all duration-300 ease-in-out">
       <i class="fa fa-arrow-left"></i>
       &emsp;
       <h4 class="font-semibold hover:text-slate-200 hover:underline">Back</h4>
     </a>
   </section>
   <main class="mx-auto grid h-fit w-4/5 place-items-center rounded-t-3xl">
-    <img
-      src={entry.data.image}
-      alt={entry.data.title}
-      class="h-full w-full rounded-3xl"
-      style="box-shadow: 0.5rem 0.5rem 0 #bcbcbc50"
-    />
+    <img src={entry.data.image} alt={entry.data.title} class="h-full w-full rounded-3xl [box-shadow:0.3rem_0.3rem_0_#bcbcbc50]" />
     <section class="flex h-full w-full cursor-default flex-col text-slate-50 xl:flex-row">
       <div class="mt-6 flex h-full w-full flex-col justify-center">
         <h3 class="text-4xl font-black">{entry.data.title}</h3>
@@ -53,8 +45,7 @@ const { Content } = await entry.render();
       <a
         href=`https://github.com/a6iyyu/visit-jatim/tree/main/src/content/kota-dan-desa/${entry.slug}.mdx`
         target="_blank"
-        class="flex h-fit w-fit cursor-pointer items-center justify-center rounded-full bg-slate-50 px-4 py-3 font-bold text-gray-950 transition-all duration-300 ease-in-out hover:bg-slate-200"
-        style="box-shadow: 0.3rem 0.3rem 0 #bcbcbc50"
+        class="flex h-fit w-fit cursor-pointer items-center justify-center rounded-full bg-slate-50 px-4 py-3 font-bold text-gray-950 transition-all duration-300 ease-in-out [box-shadow:0.3rem_0.3rem_0_#bcbcbc50] hover:bg-slate-200"
       >
         <i class="fa fa-arrow-left ml-3 mr-6"></i>
         <h4 class="mr-4 sm:mr-6">Edit this page<br />on GitHub</h4>
