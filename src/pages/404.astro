@@ -1,11 +1,8 @@
 ---
 import MainLayout from "../layouts/main-layout.astro";
-import NotFoundPage from "../layouts/404.vue";
+import NotFoundPage from "../components/404/redirect.astro";
 ---
 
-<MainLayout
-  title="404: Not Found!"
-  description="Sayang sekali, halaman yang Anda cari tidak tersedia di Visit Jatim."
->
+<MainLayout title="404: Not Found!" description="Sayang sekali, halaman yang Anda cari tidak tersedia di Visit Jatim.">
   <NotFoundPage />
 </MainLayout>

@@ -214,9 +214,37 @@ declare module "astro:content" {
         collection: "kota-dan-desa";
         data: InferEntrySchema<"kota-dan-desa">;
       } & { render(): Render[".mdx"] };
+      "kabupaten-banyuwangi.mdx": {
+        id: "kabupaten-banyuwangi.mdx";
+        slug: "kabupaten-banyuwangi";
+        body: string;
+        collection: "kota-dan-desa";
+        data: InferEntrySchema<"kota-dan-desa">;
+      } & { render(): Render[".mdx"] };
       "kabupaten-blitar.mdx": {
         id: "kabupaten-blitar.mdx";
         slug: "kabupaten-blitar";
+        body: string;
+        collection: "kota-dan-desa";
+        data: InferEntrySchema<"kota-dan-desa">;
+      } & { render(): Render[".mdx"] };
+      "kabupaten-bojonegoro.mdx": {
+        id: "kabupaten-bojonegoro.mdx";
+        slug: "kabupaten-bojonegoro";
+        body: string;
+        collection: "kota-dan-desa";
+        data: InferEntrySchema<"kota-dan-desa">;
+      } & { render(): Render[".mdx"] };
+      "kabupaten-bondowoso.mdx": {
+        id: "kabupaten-bondowoso.mdx";
+        slug: "kabupaten-bondowoso";
+        body: string;
+        collection: "kota-dan-desa";
+        data: InferEntrySchema<"kota-dan-desa">;
+      } & { render(): Render[".mdx"] };
+      "kabupaten-gresik.mdx": {
+        id: "kabupaten-gresik.mdx";
+        slug: "kabupaten-gresik";
         body: string;
         collection: "kota-dan-desa";
         data: InferEntrySchema<"kota-dan-desa">;
