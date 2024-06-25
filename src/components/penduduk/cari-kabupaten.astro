@@ -10,7 +10,7 @@ const Kabupaten = await getCollection("kota-dan-desa").then(e => e.filter(e => e
   </h3>
   <section class="mx-auto mb-14 grid h-full w-4/5 grid-cols-1 grid-rows-1 gap-x-6 text-slate-50 lg:grid-cols-3 lg:grid-rows-2">
     {Kabupaten.slice(0, 6).map(kab => (
-      <a href={`/cari-kabupaten/${kab.data.title.replace(/ /g, "-").toLowerCase()}`} class="mt-8 flex h-fit w-fit flex-col transition-all duration-300 ease-in-out">
+      <a href={`/penduduk/cari-kabupaten/${kab.data.title.replace(/ /g, "-").toLowerCase()}`} class="mt-8 flex h-fit w-fit flex-col transition-all duration-300 ease-in-out">
         <div class="h-72 w-full lg:h-60">
           <img src={kab.data.image} alt={kab.data.title} class="h-full w-full rounded-lg object-cover" />
         </div>

@@ -1,0 +1,23 @@
+---
+import MainLayout from "../../../layouts/main-layout.astro";
+import { type CollectionEntry, getCollection } from "astro:content";
+
+export const getStaticPaths = async () => {
+  const CariKabupatenEntries = await getCollection("kota-dan-desa").then(e => e.filter(e => e.data.category === "Kota"));
+  CariKabupatenEntries.map((entry) => ({
+    params: { slug: entry.data.title.replace(/ /g, "-").toLowerCase() },
+    props: { entry },
+  }));
+};
+
+type Props = {
+  entry: CollectionEntry<"kota-dan-desa">;
+};
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+
+<MainLayout>
+  <Content />
+</MainLayout>
