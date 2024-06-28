@@ -6,11 +6,7 @@ import FaktaJawaTimur from "./fakta-jawa-timur.vue";
 
 <template>
   <span class="absolute z-0 h-40 w-40 bg-[#ff85ad] [filter:blur(8rem)]"></span>
-  <main
-    class="z-10 flex h-fit w-full flex-col items-center bg-cover bg-center bg-no-repeat"
-    id="apa-itu-jawa-timur"
-    :style="{ backgroundImage: `url(${PatternSquare.src})` }"
-  >
+  <main class="z-10 flex h-fit w-full flex-col items-center bg-cover bg-center bg-no-repeat" id="apa-itu-jawa-timur" :style="{ backgroundImage: `url(${PatternSquare.src})` }">
     <h3 class="mx-auto mt-20 w-4/5 cursor-default text-center text-4xl font-bold text-gray-50 underline lg:text-5xl">
       Mengenal Jawa Timur
     </h3>

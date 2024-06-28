@@ -15,19 +15,11 @@
         culture, history, culinary, and destinations.
       </h4>
       <section class="mt-4 flex">
-        <a
-          href="https://github.com/a6iyyu"
-          target="_blank"
-          class="underline transition-all duration-300 ease-in-out hover:font-bold hover:text-gray-300"
-        >
+        <a href="https://github.com/a6iyyu" target="_blank" class="underline transition-all duration-300 ease-in-out hover:font-bold hover:text-gray-300">
           Rafi Abiyyu Airlangga
         </a>
         <p class="cursor-default">&nbsp;|&nbsp;</p>
-        <a
-          href="https://github.com/Afif-Ghifari"
-          target="_blank"
-          class="underline transition-all duration-300 ease-in-out hover:font-bold hover:text-gray-300"
-        >
+        <a href="https://github.com/Afif-Ghifari" target="_blank" class="underline transition-all duration-300 ease-in-out hover:font-bold hover:text-gray-300">
           Muhammad Afif Al Ghifari
         </a>
       </section>

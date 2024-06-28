@@ -12,16 +12,6 @@
         mempengaruhi kehidupan di sekitar mereka.
       </h4>
     </div>
-    <img
-      src="/tokoh-inspiratif.jpg"
-      alt="Jawa Timur"
-      class="rounded-2xl font-semibold text-gray-50 transition-all duration-300 ease-in-out [box-shadow:0.4rem_0.4rem_0_#bcbcbc99]"
-    />
+    <img src="/tokoh-inspiratif.jpg" alt="Jawa Timur" class="rounded-2xl font-semibold text-gray-50 transition-all duration-300 ease-in-out [box-shadow:0.4rem_0.4rem_0_#bcbcbc99] hover:scale-105" />
   </section>
 </template>
-
-<style scoped>
-main img:hover {
-  transform: scale(1.05);
-}
-</style>

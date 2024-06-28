@@ -40,11 +40,7 @@ const TourList = await getCollection("destinasi-favorit");
         <ul class="splide__list">
           {TourList.map(tour => (
             <li class="splide__slide flex h-full w-full">
-              <a
-                href={`/destinasi-favorit/${tour.slug}`}
-                class="grid h-full place-items-center rounded-xl bg-cover bg-center bg-no-repeat transition-all duration-300 ease-in-out"
-                style={{ backgroundImage: `url(${tour.data.image})` }}
-              >
+              <a href={`/destinasi-favorit/${tour.slug}`} class="grid h-full place-items-center rounded-xl bg-cover bg-center bg-no-repeat transition-all duration-300 ease-in-out" style={{ backgroundImage: `url(${tour.data.image})` }}>
                 <h4 class="mx-auto flex h-4/5 w-4/5 items-end justify-center text-center text-2xl font-bold text-gray-50">
                   {tour.data.title}
                 </h4>

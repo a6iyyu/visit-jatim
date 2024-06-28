@@ -1,49 +1,8 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import Splide from "@splidejs/splide";
+import { KaroselKotaDesa } from "@/data/karosel-kota-&-desa.vue";
 
-const images = ref([
-  {
-    name: "Banyuwangi",
-    image: "/banyuwangi.jpg?url",
-  },
-  {
-    name: "Blitar",
-    image: "/blitar.jpg?url",
-  },
-  {
-    name: "Bojonegoro",
-    image: "/bojonegoro.jpg?url",
-  },
-  {
-    name: "Jember",
-    image: "/jember.jpg?url",
-  },
-  {
-    name: "Madiun",
-    image: "/madiun.jpg?url",
-  },
-  {
-    name: "Magetan",
-    image: "/magetan.jpg?url",
-  },
-  {
-    name: "Malang",
-    image: "/malang.jpg?url",
-  },
-  {
-    name: "Mojokerto",
-    image: "/mojokerto.png?url",
-  },
-  {
-    name: "Pamekasan",
-    image: "/pamekasan.jpg?url",
-  },
-  {
-    name: "Pasuruan",
-    image: "/pasuruan.jpg?url",
-  },
-]);
 const splide = ref(null);
 
 onMounted(() => {
@@ -69,10 +28,10 @@ onMounted(() => {
         Kenali Kota & Desa
       </h3>
       <section class="mb-4 grid h-[35rem] w-full place-items-center">
-        <article class="splide h-full w-full overflow-hidden" ref="splide">
+        <article ref="splide" class="splide h-full w-full overflow-hidden">
           <div class="splide__track h-full w-full py-4">
             <ul class="splide__list">
-              <li class="splide__slide flex h-full w-full" v-for="(image, index) in images" :key="index">
+              <li class="splide__slide flex h-full w-full" v-for="image in KaroselKotaDesa" :key="image.id">
                 <span class="grid h-full place-items-center rounded-xl bg-cover bg-center bg-no-repeat transition-all duration-300 ease-in-out" :style="{ backgroundImage: 'url(' + image.image + ')' }">
                   <h4 class="mx-auto flex h-4/5 w-4/5 items-end justify-center text-4xl font-bold text-gray-50">
                     {{ image.name }}

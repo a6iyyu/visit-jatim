@@ -1,9 +1,9 @@
 <script setup>
-import reog from "/public/reog.jpg";
+import Reog from "/public/reog.jpg";
 </script>
 
 <template>
-  <main class="z-20 flex h-[41rem] w-full flex-col bg-cover bg-center bg-no-repeat [letter-spacing:0.1rem]" :style="{ backgroundImage: `url(${reog.src})` }">
+  <main class="z-20 flex h-[41rem] w-full flex-col bg-cover bg-center bg-no-repeat [letter-spacing:0.1rem]" :style="{ backgroundImage: `url(${Reog.src})` }">
     <div class="absolute z-0 h-[41rem] w-full bg-gradient-to-t from-black opacity-60 md:bg-gradient-to-r"></div>
     <section class="z-10 mx-auto mb-32 mt-72 flex h-fit w-4/5">
       <div class="flex h-full flex-col">

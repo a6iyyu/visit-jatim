@@ -16,11 +16,7 @@
         Keunikan dan keragaman tradisi ini mencerminkan kekayaan sejarah dan
         nilai-nilai luhur yang diwariskan turun-temurun.
       </h5>
-      <img
-        src="/jelajahi-kebudayaan.jpg?url"
-        alt="Upacara Adat"
-        class="-order-1 mt-6 w-full rounded-xl font-semibold text-gray-50 transition-all duration-500 ease-in-out [box-shadow:0.3rem_0.3rem_0_#bcbcbc] xl:order-1 xl:mt-0 xl:h-4/5 xl:w-4/5"
-      />
+      <img src="/jelajahi-kebudayaan.jpg?url" alt="Upacara Adat" class="-order-1 mt-6 w-full rounded-xl font-semibold text-gray-50 transition-all duration-500 ease-in-out [box-shadow:0.3rem_0.3rem_0_#bcbcbc] xl:order-1 xl:mt-0 xl:h-4/5 xl:w-4/5" />
     </section>
   </main>
 </template>

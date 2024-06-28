@@ -1,46 +1,48 @@
 ---
 import { getCollection } from "astro:content";
 
-const Kota = await getCollection("kota-dan-desa").then(e => e.filter(e => e.data.category === "Kota"));
+const Kota = await getCollection("kota-dan-desa").then((e) =>
+  e.filter((e) => e.data.category === "Kota"),
+);
 ---
 
 <main class="mb-20 mt-10 h-full w-full bg-gradient-to-r from-[#0c0c1e] to-[#141414]">
-    <h3 class="mx-auto h-full w-4/5 cursor-default text-center text-4xl font-bold text-slate-50 lg:text-left">
-      Cari Kota
-    </h3>
-    <section class="mx-auto mb-14 grid h-full w-4/5 grid-cols-1 grid-rows-1 gap-x-6 text-slate-50 lg:grid-cols-3 lg:grid-rows-2">
-      {Kota.slice(0, 6).map(kota => (
-        <a href={`/penduduk/cari-kota/${kota.data.title.replace(/ /g, "-").toLowerCase()}`} class="mt-8 flex h-fit w-fit flex-col transition-all duration-300 ease-in-out">
-          <div class="h-72 w-full lg:h-60">
-            <img src={kota.data.image} alt={kota.data.title} class="h-full w-full rounded-lg object-cover" />
-          </div>
-          <h2 class="group mt-4 text-center text-2xl font-bold text-slate-50 transition-all duration-300 ease-in-out lg:text-left">
-            <span class="bg-gradient-to-r from-sky-500 to-sky-500 bg-[length:0%_0.125rem] bg-left-bottom bg-no-repeat transition-all duration-500 ease-out group-hover:bg-[length:100%_0.125rem]">
-              {kota.data.title}
-            </span>
-          </h2>
-          <h4 class="group mt-4 text-justify text-slate-50 transition-all duration-300 ease-in-out">
-            <span class="bg-gradient-to-r from-sky-500 to-sky-500 bg-[length:0%_0.125rem] bg-left-bottom bg-no-repeat transition-all duration-500 ease-out group-hover:bg-[length:100%_0.125rem]">
-              {kota.data.description}
-            </span>
-          </h4>
-        </a>
-      ))}
-    </section>
-    <section class="mx-auto grid h-fit w-4/5 place-items-center text-slate-950">
-      <a href="/penduduk/cari-kota" class="rounded-lg bg-slate-50 px-9 py-4 text-lg font-bold transition-all duration-500 ease-in-out hover:bg-slate-200">
-        Temukan Lebih Banyak
+  <h3 class="mx-auto h-full w-4/5 cursor-default text-center text-4xl font-bold text-slate-50 lg:text-left">
+    Cari Kota
+  </h3>
+  <section class="mx-auto mb-14 grid h-full w-4/5 grid-cols-1 grid-rows-1 gap-x-6 text-slate-50 lg:grid-cols-3 lg:grid-rows-2">
+    {Kota.slice(0, 6).map(kota => (
+      <a href={`/penduduk/cari-kota/${kota.data.title.replace(/ /g, "-").toLowerCase()}`} class="mt-8 flex h-fit w-fit flex-col transition-all duration-300 ease-in-out">
+        <div class="h-72 w-full lg:h-60">
+          <img src={kota.data.image} alt={kota.data.title} class="h-full w-full rounded-lg object-cover" />
+        </div>
+        <h2 class="group mt-4 text-center text-2xl font-bold text-slate-50 transition-all duration-300 ease-in-out lg:text-left">
+          <span class="bg-gradient-to-r from-sky-500 to-sky-500 bg-[length:0%_0.125rem] bg-left-bottom bg-no-repeat transition-all duration-500 ease-out group-hover:bg-[length:100%_0.125rem]">
+            {kota.data.title}
+          </span>
+        </h2>
+        <h4 class="group mt-4 text-justify text-slate-50 transition-all duration-300 ease-in-out">
+          <span class="bg-gradient-to-r from-sky-500 to-sky-500 bg-[length:0%_0.125rem] bg-left-bottom bg-no-repeat transition-all duration-500 ease-out group-hover:bg-[length:100%_0.125rem]">
+            {kota.data.description}
+          </span>
+        </h4>
       </a>
-    </section>
-  </main>
-  
-  <style scoped>
-    main section:first-child a:hover {
-      filter: blur(0);
-      transform: scale(1.05);
-    }
-    main section:first-child:hover a:not(:hover) {
-      filter: blur(0.1rem);
-      transform: scale(0.95);
-    }
-  </style>
+    ))}
+  </section>
+  <section class="mx-auto grid h-fit w-4/5 place-items-center text-slate-950">
+    <a href="/penduduk/cari-kota" class="rounded-lg bg-slate-50 px-9 py-4 text-lg font-bold transition-all duration-500 ease-in-out hover:bg-slate-200">
+      Temukan Lebih Banyak
+    </a>
+  </section>
+</main>
+
+<style scoped>
+  main section:first-child a:hover {
+    filter: blur(0);
+    transform: scale(1.05);
+  }
+  main section:first-child:hover a:not(:hover) {
+    filter: blur(0.1rem);
+    transform: scale(0.95);
+  }
+</style>

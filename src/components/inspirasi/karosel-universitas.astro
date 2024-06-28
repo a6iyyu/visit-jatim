@@ -35,11 +35,7 @@ const UniversitiesList = await getCollection("universitas");
       <ul class="splide__list">
         {UniversitiesList.map(university => (
           <li class="splide__slide flex h-full w-full">
-            <a
-              href={`/universitas/${university.data.title.toLowerCase().replace(/ /g, "-")}`}
-              class="duration-all grid h-full place-items-center rounded-xl bg-cover bg-center bg-no-repeat transition-all duration-300 ease-in-out"
-              style={{ backgroundImage: `url(${university.data.image})` }}
-            >
+            <a href={`/universitas/${university.data.title.toLowerCase().replace(/ /g, "-")}`} class="duration-all grid h-full place-items-center rounded-xl bg-cover bg-center bg-no-repeat transition-all duration-300 ease-in-out" style={{ backgroundImage: `url(${university.data.image})` }}>
               <h4 class="mx-auto flex h-4/5 w-4/5 items-end justify-center text-4xl font-bold text-gray-50">
                 {university.data.title}
               </h4>

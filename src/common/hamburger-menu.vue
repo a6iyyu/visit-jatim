@@ -19,12 +19,7 @@ onUnmounted(() => document.body.removeEventListener("click", ToggleMenu));
 <template>
   <i class="fa-solid fa-bars flex cursor-pointer text-3xl text-gray-50"></i>
   <main v-if="ShowHamburgerMenu" class="absolute top-20 flex flex-col rounded-2xl bg-slate-50 p-0 text-base font-semibold text-gray-950 lg:top-32 lg:hidden lg:text-lg">
-    <a
-      v-for="menu in Menus"
-      :href="`/${menu.toLowerCase()}`"
-      :key="menu"
-      class="mx-auto h-fit w-full py-5 text-center transition-all duration-300 ease-in-out first:rounded-t-2xl last:rounded-b-2xl hover:bg-slate-200"
-    >
+    <a v-for="menu in Menus" :href="`/${menu.toLowerCase()}`" :key="menu" class="mx-auto h-fit w-full py-5 text-center transition-all duration-300 ease-in-out first:rounded-t-2xl last:rounded-b-2xl hover:bg-slate-200">
       {{ menu }}
     </a>
   </main>

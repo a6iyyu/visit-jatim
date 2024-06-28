@@ -19,11 +19,7 @@ import JumlahSekolah from "./jumlah-sekolah.vue";
         sebutir garam. Pendidikan dapat membentuk orang menjadi anggota
         masyarakat yang fungsional dengan jenis nilai yang tepat.
       </h5>
-      <img
-        src="/pendidikan.jpg?url"
-        alt="Pendidikan"
-        class="-order-1 mt-6 w-full rounded-xl font-semibold text-gray-50 transition-all duration-300 ease-in-out [box-shadow:0.3rem_0.3rem_0_#bcbcbc] xl:order-1 xl:mt-0 xl:h-4/5 xl:w-4/5"
-      />
+      <img src="/pendidikan.jpg?url" alt="Pendidikan" class="-order-1 mt-6 w-full rounded-xl font-semibold text-gray-50 transition-all duration-300 ease-in-out [box-shadow:0.3rem_0.3rem_0_#bcbcbc] xl:order-1 xl:mt-0 xl:h-4/5 xl:w-4/5" />
     </section>
     <JumlahSekolah />
   </main>
