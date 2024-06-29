@@ -10,6 +10,7 @@ const CulinaryList = await getCollection("kuliner-tradisional");
   new Splide("#splide-1", {
     autoplay: true,
     drag: "free",
+    pagination: false,
     snap: true,
     type: "loop",
     breakpoints: {
@@ -74,6 +75,10 @@ const CulinaryList = await getCollection("kuliner-tradisional");
   @media screen and (max-width: 768px) {
     main .splide__slide a {
       width: 100%;
+    }
+    section:hover .splide__slide a:not(:hover) {
+      filter: blur(0);
+      transform: scale(1);
     }
   }
 </style>

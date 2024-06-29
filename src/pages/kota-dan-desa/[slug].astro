@@ -1,6 +1,6 @@
 ---
-import MainLayout from "../../layouts/main-layout.astro";
 import { type CollectionEntry, getCollection } from "astro:content";
+import MainLayout from "@/layouts/main-layout.astro";
 
 export const getStaticPaths = async () => {
   const WisataEntries = await getCollection("kota-dan-desa");

@@ -10,6 +10,7 @@ const UniversitiesList = await getCollection("universitas");
   new Splide("#splide-2", {
     autoplay: true,
     drag: "free",
+    pagination: false,
     snap: true,
     type: "loop",
     breakpoints: {
@@ -89,6 +90,10 @@ const UniversitiesList = await getCollection("universitas");
   @media screen and (max-width: 768px) {
     main .splide__slide a {
       width: 100%;
+    }
+    section:hover .splide__slide a:not(:hover) {
+      filter: blur(0);
+      transform: scale(1);
     }
   }
 </style>

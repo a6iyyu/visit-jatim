@@ -16,12 +16,20 @@ import { JumlahSekolah } from "@/data/jumlah-sekolah.vue";
 </template>
 
 <style scoped>
-section > div:hover {
-  filter: blur(0);
-  transform: scale(1.05);
+@media screen and (max-width: 3120px) {
+  section > div:hover {
+    transform: scale(1.05);
+  }
+  section:hover > div:not(:hover) {
+    transform: scale(0.95);
+    filter: blur(0.25rem);
+  }
 }
-section:hover > div:not(:hover) {
-  transform: scale(0.95);
-  filter: blur(0.25rem);
+@media screen and (max-width: 1024px) {
+  section > div:hover,
+  section:hover > div:not(:hover) {
+    filter: blur(0);
+    transform: scale(1);
+  }
 }
 </style>

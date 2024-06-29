@@ -1,4 +1,6 @@
 <script>
+import { ref } from "vue";
+
 export const JumlahMelekHuruf = ref([
   {
     id: "1",
