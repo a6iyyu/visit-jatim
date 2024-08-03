@@ -4,7 +4,7 @@
 Visit Jatim bukan sekadar panduan perjalanan daring biasa, tetapi juga menghadirkan berita dan bacaan informatif yang mengeksplorasi berbagai aspek menarik dari Jawa Timur, mulai dari budaya dan sejarah, hingga kuliner dan destinasi wisata tersembunyi. Melalui situs ini, pengunjung dapat menjelajahi semua yang ditawarkan Jawa Timur, dari kekayaan budayanya hingga hidangan lokal yang menggugah selera. Selain itu, situs ini juga mengungkapkan destinasi tersembunyi yang belum banyak diketahui. Ayo, bergabunglah dalam petualangan bersama di Jawa Timur!
 </p>
 
-<p align="center">
+<p align="justify">
 Kunjungi tautan desain situs di bawah ini:
 <br/>
 <a href="https://www.figma.com/file/1C6kZkLfzMJ6z9pEYRJRKP/WDC-design?type=design&node-id=4-3&mode=design" target="_blank">Visit Jatim Figma Design</a>
