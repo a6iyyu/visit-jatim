@@ -1,8 +1,22 @@
 ---
-import MainLayout from "../layouts/main-layout.astro";
-import IndexPage from "../layouts/index.vue";
+import MainLayout from "@/common/main-layout.astro";
+import Hero from "@/components/index/hero.astro";
+import ApaItuJawaTimur from "@/components/index/apa-itu-jawa-timur.astro";
+import KaroselKotaDesa from "@/components/index/karosel-kota-dan-desa.astro";
+import DeskripsiKotaDesa from "../components/index/deskripsi-kota-dan-desa.astro";
 ---
 
+<script>
+  document.getElementById("mari-jelajahi").addEventListener("click", () => {
+    document.getElementById("apa-itu-jawa-timur").scrollIntoView({
+      behavior: "smooth",
+    });
+  });
+</script>
+
 <MainLayout title="Visit Jatim" description="Jelajahi keindahan alam, kekayaan budaya, dan kelezatan kuliner Jawa Timur bersama Visit Jatim.">
-  <IndexPage client:only="vue" />
+  <Hero />
+  <ApaItuJawaTimur />
+  <KaroselKotaDesa />
+  <DeskripsiKotaDesa />
 </MainLayout>

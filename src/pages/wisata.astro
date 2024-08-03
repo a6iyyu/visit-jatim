@@ -1,11 +1,24 @@
 ---
-import MainLayout from "../layouts/main-layout.astro";
-import WisataPage from "../layouts/wisata.astro";
+import MainLayout from "../common/main-layout.astro";
+import Hero from "../components/wisata/hero.vue";
+import KataKataBijak from "../components/wisata/kata-kata-bijak.vue";
+import DestinasiFavorit from "../components/wisata/karosel-destinasi-favorit.astro";
+import DeskripsiDestinasiFavorit from "../components/wisata/deskripsi-destinasi-favorit.vue";
 ---
 
-<MainLayout
-  title="Wisata"
-  description="Rencanakan Perjalanan Wisata Terbaik di Jawa Timur, Nikmati Angin Segar dan Pemandangan Indah Mengiringi Tiap Langkahmu!"
->
-  <WisataPage />
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("mari-jelajahi").addEventListener("click", () => {
+      document.getElementById("kata-kata-bijak").scrollIntoView({
+        behavior: "smooth",
+      });
+    });
+  });
+</script>
+
+<MainLayout title="Wisata" description="Rencanakan Perjalanan Wisata Terbaik di Jawa Timur, Nikmati Angin Segar dan Pemandangan Indah Mengiringi Tiap Langkahmu!">
+  <Hero />
+  <KataKataBijak />
+  <DestinasiFavorit />
+  <DeskripsiDestinasiFavorit />
 </MainLayout>

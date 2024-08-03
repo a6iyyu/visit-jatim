@@ -1,8 +1,34 @@
 ---
-import MainLayout from "../layouts/main-layout.astro";
-import InspirasiPage from "../layouts/inspirasi.astro";
+import MainLayout from "../common/main-layout.astro";
+import Hero from "../components/inspirasi/hero.vue";
+import MengulikPendidikan from "../components/inspirasi/mengulik-pendidikan.vue";
+import TingkatMelekHuruf from "../components/inspirasi/tingkat-melek-huruf.vue";
+import Universitas from "../components/inspirasi/universitas.vue";
+import KaroselUniversitas from "../components/inspirasi/karosel-universitas.astro";
+import JelajahiKebudayaan from "../components/inspirasi/jelajahi-kebudayaan.vue";
+import KaroselUpacaraAdat from "../components/inspirasi/karosel-upacara-adat.astro";
+import MakananTradisional from "../components/inspirasi/makanan-tradisional.vue";
+import KaroselKulinerTradisional from "../components/inspirasi/karosel-kuliner-tradisional.astro";
 ---
 
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("mari-jelajahi").addEventListener("click", () => {
+      document.getElementById("mengulik-pendidikan").scrollIntoView({
+        behavior: "smooth",
+      });
+    });
+  });
+</script>
+
 <MainLayout title="Inspirasi" description="Kupas tuntas seputar pendidikan dan kebudayaan di Jawa Timur dengan bacaan informatif.">
-  <InspirasiPage />
+  <Hero />
+  <MengulikPendidikan client:only="vue" />
+  <TingkatMelekHuruf client:only="vue" />
+  <Universitas />
+  <KaroselUniversitas />
+  <JelajahiKebudayaan />
+  <KaroselUpacaraAdat />
+  <MakananTradisional />
+  <KaroselKulinerTradisional />
 </MainLayout>

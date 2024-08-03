@@ -1,8 +1,24 @@
 ---
-import MainLayout from "../layouts/main-layout.astro";
-import PendudukPage from "../layouts/penduduk.astro";
+import MainLayout from "@/common/main-layout.astro";
+import Hero from "@/components/penduduk/hero.astro";
+import MenjelajahiKotaDanDesa from "@/components/penduduk/menjelajahi-kota-dan-desa.astro";
+import CariKabupaten from "@/components/penduduk/cari-kabupaten.astro";
+import CariKota from "@/components/penduduk/cari-kota.astro";
 ---
 
-<MainLayout title="Penduduk" description="Kenali lebih dekat ragam budaya dan kehidupan masyarakat di berbagai wilayah Jawa Timur.">
-  <PendudukPage />
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("mari-jelajahi").addEventListener("click", () => {
+      document.getElementById("menjelajahi-kota-dan-desa").scrollIntoView({
+        behavior: "smooth",
+      });
+    });
+  });
+</script>
+
+<MainLayout title="Penduduk" description="Kenali lebih dekat ragam budaya dan kehidupan masyarakat di berbagai wilayah Jawa Timur.">  
+  <Hero />
+  <MenjelajahiKotaDanDesa />
+  <CariKabupaten />
+  <CariKota />
 </MainLayout>
