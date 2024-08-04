@@ -1,13 +1,13 @@
 ---
 import MainLayout from "../common/main-layout.astro";
-import Hero from "../components/inspirasi/hero.vue";
-import MengulikPendidikan from "../components/inspirasi/mengulik-pendidikan.vue";
-import TingkatMelekHuruf from "../components/inspirasi/tingkat-melek-huruf.vue";
-import Universitas from "../components/inspirasi/universitas.vue";
+import Hero from "../components/inspirasi/hero.astro";
+import MengulikPendidikan from "../components/inspirasi/mengulik-pendidikan.astro";
+import TingkatMelekHuruf from "../components/inspirasi/tingkat-melek-huruf.astro";
+import Universitas from "../components/inspirasi/universitas.astro";
 import KaroselUniversitas from "../components/inspirasi/karosel-universitas.astro";
-import JelajahiKebudayaan from "../components/inspirasi/jelajahi-kebudayaan.vue";
+import JelajahiKebudayaan from "../components/inspirasi/jelajahi-kebudayaan.astro";
 import KaroselUpacaraAdat from "../components/inspirasi/karosel-upacara-adat.astro";
-import MakananTradisional from "../components/inspirasi/makanan-tradisional.vue";
+import MakananTradisional from "../components/inspirasi/makanan-tradisional.astro";
 import KaroselKulinerTradisional from "../components/inspirasi/karosel-kuliner-tradisional.astro";
 ---
 
@@ -23,8 +23,8 @@ import KaroselKulinerTradisional from "../components/inspirasi/karosel-kuliner-t
 
 <MainLayout title="Inspirasi" description="Kupas tuntas seputar pendidikan dan kebudayaan di Jawa Timur dengan bacaan informatif.">
   <Hero />
-  <MengulikPendidikan client:only="vue" />
-  <TingkatMelekHuruf client:only="vue" />
+  <MengulikPendidikan />
+  <TingkatMelekHuruf />
   <Universitas />
   <KaroselUniversitas />
   <JelajahiKebudayaan />

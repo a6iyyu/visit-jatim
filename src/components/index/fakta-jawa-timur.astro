@@ -1,10 +1,10 @@
 ---
-import FaktaJatim from "@/data/fakta-jawa-timur.json";
+import { FaktaJatim } from "@/data/fakta-jawa-timur";
 ---
 
-<span class="absolute left-0 top-[125rem] z-0 h-40 w-40 bg-[#be3475] [filter:blur(8rem)]"></span>
-<span class="absolute right-0 top-[160rem] z-0 h-40 w-40 bg-[#2c862c] [filter:blur(8rem)]"></span>
 <main class="z-20 mx-auto mb-20 mt-8 h-full w-4/5">
+  <span class="absolute left-0 top-[125rem] z-0 h-40 w-40 bg-[#be3475] [filter:blur(8rem)]" />
+  <span class="absolute right-0 top-[160rem] z-0 h-40 w-40 bg-[#2c862c] [filter:blur(8rem)]" />
   {FaktaJatim.map(fakta =>
     <section class="mt-20 flex h-fit w-full flex-col-reverse items-center justify-between lg:flex-row">
       <div class="mt-8 flex h-fit w-full cursor-default flex-col lg:mt-0 lg:w-2/5">

@@ -1,7 +1,4 @@
-<script>
-import { ref } from "vue";
-
-export const JumlahMelekHuruf = ref([
+export const DataJumlahMelekHuruf = [
   {
     id: "1",
     title: "15 - 19",
@@ -42,5 +39,4 @@ export const JumlahMelekHuruf = ref([
     title: "Rata-rata",
     total: 93,
   },
-]);
-</script>
+];

@@ -1,7 +1,8 @@
 ---
-import ScrollIndicator from "./scroll-indicator.vue";
-import Header from "./header.vue";
-import ScrollToTop from "./scroll-to-top.vue";
+import "@splidejs/splide/dist/css/splide.min.css";
+import { ScrollIndicator } from "./scroll-indicator";
+import { Header } from "./header";
+import { ScrollToTop } from "./scroll-to-top";
 import Footer from "./footer.astro";
 
 const { description, title } = Astro.props;
@@ -19,7 +20,6 @@ const { description, title } = Astro.props;
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/css/splide.min.css" integrity="sha512-KhFXpe+VJEu5HYbJyKQs9VvwGB+jQepqb4ZnlhUF/jQGxYJcjdxOTf6cr445hOc791FFLs18DKVpfrQnONOB1g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style is:global>
       * {
@@ -49,11 +49,10 @@ const { description, title } = Astro.props;
     </style>
   </head>
   <body class="overflow-x-hidden bg-gradient-to-r from-[#0c0c1e] to-[#141414]">
-    <ScrollIndicator client:only="vue" />
-    <ScrollToTop client:only="vue" />
-    <Header client:only="vue" />
+    <ScrollIndicator client:only="react" />
+    <ScrollToTop client:only="react" />
+    <Header client:only="react" />
     <slot />
     <Footer />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/js/splide.min.js" integrity="sha512-4TcjHXQMLM7Y6eqfiasrsnRCc8D/unDeY1UGKGgfwyLUCTsHYMxF7/UHayjItKQKIoP6TTQ6AMamb9w2GMAvNg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </body>
 </html>
