@@ -24,7 +24,7 @@ export const Header = () => {
         </section>
         <section className="flex h-full w-3/5 items-center justify-end">
           {menus.map((menu, i) =>
-            <a key={i} className="hidden font-black text-white transition-all duration-300 ease-in-out [letter-spacing:0.1rem] hover:text-gray-200 hover:underline lg:flex">
+            <a key={i} href={`/${menu.toLowerCase()}`} className="hidden font-black text-white transition-all duration-300 ease-in-out [letter-spacing:0.1rem] hover:text-gray-200 hover:underline lg:flex">
               {menu}
             </a>
           )}
