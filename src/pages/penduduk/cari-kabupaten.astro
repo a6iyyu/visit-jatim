@@ -1,23 +1,24 @@
 ---
 import { getCollection } from "astro:content";
 import MainLayout from "@/common/main-layout.astro";
+import { TruncateText } from "@/common/truncate-text";
 
 const KabupatenCard = await getCollection("kota-dan-desa").then(e => e.filter(e => e.data.category === "Kabupaten"));
 ---
 
 <script>
   document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("cari").addEventListener("input", () => {
-      let has_result = false;
+    (document.getElementById("cari") as HTMLInputElement).addEventListener("input", () => {
+      let has_result: boolean = false;
 
       document.querySelectorAll(".kabupaten-item").forEach(item => {
-        const title = item.querySelector("h2").textContent.toLowerCase();
-        const is_match = title.includes((document.getElementById("cari") as HTMLInputElement).value.toLowerCase());
+        const title = item.querySelector("h2").textContent.toLowerCase().trim();
+        const is_match = title.includes((document.getElementById("cari") as HTMLInputElement).value.toLowerCase().trim());
         item.classList.toggle("hidden", !is_match);
         has_result = has_result || is_match;
       });
 
-      if (document.querySelector(".no-result")) (document.querySelector(".no-result") as HTMLElement).style.display = has_result ? "none" : "flex";
+      if (document.querySelector(".no-result") as HTMLElement) (document.querySelector(".no-result") as HTMLElement).style.display = has_result ? "none" : "flex";
     });
 
     (document.getElementById("cari") as HTMLInputElement).dispatchEvent(new Event("input"));
@@ -40,13 +41,13 @@ const KabupatenCard = await getCollection("kota-dan-desa").then(e => e.filter(e 
             <img src={kab.data.image} alt={kab.data.title} class="h-full w-full rounded-lg object-cover [box-shadow:0.3rem_0.3rem_0_#bcbcbc]" />
           </div>
           <h2 class="group mt-4 text-center text-2xl font-bold text-slate-50 transition-all duration-300 ease-in-out lg:text-left">
-            <span class="bg-gradient-to-r from-sky-500 to-sky-500 bg-[length:0%_0.125rem] bg-left-bottom bg-no-repeat transition-all duration-500 ease-out group-hover:bg-[length:100%_0.125rem]">
+            <span class="lg:bg-gradient-to-r lg:from-sky-500 lg:to-sky-500 lg:bg-[length:0%_0.125rem] lg:bg-left-bottom lg:bg-no-repeat lg:transition-all lg:duration-500 lg:ease-out lg:group-hover:bg-[length:100%_0.125rem]">
               {kab.data.title}
             </span>
           </h2>
           <h4 class="group mt-4 text-justify text-slate-50 transition-all duration-300 ease-in-out">
-            <span class="bg-gradient-to-r from-sky-500 to-sky-500 bg-[length:0%_0.125rem] bg-left-bottom bg-no-repeat transition-all duration-500 ease-out group-hover:bg-[length:100%_0.125rem]">
-              {kab.data.description}
+            <span class="lg:bg-gradient-to-r lg:from-sky-500 lg:to-sky-500 lg:bg-[length:0%_0.125rem] lg:bg-left-bottom lg:bg-no-repeat lg:transition-all lg:duration-500 lg:ease-out lg:group-hover:bg-[length:100%_0.125rem]">
+              {TruncateText(kab.data.description, 90)}
             </span>
           </h4>
         </a>
@@ -60,12 +61,22 @@ const KabupatenCard = await getCollection("kota-dan-desa").then(e => e.filter(e 
 </MainLayout>
   
 <style scoped>
+@media screen and (max-width: 3120px) {
   main section a:hover {
-    filter: blur(0);
     transform: scale(1.05);
   }
   main section:hover a:not(:hover) {
     filter: blur(0.1rem);
     transform: scale(0.95);
   }
+}
+@media screen and (max-width: 1280px) {
+  main section a:hover {
+    transform: scale(1);
+  }
+  main section:hover a:not(:hover) {
+    filter: blur(0);
+    transform: scale(1);
+  }
+}
 </style>
